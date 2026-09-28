@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this assessment or its data, please cite it as below."
+title: "Basel-Stadt environmental audit / Umweltbilanz Basel-Stadt"
+type: dataset
+authors:
+  - family-names: Hertner
+    given-names: Jonas
+version: "2026"
+date-released: "2026-09-28"
+license: CC-BY-4.0
+url: "https://jonashertner.github.io/basel-environmental-audit/"
+repository-code: "https://github.com/jonashertner/basel-environmental-audit"
+keywords:
+  - Basel-Stadt
+  - environment
+  - climate
+  - contaminated sites
+  - PFAS
+  - noise
+languages:
+  - en
+  - de

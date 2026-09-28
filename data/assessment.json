@@ -1,0 +1,2747 @@
+{
+  "meta": {
+    "title": {
+      "en": "Basel-Stadt environmental audit",
+      "de": "Umweltbilanz Basel-Stadt"
+    },
+    "edition": "2026",
+    "reviewed": "2026-09-28",
+    "reviewIntervalDays": 90,
+    "author": {
+      "en": "Jonas Hertner",
+      "de": "Jonas Hertner"
+    },
+    "siteUrl": "https://jonashertner.github.io/basel-environmental-audit/",
+    "repoUrl": "https://github.com/jonashertner/basel-environmental-audit",
+    "kicker": {
+      "en": "Independent audit of public sources",
+      "de": "Unabhängige Auswertung öffentlicher Quellen"
+    },
+    "thesis": {
+      "en": "Basel's net-zero target covers at most a fifth of its residents' climate footprint.",
+      "de": "Basels Netto-Null-Ziel erfasst höchstens ein Fünftel des Klima-Fussabdrucks seiner Bevölkerung."
+    },
+    "standfirst": {
+      "en": "The canton has Switzerland's toughest climate target, one of Europe's heaviest chemical legacies and, in 2026, the hottest summer since Swiss records began. This audit grades where it stands. Every figure links to its source.",
+      "de": "Der Kanton hat das strengste Klimaziel der Schweiz, eine der schwersten Chemie-Altlasten Europas und 2026 den heissesten Sommer seit Messbeginn. Diese Bilanz benotet, wo er steht. Jede Zahl verweist auf ihre Quelle."
+    },
+    "description": {
+      "en": "A graded, source-linked assessment of the environment in Basel-Stadt: climate, heat, chemical legacy, air, water, noise and traffic. Every figure links to its source.",
+      "de": "Eine benotete, belegte Bilanz der Umwelt in Basel-Stadt: Klima, Hitze, Chemie-Altlasten, Luft, Wasser, Lärm und Verkehr. Jede Zahl verweist auf ihre Quelle."
+    },
+    "scope": {
+      "en": "Canton of Basel-Stadt (Basel, Riehen, Bettingen). Some sources cover both Basel cantons; where a site lies in Basel-Landschaft but affects Basel-Stadt, that is stated.",
+      "de": "Kanton Basel-Stadt (Basel, Riehen, Bettingen). Einige Quellen betreffen beide Basel; wo ein Standort in Basel-Landschaft liegt, aber Basel-Stadt betrifft, ist das vermerkt."
+    },
+    "disclaimer": {
+      "en": "Analysis of public sources. Grades are an analytical judgment, not an official rating. Not legal advice.",
+      "de": "Auswertung öffentlicher Quellen. Die Noten sind eine analytische Einschätzung, keine amtliche Bewertung. Keine Rechtsberatung."
+    }
+  },
+  "hero": {
+    "counted": {
+      "value": 3.1,
+      "label": {
+        "en": "Direct emissions inside the canton, covered by the 2037 target",
+        "de": "Direkte Emissionen auf Kantonsgebiet, vom Ziel 2037 erfasst"
+      },
+      "sources": [
+        "bs-klimaschutz"
+      ]
+    },
+    "uncounted": {
+      "value": 13,
+      "isMinimum": true,
+      "label": {
+        "en": "Consumption, financial investments, flights and energy supply chains, outside the target (estimated on a Swiss-average basis)",
+        "de": "Konsum, Finanzanlagen, Flüge und Energie-Vorketten, ausserhalb des Ziels (geschätzt auf Basis des Schweizer Durchschnitts)"
+      },
+      "sources": [
+        "bs-strategie-2025",
+        "infras-strategie"
+      ]
+    },
+    "note": {
+      "en": "Per resident, in tonnes CO2-equivalent. The two figures come from different years (2022 inventory, 2023 strategy estimate), so the share is indicative.",
+      "de": "Pro Kopf, in Tonnen CO2-Äquivalent. Die beiden Zahlen stammen aus verschiedenen Jahren (Inventar 2022, Schätzung der Strategie 2023); der Anteil ist deshalb ein Richtwert."
+    }
+  },
+  "overall": {
+    "grade": "C",
+    "summary": {
+      "en": "Good governance on paper, lagging outcomes, and a chemical legacy that is still largely in the ground.",
+      "de": "Gute Steuerung auf dem Papier, nachhinkende Ergebnisse und eine Chemie-Altlast, die grösstenteils noch im Boden liegt."
+    },
+    "facets": [
+      {
+        "label": {
+          "en": "Governance",
+          "de": "Steuerung"
+        },
+        "grade": "B+",
+        "note": {
+          "en": "Constitutional target, a dedicated climate office, a public progress portal and a report every two years as a basis for decisions by government and parliament; the first is due in 2026.",
+          "de": "Ziel in der Verfassung, eine eigene Klimafachstelle, ein öffentliches Fortschrittsportal und alle zwei Jahre ein Bericht als Entscheidungsgrundlage für Regierung und Grossen Rat; der erste ist 2026 fällig."
+        },
+        "sources": [
+          "bs-mm-klimaportal",
+          "bajour-berger-2026"
+        ]
+      },
+      {
+        "label": {
+          "en": "Measured outcomes",
+          "de": "Gemessene Ergebnisse"
+        },
+        "grade": "C–",
+        "note": {
+          "en": "Heating is moving. Mobility is off track by the climate office's own account, the canton's heat monitoring finds no measurable reduction in exposure, and road-noise remediation is years overdue.",
+          "de": "Bei der Wärme geht es voran. Die Mobilität ist nach Angaben der Klimafachstelle nicht auf Kurs, das kantonale Hitze-Controlling stellt keine messbare Entlastung fest, und die Strassenlärmsanierung ist seit Jahren überfällig."
+        },
+        "sources": [
+          "bajour-berger-2026",
+          "bs-controlling-2026",
+          "rr-laerm-2018"
+        ]
+      },
+      {
+        "label": {
+          "en": "Legacy liabilities",
+          "de": "Altlasten"
+        },
+        "grade": "D",
+        "note": {
+          "en": "Contaminated chemical sites next to homes and drinking water, with clean-up years away.",
+          "de": "Belastete Chemie-Standorte neben Wohnungen und Trinkwasser, die Sanierung liegt Jahre entfernt."
+        },
+        "sources": [
+          "srf-klybeck-2026",
+          "srf-feldreben-2026"
+        ]
+      }
+    ]
+  },
+  "domains": [
+    {
+      "id": "climate",
+      "name": {
+        "en": "Climate mitigation",
+        "de": "Klimaschutz"
+      },
+      "short": {
+        "en": "Climate",
+        "de": "Klima"
+      },
+      "grade": "C",
+      "verdict": {
+        "en": "The target is real. The accounting flatters it, and the last step depends on technology and law that do not yet exist.",
+        "de": "Das Ziel ist ernst gemeint. Die Bilanzierung schönt es, und der letzte Schritt hängt von Technik und Recht ab, die es noch nicht gibt."
+      },
+      "metrics": [
+        {
+          "value": "2037",
+          "label": {
+            "en": "Net-zero year, written into the cantonal constitution in 2022",
+            "de": "Netto-Null-Jahr, 2022 in die Kantonsverfassung geschrieben"
+          },
+          "sources": [
+            "bs-strategie-2023",
+            "bs-abst-2022"
+          ]
+        },
+        {
+          "value": {
+            "en": "3.1 t",
+            "de": "3,1 t"
+          },
+          "label": {
+            "en": "Direct emissions per resident in 2022; total emissions fell 6% from 2020",
+            "de": "Direkte Emissionen pro Kopf 2022; die Gesamtemissionen sanken gegenüber 2020 um 6 %"
+          },
+          "sources": [
+            "bs-klimaschutz"
+          ]
+        },
+        {
+          "value": ">13 t",
+          "label": {
+            "en": "Indirect emissions per resident, outside the target; a Swiss-average estimate in which financial investments account for more than 6 t",
+            "de": "Indirekte Emissionen pro Kopf, ausserhalb des Ziels; eine Schätzung auf Basis des Schweizer Durchschnitts, davon über 6 t aus Finanzanlagen"
+          },
+          "sources": [
+            "bs-strategie-2025"
+          ]
+        },
+        {
+          "value": "23%",
+          "label": {
+            "en": "Share of waste burned in Basel's incinerator that comes from Basel-Stadt itself",
+            "de": "Anteil des in der Basler KVA verbrannten Abfalls, der aus Basel-Stadt selbst stammt"
+          },
+          "sources": [
+            "rr-ccs-2025"
+          ]
+        },
+        {
+          "value": ">50%",
+          "label": {
+            "en": "Heating systems already running on renewable energy",
+            "de": "Heizungen, die bereits mit erneuerbarer Energie laufen"
+          },
+          "sources": [
+            "bajour-berger-2026"
+          ]
+        },
+        {
+          "value": "CHF 500",
+          "label": {
+            "en": "Current industry estimate per tonne for capturing, transporting and storing CO2",
+            "de": "Aktuelle Branchenschätzung pro Tonne für Abscheidung, Transport und Speicherung von CO2"
+          },
+          "sources": [
+            "rr-ccs-2025"
+          ]
+        }
+      ],
+      "charts": [
+        "pathway",
+        "waste-origin",
+        "gas-exit"
+      ],
+      "truth": {
+        "text": {
+          "en": "If the 2037 target is met, it will be met largely on the balance sheet. The incinerator, the largest single source, would need carbon capture that no waste incinerator operates at industrial scale, that Swiss waste law does not yet allow to be stored, and that the government only contemplates from 2037. The climate office itself says any shortfall will be covered by negative emissions after 2037, bought on the market if necessary.",
+          "de": "Wird das Ziel 2037 erreicht, dann grösstenteils in der Bilanz. Die KVA, die grösste Einzelquelle, bräuchte eine CO2-Abscheidung, die keine Kehrichtverbrennung im industriellen Massstab betreibt, deren Speicherung das Schweizer Abfallrecht noch nicht zulässt und die die Regierung erst ab 2037 in Betracht zieht. Die Klimafachstelle sagt selbst, eine Lücke werde nach 2037 mit Negativemissionen geschlossen, nötigenfalls am Markt gekauft."
+        },
+        "sources": [
+          "rr-ccs-2025",
+          "baz-klimaportal-2025",
+          "bajour-berger-2026"
+        ]
+      },
+      "upgrades": [
+        {
+          "text": {
+            "en": "Negotiate intercantonal and cross-border cost sharing for incinerator carbon capture now; 77% of the waste comes from elsewhere.",
+            "de": "Die Kostenteilung für die CO2-Abscheidung an der KVA jetzt interkantonal und grenzüberschreitend verhandeln; 77 % des Abfalls stammen von anderswo."
+          },
+          "sources": [
+            "rr-ccs-2025"
+          ]
+        },
+        {
+          "text": {
+            "en": "Implement the Grand Council's 2024 motion to reform the vehicle tax, which already weighs weight and CO2, towards fuel and space consumption. Mobility is off track by the climate office's own account.",
+            "de": "Die Motion des Grossen Rates von 2024 umsetzen, welche die bereits nach Gewicht und CO2 bemessene Motorfahrzeugsteuer stärker auf Treibstoff- und Flächenverbrauch ausrichten will. Die Mobilität ist nach Angaben der Klimafachstelle nicht auf Kurs."
+          },
+          "sources": [
+            "bs-mfz-steuer",
+            "bz-suv-2024",
+            "bajour-berger-2026"
+          ]
+        },
+        {
+          "text": {
+            "en": "Set a dated target for indirect emissions instead of waiting for groundwork due in 2028.",
+            "de": "Ein terminiertes Ziel für indirekte Emissionen setzen, statt auf Grundlagen zu warten, die erst 2028 vorliegen sollen."
+          },
+          "sources": [
+            "bajour-berger-2026"
+          ]
+        },
+        {
+          "text": {
+            "en": "Position the Rhine ports as Switzerland's CO2 export hub. The government already describes the region as pivotal for moving CO2 by rail and ship.",
+            "de": "Die Rheinhäfen als Schweizer Drehscheibe für den CO2-Export positionieren. Die Regierung bezeichnet die Region bereits als zentral für den CO2-Transport per Bahn und Schiff."
+          },
+          "sources": [
+            "rr-ccs-2025"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heat",
+      "name": {
+        "en": "Heat and adaptation",
+        "de": "Hitze und Anpassung"
+      },
+      "short": {
+        "en": "Heat",
+        "de": "Hitze"
+      },
+      "grade": "D",
+      "verdict": {
+        "en": "2026 showed what is coming. Adaptation is proceeding at the pace of routine street maintenance.",
+        "de": "2026 hat gezeigt, was kommt. Die Anpassung kommt im Tempo des ordentlichen Strassenunterhalts voran."
+      },
+      "metrics": [
+        {
+          "value": {
+            "en": "39.7 °C",
+            "de": "39,7 °C"
+          },
+          "label": {
+            "en": "New station record at Basel-Binningen on 30 July 2026, equalling the record north of the Alps",
+            "de": "Neuer Stationsrekord in Basel-Binningen am 30. Juli 2026, gleichauf mit dem Rekord der Alpennordseite"
+          },
+          "sources": [
+            "meteoswiss-jja-2026",
+            "blick-sommer-2026"
+          ]
+        },
+        {
+          "value": "52",
+          "label": {
+            "en": "Hot days (30 °C or more) in June–August 2026, against a 1991–2020 average of 14",
+            "de": "Hitzetage (30 °C und mehr) im Juni–August 2026, gegenüber einem Mittel von 14 (1991–2020)"
+          },
+          "sources": [
+            "nbcn-binningen",
+            "blick-sommer-2026"
+          ]
+        },
+        {
+          "value": "20",
+          "label": {
+            "en": "Days of 35 °C or more in June–August 2026, against 12 in 2003",
+            "de": "Tage mit 35 °C und mehr im Juni–August 2026, gegenüber 12 im Jahr 2003"
+          },
+          "sources": [
+            "nbcn-binningen"
+          ]
+        },
+        {
+          "value": {
+            "en": "≈28,000",
+            "de": "≈28’000"
+          },
+          "label": {
+            "en": "Trees on public ground in the city",
+            "de": "Bäume auf öffentlichem Grund in der Stadt"
+          },
+          "sources": [
+            "bs-baeume-2025"
+          ]
+        },
+        {
+          "value": "17%",
+          "label": {
+            "en": "Tree canopy cover of the city of Basel in 2024, unchanged since 2012",
+            "de": "Baumkronenbedeckung der Stadt Basel 2024, seit 2012 unverändert"
+          },
+          "sources": [
+            "bs-controlling-2026"
+          ]
+        },
+        {
+          "value": {
+            "en": "4,477 m²",
+            "de": "4’477 m²"
+          },
+          "label": {
+            "en": "Unsealed area approved in 2023–2024, against a target of 165,000 m² by 2037",
+            "de": "In den Jahren 2023–2024 bewilligte Entsiegelung, gegenüber einem Ziel von 165’000 m² bis 2037"
+          },
+          "sources": [
+            "bs-controlling-2026"
+          ]
+        }
+      ],
+      "charts": [
+        "hot-days",
+        "trees"
+      ],
+      "truth": {
+        "text": {
+          "en": "The canton's own 2026 monitoring report finds no measurable reduction in the number of people exposed to heat, and tree canopy has not grown since 2012. New trees are planted mainly where streets are already being dug up for district heating or maintenance, for cost reasons. The one measure that would free real space, converting street area to greenery, was rejected at the ballot box in 2023. Petitioners said Basel has by far the smallest share of green space among the large Swiss cities, and the government's reply did not dispute it.",
+          "de": "Der kantonale Controllingbericht 2026 stellt insgesamt keine messbare Reduktion der Hitzebetroffenheit fest, und die Baumkronenbedeckung ist seit 2012 nicht gewachsen. Neue Bäume werden aus Kostengründen vor allem dort gepflanzt, wo Strassen ohnehin für Fernwärme oder Unterhalt aufgerissen werden. Die eine Massnahme, die wirklich Raum schaffen würde, die Umwandlung von Strassenfläche in Grün, scheiterte 2023 an der Urne. Die Petitionäre hielten fest, Basel habe unter den grossen Schweizer Städten den deutlich geringsten Grünflächenanteil; die Regierung widersprach in ihrer Antwort nicht."
+        },
+        "sources": [
+          "bs-controlling-2026",
+          "rr-begruenung-2025",
+          "bs-abst-2023"
+        ]
+      },
+      "upgrades": [
+        {
+          "text": {
+            "en": "Set a canopy-cover target for the identified heat hotspots instead of a tree count.",
+            "de": "Für die bekannten Hitze-Hotspots ein Ziel für die Kronenüberdeckung setzen statt einer Baumzahl."
+          },
+          "sources": []
+        },
+        {
+          "text": {
+            "en": "Adopt the proposed «Grünes Basel» programme for greening and unsealing private land, still before the Grand Council, and aim it at courtyards, where no ballot fight is needed.",
+            "de": "Das vorgeschlagene Förderprogramm «Grünes Basel» für Begrünung und Entsiegelung privater Flächen, das noch im Grossen Rat hängig ist, beschliessen und gezielt in Innenhöfen einsetzen, wo es keinen Abstimmungskampf braucht."
+          },
+          "sources": [
+            "bs-gruenes-basel-2025",
+            "bs-controlling-2026"
+          ]
+        },
+        {
+          "text": {
+            "en": "Make unsealing the default whenever a district-heating trench is dug, not an option.",
+            "de": "Entsiegelung zur Regel machen, wann immer ein Fernwärmegraben geöffnet wird, nicht zur Option."
+          },
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "legacy",
+      "name": {
+        "en": "Chemical legacy in soil and groundwater",
+        "de": "Chemie-Altlasten in Boden und Grundwasser"
+      },
+      "short": {
+        "en": "Chemical legacy",
+        "de": "Chemie-Altlasten"
+      },
+      "grade": "D",
+      "verdict": {
+        "en": "The region's chemical past is still mostly underground, next to future homes and existing drinking water.",
+        "de": "Die Chemievergangenheit der Region liegt grösstenteils noch im Boden, neben künftigen Wohnungen und bestehendem Trinkwasser."
+      },
+      "metrics": [
+        {
+          "value": {
+            "en": "28–30 ha",
+            "de": "28–30 ha"
+          },
+          "label": {
+            "en": "Klybeck, a former chemical site being turned into a district (canton: about 280,000 m²; SRF: 300,000 m²)",
+            "de": "Klybeck, ein ehemaliges Chemieareal, das zum Quartier wird (Kanton: rund 280’000 m²; SRF: 300’000 m²)"
+          },
+          "sources": [
+            "bs-klybeck",
+            "srf-klybeck-2026"
+          ]
+        },
+        {
+          "value": {
+            "en": "8,500",
+            "de": "8500"
+          },
+          "label": {
+            "en": "Residents planned at Klybeck by 2040",
+            "de": "Geplante Bewohnerinnen und Bewohner im Klybeck bis 2040"
+          },
+          "sources": [
+            "srf-klybeck-2026"
+          ]
+        },
+        {
+          "value": {
+            "en": "CHF 280 m",
+            "de": "CHF 280 Mio."
+          },
+          "label": {
+            "en": "Cost of remediating the Feldreben chemical landfill in Muttenz (BL)",
+            "de": "Kosten der Sanierung der Chemiemülldeponie Feldreben in Muttenz (BL)"
+          },
+          "sources": [
+            "srf-feldreben-2026"
+          ]
+        },
+        {
+          "value": {
+            "en": "≈20 years",
+            "de": "≈20 Jahre"
+          },
+          "label": {
+            "en": "Groundwater treatment needed at Feldreben",
+            "de": "Nötige Grundwasserbehandlung bei der Feldreben"
+          },
+          "sources": [
+            "srf-feldreben-2026"
+          ]
+        },
+        {
+          "value": {
+            "en": ">200,000",
+            "de": ">200’000"
+          },
+          "label": {
+            "en": "People drawing drinking water from the Muttenzer Hard, next to the landfills (figure reported in 2013)",
+            "de": "Menschen, die ihr Trinkwasser aus der Muttenzer Hard beziehen, neben den Deponien (Zahl von 2013)"
+          },
+          "sources": [
+            "bz-feldreben"
+          ]
+        }
+      ],
+      "charts": [
+        "legacy-sites"
+      ],
+      "truth": {
+        "text": {
+          "en": "Klybeck is planned for 8,500 residents on ground where, SRF reported in April 2026, pollutants including the carcinogen benzidine exceed remediation thresholds in places. In 2024 SRF reported that the canton had dropped a bid for the Novartis parcels after an internal report said the remediation cost could not be assessed; the canton says an overall assessment, including finances, was decisive. The Feldreben clean-up is only now entering planning.",
+          "de": "Im Klybeck sollen 8500 Menschen wohnen, auf einem Boden, in dem laut SRF (April 2026) Schadstoffe wie das krebserregende Benzidin teils über den Sanierungswerten liegen. 2024 berichtete SRF, der Kanton habe auf ein Angebot für die Novartis-Parzellen verzichtet, nachdem ein interner Bericht die Sanierungskosten als nicht abschätzbar bezeichnet hatte; der Kanton erklärt, eine Gesamtbetrachtung, auch der Finanzen, sei ausschlaggebend gewesen. Die Sanierung Feldreben tritt erst jetzt in die Planung."
+        },
+        "sources": [
+          "srf-klybeck-2026",
+          "srf-rundschau-2024",
+          "bafu-altlasten-medien",
+          "srf-feldreben-2026"
+        ]
+      },
+      "upgrades": [
+        {
+          "text": {
+            "en": "Require a substance inventory drawn from each site's production history before building permits are granted. Critics have long asked for the inventory; tying it to permits is this audit's proposal.",
+            "de": "Vor Baubewilligungen ein Stoffinventar aus der Produktionsgeschichte jedes Areals verlangen. Das Inventar fordern Kritiker seit Langem; die Verknüpfung mit der Bewilligung ist ein Vorschlag dieser Bilanz."
+          },
+          "sources": [
+            "aefu-klybeck-2026"
+          ]
+        },
+        {
+          "text": {
+            "en": "Make independent second opinions standard, as the canton did for the Ackermätteli playground in 2025.",
+            "de": "Unabhängige Zweitgutachten zum Standard machen, wie es der Kanton 2025 für den Spielplatz Ackermätteli getan hat."
+          },
+          "sources": [
+            "bs-ackermaetteli"
+          ]
+        },
+        {
+          "text": {
+            "en": "Publish site monitoring as open data, as the canton already does for groundwater PFAS.",
+            "de": "Die Überwachung der Areale als offene Daten publizieren, wie es der Kanton für PFAS im Grundwasser bereits tut."
+          },
+          "sources": [
+            "bs-pfas"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "air",
+      "name": {
+        "en": "Air quality",
+        "de": "Luftqualität"
+      },
+      "short": {
+        "en": "Air",
+        "de": "Luft"
+      },
+      "grade": "B–",
+      "verdict": {
+        "en": "Much cleaner than in 1990 and mostly within Swiss limits. Those limits are well above what the WHO now considers safe.",
+        "de": "Viel sauberer als 1990 und meist innerhalb der Schweizer Grenzwerte. Diese liegen deutlich über dem, was die WHO heute für unbedenklich hält."
+      },
+      "metrics": [
+        {
+          "value": "−65%",
+          "label": {
+            "en": "Nitrogen oxide and particulate emissions in the region since 1990",
+            "de": "Stickoxid- und Feinstaubemissionen in der Region seit 1990"
+          },
+          "sources": [
+            "ub-luft-flyer"
+          ]
+        },
+        {
+          "value": "−80%",
+          "label": {
+            "en": "Volatile organic compound emissions since 1990",
+            "de": "Emissionen flüchtiger organischer Verbindungen seit 1990"
+          },
+          "sources": [
+            "ub-luft-flyer"
+          ]
+        },
+        {
+          "value": {
+            "en": "Stalled",
+            "de": "Stagnation"
+          },
+          "label": {
+            "en": "Nitrogen dioxide in 2025: the decline stopped, but the Swiss annual limit was met at every station",
+            "de": "Stickstoffdioxid 2025: kein weiterer Rückgang, aber der Schweizer Jahresgrenzwert wurde an allen Stationen eingehalten"
+          },
+          "sources": [
+            "luft-2025"
+          ]
+        },
+        {
+          "value": "27 µg/m³",
+          "label": {
+            "en": "NO2 annual mean at Feldbergstrasse in 2025, below the Swiss limit of 30 (2022: 37)",
+            "de": "NO2-Jahresmittel an der Feldbergstrasse 2025, unter dem Schweizer Grenzwert von 30 (2022: 37)"
+          },
+          "sources": [
+            "luft-2025",
+            "bl-luft-2022"
+          ]
+        },
+        {
+          "value": "3×",
+          "label": {
+            "en": "The Swiss NO2 limit relative to the WHO 2021 guideline of 10 µg/m³",
+            "de": "Der Schweizer NO2-Grenzwert im Verhältnis zum WHO-Richtwert 2021 von 10 µg/m³"
+          },
+          "sources": [
+            "bl-luft-2022",
+            "who-aqg-2021"
+          ]
+        }
+      ],
+      "charts": [
+        "air-limits",
+        "air-emissions"
+      ],
+      "truth": {
+        "text": {
+          "en": "\"Within limits\" mostly means within Swiss limits. Fine particles (PM2.5) and ozone are still too high, and nitrogen deposition exceeds ecological limits almost everywhere.",
+          "de": "«Innerhalb der Grenzwerte» heisst meist: innerhalb der Schweizer Grenzwerte. Feinstaub (PM2.5) und Ozon sind weiterhin zu hoch, und die Stickstoffeinträge überschreiten die ökologischen Belastungsgrenzen fast überall."
+        },
+        "sources": [
+          "ub-luft-2025"
+        ]
+      },
+      "upgrades": [
+        {
+          "text": {
+            "en": "Report against the WHO 2021 values as cantonal target values, even though the legal limits are federal.",
+            "de": "Die WHO-Werte 2021 als kantonale Zielwerte ausweisen und daran berichten, auch wenn die Grenzwerte Bundesrecht sind."
+          },
+          "sources": [
+            "who-aqg-2021"
+          ]
+        },
+        {
+          "text": {
+            "en": "Concentrate on fine particles and carcinogenic soot from combustion, which the regional clean-air programme singles out for reduction.",
+            "de": "Auf Feinstaub und krebserregenden Russ aus Verbrennung fokussieren, deren Reduktion das regionale Luftreinhalteprogramm besonders hervorhebt."
+          },
+          "sources": [
+            "ub-luft-2025"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "name": {
+        "en": "Drinking water and rivers",
+        "de": "Trinkwasser und Flüsse"
+      },
+      "short": {
+        "en": "Water",
+        "de": "Wasser"
+      },
+      "grade": "C+",
+      "subgrades": [
+        {
+          "label": {
+            "en": "Tap water",
+            "de": "Leitungswasser"
+          },
+          "grade": "B–"
+        },
+        {
+          "label": {
+            "en": "River ecosystems",
+            "de": "Flussökosysteme"
+          },
+          "grade": "C"
+        }
+      ],
+      "verdict": {
+        "en": "The tap water is good. The rivers carry PFAS and now need heat-wave closures to keep fish alive.",
+        "de": "Das Leitungswasser ist gut. Die Flüsse führen PFAS und müssen bei Hitzewellen gesperrt werden, damit die Fische überleben."
+      },
+      "metrics": [
+        {
+          "value": "≥10×",
+          "label": {
+            "en": "Margin by which every Basel drinking-water sample met the planned PFAS limit in the 2023 national campaign",
+            "de": "Abstand, mit dem jede Basler Trinkwasserprobe in der nationalen Kampagne 2023 den geplanten PFAS-Höchstwert einhielt"
+          },
+          "sources": [
+            "gr-pfas-2024"
+          ]
+        },
+        {
+          "value": {
+            "en": "All",
+            "de": "Alle"
+          },
+          "label": {
+            "en": "Wild fish samples contained PFAS; some exceeded the legal maximum",
+            "de": "Wildfischproben enthielten PFAS; einige überschritten den gesetzlichen Höchstwert"
+          },
+          "sources": [
+            "bs-pfas"
+          ]
+        },
+        {
+          "value": "240–400 ng/l",
+          "label": {
+            "en": "PFAS in groundwater near the EuroAirport as asserted in a Green Party question (2025), against the planned 100 ng/l limit; the government did not confirm the figures",
+            "de": "PFAS im Grundwasser beim EuroAirport gemäss einer Anfrage der Grünen (2025), gegenüber dem geplanten Höchstwert von 100 ng/l; die Regierung bestätigte die Zahlen nicht"
+          },
+          "sources": [
+            "gruene-bl-pfas-2025"
+          ]
+        },
+        {
+          "value": ">25 °C",
+          "label": {
+            "en": "Peak water temperature in the lower Birs, July 2026",
+            "de": "Höchste Wassertemperatur in der unteren Birs, Juli 2026"
+          },
+          "sources": [
+            "srf-birs-2026"
+          ]
+        },
+        {
+          "value": "2",
+          "label": {
+            "en": "Rivers closed to bathing, entry and fishing on their lower reaches in June 2026 (Birs and Wiese)",
+            "de": "Flüsse, deren Unterlauf im Juni 2026 für Baden, Betreten und Fischen gesperrt wurde (Birs und Wiese)"
+          },
+          "sources": [
+            "bs-birs-2026",
+            "bs-wiese-2026"
+          ]
+        }
+      ],
+      "charts": [
+        "pfas"
+      ],
+      "truth": {
+        "text": {
+          "en": "Part of the drinking water is produced next to unremediated chemical landfills. The protection is hydraulic: more Rhine water is infiltrated than is pumped out, so the groundwater flows away from the wells. The authorities have said an effect on drinking water has not been demonstrated; critics dispute this. The contamination itself remains in place.",
+          "de": "Ein Teil des Trinkwassers wird neben unsanierten Chemiemülldeponien gewonnen. Der Schutz ist hydraulisch: Es wird mehr Rheinwasser versickert als abgepumpt, sodass das Grundwasser von den Brunnen wegfliesst. Die Behörden erklärten, ein Einfluss auf das Trinkwasser sei nicht nachgewiesen; Kritiker bestreiten dies. Die Belastung selbst bleibt im Boden."
+        },
+        "sources": [
+          "hardwasser-wasserberg",
+          "tageswoche-2013",
+          "srf-feldreben-2026"
+        ]
+      },
+      "upgrades": [
+        {
+          "text": {
+            "en": "Trace the PFAS plume around the EuroAirport across the border and put the cost on the polluter. The Grand Council took a first step in September 2026 by referring a cantonal initiative for a federal PFAS levy.",
+            "de": "Die PFAS-Fahne rund um den EuroAirport grenzüberschreitend erfassen und die Kosten dem Verursacher auferlegen. Der Grosse Rat hat im September 2026 mit der Überweisung einer Standesinitiative für eine Bundesabgabe auf PFAS einen ersten Schritt getan."
+          },
+          "sources": [
+            "gruene-bl-pfas-2025",
+            "gr-pfas-abgabe-2026"
+          ]
+        },
+        {
+          "text": {
+            "en": "Build cold-water refuges at the mouths of the Birs and Wiese before the next hot summer.",
+            "de": "Vor dem nächsten heissen Sommer Kaltwasser-Refugien an den Mündungen von Birs und Wiese schaffen."
+          },
+          "sources": [
+            "bs-birs-2026"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noise",
+      "name": {
+        "en": "Noise and traffic",
+        "de": "Lärm und Verkehr"
+      },
+      "short": {
+        "en": "Noise & traffic",
+        "de": "Lärm & Verkehr"
+      },
+      "grade": "C–",
+      "verdict": {
+        "en": "Years past a federal deadline on road noise; the fix still awaits a parliamentary decision and a rollout of eight years or more.",
+        "de": "Jahre nach Ablauf einer Bundesfrist zum Strassenlärm; die Lösung wartet noch auf den Parlamentsentscheid und eine Umsetzung von acht Jahren oder mehr."
+      },
+      "metrics": [
+        {
+          "value": {
+            "en": "31 Mar 2018",
+            "de": "31.3.2018"
+          },
+          "label": {
+            "en": "Federal deadline for road-noise remediation, passed with the work unfinished",
+            "de": "Bundesfrist für die Strassenlärmsanierung, abgelaufen, die Sanierung ist nicht abgeschlossen"
+          },
+          "sources": [
+            "rr-laerm-2018"
+          ]
+        },
+        {
+          "value": "63%",
+          "label": {
+            "en": "Share of the road network that is traffic-calmed today",
+            "de": "Anteil des Strassennetzes, der heute verkehrsberuhigt ist"
+          },
+          "sources": [
+            "bs-tempo30-page"
+          ]
+        },
+        {
+          "value": "+50 km",
+          "label": {
+            "en": "Planned Tempo 30 extension, plus 20 km at night only",
+            "de": "Geplante Ausweitung von Tempo 30, dazu 20 km nur nachts"
+          },
+          "sources": [
+            "bs-mm-tempo30-2026"
+          ]
+        },
+        {
+          "value": {
+            "en": "CHF 2.35 bn",
+            "de": "CHF 2,35 Mrd."
+          },
+          "label": {
+            "en": "Rheintunnel motorway, cost in the federal consultation of June 2026; back in the 2045 horizon after voters rejected the expansion package",
+            "de": "Autobahn Rheintunnel, Kosten gemäss Vernehmlassung des Bundes vom Juni 2026; nach dem Nein an der Urne wieder im Horizont 2045"
+          },
+          "sources": [
+            "uvek-v45-2026",
+            "rr-rheintunnel-2026"
+          ]
+        },
+        {
+          "value": {
+            "en": "9.6 m",
+            "de": "9,6 Mio."
+          },
+          "label": {
+            "en": "EuroAirport passengers in 2025, a record; aviation is outside the climate target",
+            "de": "Passagiere am EuroAirport 2025, ein Rekord; der Flugverkehr liegt ausserhalb des Klimaziels"
+          },
+          "sources": [
+            "moneycab-eap-2026",
+            "bajour-berger-2026"
+          ]
+        }
+      ],
+      "charts": [
+        "calming"
+      ],
+      "truth": {
+        "text": {
+          "en": "Basel-Stadt voted 56% against motorway expansion in 2024. Federal planning has put the Rheintunnel back on the list anyway. The canton's Tempo 30 extension, meant to meet a legal duty overdue since 2018, is still before the Grand Council and would take eight to ten years to roll out. Since 1 October 2026, federal law also requires an expert report showing that Tempo 30 on main roads does not divert traffic into residential streets.",
+          "de": "Basel-Stadt stimmte 2024 mit 56 % gegen den Autobahnausbau. Die Bundesplanung hat den Rheintunnel trotzdem wieder auf die Liste gesetzt. Die kantonale Ausweitung von Tempo 30, die eine seit 2018 überfällige Rechtspflicht erfüllen soll, liegt noch beim Grossen Rat und bräuchte acht bis zehn Jahre. Seit dem 1. Oktober 2026 verlangt das Bundesrecht zudem ein Gutachten, das zeigt, dass Tempo 30 auf Hauptstrassen keinen Ausweichverkehr in Wohnquartiere auslöst."
+        },
+        "sources": [
+          "bs-abst-2024",
+          "uvek-v45-2026",
+          "bs-mm-tempo30-2026",
+          "astra-schilliger-2026",
+          "sda-schilliger-2026"
+        ]
+      },
+      "upgrades": [
+        {
+          "text": {
+            "en": "Introduce the planned night-time Tempo 30 immediately. It needs signs, not construction, and courts have upheld noise-based Tempo 30 orders.",
+            "de": "Das geplante Nacht-Tempo-30 sofort einführen. Es braucht Signale, keine Bauarbeiten, und Gerichte haben lärmbegründete Tempo-30-Anordnungen bestätigt."
+          },
+          "sources": [
+            "bs-mm-tempo30-2026",
+            "bger-1c-318-2024"
+          ]
+        },
+        {
+          "text": {
+            "en": "Hold the government to the conditions it set in March 2026 for supporting the Rheintunnel: tangible gains for residents, flanking measures such as urban greenery, space for walking and cycling and unsealing, and a limited construction burden. Make them binding before construction is approved.",
+            "de": "Die Regierung auf die Bedingungen verpflichten, die sie im März 2026 für eine Unterstützung des Rheintunnels formuliert hat: spürbarer Mehrwert für die Bevölkerung, flankierende Massnahmen wie Stadtgrün, Raum für Fuss- und Veloverkehr und Entsiegelung sowie eine begrenzte Baubelastung. Diese Bedingungen verbindlich machen, bevor der Bau bewilligt wird."
+          },
+          "sources": [
+            "rr-rheintunnel-2026"
+          ]
+        },
+        {
+          "text": {
+            "en": "Commission the diversion reports now required by federal law for each main-road section together with the noise reports, so that the new requirement does not delay remediation further.",
+            "de": "Die neu vom Bundesrecht verlangten Gutachten zum Ausweichverkehr für jeden Hauptstrassenabschnitt zusammen mit den Lärmgutachten in Auftrag geben, damit die neue Anforderung die Sanierung nicht weiter verzögert."
+          },
+          "sources": [
+            "astra-schilliger-2026"
+          ]
+        }
+      ]
+    }
+  ],
+  "charts": {
+    "pathway": {
+      "type": "pathway",
+      "title": {
+        "en": "The path to 2037, and the gap at the end of it",
+        "de": "Der Weg bis 2037 und die Lücke an seinem Ende"
+      },
+      "note": {
+        "en": "Tonnes CO2-equivalent on cantonal territory; 2022 is the latest published inventory as of September 2026. The dashed line is an illustrative straight path, not the canton's official curve. 2020 follows the climate strategy (674,000 t; the portal launch release rounds to about 700,000). 2022 is derived from the reported 6% reduction. 2020 was a pandemic year, so the pace comparison is indicative. IWB reports about 620,000 t CO2 in a different accounting.",
+        "de": "Tonnen CO2-Äquivalent auf Kantonsgebiet; 2022 ist das neuste veröffentlichte Inventar (Stand September 2026). Die gestrichelte Linie ist ein illustrativer linearer Pfad, nicht die offizielle Kurve des Kantons. 2020 folgt der Klimaschutzstrategie (674’000 t; die Medienmitteilung zum Klimaportal rundet auf rund 700’000). 2022 ist aus der ausgewiesenen Reduktion von 6 % abgeleitet. 2020 war ein Pandemiejahr; der Tempovergleich ist deshalb ein Richtwert. Die IWB weisen in einer anderen Bilanzierung rund 620’000 t CO2 aus."
+      },
+      "start": {
+        "year": 2020,
+        "value": 674000,
+        "sources": [
+          "bs-strategie-2025"
+        ]
+      },
+      "reductionTo2022": {
+        "year": 2022,
+        "percent": 6,
+        "sources": [
+          "bs-klimaschutz"
+        ]
+      },
+      "residual2037": {
+        "year": 2037,
+        "value": 90000,
+        "sources": [
+          "infras-kurzfassung"
+        ]
+      },
+      "markers": [
+        {
+          "year": 2027.9,
+          "label": {
+            "en": "CCS feasibility study due",
+            "de": "Machbarkeitsstudie CCS fällig"
+          },
+          "sources": [
+            "rr-ccs-2025"
+          ],
+          "short": {
+            "en": "CCS study",
+            "de": "Studie CCS"
+          }
+        },
+        {
+          "year": 2031,
+          "label": {
+            "en": "Federal CCS law planned",
+            "de": "Bundesgesetz zu CCS geplant"
+          },
+          "sources": [
+            "rr-ccs-2025"
+          ],
+          "short": {
+            "en": "CCS law",
+            "de": "Gesetz CCS"
+          }
+        }
+      ],
+      "sources": [
+        "bs-strategie-2025",
+        "bs-mm-klimaportal",
+        "bs-klimaschutz",
+        "infras-kurzfassung",
+        "rr-ccs-2025",
+        "iwb-fokus-2023"
+      ]
+    },
+    "waste-origin": {
+      "type": "stack",
+      "title": {
+        "en": "Whose waste Basel burns",
+        "de": "Wessen Abfall Basel verbrennt"
+      },
+      "note": {
+        "en": "Origin of waste incinerated at the Basel plant (KVA), the canton's largest emission source. The report gives no reference year; the last share is the remainder.",
+        "de": "Herkunft des in der Basler Kehrichtverwertungsanlage (KVA) verbrannten Abfalls, der grössten Emissionsquelle des Kantons. Der Bericht nennt kein Bezugsjahr; der letzte Anteil ist der Rest."
+      },
+      "unit": "%",
+      "segments": [
+        {
+          "label": {
+            "en": "Basel-Stadt",
+            "de": "Basel-Stadt"
+          },
+          "value": 23,
+          "tone": "ink"
+        },
+        {
+          "label": {
+            "en": "Basel-Landschaft",
+            "de": "Basel-Landschaft"
+          },
+          "value": 40,
+          "tone": "g1"
+        },
+        {
+          "label": {
+            "en": "Germany",
+            "de": "Deutschland"
+          },
+          "value": 15,
+          "tone": "g2"
+        },
+        {
+          "label": {
+            "en": "Aargau and Solothurn (remainder, derived)",
+            "de": "Aargau und Solothurn (Rest, abgeleitet)"
+          },
+          "value": 22,
+          "tone": "g3"
+        }
+      ],
+      "sources": [
+        "rr-ccs-2025",
+        "baz-klimaportal-2025"
+      ]
+    },
+    "gas-exit": {
+      "type": "stack",
+      "title": {
+        "en": "Switching off the gas grid by 2037",
+        "de": "Die Stilllegung des Gasnetzes bis 2037"
+      },
+      "note": {
+        "en": "Properties on the gas network by what replaces it. IWB plans about 1,000 disconnections a year from 2028, after first shutdowns in 2026–27, and about 14,000 gas cookers must be replaced. Our calculation: 11,000 properties against roughly ten years at that pace leaves almost no slack.",
+        "de": "Liegenschaften am Gasnetz nach Ersatzlösung. Die IWB planen ab 2028 rund 1000 Abtrennungen pro Jahr, nach ersten Stilllegungen 2026–27, und rund 14’000 Gasherde müssen ersetzt werden. Eigene Berechnung: 11’000 Liegenschaften bei rund zehn Jahren in diesem Tempo lassen kaum Spielraum."
+      },
+      "unit": {
+        "en": "Properties",
+        "de": "Liegenschaften"
+      },
+      "segments": [
+        {
+          "label": {
+            "en": "Can connect to district heating",
+            "de": "Anschluss an Fernwärme möglich"
+          },
+          "value": 5800,
+          "tone": "good"
+        },
+        {
+          "label": {
+            "en": "Outside district heating: heat pump or pellets",
+            "de": "Ausserhalb der Fernwärme: Wärmepumpe oder Pellets"
+          },
+          "value": 3200,
+          "tone": "ink"
+        },
+        {
+          "label": {
+            "en": "Gas used mainly for cooking",
+            "de": "Gas vor allem zum Kochen"
+          },
+          "value": 2000,
+          "tone": "g3"
+        }
+      ],
+      "sources": [
+        "bs-mm-waerme-2023",
+        "iwb-fokus-2023"
+      ]
+    },
+    "hot-days": {
+      "type": "columns",
+      "title": {
+        "en": "Hot days (30 °C or more) in Basel, June to August",
+        "de": "Hitzetage (30 °C und mehr) in Basel, Juni bis August"
+      },
+      "note": {
+        "en": "Days with a maximum of 30 °C or more, June to August, MeteoSwiss station Basel-Binningen, one series throughout. The 2026 maximum of 39.7 °C is the highest in the station's daily series, which starts in 1876. The government cites about 60 hot days for 2026, counting beyond August.",
+        "de": "Tage mit einem Maximum von 30 °C und mehr, Juni bis August, MeteoSchweiz-Station Basel-Binningen, durchgehend eine Messreihe. Das Maximum von 39,7 °C im Jahr 2026 ist der höchste Wert der täglichen Reihe dieser Station seit 1876. Die Regierung nennt für 2026 rund 60 Hitzetage und zählt dabei über den August hinaus."
+      },
+      "unit": {
+        "en": "days",
+        "de": "Tage"
+      },
+      "bars": [
+        {
+          "label": {
+            "en": "1991–2020 average",
+            "de": "Mittel 1991–2020"
+          },
+          "value": 14,
+          "tone": "base",
+          "sources": [
+            "nbcn-binningen"
+          ]
+        },
+        {
+          "label": {
+            "en": "2003",
+            "de": "2003"
+          },
+          "value": 41,
+          "tone": "mid",
+          "sources": [
+            "nbcn-binningen"
+          ]
+        },
+        {
+          "label": {
+            "en": "2018",
+            "de": "2018"
+          },
+          "value": 24,
+          "tone": "mid",
+          "sources": [
+            "nbcn-binningen"
+          ]
+        },
+        {
+          "label": {
+            "en": "2026",
+            "de": "2026"
+          },
+          "value": 52,
+          "tone": "bad",
+          "sources": [
+            "nbcn-binningen"
+          ]
+        }
+      ],
+      "sources": [
+        "nbcn-binningen",
+        "meteoswiss-jja-2026"
+      ],
+      "valueLabel": {
+        "en": "Days of 30 °C or more",
+        "de": "Tage mit 30 °C und mehr"
+      }
+    },
+    "trees": {
+      "type": "dots",
+      "title": {
+        "en": "Tree planting against the scale of the problem",
+        "de": "Baumpflanzungen gemessen am Ausmass des Problems"
+      },
+      "note": {
+        "en": "One dot is ten trees. Trees removed for safety are replaced, so removals are not net losses; they show how much of each year's effort goes into standing still.",
+        "de": "Ein Punkt entspricht zehn Bäumen. Aus Sicherheitsgründen gefällte Bäume werden ersetzt; Fällungen sind also keine Nettoverluste. Sie zeigen, wie viel des jährlichen Aufwands nötig ist, nur um den Stand zu halten."
+      },
+      "perDot": 10,
+      "rows": [
+        {
+          "label": {
+            "en": "Government's expectation: at least this many additional trees per year",
+            "de": "Erwartung der Regierung: mindestens so viele zusätzliche Bäume pro Jahr"
+          },
+          "value": 100,
+          "tone": "good",
+          "sources": [
+            "rr-begruenung-2025"
+          ]
+        },
+        {
+          "label": {
+            "en": "Petition's ask: 2,000 trees over 2026–2030, per year",
+            "de": "Forderung der Petition: 2000 Bäume 2026–2030, pro Jahr"
+          },
+          "value": 400,
+          "tone": "base",
+          "sources": [
+            "rr-begruenung-2025"
+          ]
+        },
+        {
+          "label": {
+            "en": "Trees flagged for removal in the 2025 inspection",
+            "de": "Bei der Kontrolle 2025 zur Fällung bestimmte Bäume"
+          },
+          "value": 261,
+          "tone": "bad",
+          "sources": [
+            "bs-baeume-2025"
+          ]
+        }
+      ],
+      "derived": {
+        "stock": 28000,
+        "perYear": 100,
+        "toYear": 2037
+      },
+      "sources": [
+        "rr-begruenung-2025",
+        "bs-baeume-2025"
+      ],
+      "unit": {
+        "en": "Trees",
+        "de": "Bäume"
+      }
+    },
+    "legacy-sites": {
+      "type": "sites",
+      "title": {
+        "en": "Two sites, two decades of work",
+        "de": "Zwei Standorte, zwei Jahrzehnte Arbeit"
+      },
+      "note": {
+        "en": "Advocacy sources are marked. Company-reported waste volumes are cited here via an advocacy group.",
+        "de": "Quellen von Interessenvertretungen sind gekennzeichnet. Die von den Firmen angegebenen Abfallmengen werden hier über eine Interessengruppe zitiert."
+      },
+      "sites": [
+        {
+          "name": {
+            "en": "Klybeck",
+            "de": "Klybeck"
+          },
+          "place": {
+            "en": "Basel-Stadt, between the Rhine and the Wiese",
+            "de": "Basel-Stadt, zwischen Rhein und Wiese"
+          },
+          "rows": [
+            {
+              "k": {
+                "en": "History",
+                "de": "Geschichte"
+              },
+              "v": {
+                "en": "Former Ciba site, later Novartis and BASF",
+                "de": "Ehemaliges Ciba-Areal, später Novartis und BASF"
+              },
+              "sources": [
+                "srf-klybeck-altlasten"
+              ]
+            },
+            {
+              "k": {
+                "en": "Found in groundwater",
+                "de": "Im Grundwasser gefunden"
+              },
+              "v": {
+                "en": "Benzidine, 4-aminobiphenyl, PFAS and arsenic, some above remediation thresholds (2026)",
+                "de": "Benzidin, 4-Aminobiphenyl, PFAS und Arsen, teils über den Sanierungswerten (2026)"
+              },
+              "sources": [
+                "srf-klybeck-2026"
+              ]
+            },
+            {
+              "k": {
+                "en": "Hazard note",
+                "de": "Gefahrenhinweis"
+              },
+              "v": {
+                "en": "Benzidine is classified as carcinogenic to humans (IARC Group 1)",
+                "de": "Benzidin ist als krebserregend für den Menschen eingestuft (IARC Gruppe 1)"
+              },
+              "sources": [
+                "aefu-klybeck-2019"
+              ]
+            },
+            {
+              "k": {
+                "en": "Owners",
+                "de": "Eigentümer"
+              },
+              "v": {
+                "en": "Rhystadt and Swiss Life",
+                "de": "Rhystadt und Swiss Life"
+              },
+              "sources": [
+                "srf-klybeck-2026"
+              ]
+            },
+            {
+              "k": {
+                "en": "Complication",
+                "de": "Erschwernis"
+              },
+              "v": {
+                "en": "Listed buildings and underground tunnels make excavation difficult",
+                "de": "Denkmalgeschützte Bauten und unterirdische Tunnel erschweren den Aushub"
+              },
+              "sources": [
+                "bs-klybeck"
+              ]
+            },
+            {
+              "k": {
+                "en": "Next step",
+                "de": "Nächster Schritt"
+              },
+              "v": {
+                "en": "The owners aim to present a remediation plan by spring 2027",
+                "de": "Die Eigentümer wollen bis Frühling 2027 ein Sanierungsprojekt vorlegen"
+              },
+              "sources": [
+                "srf-klybeck-2026"
+              ]
+            },
+            {
+              "k": {
+                "en": "Plan",
+                "de": "Planung"
+              },
+              "v": {
+                "en": "8,500 residents by 2040, and 7,500 jobs",
+                "de": "8500 Bewohnerinnen und Bewohner bis 2040 sowie 7500 Arbeitsplätze"
+              },
+              "sources": [
+                "srf-klybeck-2026"
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Feldreben",
+            "de": "Feldreben"
+          },
+          "place": {
+            "en": "Muttenz (Basel-Landschaft), in a residential and commercial area",
+            "de": "Muttenz (Basel-Landschaft), in einem Wohn- und Gewerbegebiet"
+          },
+          "rows": [
+            {
+              "k": {
+                "en": "Deposited",
+                "de": "Abgelagert"
+              },
+              "v": {
+                "en": "13,500–25,000 t of chemical waste from Geigy and Ciba, by the companies' own figures",
+                "de": "13’500–25’000 t Chemieabfälle von Geigy und Ciba, nach Angaben der Firmen"
+              },
+              "sources": [
+                "multiwatch-feldreben"
+              ]
+            },
+            {
+              "k": {
+                "en": "Exposure",
+                "de": "Exposition"
+              },
+              "v": {
+                "en": "Next to the Muttenzer Hard, which supplied drinking water to more than 200,000 people by a 2013 count",
+                "de": "Neben der Muttenzer Hard, die gemäss einer Zahl von 2013 mehr als 200’000 Menschen mit Trinkwasser versorgt"
+              },
+              "sources": [
+                "bz-feldreben"
+              ]
+            },
+            {
+              "k": {
+                "en": "Contaminants",
+                "de": "Schadstoffe"
+              },
+              "v": {
+                "en": "Chlorinated hydrocarbons; excavation must happen under a tent because of the vapours",
+                "de": "Chlorierte Kohlenwasserstoffe; wegen der Dämpfe muss unter einem Zelt ausgehoben werden"
+              },
+              "sources": [
+                "srf-feldreben-2026"
+              ]
+            },
+            {
+              "k": {
+                "en": "Cost",
+                "de": "Kosten"
+              },
+              "v": {
+                "en": "CHF 280 million",
+                "de": "CHF 280 Mio."
+              },
+              "sources": [
+                "srf-feldreben-2026"
+              ]
+            },
+            {
+              "k": {
+                "en": "Duration",
+                "de": "Dauer"
+              },
+              "v": {
+                "en": "Groundwater treatment for about twenty years",
+                "de": "Grundwasserbehandlung während rund zwanzig Jahren"
+              },
+              "sources": [
+                "srf-feldreben-2026"
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "srf-klybeck-2026",
+        "srf-feldreben-2026",
+        "bz-feldreben",
+        "multiwatch-feldreben"
+      ]
+    },
+    "air-limits": {
+      "type": "thresholds",
+      "title": {
+        "en": "Measured against two yardsticks",
+        "de": "An zwei Massstäben gemessen"
+      },
+      "note": {
+        "en": "Annual means in µg/m³. The Feldbergstrasse station stood at a temporary, better-ventilated site in 2024, so that year is not shown. For PM2.5 the chart shows the two yardsticks; the canton reports that exposure remains too high.",
+        "de": "Jahresmittel in µg/m³. Die Station Feldbergstrasse stand 2024 an einem provisorischen, besser durchlüfteten Standort; dieses Jahr wird daher nicht gezeigt. Für PM2.5 zeigt die Grafik die beiden Massstäbe; laut Kanton ist die Belastung weiterhin zu hoch."
+      },
+      "max": 40,
+      "unit": "µg/m³",
+      "groups": [
+        {
+          "label": {
+            "en": "Nitrogen dioxide (NO2)",
+            "de": "Stickstoffdioxid (NO2)"
+          },
+          "items": [
+            {
+              "label": {
+                "en": "Feldbergstrasse, 2022",
+                "de": "Feldbergstrasse, 2022"
+              },
+              "value": 37,
+              "tone": "ink",
+              "sources": [
+                "bl-luft-2022"
+              ]
+            },
+            {
+              "label": {
+                "en": "Feldbergstrasse, 2025",
+                "de": "Feldbergstrasse, 2025"
+              },
+              "value": 27,
+              "tone": "ink",
+              "sources": [
+                "luft-2025"
+              ]
+            },
+            {
+              "label": {
+                "en": "Swiss legal limit",
+                "de": "Schweizer Grenzwert"
+              },
+              "value": 30,
+              "tone": "base",
+              "sources": [
+                "bl-luft-2022"
+              ]
+            },
+            {
+              "label": {
+                "en": "WHO guideline (2021)",
+                "de": "WHO-Richtwert (2021)"
+              },
+              "value": 10,
+              "tone": "good",
+              "sources": [
+                "who-aqg-2021"
+              ]
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Fine particles (PM2.5)",
+            "de": "Feinstaub (PM2.5)"
+          },
+          "items": [
+            {
+              "label": {
+                "en": "Swiss legal limit",
+                "de": "Schweizer Grenzwert"
+              },
+              "value": 10,
+              "tone": "base",
+              "sources": [
+                "bl-luft-2018"
+              ]
+            },
+            {
+              "label": {
+                "en": "WHO guideline (2021)",
+                "de": "WHO-Richtwert (2021)"
+              },
+              "value": 5,
+              "tone": "good",
+              "sources": [
+                "who-aqg-2021"
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "bl-luft-2022",
+        "luft-2025",
+        "lha-2024",
+        "bl-luft-2018",
+        "who-aqg-2021",
+        "ub-luft-2025"
+      ]
+    },
+    "air-emissions": {
+      "type": "declines",
+      "title": {
+        "en": "Emissions in the region since 1990",
+        "de": "Emissionen in der Region seit 1990"
+      },
+      "note": {
+        "en": "Approximate change in emissions across both Basel cantons.",
+        "de": "Ungefähre Veränderung der Emissionen in beiden Basel."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Volatile organic compounds",
+            "de": "Flüchtige organische Verbindungen"
+          },
+          "value": -80
+        },
+        {
+          "label": {
+            "en": "Nitrogen oxides",
+            "de": "Stickoxide"
+          },
+          "value": -65
+        },
+        {
+          "label": {
+            "en": "Particulate matter (PM10, PM2.5)",
+            "de": "Feinstaub (PM10, PM2.5)"
+          },
+          "value": -65
+        },
+        {
+          "label": {
+            "en": "Ammonia (mostly agriculture)",
+            "de": "Ammoniak (vor allem Landwirtschaft)"
+          },
+          "value": -10
+        }
+      ],
+      "sources": [
+        "ub-luft-flyer"
+      ]
+    },
+    "pfas": {
+      "type": "log",
+      "title": {
+        "en": "PFAS, from tap to airport",
+        "de": "PFAS, vom Wasserhahn bis zum Flughafen"
+      },
+      "note": {
+        "en": "Nanograms per litre, logarithmic scale. The tap-water value is an upper bound derived from the reported tenfold margin. The airport figure was asserted in a Green Party question of 8 May 2025; the Basel-Landschaft government pointed instead to a 2022 survey with no sample above current or expected limits.",
+        "de": "Nanogramm pro Liter, logarithmische Skala. Der Wert für das Leitungswasser ist eine Obergrenze, abgeleitet aus dem ausgewiesenen zehnfachen Abstand. Die Zahl zum Flughafen stammt aus einer Anfrage der Grünen vom 8. Mai 2025; die Regierung Basel-Landschaft verwies auf eine Untersuchung von 2022 ohne Probe über den geltenden oder erwarteten Höchstwerten."
+      },
+      "min": 1,
+      "max": 1000,
+      "unit": "ng/l",
+      "items": [
+        {
+          "label": {
+            "en": "Basel tap water (2023 campaign)",
+            "de": "Basler Leitungswasser (Kampagne 2023)"
+          },
+          "to": 10,
+          "prefix": "≤",
+          "tone": "good",
+          "sources": [
+            "gr-pfas-2024"
+          ]
+        },
+        {
+          "label": {
+            "en": "Planned limit, sum of 20 PFAS",
+            "de": "Geplanter Höchstwert, Summe von 20 PFAS"
+          },
+          "to": 100,
+          "tone": "base",
+          "sources": [
+            "bafu-naqua-pfas"
+          ]
+        },
+        {
+          "label": {
+            "en": "Groundwater near the EuroAirport (party's figure)",
+            "de": "Grundwasser beim EuroAirport (Angabe einer Partei)"
+          },
+          "from": 240,
+          "to": 400,
+          "tone": "bad",
+          "sources": [
+            "gruene-bl-pfas-2025"
+          ]
+        }
+      ],
+      "sources": [
+        "gr-pfas-2024",
+        "bafu-naqua-pfas",
+        "gruene-bl-pfas-2025",
+        "bs-pfas"
+      ]
+    },
+    "calming": {
+      "type": "progress",
+      "title": {
+        "en": "Traffic calming, now and planned",
+        "de": "Verkehrsberuhigung, heute und geplant"
+      },
+      "note": {
+        "en": "Share of city and cantonal roads with Tempo 30, meeting zones or pedestrian zones. The government's March 2026 release gives eight to ten years for reaching 79%; the canton's Tempo 30 page gives about 15.",
+        "de": "Anteil der Gemeinde- und Kantonsstrassen mit Tempo 30, Begegnungs- oder Fussgängerzonen. Die Medienmitteilung der Regierung vom März 2026 nennt acht bis zehn Jahre bis zum Erreichen von 79 %, die kantonale Tempo-30-Seite rund 15 Jahre."
+      },
+      "now": 63,
+      "target": 79,
+      "deadline": "2018-03-31",
+      "sources": [
+        "bs-tempo30-page",
+        "bs-mm-tempo30-2026",
+        "rr-laerm-2018"
+      ],
+      "deadlineLabel": {
+        "en": "since the federal deadline for road-noise remediation passed on 31 March 2018",
+        "de": "seit Ablauf der Bundesfrist für die Strassenlärmsanierung am 31. März 2018"
+      },
+      "deadlineSources": [
+        "rr-laerm-2018"
+      ]
+    }
+  },
+  "politics": {
+    "title": {
+      "en": "What voters approved, and what they rejected",
+      "de": "Was die Stimmberechtigten annahmen und was sie ablehnten"
+    },
+    "lead": {
+      "en": "Basel votes for ambitious targets and against new motorways, but not for giving up street space. The result is a status quo defended from both sides.",
+      "de": "Basel stimmt für ehrgeizige Ziele und gegen neue Autobahnen, aber nicht dafür, Strassenraum abzugeben. Das Ergebnis ist ein Status quo, der von beiden Seiten verteidigt wird."
+    },
+    "votes": [
+      {
+        "date": "2022-11-27",
+        "label": {
+          "en": "Net zero by 2037 (counter-proposal)",
+          "de": "Netto-Null bis 2037 (Gegenvorschlag)"
+        },
+        "kind": {
+          "en": "Target",
+          "de": "Ziel"
+        },
+        "yes": 64.1,
+        "sources": [
+          "bs-abst-2022"
+        ]
+      },
+      {
+        "date": "2022-11-27",
+        "label": {
+          "en": "Net zero by 2030 (initiative)",
+          "de": "Netto-Null bis 2030 (Initiative)"
+        },
+        "kind": {
+          "en": "Target",
+          "de": "Ziel"
+        },
+        "yes": 56.72,
+        "note": {
+          "en": "Lost the tie-break to 2037",
+          "de": "Unterlag in der Stichfrage gegen 2037"
+        },
+        "sources": [
+          "bs-abst-2022"
+        ]
+      },
+      {
+        "date": "2023-11-26",
+        "label": {
+          "en": "Turn 5% of street space into greenery",
+          "de": "5 % der Strassenfläche begrünen"
+        },
+        "kind": {
+          "en": "Measure",
+          "de": "Massnahme"
+        },
+        "yes": 43.12,
+        "sources": [
+          "bs-abst-2023",
+          "srf-abst-2023"
+        ]
+      },
+      {
+        "date": "2023-11-26",
+        "label": {
+          "en": "Turn 5% of street space over to walking, cycling and transit",
+          "de": "5 % der Strassenfläche für Fuss-, Velo- und öffentlichen Verkehr"
+        },
+        "kind": {
+          "en": "Measure",
+          "de": "Massnahme"
+        },
+        "yes": 40.35,
+        "sources": [
+          "bs-abst-2023",
+          "srf-abst-2023"
+        ]
+      },
+      {
+        "date": "2024-11-24",
+        "label": {
+          "en": "National motorway expansion incl. Rheintunnel (Basel-Stadt result)",
+          "de": "Nationaler Autobahnausbau inkl. Rheintunnel (Resultat Basel-Stadt)"
+        },
+        "kind": {
+          "en": "Road building",
+          "de": "Strassenbau"
+        },
+        "yes": 43.57,
+        "sources": [
+          "sp-rheintunnel-2026",
+          "bl-rheintunnel-2025"
+        ]
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2018-03-31",
+      "label": {
+        "en": "Federal deadline for road-noise remediation passes",
+        "de": "Bundesfrist für die Strassenlärmsanierung läuft ab"
+      },
+      "sources": [
+        "rr-laerm-2018"
+      ]
+    },
+    {
+      "date": "2019-01-01",
+      "precision": "year",
+      "label": {
+        "en": "Basel-Stadt declares a climate emergency",
+        "de": "Basel-Stadt ruft den Klimanotstand aus"
+      },
+      "sources": [
+        "bs-strategie-2023"
+      ]
+    },
+    {
+      "date": "2022-11-27",
+      "label": {
+        "en": "Voters put net zero by 2037 into the constitution",
+        "de": "Die Stimmberechtigten schreiben Netto-Null 2037 in die Verfassung"
+      },
+      "sources": [
+        "bs-abst-2022"
+      ]
+    },
+    {
+      "date": "2023-11-26",
+      "label": {
+        "en": "Voters reject both street-space initiatives",
+        "de": "Die Stimmberechtigten lehnen beide Strassenraum-Initiativen ab"
+      },
+      "sources": [
+        "bs-abst-2023"
+      ]
+    },
+    {
+      "date": "2024-11-24",
+      "label": {
+        "en": "Motorway expansion rejected nationally; Basel-Stadt 56% against",
+        "de": "Autobahnausbau national abgelehnt; Basel-Stadt 56 % dagegen"
+      },
+      "sources": [
+        "bs-abst-2024"
+      ]
+    },
+    {
+      "date": "2025-09-11",
+      "label": {
+        "en": "Canton launches its public climate portal",
+        "de": "Der Kanton lanciert sein öffentliches Klimaportal"
+      },
+      "sources": [
+        "bs-mm-klimaportal"
+      ]
+    },
+    {
+      "date": "2026-01-28",
+      "label": {
+        "en": "Federal Council puts the CHF 2.4 bn Rheintunnel back in the 2045 horizon",
+        "de": "Der Bundesrat nimmt den Rheintunnel für CHF 2,4 Mrd. wieder in den Horizont 2045 auf"
+      },
+      "sources": [
+        "rr-rheintunnel-2026"
+      ]
+    },
+    {
+      "date": "2026-03-03",
+      "label": {
+        "en": "Feldreben: CHF 280 m remediation enters planning",
+        "de": "Feldreben: Sanierung für CHF 280 Mio. tritt in die Planung"
+      },
+      "sources": [
+        "srf-feldreben-2026"
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "label": {
+        "en": "Federal Supreme Court upholds noise-based Tempo 30 on cantonal roads in three Basel-Landschaft towns",
+        "de": "Das Bundesgericht bestätigt lärmbegründetes Tempo 30 auf Kantonsstrassen in drei Baselbieter Gemeinden"
+      },
+      "sources": [
+        "bger-1c-318-2024",
+        "bl-tempo30-bger"
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "label": {
+        "en": "Government proposes Tempo 30 on 50 more kilometres",
+        "de": "Die Regierung schlägt Tempo 30 auf 50 weiteren Kilometern vor"
+      },
+      "sources": [
+        "bs-mm-tempo30-2026",
+        "bs-tempo30-page"
+      ]
+    },
+    {
+      "date": "2026-04-09",
+      "label": {
+        "en": "Klybeck: pollutants including the carcinogen benzidine found above remediation thresholds in places",
+        "de": "Klybeck: Schadstoffe wie das krebserregende Benzidin teils über den Sanierungswerten gefunden"
+      },
+      "sources": [
+        "srf-klybeck-2026"
+      ]
+    },
+    {
+      "date": "2026-06-15",
+      "precision": "month",
+      "label": {
+        "en": "Birs and Wiese closed to bathing and fishing in the heat",
+        "de": "Birs und Wiese wegen Hitze für Baden und Fischen gesperrt"
+      },
+      "sources": [
+        "bs-birs-2026",
+        "bs-wiese-2026"
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "precision": "season",
+      "label": {
+        "en": "Hottest summer since Swiss records began in 1864; 39.7 °C in Basel-Binningen",
+        "de": "Heissester Sommer seit Messbeginn 1864; 39,7 °C in Basel-Binningen"
+      },
+      "sources": [
+        "meteoswiss-jja-2026",
+        "nbcn-binningen"
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "label": {
+        "en": "Climate office: mobility is off track",
+        "de": "Klimafachstelle: Mobilität nicht auf Kurs"
+      },
+      "sources": [
+        "bajour-berger-2026"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "label": {
+        "en": "Grand Council refers a cantonal initiative for a federal PFAS levy",
+        "de": "Der Grosse Rat überweist eine Standesinitiative für eine Bundesabgabe auf PFAS"
+      },
+      "sources": [
+        "gr-pfas-abgabe-2026"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "label": {
+        "en": "Amended federal signalling rules: Tempo 30 on main roads needs proof of no diversion into residential streets",
+        "de": "Geänderte Signalisationsverordnung: Tempo 30 auf Hauptstrassen braucht den Nachweis, dass kein Ausweichverkehr in Quartiere entsteht"
+      },
+      "sources": [
+        "astra-schilliger-2026",
+        "sda-schilliger-2026"
+      ]
+    },
+    {
+      "date": "2027-05-31",
+      "precision": "season",
+      "display": {
+        "en": "Spring 2027",
+        "de": "Frühling 2027"
+      },
+      "label": {
+        "en": "Owners' target for the Klybeck remediation plan",
+        "de": "Zieltermin der Eigentümer für das Sanierungsprojekt Klybeck"
+      },
+      "sources": [
+        "srf-klybeck-2026"
+      ]
+    },
+    {
+      "date": "2027-06-01",
+      "precision": "season",
+      "display": {
+        "en": "Summer–autumn 2027",
+        "de": "Sommer/Herbst 2027"
+      },
+      "label": {
+        "en": "Federal parliament expected to debate the 2045 transport programme, incl. Rheintunnel",
+        "de": "Das Bundesparlament berät voraussichtlich das Verkehrsprogramm 2045, inkl. Rheintunnel"
+      },
+      "sources": [
+        "rr-dreirosen-2026"
+      ]
+    },
+    {
+      "date": "2027-12-31",
+      "precision": "year",
+      "display": {
+        "en": "End of 2027",
+        "de": "Ende 2027"
+      },
+      "label": {
+        "en": "Feasibility study on carbon capture at the Basel incinerator due",
+        "de": "Machbarkeitsstudie zur CO2-Abscheidung an der Basler KVA fällig"
+      },
+      "sources": [
+        "rr-ccs-2025"
+      ]
+    },
+    {
+      "date": "2028-01-01",
+      "precision": "year",
+      "display": {
+        "en": "From 2028",
+        "de": "Ab 2028"
+      },
+      "label": {
+        "en": "IWB starts disconnecting about 1,000 gas connections a year",
+        "de": "Die IWB beginnen, jährlich rund 1000 Gasanschlüsse abzutrennen"
+      },
+      "sources": [
+        "bs-mm-waerme-2023"
+      ]
+    },
+    {
+      "date": "2030-12-31",
+      "precision": "year",
+      "display": {
+        "en": "2030",
+        "de": "2030"
+      },
+      "label": {
+        "en": "Cantonal administration to reach net zero on its direct emissions",
+        "de": "Die Kantonsverwaltung soll bei ihren direkten Emissionen Netto-Null erreichen"
+      },
+      "sources": [
+        "bs-klimaschutz"
+      ]
+    },
+    {
+      "date": "2031-01-01",
+      "label": {
+        "en": "Federal CCS framework law planned to take effect",
+        "de": "Geplantes Inkrafttreten eines Bundesrahmengesetzes zu CCS"
+      },
+      "sources": [
+        "rr-ccs-2025"
+      ]
+    },
+    {
+      "date": "2037-12-31",
+      "precision": "year",
+      "display": {
+        "en": "2037",
+        "de": "2037"
+      },
+      "label": {
+        "en": "Net zero on cantonal territory; gas grid switched off",
+        "de": "Netto-Null auf Kantonsgebiet; Gasnetz stillgelegt"
+      },
+      "sources": [
+        "bs-strategie-2023",
+        "bs-mm-waerme-2023"
+      ]
+    },
+    {
+      "date": "2040-12-31",
+      "precision": "year",
+      "display": {
+        "en": "2040",
+        "de": "2040"
+      },
+      "label": {
+        "en": "Klybeck district for 8,500 residents",
+        "de": "Quartier Klybeck für 8500 Bewohnerinnen und Bewohner"
+      },
+      "sources": [
+        "srf-klybeck-2026"
+      ]
+    },
+    {
+      "date": "2045-12-31",
+      "precision": "year",
+      "display": {
+        "en": "2045",
+        "de": "2045"
+      },
+      "label": {
+        "en": "Rheintunnel realisation horizon",
+        "de": "Realisierungshorizont Rheintunnel"
+      },
+      "sources": [
+        "rr-rheintunnel-2026"
+      ]
+    }
+  ],
+  "legal": [
+    {
+      "title": {
+        "en": "Who pays for Klybeck",
+        "de": "Wer bezahlt im Klybeck?"
+      },
+      "law": {
+        "en": "Art. 32d and Art. 32d bis para. 3 USG (SR 814.01); AltlV (SR 814.680); BGE 139 II 106; BGE 144 II 332",
+        "de": "Art. 32d und Art. 32d bis Abs. 3 USG (SR 814.01); AltlV (SR 814.680); BGE 139 II 106; BGE 144 II 332"
+      },
+      "body": {
+        "en": "Remediation costs fall primarily on those whose conduct caused the contamination; at Klybeck the historic operators were Ciba, Novartis and BASF. An owner who merely holds the land bears a small share at most, and none if it could not have known of the contamination with due care; the Federal Supreme Court has held a 10% share excessive for such an owner absent special circumstances. The current owners, Rhystadt and Swiss Life, acquired a site already known to be contaminated. Selling or dividing a parcel listed in the contaminated-sites register has required a permit since 2014.",
+        "de": "Die Sanierungskosten tragen in erster Linie jene, die die Belastung durch ihr Verhalten verursacht haben; im Klybeck waren das die früheren Betreiber Ciba, Novartis und BASF. Wer das Grundstück bloss innehat, trägt höchstens einen kleinen Anteil und keinen, wenn er die Belastung bei gebotener Sorgfalt nicht kennen konnte; das Bundesgericht hielt für einen solchen Eigentümer 10 % ohne besondere Umstände für übersetzt. Die heutigen Eigentümer Rhystadt und Swiss Life erwarben ein Areal, dessen Belastung bekannt war. Die Veräusserung oder Teilung eines im Kataster eingetragenen Grundstücks ist seit 2014 bewilligungspflichtig."
+      },
+      "work": {
+        "en": "Buyers, lenders and investors carry the risk of a cost-allocation ruling, which any party responsible can request (Art. 32d para. 4 USG). Contamination findings are therefore a pricing and contract question, not only a planning one.",
+        "de": "Käufer, Kreditgeber und Investoren tragen das Risiko einer Kostenverteilungsverfügung, die jeder Verursacher verlangen kann (Art. 32d Abs. 4 USG). Belastungsbefunde werden damit zur Preis- und Vertragsfrage, nicht nur zur Planungsfrage."
+      },
+      "sources": [
+        "srf-klybeck-2026",
+        "srf-klybeck-altlasten",
+        "bs-klybeck"
+      ]
+    },
+    {
+      "title": {
+        "en": "Carbon storage has no domestic legal path yet",
+        "de": "Für die CO2-Speicherung fehlt im Inland der Rechtsweg"
+      },
+      "law": {
+        "en": "Art. 3 para. 5 and Art. 6 KlG (SR 814.310); Art. 14 KlV (SR 814.310.1); Art. 55 para. 1bis CO2 Ordinance (SR 641.711); planned federal CCS framework law",
+        "de": "Art. 3 Abs. 5 und Art. 6 KlG (SR 814.310); Art. 14 KlV (SR 814.310.1); Art. 55 Abs. 1bis CO2-Verordnung (SR 641.711); geplantes Bundesrahmengesetz zu CCS"
+      },
+      "body": {
+        "en": "Captured CO2 destined for disposal counts as waste. It may be exported for permanent geological storage in an approved European site, which the CO2 Ordinance has credited since 2025, but only with a waste-law export permit and a bilateral agreement; Switzerland signed one with Norway in 2025. There is no permit regime for storing CO2 underground in Switzerland and no law on CO2 pipelines. A framework law is planned to take effect on 1 January 2031. Federal aid for new technologies can cover up to half of eligible costs, and federal and cantonal authorities must make carbon storage available by 2050.",
+        "de": "Abgeschiedenes CO2, das entsorgt werden soll, gilt als Abfall. Es darf zur dauerhaften geologischen Speicherung in eine bewilligte europäische Lagerstätte exportiert werden, was die CO2-Verordnung seit 2025 anrechnet, aber nur mit abfallrechtlicher Exportbewilligung und bilateralem Abkommen; mit Norwegen hat die Schweiz 2025 eines unterzeichnet. Für eine Speicherung im Schweizer Untergrund fehlt ein Bewilligungsregime, für CO2-Leitungen ein Gesetz. Ein Rahmengesetz soll am 1. Januar 2031 in Kraft treten. Bundesbeiträge für neuartige Technologien können bis zur Hälfte der anrechenbaren Kosten decken, und Bund und Kantone müssen bis 2050 Kohlenstoffspeicher verfügbar machen."
+      },
+      "work": {
+        "en": "Until storage in Switzerland is lawful, capture at the incinerator can be planned and subsidised but depends on export by rail and ship. Cost sharing with the cantons and regions that send waste has to be negotiated.",
+        "de": "Solange die Speicherung in der Schweiz nicht zulässig ist, lässt sich die Abscheidung an der KVA planen und fördern, bleibt aber auf den Export per Bahn und Schiff angewiesen. Die Kostenteilung mit den Kantonen und Regionen, die Abfall liefern, muss ausgehandelt werden."
+      },
+      "sources": [
+        "rr-ccs-2025"
+      ]
+    },
+    {
+      "title": {
+        "en": "Road noise is an overdue duty",
+        "de": "Die Strassenlärmsanierung ist überfällig"
+      },
+      "law": {
+        "en": "Art. 16 USG; Art. 13 and Art. 17 para. 4 lit. b LSV (SR 814.41); Art. 108 SSV (SR 741.21), as amended on 12 August 2026 with effect from 1 October 2026; BGer 1C_318/2024 of 27 March 2026; BGer 1C_513/2022 of 7 July 2023",
+        "de": "Art. 16 USG; Art. 13 und Art. 17 Abs. 4 lit. b LSV (SR 814.41); Art. 108 SSV (SR 741.21), geändert am 12. August 2026 mit Wirkung ab 1. Oktober 2026; BGer 1C_318/2024 vom 27. März 2026; BGer 1C_513/2022 vom 7. Juli 2023"
+      },
+      "body": {
+        "en": "The deadline for remediating noise from main and other roads passed on 31 March 2018. On 27 March 2026 the Federal Supreme Court dismissed, insofar as it was admissible, an appeal by the TCS section of both Basel cantons and a resident against Tempo 30 on cantonal roads in Bottmingen, Oberwil and Therwil. It had upheld Tempo 30 on Basel's Feldbergstrasse in 2023. The Basel-Stadt government nevertheless says blanket Tempo 30 would conflict with federal law, and proceeds road by road. Since 1 October 2026, the expert report for Tempo 30 on traffic-oriented roads must also show that the reduction does not cause unwanted diversion into residential areas. The Federal Council's announcement does not say how this applies to procedures already under way.",
+        "de": "Die Frist zur Sanierung des Lärms von Haupt- und übrigen Strassen lief am 31. März 2018 ab. Am 27. März 2026 wies das Bundesgericht eine Beschwerde der TCS-Sektion beider Basel und eines Anwohners gegen Tempo 30 auf Kantonsstrassen in Bottmingen, Oberwil und Therwil ab, soweit es darauf eintrat. Bereits 2023 hatte es Tempo 30 auf der Basler Feldbergstrasse bestätigt. Die Basler Regierung hält flächendeckendes Tempo 30 dennoch für bundesrechtswidrig und geht Strasse für Strasse vor. Seit dem 1. Oktober 2026 muss das Gutachten für Tempo 30 auf verkehrsorientierten Strassen zudem zeigen, dass die Temporeduktion keinen «unerwünschten Ausweichverkehr» in Wohnquartiere verursacht. Wie das auf laufende Verfahren anzuwenden ist, sagt die Mitteilung des Bundesrates nicht."
+      },
+      "work": {
+        "en": "Residents along roads above the noise limits can ask the authorities to act. Road users can appeal speed orders, but courts have upheld them where limits are exceeded and the expert report required by Art. 108 SSV is sound.",
+        "de": "Anwohnende von Strassen über den Lärmgrenzwerten können von den Behörden Massnahmen verlangen. Verkehrsteilnehmende können Temporeduktionen anfechten, doch Gerichte haben sie bestätigt, wo Grenzwerte überschritten sind und das Gutachten nach Art. 108 SSV trägt."
+      },
+      "sources": [
+        "rr-laerm-2018",
+        "bger-1c-318-2024",
+        "bger-1c-513-2022",
+        "bs-mm-tempo30-2026",
+        "astra-schilliger-2026",
+        "sda-schilliger-2026"
+      ]
+    },
+    {
+      "title": {
+        "en": "PFAS across a treaty border",
+        "de": "PFAS über eine Vertragsgrenze hinweg"
+      },
+      "law": {
+        "en": "Franco-Swiss treaty on Basel-Mulhouse Airport of 4 July 1949 (SR 0.748.131.934.92), Art. 6; Drinking Water Ordinance TBDV (SR 817.022.11); polluter-pays principle (Art. 2 USG)",
+        "de": "Französisch-schweizerischer Staatsvertrag vom 4. Juli 1949 über den Flughafen Basel-Mülhausen (SR 0.748.131.934.92), Art. 6; Trinkwasserverordnung TBDV (SR 817.022.11); Verursacherprinzip (Art. 2 USG)"
+      },
+      "body": {
+        "en": "Elevated PFAS levels are reported in groundwater near the binational airport, which lies on French soil; under Art. 6 of the treaty, French law applies throughout the airport area unless the treaty provides otherwise. Swiss drinking-water law currently sets limits for single PFAS substances. The EU-aligned limit of 100 ng/l for the sum of 20 PFAS is planned but was not in force on 28 September 2026.",
+        "de": "Im Grundwasser beim binationalen Flughafen, der auf französischem Boden liegt, werden erhöhte PFAS-Werte gemeldet; nach Art. 6 des Staatsvertrags gilt im ganzen Flughafengebiet französisches Recht, soweit der Vertrag nichts anderes vorsieht. Das Schweizer Trinkwasserrecht kennt heute Höchstwerte für einzelne PFAS. Der an die EU angelehnte Höchstwert von 100 ng/l für die Summe von 20 PFAS ist geplant, war am 28. September 2026 aber nicht in Kraft."
+      },
+      "work": {
+        "en": "Holding a polluter liable for contamination that originates on the airport site raises questions of jurisdiction, applicable law and the airport's treaty status. On 23 September 2026 the Grand Council referred, on first reading, a cantonal initiative asking the federal parliament for a levy on PFAS to fund remediation.",
+        "de": "Einen Verursacher für eine Belastung haftbar zu machen, die vom Flughafengelände ausgeht, wirft Fragen der Zuständigkeit, des anwendbaren Rechts und des Status des Flughafens nach dem Staatsvertrag auf. Am 23. September 2026 hat der Grosse Rat eine Standesinitiative erstmals überwiesen, die vom Bundesparlament eine Abgabe auf PFAS zur Finanzierung von Sanierungen verlangt."
+      },
+      "sources": [
+        "bl-eap-2024",
+        "gruene-bl-pfas-2025",
+        "bafu-naqua-pfas",
+        "gr-pfas-abgabe-2026"
+      ]
+    },
+    {
+      "title": {
+        "en": "Can anyone enforce net zero 2037?",
+        "de": "Kann jemand Netto-Null 2037 durchsetzen?"
+      },
+      "law": {
+        "en": "§ 15 para. 2 and § 16a para. 2 Constitution of Basel-Stadt (SG 111.100); ECtHR (Grand Chamber), Verein KlimaSeniorinnen Schweiz and Others v. Switzerland, no. 53600/20, 9 April 2024, § 502",
+        "de": "§ 15 Abs. 2 und § 16a Abs. 2 Verfassung des Kantons Basel-Stadt (SG 111.100); EGMR (Grosse Kammer), Verein KlimaSeniorinnen Schweiz u. a. gegen die Schweiz, Nr. 53600/20, 9. April 2024, § 502"
+      },
+      "body": {
+        "en": "§ 16a para. 2 obliges the canton, within its competences, to bring emissions on its territory to net zero in all sectors by 2037; § 15 para. 2 commits it to contribute, within its means, to keeping global warming below 1.5 °C. Both qualifiers weigh against enforceable individual claims. A search of opencaselaw.ch on 28 September 2026 found no decision construing § 16a. The Strasbourg court recognised standing for associations to bring Convention claims against the state; that does not create standing under cantonal law.",
+        "de": "§ 16a Abs. 2 verpflichtet den Kanton, «im Rahmen seiner Kompetenzen» dafür zu sorgen, dass die Treibhausgasemissionen auf Kantonsgebiet in allen Sektoren bis 2037 auf Netto-Null sinken; nach § 15 Abs. 2 trägt er «nach seinen Möglichkeiten» dazu bei, dass die Erwärmung 1,5 °C nicht übersteigt. Beide Vorbehalte sprechen gegen durchsetzbare individuelle Ansprüche. Eine Suche auf opencaselaw.ch am 28. September 2026 ergab keinen Entscheid, der § 16a auslegt. Der Strassburger Gerichtshof anerkannte die Beschwerdebefugnis von Verbänden für Konventionsrügen gegen den Staat; eine Legitimation nach kantonalem Recht folgt daraus nicht."
+      },
+      "work": {
+        "en": "The target binds the canton, but it is unclear who could take it to court. Standing, not the substance of the target, is the likely obstacle.",
+        "de": "Das Ziel bindet den Kanton, aber es ist offen, wer es vor Gericht bringen könnte. Hürde ist voraussichtlich die Legitimation, nicht der Inhalt des Ziels."
+      },
+      "sources": [
+        "kv-bs",
+        "egmr-klimaseniorinnen",
+        "infras-strategie"
+      ]
+    }
+  ],
+  "method": {
+    "rubric": [
+      {
+        "grade": "A",
+        "meaning": {
+          "en": "Meets health-based benchmarks and legal deadlines; on track.",
+          "de": "Erfüllt gesundheitsbasierte Richtwerte und gesetzliche Fristen; auf Kurs."
+        }
+      },
+      {
+        "grade": "B",
+        "meaning": {
+          "en": "Broadly compliant with a credible plan; minor gaps.",
+          "de": "Weitgehend rechtskonform mit glaubwürdigem Plan; kleinere Lücken."
+        }
+      },
+      {
+        "grade": "C",
+        "meaning": {
+          "en": "Targets set, but outcomes lag or depend on unproven measures.",
+          "de": "Ziele gesetzt, aber die Ergebnisse hinken nach oder hängen von unerprobten Massnahmen ab."
+        }
+      },
+      {
+        "grade": "D",
+        "meaning": {
+          "en": "Material unresolved harm, or legal deadlines missed.",
+          "de": "Erhebliche ungelöste Schäden oder verpasste gesetzliche Fristen."
+        }
+      },
+      {
+        "grade": "F",
+        "meaning": {
+          "en": "Deteriorating with no credible plan.",
+          "de": "Verschlechterung ohne glaubwürdigen Plan."
+        }
+      }
+    ],
+    "notes": [
+      {
+        "en": "Letter grades run from A (best) to F.",
+        "de": "Buchstabennoten von A (beste) bis F, nicht die Schweizer Schulnoten 1 bis 6."
+      },
+      {
+        "en": "Plus and minus mark the position within a band. The overall grade is a judgment, not an average.",
+        "de": "Plus und Minus zeigen die Lage innerhalb einer Stufe. Die Gesamtnote ist eine Einschätzung, kein Durchschnitt."
+      },
+      {
+        "en": "Data years differ: the latest published emissions inventory is from 2022, weather and air data from 2025 and 2026. Each figure shows its source and date.",
+        "de": "Die Datenjahre unterscheiden sich: Das neuste veröffentlichte Emissionsinventar stammt von 2022, die Wetter- und Luftdaten von 2025 und 2026. Jede Zahl nennt ihre Quelle und ihr Datum."
+      },
+      {
+        "en": "Sources are classed as official, press, advocacy or reference. Advocacy sources are flagged wherever they carry a figure.",
+        "de": "Quellen sind als amtlich, Presse, Interessenvertretung oder Referenz eingestuft. Quellen von Interessenvertretungen sind überall gekennzeichnet, wo sie eine Zahl tragen."
+      },
+      {
+        "en": "No own measurements were taken. Figures derived by calculation are labelled as such; hot days were counted from MeteoSwiss's daily series.",
+        "de": "Es wurden keine eigenen Messungen durchgeführt. Berechnete Zahlen sind als solche gekennzeichnet; die Hitzetage wurden aus der täglichen Messreihe von MeteoSchweiz ausgezählt."
+      },
+      {
+        "en": "Recommendations under 'What would raise the grade' are this audit's analysis, not the canton's plans.",
+        "de": "Die Empfehlungen unter «Was die Note verbessern würde» sind Analyse dieser Bilanz, nicht Pläne des Kantons."
+      }
+    ]
+  },
+  "changelog": [
+    {
+      "date": "2026-09-28",
+      "text": {
+        "en": "First public edition, in English and German. Figures and legal references checked against primary sources on 28 September 2026.",
+        "de": "Erste öffentliche Ausgabe, auf Englisch und Deutsch. Zahlen und Rechtsgrundlagen am 28. September 2026 an den Primärquellen überprüft."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "bs-strategie-2023",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2023-09-26",
+      "title": "Gemeinsam Netto-Null 2037 erreichen: Regierungsrat verabschiedet die kantonale Klimaschutzstrategie",
+      "url": "https://www.bs.ch/medienmitteilungen/2023-gemeinsam-netto-null-2037-erreichen-regierungsrat-verabschiedet-die-kantonale-klimaschutzstrategie"
+    },
+    {
+      "id": "bs-strategie-2025",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2025-08-14",
+      "title": "Klimaschutzstrategie, Langfassung (Ausgabe August 2025)",
+      "url": "https://media.bs.ch/original_file/81b51881b3601b2d7641aff299881202da3330f2/20250814-klimastrategie-langfassung-bf.pdf"
+    },
+    {
+      "id": "infras-strategie",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt (prepared with Infras)",
+      "date": "2023-09-26",
+      "title": "Klimaschutzstrategie Basel-Stadt, Teil 1 (Bericht an den Grossen Rat)",
+      "url": "https://www.infras.ch/media/filer_public/83/94/83948a47-b338-46a4-a71b-41739044341f/3812a_klimaschutzstrategie_basel-stadt.pdf"
+    },
+    {
+      "id": "infras-kurzfassung",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt (prepared with Infras)",
+      "date": "2023-09-28",
+      "title": "Klimaschutzstrategie Basel-Stadt, Kurzfassung",
+      "url": "https://www.infras.ch/media/filer_public/7c/9c/7c9c0b02-508f-43f3-8dda-c3941696aa53/3812a_klimastrategie_basel-stadt_kurzfassung.pdf"
+    },
+    {
+      "id": "bs-klimaschutz",
+      "type": "official",
+      "publisher": "Kanton Basel-Stadt",
+      "date": "2025-07",
+      "title": "Massnahmen für den Klimaschutz",
+      "url": "https://www.bs.ch/schwerpunkte/klima/klimaschutz"
+    },
+    {
+      "id": "bs-mm-klimaportal",
+      "type": "official",
+      "publisher": "Kanton Basel-Stadt",
+      "date": "2025-09-11",
+      "title": "Mit einem Klimaportal macht der Kanton die Fortschritte im Klimaschutz transparent",
+      "url": "https://www.bs.ch/medienmitteilungen/2025-mit-einem-klimaportal-macht-der-kanton-basel-stadt-die-fortschritte-im-klimaschutz-transparent"
+    },
+    {
+      "id": "rr-ccs-2025",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2025-09-17",
+      "title": "Bericht zum Anzug Leonhardt/Hanauer: CO2-Abscheidung bei der KVA der IWB (23.5299.02)",
+      "url": "https://grosserrat.bs.ch/dokumente/100410/000000410724.pdf"
+    },
+    {
+      "id": "bs-mm-waerme-2023",
+      "type": "official",
+      "publisher": "Kanton Basel-Stadt",
+      "date": "2023-10",
+      "title": "Die Wärmeversorgung Basel-Stadt wird bis 2037 erneuerbar",
+      "url": "https://www.bs.ch/medienmitteilungen/wsu/2023-die-waermeversorgung-basel-stadt-wird-bis-2037-erneuerbar"
+    },
+    {
+      "id": "iwb-fokus-2023",
+      "type": "official",
+      "publisher": "IWB Industrielle Werke Basel",
+      "date": "2024-04",
+      "title": "Geschäftsbericht, Fokus 2023: Wärme",
+      "url": "https://www.iwb.ch/dam/jcr:ccc3e1ca-65b4-4778-8983-e676862d0e72/IWB_FOKUS_23_Waerme_240425.pdf"
+    },
+    {
+      "id": "bs-abst-2022",
+      "type": "official",
+      "publisher": "Staatskanzlei Basel-Stadt",
+      "date": "2022-11-27",
+      "title": "Schlussresultat der kantonalen Abstimmung vom 27. November 2022",
+      "url": "https://www.bs.ch/medienmitteilungen/staatskanzlei/2022-schlussresultat-der-kantonalen-abstimmung-vom-27-november-2022"
+    },
+    {
+      "id": "bs-abst-2023",
+      "type": "official",
+      "publisher": "Staatskanzlei Basel-Stadt",
+      "date": "2023-11-26",
+      "title": "Schlussresultat der kantonalen Abstimmung vom 26. November 2023",
+      "url": "https://www.bs.ch/medienmitteilungen/staatskanzlei/2023-schlussresultat-der-kantonalen-abstimmung-vom-26-november-2023"
+    },
+    {
+      "id": "bs-baeume-2025",
+      "type": "official",
+      "publisher": "Bau- und Verkehrsdepartement Basel-Stadt",
+      "date": "2025-12-03",
+      "title": "Aus Sicherheitsgründen müssen 261 Bäume ersetzt werden",
+      "url": "https://www.bs.ch/medienmitteilungen/bvd/2025-aus-sicherheitsgruenden-muessen-261-baeume-ersetzt-werden"
+    },
+    {
+      "id": "rr-begruenung-2025",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2025-10-21",
+      "title": "Antwort auf die Petition «Für mehr Begrünung der Stadt Basel»",
+      "url": "https://www.bs.ch/api/government-resolutions/document/0fdb192e8c9d4dc48668f7a25d299839-332/4/Dokument"
+    },
+    {
+      "id": "ub-luft-2025",
+      "type": "official",
+      "publisher": "Umweltbericht beider Basel",
+      "date": "2025",
+      "title": "Fokusthema 2025: Luft",
+      "url": "https://www.bs.ch/schwerpunkte/umweltbericht-beider-basel/luft/fokusthema-2025-luft-unser-unsichtbarer-schatz"
+    },
+    {
+      "id": "ub-luft-flyer",
+      "type": "official",
+      "publisher": "Umweltbericht beider Basel",
+      "date": "2025",
+      "title": "Fokusthema Luft 2025 (Kurzbroschüre)",
+      "url": "https://media.bs.ch/original_file/d03f03851470027ec6e574888af2e67b7623c224/umweltbericht-beider-basel-flyer-fokusthema-luft-2025.pdf"
+    },
+    {
+      "id": "lha-2024",
+      "type": "official",
+      "publisher": "Lufthygieneamt beider Basel",
+      "date": "2025-05-05",
+      "title": "Bessere Luftqualität in der Region Basel (Jahresbericht 2024)",
+      "url": "https://www.bs.ch/medienmitteilungen/wsu/2025-bessere-luftqualitaet-der-region-basel"
+    },
+    {
+      "id": "bl-luft-2022",
+      "type": "official",
+      "publisher": "Kanton Basel-Landschaft",
+      "date": "2023-04-24",
+      "title": "Jahresbericht Luftqualität Nordwestschweiz 2022",
+      "url": "https://www.baselland.ch/politik-und-behorden/direktionen/bau-und-umweltschutzdirektion/medienmitteilungen/hitze-trockenheit-und-saharastaub-belasteten-die-luft"
+    },
+    {
+      "id": "bl-luft-2018",
+      "type": "official",
+      "publisher": "Kanton Basel-Landschaft",
+      "date": "2019",
+      "title": "Jahresbericht Luftqualität Nordwestschweiz 2018: neuer Jahresgrenzwert für PM2.5",
+      "url": "https://www.baselland.ch/politik-und-behorden/direktionen/bau-und-umweltschutzdirektion/medienmitteilungen/jahresbericht-luftqualitaet-nordwestschweiz-2018-hohe-ozonwerte-und-deutliche-ueberschreitungen-beim-neu-eingefuehrten-feinstaubgrenzwert"
+    },
+    {
+      "id": "bs-pfas",
+      "type": "official",
+      "publisher": "Amt für Umwelt und Energie Basel-Stadt",
+      "date": "2026-01-26",
+      "title": "PFAS in Gewässer und Boden",
+      "url": "https://www.bs.ch/wsu/aue/abteilung-gewaesser-und-boden/und-polyfluorierte-alkylsubstanzen-pfas-gewaesser-und-boden"
+    },
+    {
+      "id": "gr-pfas-2024",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2024-05",
+      "title": "Antwort auf die Interpellation betreffend PFAS im Trinkwasser",
+      "url": "https://grosserrat.bs.ch/dokumente/100407/000000407511.pdf"
+    },
+    {
+      "id": "bafu-naqua-pfas",
+      "type": "official",
+      "publisher": "Bundesamt für Umwelt (BAFU)",
+      "date": "2025-10-27",
+      "title": "PFAS im Grundwasser (NAQUA)",
+      "url": "https://www.bafu.admin.ch/de/naqua-pfas"
+    },
+    {
+      "id": "bs-birs-2026",
+      "type": "official",
+      "publisher": "Kantone Basel-Stadt und Basel-Landschaft",
+      "date": "2026-06",
+      "title": "Bade-, Betretungs- und Fischereiverbot in der Birs",
+      "url": "https://media.bs.ch/original_file/3343ba253da7b32fc805a53b6646dcf094293633/schild-badeverbot-birs-2026.pdf"
+    },
+    {
+      "id": "bs-wiese-2026",
+      "type": "official",
+      "publisher": "Amt für Umwelt und Energie Basel-Stadt",
+      "date": "2026-06",
+      "title": "Bade-, Betretungs- und Fischereiverbot in der Wiese",
+      "url": "https://media.bs.ch/original_file/134253805a97a1361d7fbfbb19edb4c4b2faf45d/schild-badeverbot-wiese-2026.pdf"
+    },
+    {
+      "id": "bs-klybeck",
+      "type": "official",
+      "publisher": "Amt für Umwelt und Energie Basel-Stadt",
+      "date": "2026-02-12",
+      "title": "Klybeck: ehemalige Werkareale der Chemie",
+      "url": "https://www.bs.ch/wsu/aue/abteilung-gewaesser-und-boden/belastete-areale/klybeck-ehemalige-werkareale-der-chemie"
+    },
+    {
+      "id": "bs-ackermaetteli",
+      "type": "official",
+      "publisher": "Amt für Umwelt und Energie Basel-Stadt",
+      "date": "2025",
+      "title": "Klybeck: Auffüllung Klybeck und Teilfläche Ackermätteli",
+      "url": "https://www.bs.ch/en/node/40416"
+    },
+    {
+      "id": "bafu-altlasten-medien",
+      "type": "official",
+      "publisher": "Bundesamt für Umwelt (BAFU)",
+      "date": "2026-06-26",
+      "title": "Lernmodule Altlasten: Medien (incl. SRF Rundschau, 18 Sept 2024, on Klybeck)",
+      "url": "https://www.bafu.admin.ch/de/m03"
+    },
+    {
+      "id": "rr-laerm-2018",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2018",
+      "title": "Stand der Strassenlärmsanierung (Stellungnahme)",
+      "url": "https://bs.ch/api/government-resolutions/document/33f22542068441a4a885a2d34461946e-332/2/Dokument"
+    },
+    {
+      "id": "bs-mm-tempo30-2026",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2026-03-31",
+      "title": "Tempo 30 auf rund 50 zusätzlichen Strassenkilometern",
+      "url": "https://www.bs.ch/medienmitteilungen/2026-tempo-30-auf-rund-50-zusaetzlichen-strassenkilometern-im-kanton-basel-stadt"
+    },
+    {
+      "id": "bs-tempo30-page",
+      "type": "official",
+      "publisher": "Kanton Basel-Stadt",
+      "date": "2026",
+      "title": "Verkehrsberuhigte Zonen: Tempo 30, Begegnungszonen, Fussgängerzonen",
+      "url": "https://www.bs.ch/en/node/29911"
+    },
+    {
+      "id": "bl-tempo30-bger",
+      "type": "official",
+      "publisher": "Bau- und Umweltschutzdirektion Basel-Landschaft",
+      "date": "2026-05",
+      "title": "Tempo 30 in Bottmingen, Oberwil und Therwil: Umsetzung startet",
+      "url": "https://www.baselland.ch/politik-und-behorden/direktionen/bau-und-umweltschutzdirektion/medienmitteilungen/tempo-30-in-bottmingen-oberwil-und-therwil-umsetzung-startet"
+    },
+    {
+      "id": "rr-rheintunnel-2026",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2026-03-31",
+      "title": "Antwort auf die Petition «Nein zum Zombie-Rheintunnel»",
+      "url": "https://www.bs.ch/api/government-resolutions/document/aa562fe35fff4012925d7086ec944be6-332/5/Dokument"
+    },
+    {
+      "id": "rr-dreirosen-2026",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2026-03-03",
+      "title": "Anzug Leonhardt betreffend «Betonpiste Dreirosenbrücke» (Regierungsratsbeschluss)",
+      "url": "https://www.bs.ch/api/government-resolutions/document/624e71803eb640acbac33fc66f1f3d0c-332/5/Dokument"
+    },
+    {
+      "id": "bl-rheintunnel-2025",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Landschaft",
+      "date": "2025-06-17",
+      "title": "Antwort auf die Interpellation 2025/15 «Nach NEIN zum Rheintunnel: Nächste Schritte»",
+      "url": "https://baselland.talus.ch/de/dokumente/geschaeft/1f3907bf6d87466ca8bfc0a97d1c5ee9-332"
+    },
+    {
+      "id": "bl-eap-2024",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Landschaft",
+      "date": "2025-05-27",
+      "title": "Jahresbericht 2024 des Flughafens Basel-Mulhouse (Vorlage an den Landrat)",
+      "url": "https://baselland.talus.ch/de/dokumente/geschaeft/e222a807dc1e4f3880ca84cb83f16733-332"
+    },
+    {
+      "id": "bger-1c-318-2024",
+      "type": "official",
+      "publisher": "Schweizerisches Bundesgericht",
+      "date": "2026-03-27",
+      "title": "Urteil 1C_318/2024 vom 27. März 2026 (Tempo 30 auf Kantonsstrassen in Bottmingen, Oberwil und Therwil)",
+      "url": "https://www.bger.ch/ext/eurospider/live/de/php/aza/http/index.php?lang=de&type=show_document&highlight_docid=aza://27-03-2026-1C_318-2024"
+    },
+    {
+      "id": "bger-1c-513-2022",
+      "type": "official",
+      "publisher": "Schweizerisches Bundesgericht",
+      "date": "2023-07-07",
+      "title": "Urteil 1C_513/2022 vom 7. Juli 2023 (Tempo 30 Feldbergstrasse, Basel)",
+      "url": "https://www.bger.ch/ext/eurospider/live/de/php/aza/http/index.php?lang=de&type=show_document&highlight_docid=aza://07-07-2023-1C_513-2022"
+    },
+    {
+      "id": "kv-bs",
+      "type": "official",
+      "publisher": "Kanton Basel-Stadt, Gesetzessammlung",
+      "date": "2025-11-03",
+      "title": "Verfassung des Kantons Basel-Stadt (SG 111.100), § 15 und § 16a",
+      "url": "https://www.gesetzessammlung.bs.ch/app/de/texts_of_law/111.100"
+    },
+    {
+      "id": "egmr-klimaseniorinnen",
+      "type": "official",
+      "publisher": "European Court of Human Rights (Grand Chamber)",
+      "date": "2024-04-09",
+      "title": "Verein KlimaSeniorinnen Schweiz and Others v. Switzerland, no. 53600/20",
+      "url": "https://hudoc.echr.coe.int/eng?i=001-233206",
+      "lang": "en"
+    },
+    {
+      "id": "luft-2025",
+      "type": "official",
+      "publisher": "Luftqualität Nordwestschweiz (AUE Basel-Stadt, AUE Basel-Landschaft)",
+      "date": "2026-05-08",
+      "title": "Jahresbericht Luftqualität 2025",
+      "url": "https://berichte.luftqualitaet.ch/25/"
+    },
+    {
+      "id": "meteoswiss-jja-2026",
+      "type": "official",
+      "publisher": "MeteoSchweiz",
+      "date": "2026-09",
+      "title": "Klimabulletin Sommer 2026",
+      "url": "https://www.meteoswiss.admin.ch/dam/jcr:dccbcb08-8ce3-497c-9d30-da955f1ab5dd/2026_JJA-d.pdf"
+    },
+    {
+      "id": "nbcn-binningen",
+      "type": "official",
+      "publisher": "MeteoSchweiz via Open Data Basel-Stadt",
+      "date": "2026-09-28",
+      "title": "Tägliche Klimadaten der NBCN-Station Basel-Binningen (Datensatz 100254)",
+      "url": "https://data.bs.ch/explore/dataset/100254/"
+    },
+    {
+      "id": "bs-controlling-2026",
+      "type": "official",
+      "publisher": "Bau- und Verkehrsdepartement Basel-Stadt",
+      "date": "2026-06-22",
+      "title": "Controllingbericht Stadtklimakonzept 2026",
+      "url": "https://media.bs.ch/original_file/21aef3e352edaf318733304b9f34eaa4e301ef13/controllingbericht-stadtklimakonzept-2026.pdf"
+    },
+    {
+      "id": "bs-gruenes-basel-2025",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2025-09",
+      "title": "Für ein grüneres Basel: verstärkte Förderung von Kleinprojekten",
+      "url": "https://www.bs.ch/medienmitteilungen/2025-fuer-ein-grueneres-basel-verstaerkte-foerderung-von-kleinprojekten"
+    },
+    {
+      "id": "bs-mfz-steuer",
+      "type": "official",
+      "publisher": "Kanton Basel-Stadt",
+      "date": "2026-07-13",
+      "title": "Motorfahrzeugsteuer",
+      "url": "https://www.bs.ch/themen/mobilitaet/fahrzeuge/motorfahrzeugsteuer"
+    },
+    {
+      "id": "uvek-v45-2026",
+      "type": "official",
+      "publisher": "UVEK",
+      "date": "2026-06-19",
+      "title": "Vernehmlassung Verkehr ’45, Faktenblatt 1: Projekte Zeitraum bis 2045",
+      "url": "https://www.uvek.admin.ch/dam/de/sd-web/NKpAQpjqyQxa/VL-Faktenblatt%201%20Verkehr%20%E2%80%9945%20%E2%80%93%20Projekte%20Zeitraum%20bis%202045%20DE.pdf"
+    },
+    {
+      "id": "bs-abst-2024",
+      "type": "official",
+      "publisher": "Staatskanzlei Basel-Stadt",
+      "date": "2024-11-24",
+      "title": "Schlussresultat der eidgenössischen Abstimmung vom 24. November 2024",
+      "url": "https://www.bs.ch/medienmitteilungen/staatskanzlei/2024-schlussresultat-der-eidgenoessischen-abstimmung-vom-24-november-2024"
+    },
+    {
+      "id": "astra-schilliger-2026",
+      "type": "official",
+      "publisher": "Bundesamt für Strassen (ASTRA)",
+      "date": "2026-08-12",
+      "title": "Bundesrat setzt Motion Schilliger zu Tempo 30 um",
+      "url": "https://www.astra.admin.ch/de/motion-schilliger-tempo-30"
+    },
+    {
+      "id": "gr-pfas-abgabe-2026",
+      "type": "official",
+      "publisher": "Grosser Rat Basel-Stadt",
+      "date": "2026-09-23",
+      "title": "Die wichtigsten Grossratsbeschlüsse auf einen Blick, 23. September 2026",
+      "url": "https://grosserrat.bs.ch/medien/mitteilungen/mitteilung/1877-die-wichtigsten-grossratsbeschluesse-auf-einen-blick-23-09-2026"
+    },
+    {
+      "id": "bajour-berger-2026",
+      "type": "press",
+      "publisher": "Bajour",
+      "date": "2026-09-03",
+      "title": "«Nicht auf Kurs sind wir derzeit bei der Mobilität» (interview with the head of the cantonal climate office)",
+      "url": "https://bajour.ch/a/nicht-auf-kurs-sind-wir-derzeit-bei-der-mobilitaet"
+    },
+    {
+      "id": "baz-klimaportal-2025",
+      "type": "press",
+      "publisher": "Basler Zeitung",
+      "date": "2025-09-11",
+      "title": "Basel-Stadt: Über Netto-Null informiert neues Klimaportal",
+      "url": "https://www.bazonline.ch/basel-stadt-ueber-netto-null-informiert-neues-klimaportal-914946330814"
+    },
+    {
+      "id": "blick-sommer-2026",
+      "type": "press",
+      "publisher": "Blick",
+      "date": "2026-09",
+      "title": "Sommer der Rekorde: Hier schwitzte die Schweiz am meisten",
+      "url": "https://www.blick.ch/schweiz/sommer-der-rekorde-hier-schwitzte-die-schweiz-am-meisten-id22230058.html"
+    },
+    {
+      "id": "srf-klybeck-2026",
+      "type": "press",
+      "publisher": "SRF",
+      "date": "2026-04-09",
+      "title": "Gift im Boden: Klybeck-Areal muss vor Bauarbeiten saniert werden",
+      "url": "https://www.srf.ch/news/schweiz/basler-klybeck-areal-gift-im-boden-klybeck-areal-muss-vor-bauarbeiten-saniert-werden"
+    },
+    {
+      "id": "srf-klybeck-altlasten",
+      "type": "press",
+      "publisher": "SRF",
+      "date": "2018-09-30",
+      "title": "Altlasten in Basel: Wohnquartier auf chemisch verschmutztem Boden",
+      "url": "https://www.srf.ch/news/schweiz/altlasten-in-basel-wohnquartier-auf-chemisch-verschmutztem-boden"
+    },
+    {
+      "id": "srf-feldreben-2026",
+      "type": "press",
+      "publisher": "SRF",
+      "date": "2026-03-03",
+      "title": "Muttenz BL saniert für 280 Mio. Franken ehemalige Chemiedeponie",
+      "url": "https://www.srf.ch/news/schweiz/chemiemuell-neben-wohngebiet-muttenz-bl-saniert-fuer-280-mio-franken-ehemalige-chemiedeponie"
+    },
+    {
+      "id": "bz-feldreben",
+      "type": "press",
+      "publisher": "bz Basel",
+      "date": "2013-03-26",
+      "title": "Die bz erklärt Ihnen, wie das Gift am besten aus dem Boden kommt",
+      "url": "https://www.bzbasel.ch/basel/baselland/die-bz-erklart-ihnen-wie-das-gift-am-besten-aus-dem-boden-kommt-ld.1755612"
+    },
+    {
+      "id": "tageswoche-2013",
+      "type": "press",
+      "publisher": "TagesWoche",
+      "date": "2013-11-26",
+      "title": "Gegner kritisieren «Billigsanierung» (Feldreben)",
+      "url": "https://tageswoche.ch/gesellschaft/gegner-kritisieren-billigsanierung/"
+    },
+    {
+      "id": "srf-birs-2026",
+      "type": "press",
+      "publisher": "SRF Regionaljournal Basel",
+      "date": "2026-07-13",
+      "title": "Badeverbote wegen Hitze: Ausgerechnet wegen der Hitze ist Baden in der Birs untersagt",
+      "url": "https://www.srf.ch/news/schweiz/bach-badeverbote-wegen-hitze-ausgerechnet-wegen-der-hitze-ist-baden-in-der-birs-untersagt"
+    },
+    {
+      "id": "srf-abst-2023",
+      "type": "press",
+      "publisher": "SRF",
+      "date": "2023-11-26",
+      "title": "Baustellen-Ängste: Nein zu Stadtklima-Initiativen in Basel",
+      "url": "https://www.srf.ch/news/schweiz/abstimmungen-26-november-2023/abstimmungen-basel-stadt-baustellen-aengste-nein-zu-stadtklima-initiativen-in-basel"
+    },
+    {
+      "id": "moneycab-eap-2026",
+      "type": "press",
+      "publisher": "Moneycab",
+      "date": "2026-01-28",
+      "title": "9,6 Millionen Passagiere am EuroAirport",
+      "url": "https://www.moneycab.com/?p=2039181"
+    },
+    {
+      "id": "srf-rundschau-2024",
+      "type": "press",
+      "publisher": "SRF",
+      "date": "2024-09-18",
+      "title": "Gross-Überbauung in Basel: Vertraulicher Bericht: Verschwieg der Kanton Altlasten-Risiko?",
+      "url": "https://www.srf.ch/news/schweiz/gross-ueberbauung-in-basel-vertraulicher-bericht-verschwieg-der-kanton-altlasten-risiko"
+    },
+    {
+      "id": "bz-suv-2024",
+      "type": "press",
+      "publisher": "bz Basel",
+      "date": "2024-01-18",
+      "title": "Grosser Rat sagt Ja zur SUV-Steuer",
+      "url": "https://www.bzbasel.ch/basel/basel-stadt/basel-stadt-autos-in-basel-stadt-sollen-im-schnitt-wieder-kleiner-werden-grosser-rat-sagt-ja-zur-suv-steuer-ld.2567109"
+    },
+    {
+      "id": "sda-schilliger-2026",
+      "type": "press",
+      "publisher": "Keystone-SDA via swissinfo.ch",
+      "date": "2026-08-12",
+      "title": "Tempo 30 auf Hauptverkehrsachsen nur noch nach Gutachten möglich",
+      "url": "https://www.swissinfo.ch/ger/tempo-30-auf-hauptverkehrsachsen-nur-noch-nach-gutachten-m%C3%B6glich/91884672"
+    },
+    {
+      "id": "gruene-bl-pfas-2025",
+      "type": "advocacy",
+      "publisher": "Grüne Baselland (parliamentary question)",
+      "date": "2025-05-08",
+      "title": "PFAS auch in unserem Trinkwasser",
+      "url": "https://gruene-bl.ch/blog/vorstoesse/pfas-auch-in-unserem-trinkwasser"
+    },
+    {
+      "id": "multiwatch-feldreben",
+      "type": "advocacy",
+      "publisher": "Multiwatch",
+      "date": "n.d.",
+      "title": "Syngentas giftige Hinterlassenschaft",
+      "url": "https://multiwatch.ch/fall/syngentas-giftige-hinterlassenschaft/"
+    },
+    {
+      "id": "aefu-klybeck-2019",
+      "type": "advocacy",
+      "publisher": "Martin Forter for Ärztinnen und Ärzte für Umweltschutz",
+      "date": "2019-05-21",
+      "title": "Die BASF- und Novartis-Areale sowie Chemiemüll auf Allmend im Klybeck",
+      "url": "https://www.aefu.ch/fileadmin/user_upload/aefu-data/b_documents/Aktuell/20190521_Forter_Chemiemuell_Klybeck_Chemieareale_BASF_Novartis_Allmend.pdf"
+    },
+    {
+      "id": "aefu-klybeck-2026",
+      "type": "advocacy",
+      "publisher": "Martin Forter for Ärztinnen und Ärzte für Umweltschutz",
+      "date": "2026-03-03",
+      "title": "Chemiegelände Klybeck: 200 Substanzen",
+      "url": "https://www.aefu.ch/wp-content/uploads/2026/03/20260303_Forter_200_Substanzen_Bericht.pdf"
+    },
+    {
+      "id": "sp-rheintunnel-2026",
+      "type": "advocacy",
+      "publisher": "SP (party newspaper)",
+      "date": "2026-09-03",
+      "title": "Trotz klarem Nein: Rheintunnel zurück, Bahnausbau verspätet",
+      "url": "https://www.sp-ps.ch/wp-content/uploads/2026/09/20260903_SPZ_BLSSPZ_001.pdf"
+    },
+    {
+      "id": "who-aqg-2021",
+      "type": "reference",
+      "publisher": "World Health Organization",
+      "date": "2021-09-22",
+      "title": "WHO global air quality guidelines",
+      "url": "https://www.who.int/publications/i/item/9789240034228",
+      "lang": "en"
+    },
+    {
+      "id": "hardwasser-wasserberg",
+      "type": "reference",
+      "publisher": "Hardwasser AG",
+      "date": "n.d.",
+      "title": "Der Wasserberg",
+      "url": "https://www.hardwasser.ch/der-wasserberg.html"
+    }
+  ]
+}

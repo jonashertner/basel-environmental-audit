@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jonashertner.github.io/basel-environmental-audit/sitemap.xml

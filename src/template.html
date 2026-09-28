@@ -132,15 +132,14 @@ p { margin: 0; }
 .strip { margin: clamp(36px, 5vw, 56px) 0 0; }
 .strip-bar { display: flex; height: clamp(64px, 9vw, 112px); }
 .seg { display: flex; align-items: flex-end; padding: 10px 12px; color: var(--on-strong); font-weight: 800; font-stretch: 75%; font-size: clamp(1.25rem, 3vw, 2.25rem); line-height: 1; min-width: 0; }
-.seg-in { flex: 0 0 var(--w); background: var(--ink); }
-.seg-out {
-  flex: 0 0 var(--w); background-color: var(--fuchsine);
-  background-image: repeating-linear-gradient(135deg, transparent 0 12px, color-mix(in srgb, var(--paper) 14%, transparent) 12px 24px);
-  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 12%, calc(100% - 10px) 25%, 100% 38%, calc(100% - 12px) 50%, 100% 63%, calc(100% - 10px) 76%, 100% 88%, calc(100% - 16px) 100%, 0 100%);
-  transform-origin: left center;
-}
+.strip-bar { position: relative; }
+.seg-hot { flex: 0 0 var(--w); background: var(--fuchsine); transform-origin: left center; }
+.seg-rest { flex: 0 0 var(--w); background: var(--field); color: var(--ink); justify-content: flex-end; }
+.strip-mark { position: absolute; top: -8px; bottom: -8px; width: 0; border-left: 3px solid var(--ink); }
+.strip-mk { margin-top: 12px; font-size: var(--fs-s); display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.strip-mk i { display: inline-block; width: 3px; height: 14px; background: var(--ink); align-self: center; }
 @media (prefers-reduced-motion: no-preference) {
-  .js .seg-out { animation: reveal 1.2s cubic-bezier(.2,.7,.1,1) .35s both; }
+  .js .seg-hot { animation: reveal 1.2s cubic-bezier(.2,.7,.1,1) .35s both; }
   @keyframes reveal { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 }
 .strip-legend { display: grid; grid-template-columns: var(--w-in) 1fr; gap: 16px; margin-top: 12px; font-size: var(--fs-s); }
@@ -150,7 +149,8 @@ p { margin: 0; }
 @media (max-width: 640px) {
   .strip-legend { grid-template-columns: 1fr; gap: 10px; }
   .strip-legend > div { padding-left: 12px; border-left: 6px solid var(--ink); }
-  .strip-legend > div + div { border-left-color: var(--fuchsine); }
+  .strip-legend > div:first-child { border-left-color: var(--fuchsine); }
+  .strip-legend > div + div { border-left-color: var(--rule); }
 }
 
 .hero-foot { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gap); margin-top: clamp(40px, 6vw, 72px); align-items: start; }
@@ -276,23 +276,27 @@ p { margin: 0; }
 .dotrow .lbl b { display: block; font-size: var(--fs-l); font-stretch: 75%; font-weight: 800; }
 .dots { display: flex; flex-wrap: wrap; gap: 4px; }
 .dots i { width: 11px; height: 11px; border-radius: 50%; display: block; }
-.derived { margin-top: 16px; font-weight: 600; max-width: 60ch; }
-.derived small { font-weight: 400; color: var(--ink-2); }
 @media (max-width: 640px) { .dotrow { grid-template-columns: 1fr; gap: 8px; } }
 
 /* Pathway */
-.pathway svg { display: block; width: 100%; height: auto; overflow: visible; }
-.pathway text { font-family: var(--font); fill: var(--ink-2); font-size: 12px; }
-.pathway .axis { stroke: var(--rule); stroke-width: 1; }
-.pathway .base { stroke: var(--ink); stroke-width: 2; }
-.pathway .path-ill { stroke: var(--ink-3); stroke-width: 2; stroke-dasharray: 6 5; fill: none; }
-.pathway .path-act { stroke: var(--ink); stroke-width: 4; fill: none; }
-.pathway .dot { fill: var(--ink); }
-.pathway .mk { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 2 3; }
-.pathway .today { stroke: var(--fuchsine); stroke-width: 2; }
-.pathway .today-t { fill: var(--fuchsine); font-weight: 700; }
-.pathway .gap { fill: var(--fuchsine); }
-.pathway .gap-t { fill: var(--fuchsine); font-weight: 700; font-size: 13px; }
+.series svg { display: block; width: 100%; height: auto; overflow: visible; }
+.series text { font-family: var(--font); fill: var(--ink-2); font-size: 12px; }
+.series .axis { stroke: var(--rule); stroke-width: 1; }
+.series .base { stroke: var(--ink); stroke-width: 2; }
+.series .line { stroke: var(--ink); stroke-width: 3; fill: none; }
+.series .dot { fill: var(--ink); }
+.series .line.ln-bad { stroke: var(--fuchsine); } .series .dot.ln-bad { fill: var(--fuchsine); }
+.series .line.ln-good { stroke: var(--rhine); } .series .dot.ln-good { fill: var(--rhine); }
+.series .line.ln-mid { stroke: var(--sulfur); } .series .dot.ln-mid { fill: var(--sulfur); }
+.series .line.ln-g2 { stroke: var(--g2); } .series .dot.ln-g2 { fill: var(--g2); }
+.lnkey { display: inline-block; width: 18px; height: 4px; vertical-align: middle; background: var(--ink); }
+.lnkey.ln-bad { background: var(--fuchsine); } .lnkey.ln-good { background: var(--rhine); } .lnkey.ln-mid { background: var(--sulfur); } .lnkey.ln-g2 { background: var(--g2); }
+.series .val { fill: var(--ink); font-weight: 700; }
+.series .ref { stroke: var(--fuchsine); stroke-width: 2; stroke-dasharray: 6 4; }
+.series .ref-pt { fill: none; stroke: var(--fuchsine); stroke-width: 2.5; }
+.series .ref-t { fill: var(--fuchsine); font-weight: 700; }
+.refkey, .refkey-pt { display: inline-block; width: 18px; height: 0; border-top: 2px dashed var(--fuchsine); vertical-align: middle; }
+.refkey-pt { width: 12px; height: 12px; border: 2.5px solid var(--fuchsine); border-radius: 50%; }
 .pace { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px var(--gap); margin-top: 20px; }
 .pace div { border-top: 2px solid var(--ink); padding-top: 8px; }
 .pace b { display: block; font-size: var(--fs-2xl); font-weight: 800; font-stretch: 72%; line-height: 1.05; }
@@ -322,7 +326,6 @@ p { margin: 0; }
 /* Progress */
 .progress { position: relative; height: 56px; background: var(--field); display: flex; }
 .progress .done { background: var(--ink); color: var(--paper); display: flex; align-items: center; padding-left: 12px; font-weight: 800; font-stretch: 75%; font-size: var(--fs-l); }
-.progress .plan { background-image: repeating-linear-gradient(135deg, var(--rhine) 0 6px, transparent 6px 12px); border-left: 2px solid var(--paper); }
 .overdue { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: baseline; }
 .overdue b { font-size: var(--fs-2xl); font-weight: 800; font-stretch: 72%; color: var(--fuchsine); line-height: 1; }
 
@@ -445,7 +448,7 @@ p { margin: 0; }
   .area-head { position: static; }
   .area, .block { break-inside: auto; padding-block: 24px; }
   .chart, .sheet, .fig, .legal article { break-inside: avoid; }
-  .seg-out { animation: none !important; }
+  .seg-hot { animation: none !important; }
   .srclist .t a::after { content: " " attr(href); font-weight: 400; font-size: 0.75rem; word-break: break-all; }
   body { font-size: 10.5pt; }
 }
@@ -521,30 +524,20 @@ p { margin: 0; }
       rel: (n, unit, future) => { const u = { d: ['day', 'days'], m: ['month', 'months'], y: ['year', 'years'] }[unit][n === 1 ? 0 : 1]; return future ? `in ${n} ${u}` : `${n} ${u} ago`; },
       yearsMonths: (y, m) => `${y} year${y === 1 ? '' : 's'}, ${m} month${m === 1 ? '' : 's'}`,
       types: { official: 'Official', press: 'Press', advocacy: 'Advocacy', reference: 'Reference' },
-      typeCounts: (c) => `${c.official || 0} official, ${c.press || 0} press, ${c.advocacy || 0} advocacy, ${c.reference || 0} reference`,
+      typeCounts: (c) => [['official', 'official'], ['press', 'press'], ['advocacy', 'advocacy'], ['reference', 'reference']].filter(([k]) => c[k]).map(([k, w]) => `${c[k]} ${w}`).join(', '),
       advFlag: 'advocacy source',
       grade: 'Grade', plus: 'plus', minus: 'minus', overall: 'Overall',
       overallGrade: 'Overall grade',
       lastReviewed: 'Last reviewed', today: 'today', daysAgo: (n) => `${n} day${n === 1 ? '' : 's'} ago`, reviewDue: 'review due',
       sources: 'Sources', nextDeadline: 'Next deadline',
       dlData: 'Download data (JSON)', dlSources: 'Download sources (CSV)', print: 'Print report',
-      stripAria: (total, v, share) => `Of at least ${total} tonnes per resident, ${v} tonnes, about ${share}, fall under the 2037 target.`,
-      inTarget: (v) => `${v} t in the target`, outside: (v) => `More than ${v} t outside it`,
       showNumbers: 'Show the numbers',
       truth: 'The uncomfortable part', upgrades: 'What would raise the grade', upgradesNote: "This audit's analysis, not the canton's plans.",
       source: 'Source', openSource: 'Open source', findInList: 'Find in list', close: 'Close', undated: 'undated', citedIn: 'Cited in',
       item: 'Item', value: 'Value', measure: 'Measure', segment: 'Segment', share: 'Share', period: 'Period',
       pollutant: 'Pollutant', change1990: 'Change since 1990', vote: 'Vote', yes: 'Yes',
-      paceAchieved: 'Average cut per year, 2020–2022', paceRequired: 'Cut needed every year, 2022–2037, to reach the planned residual', paceRatio: 'How much faster emissions must fall (our calculation)',
-      pathRows: ['2020, reported', '2022, derived (−6%)', '2037, planned residual before removals', 'Required average cut per year, 2022–2037', 'Achieved average cut per year, 2020–2022'],
-      pathAria: (a, b, c) => `Emissions fell from about ${a} tonnes in 2020 to about ${b} in 2022. The plan leaves about ${c} tonnes in 2037 that must be removed by carbon capture or negative emissions.`,
-      pathIll: 'Illustrative straight path', pathToday: 'Today',
-      pathGap: (v) => `${v} kt left in 2037, to be captured or offset`, pathGapShort: (v) => `${v} kt to remove`,
       average: 'Average',
-      treesDerived: (per, added, share, year) => `At ${per} a year, the public stock grows by about ${added} trees, or ${share}, by ${year}.`,
-      treesSmall: (stock) => `Our calculation from a stock of about ${stock}.`,
       atMost: 'at most', to: 'to',
-      calmAria: (a, b) => `${a} traffic-calmed today, ${b} planned`, calmToday: 'Traffic-calmed today', calmPlanned: 'Planned', calmNow: (a) => `${a} today`,
       deadline: 'Remediation deadline',
       votesCaption: 'Yes share by vote; the line marks 50%.', passed: 'Passed', rejected: 'Rejected', half: '50% yes',
       deadlinesTitle: 'Deadlines and what has happened', deadlinesLead: "Countdowns update from today's date. Approximate dates are shown as seasons or years.",
@@ -554,7 +547,7 @@ p { margin: 0; }
       methodTitle: 'How the grades work',
       changelog: 'Revision history',
       cite: 'How to cite',
-      sourcesLead: 'Every figure on this page links here. Advocacy sources are included where they add information official sources lack, and are marked wherever they carry a number. Source titles are given in their original language.',
+      sourcesLead: 'Every figure on this page links here. All sources are official: authorities, courts, public utilities and international bodies. Source titles are given in their original language.',
       all: 'All', search: 'Search sources', showing: (n, t) => `Showing ${n} of ${t}`, noMatch: 'No sources match. Clear the search or choose All.',
       nav: { overview: 'Overview', voters: 'Voters', deadlines: 'Deadlines', legal: 'Legal', method: 'Method', sources: 'Sources' },
       theme: 'Theme', themes: { auto: 'Auto', light: 'Light', dark: 'Dark' },
@@ -570,30 +563,20 @@ p { margin: 0; }
       rel: (n, unit, future) => { const u = { d: ['Tag', 'Tagen'], m: ['Monat', 'Monaten'], y: ['Jahr', 'Jahren'] }[unit][n === 1 ? 0 : 1]; return future ? `in ${n} ${u}` : `vor ${n} ${u}`; },
       yearsMonths: (y, m) => `${y} ${y === 1 ? 'Jahr' : 'Jahre'}, ${m} ${m === 1 ? 'Monat' : 'Monate'}`,
       types: { official: 'Amtlich', press: 'Presse', advocacy: 'Interessenvertretung', reference: 'Referenz' },
-      typeCounts: (c) => `${c.official || 0} amtlich, ${c.press || 0} Presse, ${c.advocacy || 0} Interessenvertretung, ${c.reference || 0} Referenz`,
+      typeCounts: (c) => [['official', 'amtlich'], ['press', 'Presse'], ['advocacy', 'Interessenvertretung'], ['reference', 'Referenz']].filter(([k]) => c[k]).map(([k, w]) => `${c[k]} ${w}`).join(', '),
       advFlag: 'Quelle einer Interessenvertretung',
       grade: 'Note', plus: 'plus', minus: 'minus', overall: 'Gesamt',
       overallGrade: 'Gesamtnote',
       lastReviewed: 'Zuletzt geprüft', today: 'heute', daysAgo: (n) => `vor ${n} ${n === 1 ? 'Tag' : 'Tagen'}`, reviewDue: 'Überprüfung fällig',
       sources: 'Quellen', nextDeadline: 'Nächster Termin',
       dlData: 'Daten herunterladen (JSON)', dlSources: 'Quellen herunterladen (CSV)', print: 'Bericht drucken',
-      stripAria: (total, v, share) => `Von mindestens ${total} Tonnen pro Kopf fallen ${v} Tonnen, rund ${share}, unter das Ziel 2037.`,
-      inTarget: (v) => `${v} t im Ziel`, outside: (v) => `Mehr als ${v} t ausserhalb`,
       showNumbers: 'Zahlen anzeigen',
       truth: 'Der unbequeme Teil', upgrades: 'Was die Note verbessern würde', upgradesNote: 'Analyse dieser Bilanz, nicht Pläne des Kantons.',
       source: 'Quelle', openSource: 'Quelle öffnen', findInList: 'In der Liste zeigen', close: 'Schliessen', undated: 'undatiert', citedIn: 'Zitiert in',
       item: 'Position', value: 'Wert', measure: 'Messgrösse', segment: 'Segment', share: 'Anteil', period: 'Zeitraum',
       pollutant: 'Schadstoff', change1990: 'Veränderung seit 1990', vote: 'Vorlage', yes: 'Ja',
-      paceAchieved: 'Durchschnittliche Reduktion pro Jahr, 2020–2022', paceRequired: 'Nötige Reduktion pro Jahr, 2022–2037, bis zur geplanten Restmenge', paceRatio: 'So viel schneller müssen die Emissionen sinken (eigene Berechnung)',
-      pathRows: ['2020, ausgewiesen', '2022, abgeleitet (−6 %)', '2037, geplante Restmenge vor Entnahmen', 'Nötige Reduktion pro Jahr, 2022–2037', 'Erreichte Reduktion pro Jahr, 2020–2022'],
-      pathAria: (a, b, c) => `Die Emissionen sanken von rund ${a} Tonnen 2020 auf rund ${b} Tonnen 2022. Der Plan lässt 2037 rund ${c} Tonnen übrig, die durch CO2-Abscheidung oder Negativemissionen entfernt werden müssen.`,
-      pathIll: 'Linearer Pfad (illustrativ)', pathToday: 'Heute',
-      pathGap: (v) => `${v} kt Rest 2037, abzuscheiden oder zu kompensieren`, pathGapShort: (v) => `${v} kt zu entfernen`,
       average: 'Mittel',
-      treesDerived: (per, added, share, year) => `Bei ${per} pro Jahr wächst der öffentliche Bestand bis ${year} um rund ${added} Bäume, also um ${share}.`,
-      treesSmall: (stock) => `Eigene Berechnung, ausgehend von rund ${stock} Bäumen.`,
       atMost: 'höchstens', to: 'bis',
-      calmAria: (a, b) => `${a} heute verkehrsberuhigt, ${b} geplant`, calmToday: 'Heute verkehrsberuhigt', calmPlanned: 'Geplant', calmNow: (a) => `${a} heute`,
       deadline: 'Sanierungsfrist',
       votesCaption: 'Ja-Anteil je Vorlage; die Linie markiert 50 %.', passed: 'Angenommen', rejected: 'Abgelehnt', half: '50 % Ja',
       deadlinesTitle: 'Termine und was geschehen ist', deadlinesLead: 'Die Countdowns rechnen ab dem heutigen Datum. Ungefähre Daten erscheinen als Jahreszeit oder Jahr.',
@@ -603,7 +586,7 @@ p { margin: 0; }
       methodTitle: 'Wie die Noten entstehen',
       changelog: 'Änderungen',
       cite: 'Zitiervorschlag',
-      sourcesLead: 'Jede Zahl auf dieser Seite verweist hierher. Quellen von Interessenvertretungen sind aufgenommen, wo sie Informationen liefern, die amtliche Quellen nicht enthalten, und überall gekennzeichnet, wo sie eine Zahl tragen. Titel stehen in der Originalsprache.',
+      sourcesLead: 'Jede Zahl auf dieser Seite verweist hierher. Alle Quellen sind amtlich: Behörden, Gerichte, öffentliche Werke und internationale Organisationen. Titel stehen in der Originalsprache.',
       all: 'Alle', search: 'Quellen durchsuchen', showing: (n, t) => `${n} von ${t} angezeigt`, noMatch: 'Keine Treffer. Suche leeren oder «Alle» wählen.',
       nav: { overview: 'Überblick', voters: 'Abstimmungen', deadlines: 'Termine', legal: 'Recht', method: 'Methode', sources: 'Quellen' },
       theme: 'Darstellung', themes: { auto: 'Auto', light: 'Hell', dark: 'Dunkel' },
@@ -621,7 +604,7 @@ p { margin: 0; }
   function walk(node, where) {
     if (Array.isArray(node)) node.forEach((n) => walk(n, where));
     else if (node && typeof node === 'object') {
-      for (const [k, v] of Object.entries(node)) { if (k === 'sources' && Array.isArray(v)) markUse(v, where); else walk(v, where); }
+      for (const [k, v] of Object.entries(node)) { if ((k === 'sources' || k.endsWith('Sources')) && Array.isArray(v)) markUse(v, where); else walk(v, where); }
     }
   }
   walk(D.hero, 'overview'); walk(D.overall, 'overview');
@@ -676,64 +659,66 @@ p { margin: 0; }
 
   const R = {};
 
-  R.pathway = (c, id) => {
-    const start = c.start.value;
-    const y22 = Math.round(start * (1 - c.reductionTo2022.percent / 100));
-    const achieved = (start - y22) / (c.reductionTo2022.year - c.start.year);
-    const required = (y22 - c.residual2037.value) / (c.residual2037.year - c.reductionTo2022.year);
-    const ratio = required / achieved;
-    const body = `<div class="pathway" id="${id}-svg" data-y22="${y22}"></div>
-      <div class="pace">
-        <div><b>${fmtN(Math.round(achieved / 1000))} kt</b><span>${UI.paceAchieved} ${cites(c.reductionTo2022.sources)}</span></div>
-        <div class="hot"><b>${fmtN(Math.round(required / 1000))} kt</b><span>${UI.paceRequired}</span></div>
-        <div class="hot"><b>${fmtN(ratio, 1)}×</b><span>${UI.paceRatio}</span></div>
-      </div>`;
-    const v = [start, y22, c.residual2037.value, Math.round(required), Math.round(achieved)];
-    const rows = UI.pathRows.map((label, i) => [esc(label), fmtN(v[i])]);
-    return { body, table: table([UI.item, 't CO2eq'], rows) };
+  // Measured series. Reference values (legal limits, legal targets) are drawn apart from the data and labelled as such.
+  const linesOf = (c) => c.lines || [{ points: c.points, tone: 'ink' }];
+  const xLabel = (p) => p.label ? L(p.label) : String(p.x);
+  R.series = (c, id) => {
+    const div = c.axis?.div || 1, dg = c.digits || 0, unit = L(c.axis?.unit || c.unit);
+    const v = (y) => fmtN(y / div, dg);
+    const lines = linesOf(c);
+    const multi = lines.length > 1;
+    const aria = lines.map((ln) => `${multi ? L(ln.label) + ': ' : ''}${ln.points.map((p) => `${xLabel(p)} ${v(p.y)}`).join(', ')}`).join('; ') + ` (${unit})`;
+    const keys = multi ? lines.map((ln) => `<li><i class="lnkey ln-${ln.tone}" aria-hidden="true"></i><span>${esc(L(ln.label))} ${cites(ln.sources)}</span></li>`).join('') : '';
+    const refs = (c.refs || []).map((r) => `<li><i class="${r.kind === 'point' ? 'refkey-pt' : 'refkey'}" aria-hidden="true"></i><span>${esc(L(r.label))} ${cites(r.sources)}</span></li>`).join('');
+    const xs = [...new Map(lines.flatMap((ln) => ln.points.map((p) => [p.x, xLabel(p)]))).entries()].sort((a, b) => a[0] - b[0]);
+    const head = [UI.period].concat(multi ? lines.map((ln) => L(ln.label)) : [L(c.valueLabel || unit)]);
+    const rows = xs.map(([x, lab]) => [esc(lab)].concat(lines.map((ln) => { const p = ln.points.find((q) => q.x === x); return p ? v(p.y) : '–'; })))
+      .concat((c.refs || []).map((r) => [esc(L(r.label)), v(r.y)].concat(multi ? Array(lines.length - 1).fill('') : [])));
+    return {
+      body: `<div class="series" data-series="${esc(id)}" role="img" aria-label="${esc(aria)}"></div>${keys || refs ? `<ul class="legend">${keys}${refs}</ul>` : ''}`,
+      table: table(head, rows)
+    };
   };
 
-  function drawPathway(el, c) {
+  function drawSeries(el, c) {
     const W = Math.max(300, el.clientWidth);
     const narrow = W < 560;
-    const H = narrow ? 280 : 320;
-    const m = { l: narrow ? 44 : 56, r: 12, t: 46, b: 34 };
-    const x0 = 2020, x1 = 2038, yMax = 750000;
-    const X = (y) => m.l + (y - x0) / (x1 - x0) * (W - m.l - m.r);
-    const Y = (v) => m.t + (1 - v / yMax) * (H - m.t - m.b);
-    const y22 = Number(el.dataset.y22);
-    const res = c.residual2037.value;
-    let s = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="${esc(UI.pathAria(fmtN(c.start.value), fmtN(y22), fmtN(res)))}">`;
-    [0, 250000, 500000, 750000].forEach((v) => {
-      s += `<line class="${v ? 'axis' : 'base'}" x1="${m.l}" x2="${W - m.r}" y1="${Y(v)}" y2="${Y(v)}"/>`;
-      s += `<text x="${m.l - 8}" y="${Y(v) + 4}" text-anchor="end">${fmtN(v / 1000)}${narrow ? '' : ' kt'}</text>`;
+    const H = narrow ? 240 : 280;
+    const m = { l: narrow ? 44 : 56, r: narrow ? 14 : 24, t: 28, b: 30 };
+    const div = c.axis?.div || 1, dg = c.digits || 0, unit = L(c.axis?.unit || c.unit);
+    const lines = linesOf(c);
+    const xs = lines.flatMap((ln) => ln.points.map((p) => p.x)).concat((c.refs || []).filter((r) => r.kind === 'point').map((r) => r.x));
+    const x0 = c.xMin ?? Math.min(...xs), x1 = c.xMax ?? Math.max(...xs);
+    const X = (x) => m.l + (x - x0) / (x1 - x0 || 1) * (W - m.l - m.r);
+    const Y = (y) => m.t + (1 - y / c.yMax) * (H - m.t - m.b);
+    let s = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" aria-hidden="true">`;
+    c.yTicks.forEach((t) => {
+      s += `<line class="${t ? 'axis' : 'base'}" x1="${m.l}" x2="${W - m.r}" y1="${Y(t)}" y2="${Y(t)}"/>`;
+      s += `<text x="${m.l - 8}" y="${Y(t) + 4}" text-anchor="end">${fmtN(t / div)}</text>`;
     });
-    if (narrow) s += `<text x="${m.l - 8}" y="${Y(yMax) - 16}" text-anchor="end">kt</text>`;
-    const ticks = narrow ? [2020, 2025, 2030, 2037] : [2020, 2022, 2025, 2027, 2030, 2031, 2035, 2037];
-    ticks.forEach((t) => { s += `<text x="${X(t)}" y="${H - m.b + 20}" text-anchor="middle">${t}</text>`; });
-    c.markers.forEach((mk, i) => {
-      const lx = X(mk.year), ly = m.t - 28 + i * 16;
-      s += `<line class="mk" x1="${lx}" x2="${lx}" y1="${ly + 4}" y2="${Y(0)}"/>`;
-      s += `<text x="${lx + 4}" y="${ly}">${esc(L(narrow ? mk.short : mk.label))}</text>`;
+    s += `<text x="${m.l - 8}" y="${m.t - 14}" text-anchor="end">${esc(unit)}</text>`;
+    const ticks = narrow ? (c.xTicksNarrow || c.xTicks) : c.xTicks;
+    ticks.forEach((t) => { s += `<text x="${X(t.x ?? t)}" y="${H - m.b + 20}" text-anchor="middle">${esc(t.label ? L(t.label) : t)}</text>`; });
+    (c.refs || []).forEach((r) => {
+      if (r.kind === 'point') {
+        s += `<circle class="ref-pt" cx="${X(r.x)}" cy="${Y(r.y)}" r="6"/>`;
+        s += `<text class="ref-t" x="${X(r.x) - 10}" y="${Y(r.y) - 12}" text-anchor="end">${esc(L(r.mark))}</text>`;
+      } else {
+        s += `<line class="ref" x1="${m.l}" x2="${W - m.r}" y1="${Y(r.y)}" y2="${Y(r.y)}"/>`;
+        s += `<text class="ref-t" x="${W - m.r}" y="${Y(r.y) - 6}" text-anchor="end">${esc(L(r.mark))}</text>`;
+      }
     });
-    const ty = decimalYear(TODAY);
-    if (ty > x0 && ty < x1) {
-      s += `<line class="today" x1="${X(ty)}" x2="${X(ty)}" y1="${Y(yMax) - 4}" y2="${Y(0)}"/>`;
-      s += `<text class="today-t" x="${X(ty) - 6}" y="${Y(0) - 8}" text-anchor="end">${UI.pathToday}</text>`;
-    }
-    s += `<path class="path-ill" d="M${X(2020)},${Y(c.start.value)} L${X(2037)},${Y(res)}"/>`;
-    if (!narrow) {
-      const ly = 2025, lv = c.start.value + (res - c.start.value) * (ly - 2020) / 17;
-      const ang = Math.atan2(Y(res) - Y(c.start.value), X(2037) - X(2020)) * 180 / Math.PI;
-      s += `<text x="${X(ly)}" y="${Y(lv) - 14}" transform="rotate(${ang} ${X(ly)} ${Y(lv) - 14})" text-anchor="middle">${UI.pathIll}</text>`;
-    }
-    s += `<path class="path-act" d="M${X(2020)},${Y(c.start.value)} L${X(2022)},${Y(y22)}"/>`;
-    s += `<circle class="dot" cx="${X(2020)}" cy="${Y(c.start.value)}" r="5"/><circle class="dot" cx="${X(2022)}" cy="${Y(y22)}" r="5"/>`;
-    s += `<text x="${X(2022) + 10}" y="${Y(y22) - 8}" font-weight="700" style="fill:var(--ink)">${fmtN(Math.round(y22 / 1000))} kt</text>`;
-    const gw = Math.max(10, X(2037.6) - X(2037));
-    const kt = fmtN(Math.round(res / 1000));
-    s += `<rect class="gap" x="${X(2037) - gw / 2}" y="${Y(res)}" width="${gw}" height="${Y(0) - Y(res)}"/>`;
-    s += `<text class="gap-t" x="${X(2037) - gw / 2 - 8}" y="${(Y(res) + Y(0)) / 2 + 5}" text-anchor="end">${esc(narrow ? UI.pathGapShort(kt) : UI.pathGap(kt))}</text>`;
+    lines.forEach((ln) => {
+      let d = '';
+      ln.points.forEach((p, i) => { d += `${i && !p.break ? 'L' : 'M'}${X(p.x)},${Y(p.y)} `; });
+      s += `<path class="line ln-${ln.tone}" d="${d.trim()}"/>`;
+      const labelAll = !narrow && lines.length === 1;
+      ln.points.forEach((p, i) => {
+        const last = i === ln.points.length - 1;
+        s += `<circle class="dot ln-${ln.tone}" cx="${X(p.x)}" cy="${Y(p.y)}" r="${narrow ? 3.5 : 4.5}"/>`;
+        if (labelAll || i === 0 || last) s += `<text class="val" x="${X(p.x)}" y="${Y(p.y) - 10}" text-anchor="${last && lines.length > 1 ? 'end' : 'middle'}">${fmtN(p.y / div, dg)}</text>`;
+      });
+    });
     s += '</svg>';
     el.innerHTML = s;
   }
@@ -755,13 +740,13 @@ p { margin: 0; }
   R.columns = (c) => {
     const max = Math.max(...c.bars.map((b) => b.value));
     const ref = c.bars.find((b) => b.tone === 'base');
-    const cols = c.bars.map((b) => `<div class="col"><span class="v">${fmtN(b.value)}</span><div class="b bg-${b.tone}" style="height:${b.value / max * 82}%"></div></div>`).join('');
-    const refLine = ref ? `<div class="refline" style="bottom:${ref.value / max * 82}%"><span>${UI.average} ${fmtN(ref.value)}</span></div>` : '';
+    const cols = c.bars.map((b) => `<div class="col"><span class="v">${fmtN(b.value, b.digits || 0)}</span><div class="b bg-${b.tone}" style="height:${b.value / max * 82}%"></div></div>`).join('');
+    const refLine = ref ? `<div class="refline" style="bottom:${ref.value / max * 82}%"><span>${esc(L(ref.label))} ${fmtN(ref.value, ref.digits || 0)}</span></div>` : '';
     const labels = c.bars.map((b) => `<div>${esc(L(b.label))} ${cites(b.sources)}</div>`).join('');
     const aria = c.bars.map((b) => `${L(b.label)}: ${b.value} ${L(c.unit)}`).join('; ');
     return {
       body: `<div class="cols" role="img" aria-label="${esc(aria)}">${cols}${refLine}</div><div class="col-labels">${labels}</div>`,
-      table: table([UI.period, L(c.valueLabel)], c.bars.map((b) => [esc(L(b.label)), fmtN(b.value)]))
+      table: table([UI.period, L(c.valueLabel)], c.bars.map((b) => [esc(L(b.label)), fmtN(b.value, b.digits || 0)]))
     };
   };
 
@@ -770,11 +755,7 @@ p { margin: 0; }
       const n = Math.round(r.value / c.perDot);
       return `<div class="dotrow"><div class="lbl"><b>${fmtN(r.value)}</b>${esc(L(r.label))} ${cites(r.sources)}</div><div class="dots" role="img" aria-label="${fmtN(r.value)} ${esc(L(c.unit))}">${`<i class="bg-${r.tone}"></i>`.repeat(n)}</div></div>`;
     }).join('');
-    const d = c.derived;
-    const years = Math.max(0, d.toYear - TODAY.getFullYear());
-    const added = d.perYear * years;
-    const derived = `<p class="derived">${UI.treesDerived(fmtN(d.perYear), fmtN(added), pct(added / d.stock * 100, 1), d.toYear)} <small>${UI.treesSmall(fmtN(d.stock))}</small></p>`;
-    return { body: rows + derived, table: table([UI.item, L(c.unit)], c.rows.map((r) => [esc(L(r.label)), fmtN(r.value)])) };
+    return { body: rows, table: table([UI.item, L(c.unit)], c.rows.map((r) => [esc(L(r.label)), fmtN(r.value)])) };
   };
 
   R.sites = (c) => {
@@ -800,12 +781,13 @@ p { margin: 0; }
     const bars = c.items.filter((it) => it.tone !== 'base');
     const lines = c.items.filter((it) => it.tone === 'base');
     const marks = lines.map((l) => `<span class="lim" style="left:${P(l.to)}%" aria-hidden="true"></span>`).join('');
-    const val = (it) => it.from ? `${fmtN(it.from)}–${fmtN(it.to)}` : `${it.prefix || ''}${fmtN(it.to)}`;
+    const nf = (v) => fmtN(v, v < 10 && v % 1 ? 1 : 0);
+    const val = (it) => it.from ? `${nf(it.from)}–${nf(it.to)}` : `${it.prefix || ''}${nf(it.to)}`;
     const rows = bars.map((it) => {
       const from = it.from ? P(it.from) : 0; const to = P(it.to);
       return `<div class="row"><span class="lbl">${esc(L(it.label))} ${cites(it.sources)}</span><span class="track"><span class="bar bg-${it.tone}" style="left:${from}%;width:${to - from}%"></span>${marks}</span><span class="val">${val(it)}</span></div>`;
     }).join('');
-    const ticks = [1, 10, 100, 1000].map((t) => `<span style="left:${P(t)}%">${fmtN(t)}</span>`).join('');
+    const ticks = Array.from({ length: lmax - lmin + 1 }, (_, i) => 10 ** (lmin + i)).map((t) => `<span style="left:${P(t)}%">${fmtN(t)}</span>`).join('');
     const axis = `<div class="row" aria-hidden="true"><span class="lbl"></span><span class="logaxis">${ticks}</span><span></span></div>`;
     const legend = `<ul class="legend">${lines.map((l) => `<li><i class="limkey" aria-hidden="true"></i><span>${esc(L(l.label))}: <b>${fmtN(l.to)} ${esc(c.unit)}</b> ${cites(l.sources)}</span></li>`).join('')}</ul>`;
     const aria = c.items.map((it) => `${L(it.label)}: ${it.from ? `${it.from} ${UI.to} ${it.to}` : (it.prefix ? UI.atMost + ' ' : '') + it.to} ${c.unit}`).join('; ');
@@ -817,10 +799,10 @@ p { margin: 0; }
     const dl = parseISO(c.deadline);
     const months = Math.round((TODAY - dl) / (30.44 * 864e5));
     const y = Math.floor(months / 12), mo = months % 12;
-    const body = `<div class="progress" role="img" aria-label="${esc(UI.calmAria(pct(c.now), pct(c.target)))}"><div class="done" style="width:${c.now}%">${UI.calmNow(pct(c.now))}</div><div class="plan" style="width:${c.target - c.now}%"></div></div>
-      <ul class="legend"><li><i class="bg-ink" aria-hidden="true"></i><span>${UI.calmToday} <b>${pct(c.now)}</b></span></li><li><i style="background:repeating-linear-gradient(135deg,var(--rhine) 0 3px,transparent 3px 6px)" aria-hidden="true"></i><span>${UI.calmPlanned} <b>${pct(c.target)}</b></span></li></ul>
+    const body = `<div class="progress" role="img" aria-label="${esc(L(c.nowLabel))}: ${pct(c.now)}"><div class="done" style="width:${c.now}%">${pct(c.now)}</div></div>
+      <ul class="legend"><li><i class="bg-ink" aria-hidden="true"></i><span>${esc(L(c.nowLabel))} <b>${pct(c.now)}</b> ${cites(c.nowSources)}</span></li></ul>
       <div class="overdue"><b>${UI.yearsMonths(y, mo)}</b><span>${esc(L(c.deadlineLabel))} ${cites(c.deadlineSources)}</span></div>`;
-    return { body, table: table([UI.measure, UI.value], [[UI.calmToday, pct(c.now)], [UI.calmPlanned, pct(c.target)], [UI.deadline, fullDate(dl)]]) };
+    return { body, table: table([UI.measure, UI.value], [[esc(L(c.nowLabel)), pct(c.now)], [UI.deadline, fullDate(dl)]]) };
   };
 
   function chartFigure(id) {
@@ -832,29 +814,31 @@ p { margin: 0; }
   /* ---------- Sections ---------- */
   function hero() {
     const h = D.hero; const o = D.overall; const m = D.meta;
-    const total = h.counted.value + h.uncounted.value;
-    const wIn = (h.counted.value / total * 100).toFixed(1);
-    const wOut = (100 - wIn).toFixed(1);
     const reviewed = parseISO(m.reviewed);
     const age = Math.floor((TODAY - reviewed) / 864e5);
     const stale = age > m.reviewIntervalDays;
     const counts = D.sources.reduce((a, s) => (a[s.type] = (a[s.type] || 0) + 1, a), {});
     const next = D.timeline.map((t) => ({ ...t, d: parseISO(t.date) })).filter((t) => t.d >= TODAY).sort((a, b) => a.d - b.d)[0];
     const facets = o.facets.map((f) => `<li><span class="g tone-${toneOf(f.grade)}" aria-label="${gradeLabel(f.grade)}">${esc(f.grade)}</span><div><h3>${esc(L(f.label))}</h3><p>${esc(L(f.note))} ${cites(f.sources)}</p></div></li>`).join('');
-    const cv = fmtN(h.counted.value, 1), uv = fmtN(h.uncounted.value);
+    const [hot, rest] = h.segments;
+    const w = (x) => (x / h.total * 100).toFixed(2);
+    const mk = h.marker;
+    const unit = L(h.unit);
     return `<section class="hero wrap" id="overview" aria-labelledby="thesis">
       <p class="kicker">${esc(L(m.kicker))}</p>
       <h1 class="thesis" id="thesis">${esc(L(m.thesis))}</h1>
       <p class="standfirst">${esc(L(m.standfirst))}</p>
-      <figure class="strip" style="--w-in:${wIn}%">
-        <div class="strip-bar" role="img" aria-label="${esc(UI.stripAria(fmtN(total, 1), cv, pct(Math.round(wIn))))}">
-          <div class="seg seg-in" style="--w:${wIn}%">${cv} t</div>
-          <div class="seg seg-out" style="--w:${wOut}%">&gt;${uv} t</div>
+      <figure class="strip" style="--w-in:${w(hot.value)}%">
+        <div class="strip-bar" role="img" aria-label="${esc(L(h.aria))}">
+          <div class="seg seg-hot" style="--w:${w(hot.value)}%">${fmtN(hot.value)}</div>
+          <div class="seg seg-rest" style="--w:${w(rest.value)}%">${fmtN(rest.value)}</div>
+          ${mk ? `<span class="strip-mark" style="left:${w(mk.value)}%" aria-hidden="true"></span>` : ''}
         </div>
         <div class="strip-legend">
-          <div><b>${UI.inTarget(cv)}</b>${esc(L(h.counted.label))} ${cites(h.counted.sources)}</div>
-          <div><b>${UI.outside(uv)}</b>${esc(L(h.uncounted.label))} ${cites(h.uncounted.sources)}</div>
+          <div><b>${fmtN(hot.value)} ${esc(unit)}</b>${esc(L(hot.label))} ${cites(hot.sources)}</div>
+          <div><b>${fmtN(rest.value)} ${esc(unit)}</b>${esc(L(rest.label))} ${cites(rest.sources)}</div>
         </div>
+        ${mk ? `<p class="strip-mk"><i aria-hidden="true"></i><b>${fmtN(mk.value, mk.digits || 0)} ${esc(unit)}</b> ${esc(L(mk.label))} ${cites(mk.sources)}</p>` : ''}
         <figcaption class="note">${esc(L(h.note))}</figcaption>
       </figure>
       <div class="hero-foot">
@@ -960,7 +944,7 @@ p { margin: 0; }
 
   function sources() {
     const types = ['official', 'press', 'advocacy', 'reference'];
-    const counts = types.map((t) => [t, D.sources.filter((s) => s.type === t).length]);
+    const counts = types.map((t) => [t, D.sources.filter((s) => s.type === t).length]).filter(([, n]) => n);
     const li = D.sources.map((s) => `<li id="src-${s.n}" data-type="${s.type}" data-text="${esc((s.title + ' ' + s.publisher + ' ' + s.date).toLowerCase())}"><span class="n">${s.n}</span><div><div class="t"><a href="${esc(s.url)}" target="_blank" rel="noopener" hreflang="${esc(s.lang || 'de')}">${esc(s.title)}</a></div><div class="m">${esc(s.publisher)}, ${esc(fmtSourceDate(s.date))}</div>${s.usedIn.size ? `<div class="used">${UI.citedIn}: ${[...s.usedIn].map((w) => esc(whereLabel(w))).join(', ')}</div>` : ''}</div><span class="type ${s.type}">${UI.types[s.type]}</span></li>`).join('');
     return `<section class="block" id="sources" aria-labelledby="h-sources"><div class="wrap">
       <div class="block-head"><h2 id="h-sources">${UI.nav.sources}</h2><p>${UI.sourcesLead}</p></div>
@@ -983,9 +967,8 @@ p { margin: 0; }
   const navItems = D.domains.map((d) => [d.id, L(d.short), d.grade]).concat(['voters', 'deadlines', 'legal', 'method', 'sources'].map((k) => [k, UI.nav[k], '']));
   document.getElementById('nav-list').innerHTML = navItems.map(([id, label, g]) => `<li><a href="#${id}" data-nav="${id}">${g ? `<b class="tone-${toneOf(g)}">${esc(g)}</b>` : ''}${esc(label)}</a></li>`).join('');
 
-  /* Pathway draws to the measured width and redraws on resize */
-  const pathEl = document.getElementById('pathway-svg');
-  const drawAll = () => { if (pathEl) drawPathway(pathEl, D.charts.pathway); };
+  /* Series charts draw to the measured width and redraw on resize */
+  const drawAll = () => document.querySelectorAll('[data-series]').forEach((el) => drawSeries(el, D.charts[el.dataset.series]));
   drawAll();
   let rT; window.addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(drawAll, 120); });
 

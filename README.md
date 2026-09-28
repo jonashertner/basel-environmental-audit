@@ -2,15 +2,19 @@
 
 **Live:** [English](https://jonashertner.github.io/basel-environmental-audit/) · [Deutsch](https://jonashertner.github.io/basel-environmental-audit/de/)
 
-A graded, source-linked assessment of the environment in the canton of Basel-Stadt: climate, heat, chemical legacy, air, water, and noise and traffic. Every figure on the page carries a numbered citation that opens its source.
+A graded assessment of the environment in the canton of Basel-Stadt (climate, heat, chemical legacy, air, water, and noise and traffic) built only on values that an official body measured or counted. Every figure on the page carries a numbered citation that opens its source.
 
-Eine benotete, belegte Bilanz der Umwelt im Kanton Basel-Stadt: Klima, Hitze, Chemie-Altlasten, Luft, Wasser, Lärm und Verkehr. Jede Zahl trägt eine nummerierte Quellenangabe, die ihre Quelle öffnet.
+Eine benotete Bilanz der Umwelt im Kanton Basel-Stadt (Klima, Hitze, Chemie-Altlasten, Luft, Wasser, Lärm und Verkehr), gestützt nur auf Werte, die eine amtliche Stelle gemessen oder gezählt hat. Jede Zahl trägt eine nummerierte Quellenangabe, die ihre Quelle öffnet.
 
-Last reviewed: 28 September 2026.
+Last reviewed: 29 September 2026.
+
+## The rule
+
+Only measured or counted values from official sources: authorities, courts, public utilities and international bodies. Estimates, projections, modelled values, costs and press or advocacy figures are excluded, including the canton's greenhouse gas inventory, which is calculated. Legal limits, guidelines and targets appear only as labelled reference values. The build enforces this: it fails if a figure, chart, the hero or the vote results cite a source that is not typed `official`.
 
 ## What is on the page
 
-- **Thesis and footprint strip.** What the 2037 net-zero target counts (3.1 t per resident) against what it leaves out (more than 13 t).
+- **Thesis and summer strip.** The 92 days of June to August 2026 at Basel-Binningen: 52 hot days (30 °C or more) against a normal of 13.6.
 - **Grades.** An overall grade, three facets (governance, outcomes, legacy) and one grade per area, each with a one-line verdict.
 - **Areas.** Key figures, charts, "The uncomfortable part" and "What would raise the grade" for each of the six areas.
 - **Voters.** Ballot results that explain the gap between targets and measures.
@@ -52,10 +56,10 @@ The build fails if a text field lacks either language or contains an em-dash, a 
 Conventions in the data file:
 
 - Every metric needs at least one source id in `sources`.
-- Source `type` is one of `official`, `press`, `advocacy`, `reference`. Advocacy sources are flagged on the page wherever they carry a figure. Source titles stay in their original language.
+- Source `type` is one of `official`, `press`, `advocacy`, `reference`. Only `official` sources may carry a figure; the others may appear in context only, and are flagged. The current edition cites official sources only. Source titles stay in their original language.
 - Timeline items take an ISO `date`. For approximate dates, add `precision` (`year`, `month`, `season`) and optionally `display`; the countdown uses the ISO date.
 - Grades use A–D or F with an optional `+` or `–`.
-- Numbers derived by calculation (the 2022 emissions value, the pace comparison, the tree-stock growth) are computed in the template from the source values and labelled as calculations.
+- The template computes no figures of its own. Where official counts are added up (hot days per summer, the June to August normal, the waste segment "Other"), the method notes say so.
 - German text follows Swiss conventions: "ss" for "ß", «guillemets», an apostrophe as thousands separator (28’000) and a decimal comma in running text.
 
 ## Deployment
@@ -65,13 +69,13 @@ GitHub Pages, built by GitHub Actions on every push to `main` (Settings → Page
 ## Design notes
 
 - **Typography.** A single family, Archivo, using its width axis from condensed (grades, figures, headlines) to normal (text), in the Swiss typographic tradition of which Basel's School of Design is a centre. The font is self-hosted, so the page makes no third-party requests.
-- **Colour.** Black and white, as in Basel's colours, plus three signals: Rhine teal for good grades, sulfur yellow for middling ones, and a magenta close to fuchsine, one of the synthetic dyes Basel's chemical industry grew out of, for poor grades and for what the accounting leaves out.
-- **Motion.** One moment: the uncounted part of the footprint strip extends on load. It is skipped when the reader prefers reduced motion.
+- **Colour.** Black and white, as in Basel's colours, plus three signals: Rhine teal for good grades, sulfur yellow for middling ones, and a magenta close to fuchsine, one of the synthetic dyes Basel's chemical industry grew out of, for poor grades and for the hot days of 2026.
+- **Motion.** One moment: the hot-day segment of the summer strip extends on load. It is skipped when the reader prefers reduced motion.
 
 ## Before relying on it
 
 - Grades are an analytical judgment, not an official rating. Recommendations are the audit's analysis, not the canton's plans.
-- Data years differ (emissions inventory 2022, weather 2026). Figures show their source and date.
+- Data years differ (heating counts September 2026, weather 2026, air 2025, groundwater 2024 and 2025). Figures show their source and year.
 - Not legal advice.
 
 ## Licence

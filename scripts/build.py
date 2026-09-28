@@ -65,7 +65,7 @@ def collect_refs(node, path="$", out=None):
     if isinstance(node, dict):
         for key, value in node.items():
             child = f"{path}.{key}"
-            if key == "sources" and path != "$" and isinstance(value, list):
+            if (key == "sources" or key.endswith("Sources")) and path != "$" and isinstance(value, list):
                 out.extend((child, ref) for ref in value)
             else:
                 collect_refs(value, child, out)
@@ -145,6 +145,16 @@ def validate(d: dict) -> tuple[list[str], list[str]]:
     used = {ref for _, ref in refs}
     for unused in sorted(known - used):
         warnings.append(f"Source '{unused}' is listed but never cited.")
+
+    # Values: every figure, chart value and vote result rests on official sources only
+    types = {s.get("id"): s.get("type") for s in sources}
+    value_nodes = [("hero", d.get("hero", {})), ("politics", d.get("politics", {}))]
+    value_nodes += [(f"chart '{cid}'", c) for cid, c in d.get("charts", {}).items()]
+    value_nodes += [(f"metrics of '{dom.get('id')}'", dom.get("metrics", [])) for dom in d.get("domains", [])]
+    for where, node in value_nodes:
+        for path, ref in collect_refs(node, where):
+            if types.get(ref) and types[ref] != "official":
+                errors.append(f"{path} cites '{ref}' ({types[ref]}); values may cite official sources only.")
 
     # Grades
     def check_grade(value, where):

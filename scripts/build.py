@@ -46,7 +46,7 @@ TEXT_KEYS = {
     "label", "short", "note", "summary", "verdict", "text", "name", "place", "k", "v", "lead",
     "trajCaption", "statusNote", "benefitsLabel",
     "kind", "law", "body", "work", "meaning", "valueLabel", "deadlineLabel", "display",
-    "dueDisplay", "doneDisplay",
+    "dueDisplay", "doneDisplay", "measure",
 }
 # Lists whose items are reader-facing prose.
 TEXT_LIST_KEYS = {"notes"}
@@ -226,6 +226,36 @@ def validate(d: dict) -> tuple[list[str], list[str]]:
             for path, ref in collect_refs(it, f"obligation '{oid}'"):
                 if types.get(ref) and types[ref] != "official":
                     errors.append(f"{path} cites '{ref}' ({types[ref]}); obligations may cite official sources only.")
+
+    # Noncompliance: limits exceeded or met, and missed deadlines drawn from the obligations
+    cp = d.get("compliance")
+    if cp:
+        cstat = {st.get("id") for st in cp.get("status", [])}
+        obs = {o.get("id"): o for o in (ob or {}).get("items", [])}
+        seen = set()
+        for it in cp.get("items", []):
+            cid = it.get("id")
+            if not cid or cid in seen:
+                errors.append(f"Compliance id '{cid}' is missing or duplicated.")
+            seen.add(cid)
+            if it.get("status") not in cstat:
+                errors.append(f"Compliance item '{cid}' has unknown status '{it.get('status')}'.")
+            if "ref" in it:
+                o = obs.get(it["ref"])
+                if not o:
+                    errors.append(f"Compliance item '{cid}' refers to unknown obligation '{it['ref']}'.")
+                elif o.get("status") != "open" or o.get("done"):
+                    errors.append(f"Compliance item '{cid}' refers to obligation '{it['ref']}', which is not open.")
+                continue
+            for k in ("title", "law", "value", "measure", "body"):
+                if not it.get(k):
+                    errors.append(f"Compliance item '{cid}' needs '{k}'.")
+            if not it.get("sources"):
+                errors.append(f"Compliance item '{cid}' has no source.")
+            check_basis(it, f"compliance item '{cid}'")
+        for path, ref in collect_refs(cp, "compliance"):
+            if types.get(ref) and types[ref] != "official":
+                errors.append(f"{path} cites '{ref}' ({types[ref]}); compliance may cite official sources only.")
 
     # Grades
     def check_grade(value, where):

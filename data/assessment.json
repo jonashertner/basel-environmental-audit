@@ -308,8 +308,8 @@
       },
       "grade": "D",
       "verdict": {
-        "en": "2026 brought the most hot days ever measured in Basel. The city's tree canopy has not grown since 2012.",
-        "de": "2026 brachte in Basel so viele Hitzetage wie nie seit Messbeginn. Die Baumkronenfläche der Stadt ist seit 2012 nicht gewachsen."
+        "en": "2026 brought the most hot days ever measured in Basel. The city's tree canopy is back at its 2012 level.",
+        "de": "2026 brachte in Basel so viele Hitzetage wie nie seit Messbeginn. Die Baumkronenfläche der Stadt liegt wieder auf dem Stand von 2012."
       },
       "metrics": [
         {
@@ -356,12 +356,13 @@
             "de": "Baumkronenbedeckung der Stadt Basel 2024"
           },
           "context": {
-            "en": "Unchanged since 2012; 15% without forest",
-            "de": "Seit 2012 unverändert; 15 % ohne Wald"
+            "en": "2012: 17.1%, 2021: 18%. Without forest 15%, after 15.7% in 2021",
+            "de": "2012: 17,1 %, 2021: 18 %. Ohne Wald 15 %, nach 15,7 % im Jahr 2021"
           },
           "basis": "official",
           "sources": [
-            "bs-controlling-2026"
+            "bs-controlling-2026",
+            "rr-24-5156"
           ]
         },
         {
@@ -407,24 +408,25 @@
       ],
       "truth": {
         "text": {
-          "en": "The canton's own 2026 monitoring report finds no measurable reduction in the number of people exposed to heat, and tree canopy has not grown since 2012. More trees are planted than felled, but the margin is small: 478 against 378 in the city in 2025. New trees are planted mainly where streets are already being dug up for district heating or maintenance, for cost reasons. The one measure that would free real space, converting street area to greenery, was rejected at the ballot box in 2023. Measured against proven measures elsewhere, Basel leads on green roofs and canopy monitoring and lags on the rest: no binding canopy target, no green factor, and unsealing at about a fifth of the pace the Grand Council's motion requires.",
-          "de": "Der kantonale Controllingbericht 2026 stellt keine messbare Reduktion der von Hitze betroffenen Bevölkerung fest, und die Baumkronenfläche ist seit 2012 nicht gewachsen. Es werden mehr Bäume gepflanzt als gefällt, aber knapp: 478 gegenüber 378 in der Stadt im Jahr 2025. Neue Bäume werden aus Kostengründen vor allem dort gepflanzt, wo Strassen ohnehin für Fernwärme oder Unterhalt aufgerissen werden. Die eine Massnahme, die echten Raum schaffen würde, die Umwandlung von Strassenfläche in Grün, scheiterte 2023 an der Urne. Gemessen an bewährten Massnahmen anderswo führt Basel bei Gründächern und der Messung des Kronendachs und liegt beim Rest zurück: kein verbindliches Kronenziel, kein Grünfaktor, und Entsiegelung in etwa einem Fünftel des Tempos, das die Motion des Grossen Rates verlangt."
+          "en": "The canton's own 2026 monitoring report finds no measurable reduction in the number of people exposed to heat, and tree canopy is back at its 2012 level after a gain up to 2021. More trees are planted than felled, but the margin is small: 478 against 378 in the city in 2025. New trees are planted mainly where streets are already being dug up for district heating or maintenance, for cost reasons. The one measure that would free real space, converting street area to greenery, was rejected at the ballot box in 2023. Measured against proven measures elsewhere, Basel leads on green roofs and canopy monitoring and lags on the rest: no binding canopy target, no green factor, and unsealing at about a fifth of the pace the Grand Council's motion requires.",
+          "de": "Der kantonale Controllingbericht 2026 stellt keine messbare Reduktion der von Hitze betroffenen Bevölkerung fest, und die Baumkronenfläche liegt nach einem Zuwachs bis 2021 wieder auf dem Stand von 2012. Es werden mehr Bäume gepflanzt als gefällt, aber knapp: 478 gegenüber 378 in der Stadt im Jahr 2025. Neue Bäume werden aus Kostengründen vor allem dort gepflanzt, wo Strassen ohnehin für Fernwärme oder Unterhalt aufgerissen werden. Die eine Massnahme, die echten Raum schaffen würde, die Umwandlung von Strassenfläche in Grün, scheiterte 2023 an der Urne. Gemessen an bewährten Massnahmen anderswo führt Basel bei Gründächern und der Messung des Kronendachs und liegt beim Rest zurück: kein verbindliches Kronenziel, kein Grünfaktor, und Entsiegelung in etwa einem Fünftel des Tempos, das die Motion des Grossen Rates verlangt."
         },
         "sources": [
           "bs-controlling-2026",
           "stg-baeume-2025",
           "rr-begruenung-2025",
-          "bs-abst-2023"
+          "bs-abst-2023",
+          "rr-24-5156"
         ]
       },
       "upgrades": [
         {
           "text": {
-            "en": "Turn the canopy aim into a binding target with a path: 18% by 2040 is barely above today's 15%. Lausanne went from 20% to 24.3% in twelve years and aims for 30%.",
-            "de": "Das Kronenziel verbindlich machen, mit Absenkpfad: 18 % bis 2040 liegt kaum über den heutigen 15 %. Lausanne kam in zwölf Jahren von 20 % auf 24,3 % und will 30 %."
+            "en": "Turn the government's aim of about 18% canopy by 2040 into a binding target with a yearly path, as the 2024 motion asked. Lausanne went from 20% to 24.3% in twelve years and aims for 30%.",
+            "de": "Das Ziel der Regierung von rund 18 % Kronenbedeckung bis 2040 verbindlich machen, mit jährlichem Pfad, wie es die Motion von 2024 verlangte. Lausanne kam in zwölf Jahren von 20 % auf 24,3 % und will 30 %."
           },
           "sources": [
-            "bs-controlling-2026",
+            "rr-24-5156",
             "lausanne-canopee-2025"
           ]
         },
@@ -2761,6 +2763,13 @@
     {
       "date": "2026-09-29",
       "text": {
+        "en": "New section «Noncompliance»: the legal limits Basel-Stadt exceeds (ozone, PM2.5 at Feldbergstrasse, road noise), the legal deadlines it has missed, and the limits it meets. Canopy corrected: the aim of about 18% by 2040 comes from the government's 2024 statement on a motion, not from the Anzug, and no law, parliamentary decision or plan sets it; canopy without forest rose from 14.8% (2012) to 15.7% (2021) and fell back to 15% (2024).",
+        "de": "Neuer Abschnitt «Nichteinhaltung»: die Grenzwerte, die Basel-Stadt überschreitet (Ozon, PM2.5 an der Feldbergstrasse, Strassenlärm), die gesetzlichen Fristen, die es verpasst hat, und die Grenzwerte, die es einhält. Kronendach korrigiert: Das Ziel von rund 18 % bis 2040 stammt aus der Stellungnahme der Regierung von 2024 zu einer Motion, nicht aus dem Anzug, und kein Gesetz, kein Parlamentsbeschluss und kein Plan legt es fest; die Kronenbedeckung ohne Wald stieg von 14,8 % (2012) auf 15,7 % (2021) und sank auf 15 % (2024)."
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "text": {
         "en": "Every figure now states its basis: measured, counted, official calculation, or derived from official data. Official calculations are admitted: the canton's greenhouse gas inventory and target path are back in the climate section, and its calculated road-noise exposure is new in the noise section, whose grade falls from C– to D+. Quieter citations, fewer figures per section and a lighter layout.",
         "de": "Jede Zahl nennt nun ihre Grundlage: gemessen, gezählt, amtlich berechnet oder aus amtlichen Daten abgeleitet. Amtliche Berechnungen sind zugelassen: Das Treibhausgasinventar des Kantons und sein Absenkpfad sind zurück im Klimateil, und die vom Kanton berechnete Strassenlärmbelastung ist neu im Lärmteil, dessen Note von C– auf D+ sinkt. Ruhigere Quellenangaben, weniger Zahlen pro Abschnitt und ein leichteres Layout."
       }
@@ -3653,6 +3662,70 @@
       "date": "n.d.",
       "title": "Der Biotopflächenfaktor: Ihr ökologisches Planungsinstrument",
       "url": "https://www.berlin.de/sen/uvk/_assets/natur-gruen/landschaftsplanung/bff-biotopflaechenfaktor/broschuere_bff_als_oekologisches_planungsinstrument.pdf"
+    },
+    {
+      "id": "rr-24-5156",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2024-09-04",
+      "title": "Stellungnahme zur Motion Lukas Bollack betreffend Erhöhung der Baumkronenbedeckung im Siedlungsgebiet (24.5156.02)",
+      "url": "https://grosserrat.bs.ch/?dnr=24.5156.02"
+    },
+    {
+      "id": "go-bs",
+      "type": "official",
+      "publisher": "Kanton Basel-Stadt, Gesetzessammlung",
+      "date": "2025-11-01",
+      "title": "Gesetz über die Geschäftsordnung des Grossen Rates (GO, SG 152.100), §§ 42–45",
+      "url": "https://www.gesetzessammlung.bs.ch/app/de/texts_of_law/152.100"
+    },
+    {
+      "id": "bs-richtplan-2025",
+      "type": "official",
+      "publisher": "Bau- und Verkehrsdepartement Basel-Stadt",
+      "date": "2025-04-29",
+      "title": "Kantonaler Richtplan Basel-Stadt, Richtplantext, Stand April 2025 (Objektblatt S5.4 Hitze)",
+      "url": "https://media.bs.ch/original_file/d03050e31dc7afaebc6a6122d6197d85404473e9/kantonaler-richtplan-bs-richtplantext-20250429.pdf"
+    },
+    {
+      "id": "bs-legislaturplan-2025",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2025-09-03",
+      "title": "Legislaturplan 2025–2029",
+      "url": "https://media.bs.ch/original_file/0cf7119635c5b59434ee4dde948be571406a2858/legislaturplan-2025-2029.pdf"
+    },
+    {
+      "id": "rr-lrp-2024",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2024-08-28",
+      "title": "Luftreinhalteplan 2024 der Kantone Basel-Stadt und Basel-Landschaft (24.1166.01)",
+      "url": "https://grosserrat.bs.ch/?dnr=24.1166.01"
+    },
+    {
+      "id": "usg-44a",
+      "type": "official",
+      "publisher": "Schweizerische Eidgenossenschaft (Fedlex)",
+      "date": "2026-08-01",
+      "title": "Umweltschutzgesetz (USG, SR 814.01), Art. 44a Massnahmenpläne bei Luftverunreinigungen",
+      "url": "https://www.fedlex.admin.ch/eli/cc/1984/1122_1122_1122/de#art_44_a"
+    },
+    {
+      "id": "lrv-33",
+      "type": "official",
+      "publisher": "Schweizerische Eidgenossenschaft (Fedlex)",
+      "date": "2026-08-01",
+      "title": "Luftreinhalte-Verordnung (LRV, SR 814.318.142.1), Art. 33 Verwirklichung des Massnahmenplanes",
+      "url": "https://www.fedlex.admin.ch/eli/cc/1986/208_208_208/de#art_33"
+    },
+    {
+      "id": "lsv-13",
+      "type": "official",
+      "publisher": "Schweizerische Eidgenossenschaft (Fedlex)",
+      "date": "2026-04-01",
+      "title": "Lärmschutz-Verordnung (LSV, SR 814.41), Art. 13 Sanierungen und Art. 14 Erleichterungen bei Sanierungen",
+      "url": "https://www.fedlex.admin.ch/eli/cc/1987/338_338_338/de#art_13"
     }
   ],
   "measures": {
@@ -4048,13 +4121,20 @@
         },
         "basel": {
           "text": {
-            "en": "15% of the city's settlement area without forest, unchanged since 2012. The controlling report names about 18% by 2040, but it comes from a parliamentary Anzug, which only obliges the government to report, by 23 October 2026. There is no binding target.",
-            "de": "15 % der Siedlungsfläche der Stadt ohne Wald, seit 2012 unverändert. Der Controllingbericht nennt rund 18 % bis 2040, doch das Ziel stammt aus einem Anzug, der die Regierung nur zu einem Bericht verpflichtet, fällig am 23. Oktober 2026. Ein verbindliches Ziel gibt es nicht."
+            "en": "Canopy of the city's settlement area without forest: 14.8% in 2012, 15.7% in 2021, 15% in 2024. In 2024 the government declared it aims for about 18% by 2040, in its statement on a motion that asked for a binding target, and called a higher value unrealistic. At its request, parliament turned the motion into an Anzug, which obliges it only to report, first by 23 October 2026. No law, parliamentary decision or plan sets the 18%; the structure plan asks for more green space without a number. Reaching it takes about 0.19 points a year, against 0.1 from 2012 to 2021.",
+            "de": "Kronenbedeckung im Siedlungsgebiet der Stadt ohne Wald: 14,8 % im Jahr 2012, 15,7 % 2021, 15 % 2024. 2024 erklärte die Regierung, sie wolle bis 2040 rund 18 % erreichen, in ihrer Stellungnahme zu einer Motion, die ein verbindliches Ziel verlangte; einen höheren Wert hielt sie für nicht realistisch. Auf ihren Antrag wandelte der Grosse Rat die Motion in einen Anzug um, der sie nur zur Berichterstattung verpflichtet, erstmals bis 23. Oktober 2026. Kein Gesetz, kein Parlamentsbeschluss und kein Plan legt die 18 % fest; der Richtplan verlangt mehr Grün, ohne Zahl. Dafür braucht es rund 0,19 Prozentpunkte pro Jahr, gegenüber 0,1 von 2012 bis 2021."
           },
-          "basis": "official",
+          "basis": [
+            "official",
+            "derived"
+          ],
           "sources": [
+            "rr-24-5156",
             "bs-controlling-2026",
-            "gr-24-5156"
+            "gr-24-5156",
+            "go-bs",
+            "bs-richtplan-2025",
+            "bs-legislaturplan-2025"
           ]
         },
         "benefits": [
@@ -4458,6 +4538,278 @@
           "bio"
         ]
       }
+    ]
+  },
+  "compliance": {
+    "title": {
+      "en": "Noncompliance",
+      "de": "Nichteinhaltung"
+    },
+    "lead": {
+      "en": "Where Basel-Stadt does not meet binding law: legal limits that official measurements show are exceeded, and legal deadlines that have passed. The limits it does meet follow for comparison. An exceeded limit is not in itself an offence by the canton; it obliges the authorities to act, for air through a plan of measures, for noise through remediation.",
+      "de": "Wo Basel-Stadt verbindliches Recht nicht einhält: Grenzwerte, deren Überschreitung amtliche Messungen zeigen, und gesetzliche Fristen, die verstrichen sind. Zum Vergleich folgen die Grenzwerte, die eingehalten sind. Ein überschrittener Grenzwert ist für sich kein Rechtsverstoss des Kantons; er verpflichtet die Behörden zu handeln, bei der Luft mit einem Massnahmenplan, beim Lärm mit Sanierungen."
+    },
+    "status": [
+      {
+        "id": "exceeded",
+        "label": {
+          "en": "Limit exceeded",
+          "de": "Grenzwert überschritten"
+        }
+      },
+      {
+        "id": "overdue",
+        "label": {
+          "en": "Deadline missed",
+          "de": "Frist verpasst"
+        }
+      },
+      {
+        "id": "complies",
+        "label": {
+          "en": "Limit met",
+          "de": "Grenzwert eingehalten"
+        }
+      }
+    ],
+    "items": [
+      {
+        "id": "ozone",
+        "status": "exceeded",
+        "title": {
+          "en": "Ozone, hourly limit",
+          "de": "Ozon, Stundengrenzwert"
+        },
+        "law": {
+          "en": "Annex 7 LRV (SR 814.318.142.1)",
+          "de": "Anhang 7 LRV (SR 814.318.142.1)"
+        },
+        "value": {
+          "en": "202 h",
+          "de": "202 h"
+        },
+        "measure": {
+          "en": "above 120 µg/m³; once a year allowed",
+          "de": "über 120 µg/m³; einmal pro Jahr zulässig"
+        },
+        "body": {
+          "en": "St. Johanns-Platz in 2025; Chrischona 268 hours. Ozone forms on hot, sunny days and partly drifts in from neighbouring countries, so the canton can reduce it only in part. The 2024 clean-air plan of both Basel cantons records that the limit is exceeded often at every station.",
+          "de": "St. Johanns-Platz 2025; Chrischona 268 Stunden. Ozon bildet sich an heissen, sonnigen Tagen und wird teils aus den Nachbarländern eingetragen; der Kanton kann es nur teilweise senken. Der Luftreinhalteplan beider Basel 2024 hält fest, dass der Grenzwert an allen Stationen häufig überschritten wird."
+        },
+        "basis": "measured",
+        "sources": [
+          "luft-2025",
+          "rr-lrp-2024"
+        ]
+      },
+      {
+        "id": "pm25",
+        "status": "exceeded",
+        "title": {
+          "en": "Fine particles (PM2.5), annual limit",
+          "de": "Feinstaub (PM2.5), Jahresgrenzwert"
+        },
+        "law": {
+          "en": "Annex 7 LRV (SR 814.318.142.1)",
+          "de": "Anhang 7 LRV (SR 814.318.142.1)"
+        },
+        "value": {
+          "en": "11 µg/m³",
+          "de": "11 µg/m³"
+        },
+        "measure": {
+          "en": "limit: 10 µg/m³",
+          "de": "Grenzwert: 10 µg/m³"
+        },
+        "body": {
+          "en": "Annual mean at Feldbergstrasse in 2025; St. Johanns-Platz measured 10, at the limit. The clean-air plan says the limit is exceeded only on busy roads, by about 1 µg/m³.",
+          "de": "Jahresmittel an der Feldbergstrasse 2025; am St. Johanns-Platz 10, am Grenzwert. Laut Luftreinhalteplan wird der Grenzwert nur in verkehrsreichen Gebieten überschritten, um rund 1 µg/m³."
+        },
+        "basis": "measured",
+        "sources": [
+          "luft-2025",
+          "rr-lrp-2024"
+        ]
+      },
+      {
+        "id": "road-noise",
+        "status": "exceeded",
+        "title": {
+          "en": "Road noise, limit at night",
+          "de": "Strassenlärm, Grenzwert nachts"
+        },
+        "law": {
+          "en": "Art. 13 and Annex 3 LSV (SR 814.41)",
+          "de": "Art. 13 und Anhang 3 LSV (SR 814.41)"
+        },
+        "value": {
+          "en": "19.7%",
+          "de": "19,7 %"
+        },
+        "measure": {
+          "en": "of residents above the limit; by day 11.6%",
+          "de": "der Bevölkerung über dem Grenzwert; tagsüber 11,6 %"
+        },
+        "body": {
+          "en": "The canton's calculation for 2025, against 17.0% in 2000. Where remediation would be disproportionate, the authority must grant relief (Art. 14 LSV), and the exceedance then remains lawful. The share therefore measures exposure, not unlawful exposure.",
+          "de": "Berechnung des Kantons für 2025, gegenüber 17,0 % im Jahr 2000. Wo eine Sanierung unverhältnismässig wäre, muss die Behörde Erleichterungen gewähren (Art. 14 LSV), und die Überschreitung bleibt dann rechtmässig. Der Anteil misst deshalb die Belastung, nicht die rechtswidrige Belastung."
+        },
+        "basis": "official",
+        "sources": [
+          "ub-laerm-1002",
+          "lsv-13"
+        ]
+      },
+      {
+        "id": "noise-remediation",
+        "status": "overdue",
+        "ref": "noise"
+      },
+      {
+        "id": "vehicle-tax",
+        "status": "overdue",
+        "ref": "vehicle-tax"
+      },
+      {
+        "id": "biodiversity-report",
+        "status": "overdue",
+        "ref": "biodiversity-initiative"
+      },
+      {
+        "id": "nis-report",
+        "status": "overdue",
+        "ref": "nis",
+        "value": {
+          "en": "2024–25",
+          "de": "2024–25"
+        },
+        "measure": {
+          "en": "no yearly report yet",
+          "de": "noch kein Jahresbericht"
+        }
+      },
+      {
+        "id": "no2",
+        "status": "complies",
+        "title": {
+          "en": "Nitrogen dioxide (NO2), annual limit",
+          "de": "Stickstoffdioxid (NO2), Jahresgrenzwert"
+        },
+        "law": {
+          "en": "Annex 7 LRV (SR 814.318.142.1)",
+          "de": "Anhang 7 LRV (SR 814.318.142.1)"
+        },
+        "value": {
+          "en": "27 µg/m³",
+          "de": "27 µg/m³"
+        },
+        "measure": {
+          "en": "limit: 30 µg/m³",
+          "de": "Grenzwert: 30 µg/m³"
+        },
+        "body": {
+          "en": "Feldbergstrasse in 2025, after 37 in 2022; St. Johanns-Platz 17.",
+          "de": "Feldbergstrasse 2025, nach 37 im Jahr 2022; St. Johanns-Platz 17."
+        },
+        "basis": "measured",
+        "sources": [
+          "luft-2025",
+          "luft-2022"
+        ]
+      },
+      {
+        "id": "pm10",
+        "status": "complies",
+        "title": {
+          "en": "Fine particles (PM10), annual and daily limits",
+          "de": "Feinstaub (PM10), Jahres- und Tagesgrenzwert"
+        },
+        "law": {
+          "en": "Annex 7 LRV (SR 814.318.142.1)",
+          "de": "Anhang 7 LRV (SR 814.318.142.1)"
+        },
+        "value": {
+          "en": "16 µg/m³",
+          "de": "16 µg/m³"
+        },
+        "measure": {
+          "en": "limit: 20 µg/m³",
+          "de": "Grenzwert: 20 µg/m³"
+        },
+        "body": {
+          "en": "Annual mean at Feldbergstrasse in 2025, with no day above 50 µg/m³; three are allowed.",
+          "de": "Jahresmittel an der Feldbergstrasse 2025, ohne Tag über 50 µg/m³; drei sind zulässig."
+        },
+        "basis": "measured",
+        "sources": [
+          "luft-2025"
+        ]
+      },
+      {
+        "id": "drinking-pfas",
+        "status": "complies",
+        "title": {
+          "en": "PFAS in drinking water",
+          "de": "PFAS im Trinkwasser"
+        },
+        "law": {
+          "en": "Drinking water ordinance (TBDV, SR 817.022.11)",
+          "de": "Trinkwasserverordnung (TBDV, SR 817.022.11)"
+        },
+        "value": {
+          "en": ">100×",
+          "de": ">100×"
+        },
+        "measure": {
+          "en": "below the legal maxima",
+          "de": "unter den Höchstwerten"
+        },
+        "body": {
+          "en": "PFOS, PFOA and PFHxS in every tap-water sample in 2023.",
+          "de": "PFOS, PFOA und PFHxS in jeder Leitungswasserprobe 2023."
+        },
+        "basis": "measured",
+        "sources": [
+          "gr-pfas-2024"
+        ]
+      },
+      {
+        "id": "nis-limits",
+        "status": "complies",
+        "title": {
+          "en": "Non-ionising radiation",
+          "de": "Nichtionisierende Strahlung"
+        },
+        "law": {
+          "en": "Annex 2 NISV (SR 814.710)",
+          "de": "Anhang 2 NISV (SR 814.710)"
+        },
+        "value": {
+          "en": "5.8 V/m",
+          "de": "5,8 V/m"
+        },
+        "measure": {
+          "en": "lowest limit: 28 V/m",
+          "de": "tiefster Grenzwert: 28 V/m"
+        },
+        "body": {
+          "en": "Highest field strength on the canton's 2023 map; most of the area is at 1.0 V/m or less.",
+          "de": "Höchste Feldstärke auf der kantonalen Karte 2023; der grösste Teil der Fläche liegt bei höchstens 1,0 V/m."
+        },
+        "basis": "official",
+        "sources": [
+          "rr-26-0185"
+        ]
+      }
+    ],
+    "note": {
+      "en": "Status as of 29 September 2026. For air, the plan of measures that federal law requires exists: the 2024 clean-air plan of both Basel cantons, whose measures are as a rule to be carried out within five years. Not counted here, because no binding limit applies or the outcome is still open: canopy cover and heat exposure, which have no binding target; PFAS in groundwater outside contaminated sites, which the canton assesses against a reference value; benzidine at Klybeck, handled under contaminated-sites law; and the first five-year climate target, at risk but due only in 2027.",
+      "de": "Stand 29. September 2026. Für die Luft besteht der vom Bundesrecht verlangte Massnahmenplan: der Luftreinhalteplan beider Basel 2024, dessen Massnahmen in der Regel innert fünf Jahren umzusetzen sind. Nicht gezählt, weil kein verbindlicher Grenzwert gilt oder der Ausgang offen ist: Kronenbedeckung und Hitzebelastung, für die es kein verbindliches Ziel gibt; PFAS im Grundwasser ausserhalb belasteter Standorte, die der Kanton an einem Referenzwert misst; Benzidin im Klybeck, das nach Altlastenrecht behandelt wird; und das erste Fünfjahresziel Klima, gefährdet, aber erst 2027 fällig."
+    },
+    "noteSources": [
+      "rr-lrp-2024",
+      "usg-44a",
+      "lrv-33"
     ]
   },
   "obligations": {

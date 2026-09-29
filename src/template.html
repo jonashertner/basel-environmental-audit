@@ -427,6 +427,26 @@ p { margin: 0; }
 @media (max-width: 900px) { .traj-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 40px; } .traj-col > p { min-height: 0; } }
 @media (max-width: 560px) { .traj-grid { grid-template-columns: 1fr; } }
 
+/* Noncompliance */
+.cp-legend { display: flex; flex-wrap: wrap; gap: 8px 24px; list-style: none; margin: 0; padding: 0; font-size: var(--fs-s); }
+.cp-legend li { display: flex; gap: 8px; align-items: center; color: var(--c-text); font-weight: 700; }
+.cp-legend b { font-stretch: 80%; font-weight: 800; }
+.cp-group { margin-top: clamp(32px, 4vw, 48px); }
+.cp-group > h3 { display: flex; gap: 10px; align-items: center; font-size: var(--fs-l); font-stretch: 88%; color: var(--c-text); margin: 0 0 10px; }
+.comp { list-style: none; margin: 0; padding: 0; }
+.comp > li { display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: 6px var(--gap); padding: 16px 0; border-top: 1px solid var(--rule); }
+.comp > li:first-child { border-top: 2px solid var(--ink); }
+.cp-exceeded, .cp-overdue { --c: var(--fuchsine); --c-text: var(--fuchsine); }
+.cp-complies { --c: var(--rhine); --c-text: var(--rhine); }
+.cp-overdue .st-mark { background: transparent; }
+.cp-val b { display: block; font-size: var(--fs-xl); font-stretch: 75%; font-weight: 800; line-height: 1.05; color: var(--c-text); }
+.cp-val span { display: block; margin-top: 4px; font-size: var(--fs-xs); color: var(--ink-2); max-width: 22ch; }
+.cp-main h4 { font-size: var(--fs-m); font-weight: 700; margin: 0; }
+.cp-main .law { font-size: var(--fs-s); color: var(--ink-2); margin-top: 2px; font-style: italic; }
+.cp-main .body { margin-top: 6px; max-width: 68ch; font-size: var(--fs-s); line-height: 1.5; }
+.cp-main .body .basis { margin-left: 4px; }
+@media (max-width: 700px) { .comp > li { grid-template-columns: 1fr; } .cp-val { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; } .cp-val span { margin-top: 0; max-width: none; } }
+
 /* Open obligations */
 .oblig { list-style: none; margin: 0; padding: 0; }
 .oblig > li { display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: 8px var(--gap); padding: 18px 0; border-top: 1px solid var(--rule); }
@@ -646,8 +666,8 @@ p { margin: 0; }
       cite: 'How to cite',
       sourcesLead: 'Every figure on this page links here. All sources are official: authorities, courts, public utilities and international bodies. Source titles are given in their original language.',
       all: 'All', search: 'Search sources', showing: (n, t) => `Showing ${n} of ${t}`, noMatch: 'No sources match. Clear the search or choose All.',
-      mEvidence: 'What the evidence says', mExemplar: 'Elsewhere', obDue: 'Due', obDone: 'met', obLate: (n) => `${n} late`, dur: (n, unit) => `${n} ${{ d: ['day', 'days'], m: ['month', 'months'], y: ['year', 'years'] }[unit][n === 1 ? 0 : 1]}`, obNote: 'Note', mBasel: 'Basel', mAll: 'All', mList: 'The measures', mFrom: 'from', mTo: 'towards', mStep: 'Stage',
-      nav: { overview: 'Overview', measures: 'What works', voters: 'Voters', deadlines: 'Deadlines', obligations: 'Obligations', legal: 'Legal', method: 'Method', sources: 'Sources' },
+      mEvidence: 'What the evidence says', mExemplar: 'Elsewhere', obDue: 'Due', obDone: 'met', obLate: (n) => `${n} late`, dur: (n, unit) => `${n} ${{ d: ['day', 'days'], m: ['month', 'months'], y: ['year', 'years'] }[unit][n === 1 ? 0 : 1]}`, obNote: 'Note', cpSince: 'overdue since', cpDetails: 'Details under Obligations', mBasel: 'Basel', mAll: 'All', mList: 'The measures', mFrom: 'from', mTo: 'towards', mStep: 'Stage',
+      nav: { overview: 'Overview', measures: 'What works', voters: 'Voters', deadlines: 'Deadlines', compliance: 'Noncompliance', obligations: 'Obligations', legal: 'Legal', method: 'Method', sources: 'Sources' },
       theme: 'Theme', themes: { auto: 'Auto', light: 'Light', dark: 'Dark' },
       preparedBy: 'Prepared by', dataLine: 'Data and code', reviewedOn: 'Reviewed',
       licence: 'Text and data CC BY 4.0, code MIT. Third-party sources remain under their own terms.',
@@ -686,8 +706,8 @@ p { margin: 0; }
       cite: 'Zitiervorschlag',
       sourcesLead: 'Jede Zahl auf dieser Seite verweist hierher. Alle Quellen sind amtlich: Behörden, Gerichte, öffentliche Werke und internationale Organisationen. Titel stehen in der Originalsprache.',
       all: 'Alle', search: 'Quellen durchsuchen', showing: (n, t) => `${n} von ${t} angezeigt`, noMatch: 'Keine Treffer. Suche leeren oder «Alle» wählen.',
-      mEvidence: 'Was die Evidenz sagt', mExemplar: 'Anderswo', obDue: 'Fällig', obDone: 'erfüllt', obLate: (n) => `${n} zu spät`, dur: (n, unit) => `${n} ${{ d: ['Tag', 'Tage'], m: ['Monat', 'Monate'], y: ['Jahr', 'Jahre'] }[unit][n === 1 ? 0 : 1]}`, obNote: 'Hinweis', mBasel: 'Basel', mAll: 'Alle', mList: 'Die Massnahmen', mFrom: 'von', mTo: 'zu', mStep: 'Stufe',
-      nav: { overview: 'Überblick', measures: 'Was wirkt', voters: 'Abstimmungen', deadlines: 'Termine', obligations: 'Pflichten', legal: 'Recht', method: 'Methode', sources: 'Quellen' },
+      mEvidence: 'Was die Evidenz sagt', mExemplar: 'Anderswo', obDue: 'Fällig', obDone: 'erfüllt', obLate: (n) => `${n} zu spät`, dur: (n, unit) => `${n} ${{ d: ['Tag', 'Tage'], m: ['Monat', 'Monate'], y: ['Jahr', 'Jahre'] }[unit][n === 1 ? 0 : 1]}`, obNote: 'Hinweis', cpSince: 'überfällig seit', cpDetails: 'Details unter Pflichten', mBasel: 'Basel', mAll: 'Alle', mList: 'Die Massnahmen', mFrom: 'von', mTo: 'zu', mStep: 'Stufe',
+      nav: { overview: 'Überblick', measures: 'Was wirkt', voters: 'Abstimmungen', deadlines: 'Termine', compliance: 'Nichteinhaltung', obligations: 'Pflichten', legal: 'Recht', method: 'Methode', sources: 'Quellen' },
       theme: 'Darstellung', themes: { auto: 'Auto', light: 'Hell', dark: 'Dunkel' },
       preparedBy: 'Erstellt von', dataLine: 'Daten und Code', reviewedOn: 'Geprüft am',
       licence: 'Text und Daten CC BY 4.0, Code MIT. Quellen Dritter unterliegen ihren eigenen Bedingungen.',
@@ -709,7 +729,7 @@ p { margin: 0; }
   walk(D.hero, 'overview'); walk(D.overall, 'overview');
   D.domains.forEach((d) => { walk(d, d.id); (d.charts || []).forEach((c) => walk(D.charts[c], d.id)); });
   if (D.measures) walk(D.measures, 'measures');
-  walk(D.politics, 'voters'); walk(D.timeline, 'deadlines'); if (D.obligations) walk(D.obligations, 'obligations'); walk(D.legal, 'legal');
+  walk(D.politics, 'voters'); walk(D.timeline, 'deadlines'); if (D.compliance) walk(D.compliance, 'compliance'); if (D.obligations) walk(D.obligations, 'obligations'); walk(D.legal, 'legal');
   const DOMAIN = new Map(D.domains.map((d) => [d.id, d]));
   const whereLabel = (w) => DOMAIN.has(w) ? L(DOMAIN.get(w).short) : UI.nav[w];
 
@@ -757,19 +777,21 @@ p { margin: 0; }
     if (m) return `${UI.monthsLong[Number(m) - 1]} ${y}`;
     return y;
   }
+  // Calendar days from today; months and years count completed units only
   function relative(to) {
-    const days = Math.round((to - TODAY) / 864e5);
+    const days = Math.round((to - new Date(TODAY.getFullYear(), TODAY.getMonth(), TODAY.getDate())) / 864e5);
     const a = Math.abs(days);
     if (a < 60) return UI.rel(a, 'd', days >= 0);
-    if (a < 730) return UI.rel(Math.round(a / 30.44), 'm', days >= 0);
-    return UI.rel(Math.round(a / 365.25), 'y', days >= 0);
+    if (a < 730) return UI.rel(Math.floor(a / 30.44), 'm', days >= 0);
+    return UI.rel(Math.floor(a / 365.25), 'y', days >= 0);
   }
+  // Completed units, so that a duration is never overstated
   function span(from, to) {
-    const a = Math.abs(Math.round((to - from) / 864e5));
+    const a = Math.abs(Math.floor((to - from) / 864e5));
     const u = UI.dur;
     if (a < 60) return u(a, 'd');
-    if (a < 730) return u(Math.round(a / 30.44), 'm');
-    return u(Math.round(a / 365.25), 'y');
+    if (a < 730) return u(Math.floor(a / 30.44), 'm');
+    return u(Math.floor(a / 365.25), 'y');
   }
   const decimalYear = (d) => d.getFullYear() + (d - new Date(d.getFullYear(), 0, 1)) / (365.25 * 864e5);
 
@@ -1090,6 +1112,32 @@ p { margin: 0; }
     </div></section>`;
   }
 
+  // Binding limits and deadlines: where Basel-Stadt falls short, and the limits it meets
+  function compliance() {
+    const C = D.compliance; if (!C) return '';
+    const OB = new Map(((D.obligations && D.obligations.items) || []).map((o) => [o.id, o]));
+    const mark = `<i class="st-mark" aria-hidden="true"></i>`;
+    const row = (it) => {
+      const o = it.ref ? OB.get(it.ref) : null;
+      const title = o ? o.title : it.title, law = o ? o.law : it.law;
+      const due = o ? parseISO(o.due) : null;
+      const value = it.value ? L(it.value) : span(due, TODAY);
+      const measure = it.measure ? L(it.measure) : `${UI.cpSince} ${fullDate(due)}`;
+      const body = o ? `<a href="#ob-${esc(o.id)}">${UI.cpDetails}</a> ${cites(o.sources)}` : `${esc(L(it.body))} ${basisTag(it.basis)}${cites(it.sources)}`;
+      return `<li id="cp-${esc(it.id)}"><div class="cp-val"><b>${esc(value)}</b><span>${esc(measure)}</span></div>
+        <div class="cp-main"><h4>${esc(L(title))}</h4><p class="law">${esc(L(law))}</p><p class="body">${body}</p></div></li>`;
+    };
+    const groups = C.status.map((s) => [s, C.items.filter((i) => i.status === s.id)]).filter(([, its]) => its.length);
+    const legend = groups.map(([s, its]) => `<li class="cp-${esc(s.id)}">${mark}<b>${its.length}</b><span>${esc(L(s.label))}</span></li>`).join('');
+    const body = groups.map(([s, its]) => `<div class="cp-group cp-${esc(s.id)}"><h3>${mark}${esc(L(s.label))}</h3><ol class="comp">${its.map(row).join('')}</ol></div>`).join('');
+    return `<section class="block" id="compliance" aria-labelledby="h-compliance"><div class="wrap">
+      <div class="block-head"><h2 id="h-compliance">${esc(L(C.title))}</h2><p>${esc(L(C.lead))}</p></div>
+      <ul class="cp-legend">${legend}</ul>
+      ${body}
+      <p class="note" style="margin-top:18px">${esc(L(C.note))} ${cites(C.noteSources)}</p>
+    </div></section>`;
+  }
+
   // Binding duties with a deadline, and whether they were met
   function obligations() {
     const O = D.obligations; if (!O) return '';
@@ -1161,11 +1209,11 @@ p { margin: 0; }
 
   /* ---------- Render ---------- */
   const app = document.getElementById('app');
-  app.innerHTML = hero() + board() + D.domains.map(area).join('') + measures() + politics() + deadlines() + obligations() + legal() + method() + sources();
+  app.innerHTML = hero() + board() + D.domains.map(area).join('') + measures() + politics() + deadlines() + compliance() + obligations() + legal() + method() + sources();
   const repo = D.meta.repoUrl ? ` <a href="${esc(D.meta.repoUrl)}">GitHub</a>,` : '';
   document.getElementById('foot').innerHTML = `<p>${UI.preparedBy} ${esc(L(D.meta.author))}. ${esc(L(D.meta.disclaimer))}</p><p>${UI.dataLine}:${repo} <a href="${LANG === 'de' ? '../' : ''}data/assessment.json">assessment.json</a>. ${UI.reviewedOn} ${esc(fullDate(parseISO(D.meta.reviewed)))}. ${UI.licence}</p>`;
 
-  const navItems = D.domains.map((d) => [d.id, L(d.short), d.grade]).concat([...(D.measures ? ['measures'] : []), 'voters', 'deadlines', ...(D.obligations ? ['obligations'] : []), 'legal', 'method', 'sources'].map((k) => [k, UI.nav[k], '']));
+  const navItems = D.domains.map((d) => [d.id, L(d.short), d.grade]).concat([...(D.measures ? ['measures'] : []), 'voters', 'deadlines', ...(D.compliance ? ['compliance'] : []), ...(D.obligations ? ['obligations'] : []), 'legal', 'method', 'sources'].map((k) => [k, UI.nav[k], '']));
   document.getElementById('nav-list').innerHTML = navItems.map(([id, label, g]) => `<li><a href="#${id}" data-nav="${id}">${g ? `<b class="tone-${toneOf(g)}">${esc(g)}</b>` : ''}${esc(label)}</a></li>`).join('');
 
   /* Series charts draw to the measured width and redraw on resize */

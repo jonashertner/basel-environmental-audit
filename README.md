@@ -28,6 +28,7 @@ Estimates, projections, costs, averages carried over from elsewhere (such as the
 - **What works.** Fifteen measures against summer heat on a path from protecting people to regenerating living systems. For each: what official evidence reviews say, an official record from another city, and Basel's status (among the leaders, in place with gaps, behind, missing). The status is the audit's judgment.
 - **Voters.** Ballot results that explain the gap between targets and measures.
 - **Deadlines.** Past events and upcoming deadlines, with countdowns computed from the reader's date.
+- **Noncompliance.** Legal limits that official measurements show Basel-Stadt exceeds, the legal deadlines it has missed, and, for comparison, the limits it meets. Each limit states its legal basis; missed deadlines are drawn from the open obligations.
 - **Open obligations.** Binding duties with a deadline (federal or cantonal law, or a Grand Council decision) and whether Basel-Stadt has met them: not met, at risk, or met late.
 - **Legal questions.** Where the findings turn into legal questions, with statutory and case-law references.
 - **Method, revision history and a citation line.**
@@ -70,6 +71,7 @@ Conventions in the data file:
 - Source `type` is one of `official`, `press`, `advocacy`, `reference`. Only `official` sources may carry a figure; the others may appear in context only, and are flagged. The current edition cites official sources only. Source titles stay in their original language.
 - `measures.items` have a `stage`, a `status` and three parts (`evidence`, `exemplar`, `basel`), each with official `sources`. A part carries a `basis` (here `assessed` is allowed) when it states a figure; a part that states only a rule, target or date carries none.
 - `obligations.items` have a `status`, an ISO `due` date (optional `dueDisplay` for recurring or year-only deadlines), an optional ISO `done` date for duties met late, and official `sources`.
+- `compliance.items` have a `status` (`exceeded`, `overdue`, `complies`). A limit carries `title`, `law`, `value`, `measure`, `body`, a `basis` and official `sources`; a missed deadline carries only `ref`, the id of an open obligation, and may override `value` and `measure`.
 - Timeline items take an ISO `date`. For approximate dates, add `precision` (`year`, `month`, `season`) and optionally `display`; the countdown uses the ISO date.
 - Grades use A–D or F with an optional `+` or `–`.
 - The template computes no figures of its own. Where this audit adds up or subtracts official figures (hot days over a summer, the waste segment "Other", the years between two official dates), the figure is labelled `derived` and the note says how.

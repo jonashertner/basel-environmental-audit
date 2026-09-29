@@ -14,16 +14,16 @@
     "siteUrl": "https://jonashertner.github.io/basel-environmental-audit/",
     "repoUrl": "https://github.com/jonashertner/basel-environmental-audit",
     "kicker": {
-      "en": "Independent audit of official measurements",
-      "de": "Unabhängige Auswertung amtlicher Messungen"
+      "en": "Independent audit of official data",
+      "de": "Unabhängige Auswertung amtlicher Daten"
     },
     "thesis": {
       "en": "In the summer of 2026, Basel had 52 days of 30 °C or more: more than half the summer.",
       "de": "Im Sommer 2026 hatte Basel 52 Tage mit 30 °C oder mehr: mehr als den halben Sommer."
     },
     "standfirst": {
-      "en": "This audit uses only values that an official body measured or counted, each with its year and source. Legal limits and targets appear only as reference lines. Estimates, projections and modelled figures are left out, including the canton's greenhouse gas inventory, which is a calculation.",
-      "de": "Diese Bilanz verwendet nur Werte, die eine amtliche Stelle gemessen oder gezählt hat, jeweils mit Jahr und Quelle. Grenz- und Zielwerte erscheinen nur als Referenzlinien. Schätzungen, Prognosen und modellierte Zahlen sind weggelassen, auch das Treibhausgasinventar des Kantons, das eine Berechnung ist."
+      "en": "Every figure here comes from an official body: measured, counted or calculated by an authority, or derived by this audit from official figures. A label on each says which, next to its year and source. Estimates, projections and averages carried over from elsewhere are left out. Legal limits and targets appear only as reference values.",
+      "de": "Jede Zahl stammt von einer amtlichen Stelle: gemessen, gezählt oder von einer Behörde berechnet, oder von dieser Bilanz aus amtlichen Zahlen abgeleitet. Ein Vermerk nennt jeweils die Grundlage, neben Jahr und Quelle. Schätzungen, Prognosen und von anderswo übertragene Durchschnittswerte sind weggelassen. Grenz- und Zielwerte erscheinen nur als Referenzwerte."
     },
     "description": {
       "en": "A graded assessment of the environment in Basel-Stadt built only on values measured or counted by official bodies: climate, heat, chemical legacy, air, water, noise and traffic. Every figure links to its source.",
@@ -82,15 +82,19 @@
       "de": "Von den 92 Tagen von Juni bis August 2026 erreichten in Basel-Binningen 52 Tage 30 °C oder mehr. Ein ganzes Normaljahr hat 14,3."
     },
     "note": {
-      "en": "Daily maximum temperature at the MeteoSwiss station Basel-Binningen. Each day is counted once.",
-      "de": "Tageshöchsttemperatur an der MeteoSchweiz-Station Basel-Binningen. Jeder Tag ist einmal gezählt."
-    }
+      "en": "Days with a maximum of 30 °C or more at the MeteoSwiss station Basel-Binningen, summed from MeteoSwiss's monthly counts. The normal is MeteoSwiss's mean for 1991–2020.",
+      "de": "Tage mit einem Höchstwert von 30 °C oder mehr an der MeteoSchweiz-Station Basel-Binningen, summiert aus den Monatszählungen von MeteoSchweiz. Der Normwert ist das Mittel von MeteoSchweiz für 1991–2020."
+    },
+    "basis": [
+      "derived",
+      "measured"
+    ]
   },
   "overall": {
     "grade": "C",
     "summary": {
-      "en": "Good governance on paper. The measurements show a heating transition under way, record heat, air that meets most but not all Swiss limits, and chemical contamination that is still in the ground.",
-      "de": "Gute Steuerung auf dem Papier. Die Messungen zeigen einen laufenden Wärmewandel, Rekordhitze, Luft, die die meisten, aber nicht alle Schweizer Grenzwerte einhält, und eine Chemie-Belastung, die noch im Boden liegt."
+      "en": "Good governance on paper. The official data show emissions down 6% from 2020 to 2022, a heating transition under way, record heat, air that meets most but not all Swiss limits, and chemical contamination that is still in the ground.",
+      "de": "Gute Steuerung auf dem Papier. Die amtlichen Daten zeigen 6 % weniger Emissionen von 2020 bis 2022, einen laufenden Wärmewandel, Rekordhitze, Luft, die die meisten, aber nicht alle Schweizer Grenzwerte einhält, und eine Chemie-Belastung, die noch im Boden liegt."
     },
     "facets": [
       {
@@ -111,15 +115,16 @@
       },
       {
         "label": {
-          "en": "Measured outcomes",
-          "de": "Gemessene Ergebnisse"
+          "en": "Outcomes",
+          "de": "Ergebnisse"
         },
         "grade": "C–",
         "note": {
-          "en": "Fossil boilers are measurably being replaced. Fine particles at Feldbergstrasse remain above the Swiss limit, the canton's heat monitoring finds no measurable reduction in exposure, and road-noise remediation is years past its deadline.",
-          "de": "Fossile Heizkessel werden messbar ersetzt. Der Feinstaub an der Feldbergstrasse liegt weiter über dem Schweizer Grenzwert, das kantonale Hitze-Controlling stellt keine messbare Entlastung fest, und die Strassenlärmsanierung ist seit Jahren überfällig."
+          "en": "Emissions fell 6% from 2020 to 2022, and the canton's path requires a further quarter by 2027. Fossil boilers are being replaced. Fine particles at Feldbergstrasse remain above the Swiss limit, the canton's heat monitoring finds no measurable reduction in exposure, and road-noise remediation is years past its deadline.",
+          "de": "Die Emissionen sanken von 2020 bis 2022 um 6 %, und der Pfad des Kantons verlangt bis 2027 ein weiteres Viertel. Fossile Heizkessel werden ersetzt. Der Feinstaub an der Feldbergstrasse liegt weiter über dem Schweizer Grenzwert, das kantonale Hitze-Controlling stellt keine messbare Entlastung fest, und die Strassenlärmsanierung ist seit Jahren überfällig."
         },
         "sources": [
+          "bs-klimaportal",
           "aue-heizungen",
           "luft-2025",
           "bs-controlling-2026",
@@ -158,32 +163,58 @@
       },
       "grade": "C",
       "verdict": {
-        "en": "Heating is changing, and the change can be counted. Whether the 2037 target will be met cannot be read from measurements: the canton's emissions figures are calculations, and the latest are for 2022.",
-        "de": "Die Wärmeversorgung wandelt sich, und das lässt sich zählen. Ob das Ziel 2037 erreicht wird, lässt sich an Messwerten nicht ablesen: Die Emissionszahlen des Kantons sind Berechnungen, die neusten betreffen 2022."
+        "en": "Emissions fell 6% from 2020 to 2022, by the canton's own calculation. Its path to net zero in 2037 needs a further cut of a quarter by 2027. Heating is changing, and the change can be counted.",
+        "de": "Die Emissionen sanken von 2020 bis 2022 um 6 %, nach Berechnung des Kantons. Sein Pfad zu Netto-Null 2037 verlangt bis 2027 eine weitere Senkung um ein Viertel. Die Wärmeversorgung wandelt sich, und das lässt sich zählen."
       },
       "metrics": [
+        {
+          "value": "637 kt",
+          "label": {
+            "en": "Greenhouse gas emissions of Basel-Stadt in 2022, in CO2 equivalents",
+            "de": "Treibhausgasemissionen von Basel-Stadt 2022, in CO2-Äquivalenten"
+          },
+          "context": {
+            "en": "2020: 674 kt. Target path for 2027: 479 kt.",
+            "de": "2020: 674 kt. Absenkpfad für 2027: 479 kt."
+          },
+          "basis": "official",
+          "sources": [
+            "bs-klimaportal",
+            "bs-klimaschutz"
+          ]
+        },
+        {
+          "value": {
+            "en": "3.1 t",
+            "de": "3,1 t"
+          },
+          "label": {
+            "en": "Greenhouse gas emissions per resident in 2022",
+            "de": "Treibhausgasemissionen pro Kopf 2022"
+          },
+          "context": {
+            "en": "2.9 t of it from energy use",
+            "de": "Davon 2,9 t aus dem Energieverbrauch"
+          },
+          "basis": "official",
+          "sources": [
+            "bs-klimaschutz"
+          ]
+        },
         {
           "value": {
             "en": "7,987",
             "de": "7’987"
           },
           "label": {
-            "en": "Gas boilers registered in September 2026 (December 2018: 10,557)",
-            "de": "Registrierte Gasheizkessel im September 2026 (Dezember 2018: 10’557)"
+            "en": "Gas boilers registered in September 2026",
+            "de": "Registrierte Gasheizkessel im September 2026"
           },
-          "sources": [
-            "aue-heizungen"
-          ]
-        },
-        {
-          "value": {
-            "en": "1,647",
-            "de": "1’647"
+          "context": {
+            "en": "December 2018: 10,557",
+            "de": "Dezember 2018: 10’557"
           },
-          "label": {
-            "en": "Oil boilers registered in September 2026 (December 2018: 2,631)",
-            "de": "Registrierte Ölheizkessel im September 2026 (Dezember 2018: 2’631)"
-          },
+          "basis": "counted",
           "sources": [
             "aue-heizungen"
           ]
@@ -194,54 +225,34 @@
             "de": "2’407"
           },
           "label": {
-            "en": "Heat pumps registered in September 2026 (December 2018: 278)",
-            "de": "Registrierte Wärmepumpen im September 2026 (Dezember 2018: 278)"
+            "en": "Heat pumps registered in September 2026",
+            "de": "Registrierte Wärmepumpen im September 2026"
           },
+          "context": {
+            "en": "December 2018: 278",
+            "de": "Dezember 2018: 278"
+          },
+          "basis": "counted",
           "sources": [
             "aue-heizungen"
-          ]
-        },
-        {
-          "value": {
-            "en": "7,819",
-            "de": "7’819"
-          },
-          "label": {
-            "en": "District-heating connections registered in September 2026 (December 2018: 6,572)",
-            "de": "Registrierte Fernwärmeanschlüsse im September 2026 (Dezember 2018: 6’572)"
-          },
-          "sources": [
-            "aue-heizungen"
-          ]
-        },
-        {
-          "value": {
-            "en": "52,986 t",
-            "de": "52’986 t"
-          },
-          "label": {
-            "en": "Waste from Basel-Stadt delivered to the Basel incinerator in 2025, out of 227,078 t delivered in total",
-            "de": "Abfall aus Basel-Stadt, 2025 an die KVA Basel geliefert, von insgesamt 227’078 t"
-          },
-          "sources": [
-            "iwb-kva-2025"
           ]
         }
       ],
       "charts": [
+        "emissions",
         "heating",
         "waste-origin"
       ],
       "truth": {
         "text": {
-          "en": "Basel-Stadt's net-zero target cannot be checked against measurements. The canton's emissions figures are calculated from energy statistics that themselves contain modelled values, and the most recent year is 2022. What can be counted points in the right direction: fewer gas and oil boilers, more heat pumps and district-heating connections. The incinerator shows the limits of a territorial target. Most of the waste burned there comes from other cantons and from Germany. Capturing its CO2 would need storage that Swiss law does not yet provide for.",
-          "de": "Das Netto-Null-Ziel von Basel-Stadt lässt sich nicht an Messwerten überprüfen. Die Emissionszahlen des Kantons werden aus der Energiestatistik berechnet, die ihrerseits modellierte Werte enthält, und das neuste Jahr ist 2022. Was sich zählen lässt, zeigt in die richtige Richtung: weniger Gas- und Ölheizungen, mehr Wärmepumpen und Fernwärmeanschlüsse. Die KVA zeigt die Grenzen eines territorialen Ziels. Der grösste Teil des dort verbrannten Abfalls stammt aus anderen Kantonen und aus Deutschland. Die Abscheidung seines CO2 bräuchte eine Speicherung, die das Schweizer Recht noch nicht vorsieht."
+          "en": "The target path depends on the incinerator. Waste disposal was the largest source of emissions in 2020, 176 of 674 kt, and the canton's own path keeps it at about 180 kt until 2036. Most of the waste burned in Basel comes from other cantons and from Germany, and capturing its CO2 would need storage that Swiss law does not yet provide for. The inventory is also slow: its latest year is 2022. What can be counted every month points the right way: fewer gas and oil boilers, more heat pumps and district-heating connections.",
+          "de": "Der Absenkpfad hängt an der KVA. Die Entsorgung war 2020 mit 176 von 674 kt die grösste Emissionsquelle, und im eigenen Pfad des Kantons bleibt sie bis 2036 bei rund 180 kt. Der grösste Teil des in Basel verbrannten Abfalls stammt aus anderen Kantonen und aus Deutschland, und die Abscheidung seines CO2 bräuchte eine Speicherung, die das Schweizer Recht noch nicht vorsieht. Zudem ist das Inventar langsam: Sein neustes Jahr ist 2022. Was sich jeden Monat zählen lässt, zeigt in die richtige Richtung: weniger Gas- und Ölheizungen, mehr Wärmepumpen und Fernwärmeanschlüsse."
         },
         "sources": [
-          "statistik-energie-2024",
+          "bs-klimaportal",
           "iwb-kva-2025",
-          "aue-heizungen",
-          "rr-ccs-2025"
+          "rr-ccs-2025",
+          "aue-heizungen"
         ]
       },
       "upgrades": [
@@ -307,41 +318,30 @@
             "de": "39,7 °C"
           },
           "label": {
-            "en": "Highest temperature ever measured at Basel-Binningen, 30 July 2026 (record before 2026: 38.6 °C, 13 August 2003)",
-            "de": "Höchste je in Basel-Binningen gemessene Temperatur, 30. Juli 2026 (Rekord vor 2026: 38,6 °C, 13. August 2003)"
+            "en": "Highest temperature ever measured at Basel-Binningen, on 30 July 2026",
+            "de": "Höchste je in Basel-Binningen gemessene Temperatur, am 30. Juli 2026"
           },
+          "context": {
+            "en": "Record before 2026: 38.6 °C, 13 August 2003",
+            "de": "Rekord vor 2026: 38,6 °C, 13. August 2003"
+          },
+          "basis": "measured",
           "sources": [
             "meteoswiss-rekord-2026",
             "meteoswiss-jja-2026"
           ]
         },
         {
-          "value": "52",
-          "label": {
-            "en": "Hot days (30 °C or more) in June–August 2026; normal for a whole year (1991–2020): 14.3",
-            "de": "Hitzetage (30 °C und mehr) im Juni–August 2026; Normwert für ein ganzes Jahr (1991–2020): 14,3"
-          },
-          "sources": [
-            "nbcn-binningen",
-            "meteoswiss-normwerte"
-          ]
-        },
-        {
-          "value": "20",
-          "label": {
-            "en": "Days of 35 °C or more in June–August 2026 (2003: 12)",
-            "de": "Tage mit 35 °C und mehr im Juni–August 2026 (2003: 12)"
-          },
-          "sources": [
-            "nbcn-binningen"
-          ]
-        },
-        {
           "value": "12",
           "label": {
-            "en": "Tropical nights (20 °C or more) at Basel-Binningen in June–August 2026, a record (previous: 9 in 2015)",
-            "de": "Tropennächte (20 °C und mehr) in Basel-Binningen im Juni–August 2026, ein Rekord (bisher: 9 im Jahr 2015)"
+            "en": "Tropical nights (20 °C or more) from June to August 2026, a record",
+            "de": "Tropennächte (20 °C und mehr) von Juni bis August 2026, ein Rekord"
           },
+          "context": {
+            "en": "Previous record: 9, in 2015",
+            "de": "Bisheriger Rekord: 9, im Jahr 2015"
+          },
+          "basis": "measured",
           "sources": [
             "meteoswiss-jja-2026"
           ]
@@ -352,9 +352,14 @@
             "de": "17 %"
           },
           "label": {
-            "en": "Tree canopy cover of the city of Basel in 2024, unchanged since 2012",
-            "de": "Baumkronenbedeckung der Stadt Basel 2024, seit 2012 unverändert"
+            "en": "Tree canopy cover of the city of Basel in 2024",
+            "de": "Baumkronenbedeckung der Stadt Basel 2024"
           },
+          "context": {
+            "en": "Unchanged since 2012",
+            "de": "Seit 2012 unverändert"
+          },
+          "basis": "official",
           "sources": [
             "bs-controlling-2026"
           ]
@@ -365,9 +370,14 @@
             "de": "4’477 m²"
           },
           "label": {
-            "en": "Unsealing approved by permit in 2023–2024 (not yet built), against a parliamentary target of 165,000 m² by 2037",
-            "de": "2023–2024 bewilligte Entsiegelung (noch nicht gebaut), gemessen an einem Ziel des Grossen Rates von 165’000 m² bis 2037"
+            "en": "Unsealing approved by permit in 2023 and 2024, not yet built",
+            "de": "2023 und 2024 bewilligte Entsiegelung, noch nicht gebaut"
           },
+          "context": {
+            "en": "Grand Council target: 165,000 m² by 2037",
+            "de": "Ziel des Grossen Rates: 165’000 m² bis 2037"
+          },
+          "basis": "counted",
           "sources": [
             "bs-controlling-2026"
           ]
@@ -438,9 +448,10 @@
             "de": "1’718"
           },
           "label": {
-            "en": "Contaminated sites registered in Basel-Stadt and Basel-Landschaft together (2025)",
-            "de": "Registrierte belastete Standorte in Basel-Stadt und Basel-Landschaft zusammen (Stand 2025)"
+            "en": "Contaminated sites registered in Basel-Stadt and Basel-Landschaft, 2025",
+            "de": "Registrierte belastete Standorte in Basel-Stadt und Basel-Landschaft, Stand 2025"
           },
+          "basis": "counted",
           "sources": [
             "ub-altlasten-2026"
           ]
@@ -448,9 +459,14 @@
         {
           "value": "62",
           "label": {
-            "en": "Further sites classified as requiring remediation in 2025, both cantons",
-            "de": "Weitere Standorte, 2025 als sanierungsbedürftig eingestuft, beide Kantone"
+            "en": "Further sites classified as requiring remediation in 2025",
+            "de": "Weitere Standorte, 2025 als sanierungsbedürftig eingestuft"
           },
+          "context": {
+            "en": "Both cantons together",
+            "de": "Beide Kantone zusammen"
+          },
+          "basis": "counted",
           "sources": [
             "ub-altlasten-2026"
           ]
@@ -461,20 +477,33 @@
             "de": "1,6 ng/l"
           },
           "label": {
-            "en": "Benzidine in groundwater at Klybeck well 725, May 2024, above the site-specific concentration value of 1.5 ng/l",
-            "de": "Benzidin im Grundwasser der Klybeck-Messstelle 725, Mai 2024, über dem standortspezifischen Konzentrationswert von 1,5 ng/l"
+            "en": "Benzidine in the groundwater at Klybeck well 725, May 2024",
+            "de": "Benzidin im Grundwasser der Klybeck-Messstelle 725, Mai 2024"
           },
+          "context": {
+            "en": "Site-specific concentration value: 1.5 ng/l",
+            "de": "Standortspezifischer Konzentrationswert: 1,5 ng/l"
+          },
+          "basis": "measured",
           "sources": [
             "aue-benzidin-2024",
             "aue-benzidin"
           ]
         },
         {
-          "value": "2008",
-          "label": {
-            "en": "Year the Feldreben landfill in Muttenz (BL) was classified as requiring remediation; works began in December 2025",
-            "de": "Jahr, in dem die Deponie Feldreben in Muttenz (BL) als sanierungsbedürftig beurteilt wurde; die Arbeiten begannen im Dezember 2025"
+          "value": {
+            "en": "17 years",
+            "de": "17 Jahre"
           },
+          "label": {
+            "en": "From classification as requiring remediation to the start of works, Feldreben landfill, Muttenz (BL)",
+            "de": "Von der Einstufung als sanierungsbedürftig bis zum Baubeginn, Deponie Feldreben, Muttenz (BL)"
+          },
+          "context": {
+            "en": "Classified in 2008; works began in December 2025",
+            "de": "Eingestuft 2008; Arbeiten seit Dezember 2025"
+          },
+          "basis": "derived",
           "sources": [
             "bl-feldreben"
           ]
@@ -543,9 +572,14 @@
         {
           "value": "27 µg/m³",
           "label": {
-            "en": "NO2 annual mean at Feldbergstrasse in 2025; Swiss limit 30 (2022: 37)",
-            "de": "NO2-Jahresmittel an der Feldbergstrasse 2025; Schweizer Grenzwert 30 (2022: 37)"
+            "en": "NO2 annual mean at Feldbergstrasse in 2025",
+            "de": "NO2-Jahresmittel an der Feldbergstrasse 2025"
           },
+          "context": {
+            "en": "Swiss limit: 30. In 2022: 37.",
+            "de": "Schweizer Grenzwert: 30. Im Jahr 2022: 37."
+          },
+          "basis": "measured",
           "sources": [
             "luft-2025",
             "luft-2022"
@@ -554,9 +588,14 @@
         {
           "value": "17 µg/m³",
           "label": {
-            "en": "NO2 annual mean at St. Johanns-Platz in 2025 (2022: 19)",
-            "de": "NO2-Jahresmittel am St. Johanns-Platz 2025 (2022: 19)"
+            "en": "NO2 annual mean at St. Johanns-Platz in 2025",
+            "de": "NO2-Jahresmittel am St. Johanns-Platz 2025"
           },
+          "context": {
+            "en": "In 2022: 19",
+            "de": "Im Jahr 2022: 19"
+          },
+          "basis": "measured",
           "sources": [
             "luft-2025",
             "luft-2022"
@@ -565,9 +604,14 @@
         {
           "value": "11 µg/m³",
           "label": {
-            "en": "PM2.5 annual mean at Feldbergstrasse in 2025, above the Swiss limit of 10 (2022: 15)",
-            "de": "PM2.5-Jahresmittel an der Feldbergstrasse 2025, über dem Schweizer Grenzwert von 10 (2022: 15)"
+            "en": "PM2.5 annual mean at Feldbergstrasse in 2025, above the Swiss limit",
+            "de": "PM2.5-Jahresmittel an der Feldbergstrasse 2025, über dem Schweizer Grenzwert"
           },
+          "context": {
+            "en": "Swiss limit: 10. In 2022: 15.",
+            "de": "Schweizer Grenzwert: 10. Im Jahr 2022: 15."
+          },
+          "basis": "measured",
           "sources": [
             "luft-2025",
             "luft-2022"
@@ -576,22 +620,14 @@
         {
           "value": "202 h",
           "label": {
-            "en": "Hours above the ozone limit of 120 µg/m³ at St. Johanns-Platz in 2025 (Chrischona: 268); the limit may be exceeded once a year",
-            "de": "Stunden über dem Ozon-Grenzwert von 120 µg/m³ am St. Johanns-Platz 2025 (Chrischona: 268); der Grenzwert darf einmal im Jahr überschritten werden"
+            "en": "Hours above the ozone limit at St. Johanns-Platz in 2025",
+            "de": "Stunden über dem Ozon-Grenzwert am St. Johanns-Platz 2025"
           },
-          "sources": [
-            "luft-2025"
-          ]
-        },
-        {
-          "value": {
-            "en": "Stalled",
-            "de": "Stagnation"
+          "context": {
+            "en": "The limit of 120 µg/m³ may be exceeded once a year. Chrischona: 268 h.",
+            "de": "Der Grenzwert von 120 µg/m³ darf einmal im Jahr überschritten werden. Chrischona: 268 h."
           },
-          "label": {
-            "en": "Nitrogen dioxide in 2025: the decline stopped, but the Swiss annual limit was met at every station",
-            "de": "Stickstoffdioxid 2025: kein weiterer Rückgang, aber der Schweizer Jahresgrenzwert wurde an allen Stationen eingehalten"
-          },
+          "basis": "measured",
           "sources": [
             "luft-2025"
           ]
@@ -664,14 +700,16 @@
       },
       "metrics": [
         {
-          "value": {
-            "en": ">100×",
-            "de": ">100×"
-          },
+          "value": ">100×",
           "label": {
-            "en": "Margin below the legal maxima for PFOS, PFOA and PFHxS in every Basel tap-water sample, 2023",
-            "de": "Abstand zu den gesetzlichen Höchstwerten für PFOS, PFOA und PFHxS in allen Basler Trinkwasserproben, 2023"
+            "en": "Margin below the legal maxima for PFOS, PFOA and PFHxS in Basel tap water, 2023",
+            "de": "Abstand zu den gesetzlichen Höchstwerten für PFOS, PFOA und PFHxS im Basler Trinkwasser, 2023"
           },
+          "context": {
+            "en": "In every sample",
+            "de": "In allen Proben"
+          },
+          "basis": "measured",
           "sources": [
             "gr-pfas-2024"
           ]
@@ -682,24 +720,16 @@
             "de": "11’000"
           },
           "label": {
-            "en": "ng TEQ/l PFAS at the most contaminated groundwater well in Basel, May 2024; the federal concentration value then applied was 50",
-            "de": "ng TEQ/l PFAS an der am stärksten belasteten Grundwassermessstelle Basels, Mai 2024; der damals angewandte Konzentrationswert des Bundes lag bei 50"
+            "en": "ng TEQ/l PFAS at the most contaminated groundwater well in Basel, May 2024",
+            "de": "ng TEQ/l PFAS an der am stärksten belasteten Grundwassermessstelle Basels, Mai 2024"
           },
+          "context": {
+            "en": "Federal concentration value then applied: 50",
+            "de": "Damals angewandter Konzentrationswert des Bundes: 50"
+          },
+          "basis": "measured",
           "sources": [
             "aue-pfas-gw-2024"
-          ]
-        },
-        {
-          "value": {
-            "en": "4 of 10",
-            "de": "4 von 10"
-          },
-          "label": {
-            "en": "Chub from the Wiese above the food maxima for PFOS, 2024; the maxima formally apply only to fish sold",
-            "de": "Alet aus der Wiese über den Lebensmittel-Höchstwerten für PFOS, 2024; die Höchstwerte gelten formell nur für verkaufte Fische"
-          },
-          "sources": [
-            "pfas-fische-2024"
           ]
         },
         {
@@ -711,21 +741,14 @@
             "en": "Wild fish samples from both Basel cantons containing PFAS, 2024",
             "de": "Wildfischproben aus beiden Basel mit PFAS, 2024"
           },
+          "context": {
+            "en": "4 of 10 chub from the Wiese were above the food maxima for PFOS, which formally apply only to fish sold.",
+            "de": "4 von 10 Alet aus der Wiese lagen über den Lebensmittel-Höchstwerten für PFOS, die formell nur für verkaufte Fische gelten."
+          },
+          "basis": "measured",
           "sources": [
             "pfas-fische-2024",
             "gd-pfas-fische-2024"
-          ]
-        },
-        {
-          "value": "2",
-          "label": {
-            "en": "Rivers closed to bathing, entry and fishing on their lower reaches on 24 June 2026 to protect fish from heat stress (Birs and Wiese)",
-            "de": "Flüsse, deren Unterläufe am 24. Juni 2026 zum Schutz der Fische vor Hitzestress für Baden, Betreten und Fischen gesperrt wurden (Birs und Wiese)"
-          },
-          "sources": [
-            "bs-mm-sperre-2026",
-            "bs-birs-2026",
-            "bs-wiese-2026"
           ]
         },
         {
@@ -734,11 +757,19 @@
             "de": "25,9 °C"
           },
           "label": {
-            "en": "Highest daily mean temperature of the Rhine at Weil (Palmrainbrücke) in 2026, on 30 June",
-            "de": "Höchstes Tagesmittel der Wassertemperatur des Rheins bei Weil (Palmrainbrücke) 2026, am 30. Juni"
+            "en": "Highest daily mean temperature of the Rhine at Weil (Palmrainbrücke), 30 June 2026",
+            "de": "Höchstes Tagesmittel der Rheintemperatur bei Weil (Palmrainbrücke), 30. Juni 2026"
           },
+          "context": {
+            "en": "On 24 June the canton closed the lower Birs and Wiese to bathing, entry and fishing to protect fish from heat stress.",
+            "de": "Am 24. Juni sperrte der Kanton die Unterläufe von Birs und Wiese für Baden, Betreten und Fischen, um die Fische vor Hitzestress zu schützen."
+          },
+          "basis": "measured",
           "sources": [
-            "bafu-rhein-weil"
+            "bafu-rhein-weil",
+            "bs-mm-sperre-2026",
+            "bs-birs-2026",
+            "bs-wiese-2026"
           ]
         }
       ],
@@ -787,23 +818,46 @@
         "en": "Noise & traffic",
         "de": "Lärm & Verkehr"
       },
-      "grade": "C–",
+      "grade": "D+",
       "verdict": {
-        "en": "Years past a federal deadline on road noise, and no series of measured noise levels to show where Basel stands.",
-        "de": "Jahre nach Ablauf einer Bundesfrist zum Strassenlärm, und keine Reihe gemessener Lärmpegel, die zeigt, wo Basel steht."
+        "en": "One resident in five lives with road noise above the legal limit at night, eight years after the federal deadline for remediation.",
+        "de": "Jede fünfte Person lebt nachts mit Strassenlärm über dem Grenzwert, acht Jahre nach Ablauf der Bundesfrist für die Sanierung."
       },
       "metrics": [
         {
           "value": {
-            "en": "63%",
-            "de": "63 %"
+            "en": "19.7%",
+            "de": "19,7 %"
           },
           "label": {
-            "en": "Share of city and cantonal roads with Tempo 30, meeting zones or pedestrian zones, as stated by the canton in 2026",
-            "de": "Anteil der Gemeinde- und Kantonsstrassen mit Tempo 30, Begegnungs- oder Fussgängerzonen, gemäss Kanton 2026"
+            "en": "Residents of Basel-Stadt exposed to road noise above the legal limit at night, 2025",
+            "de": "Anteil der Bevölkerung von Basel-Stadt mit Strassenlärm über dem Grenzwert in der Nacht, 2025"
           },
+          "context": {
+            "en": "2000: 17.0%",
+            "de": "2000: 17,0 %"
+          },
+          "basis": "official",
           "sources": [
-            "bs-tempo30-page"
+            "ub-laerm-1002"
+          ]
+        },
+        {
+          "value": {
+            "en": "11.6%",
+            "de": "11,6 %"
+          },
+          "label": {
+            "en": "Residents exposed to road noise above the legal limit by day, 2025",
+            "de": "Anteil der Bevölkerung mit Strassenlärm über dem Grenzwert am Tag, 2025"
+          },
+          "context": {
+            "en": "2000: 13.4%",
+            "de": "2000: 13,4 %"
+          },
+          "basis": "official",
+          "sources": [
+            "ub-laerm-1002"
           ]
         },
         {
@@ -812,28 +866,34 @@
             "de": "9’631’209"
           },
           "label": {
-            "en": "EuroAirport passengers in 2025 (2019: 9,090,312)",
-            "de": "Passagiere am EuroAirport 2025 (2019: 9’090’312)"
+            "en": "EuroAirport passengers in 2025",
+            "de": "Passagiere am EuroAirport 2025"
           },
+          "context": {
+            "en": "2019: 9,090,312",
+            "de": "2019: 9’090’312"
+          },
+          "basis": "counted",
           "sources": [
             "eap-stat-2025"
           ]
         }
       ],
       "charts": [
+        "noise-exposure",
         "calming"
       ],
       "truth": {
         "text": {
-          "en": "Basel-Stadt voted 56% against motorway expansion in 2024. Federal planning has put the Rheintunnel back on the list anyway. The canton's Tempo 30 extension, meant to meet a legal duty overdue since 2018, is still before the Grand Council. Since 1 October 2026, federal law also requires an expert report showing that Tempo 30 on main roads does not divert traffic into residential streets. Federal law allows road-noise exposure to be calculated instead of measured, and this audit found no published series of measured noise levels for Basel-Stadt.",
-          "de": "Basel-Stadt stimmte 2024 mit 56 % gegen den Autobahnausbau. Die Bundesplanung hat den Rheintunnel trotzdem wieder auf die Liste gesetzt. Die kantonale Ausweitung von Tempo 30, die eine seit 2018 überfällige Rechtspflicht erfüllen soll, liegt noch beim Grossen Rat. Seit dem 1. Oktober 2026 verlangt das Bundesrecht zudem ein Gutachten, das zeigt, dass Tempo 30 auf Hauptstrassen keinen Ausweichverkehr in Wohnquartiere auslöst. Das Bundesrecht erlaubt, die Strassenlärmbelastung zu berechnen statt zu messen, und diese Bilanz fand keine veröffentlichte Reihe gemessener Lärmpegel für Basel-Stadt."
+          "en": "The legal duty to remediate road noise has been overdue since 2018, and the canton's main measure, more Tempo 30, is not yet decided. It is before the Grand Council, and from 1 October 2026 federal law requires an expert report showing that Tempo 30 on a main road does not divert traffic into residential streets. Basel-Stadt voted 56% against motorway expansion in 2024, yet federal planning has put the Rheintunnel back on the list. Meanwhile the canton's own calculation shows no progress at night: in 2025 a larger share of residents lived above the night-time limit than in 2000.",
+          "de": "Die Rechtspflicht zur Sanierung des Strassenlärms ist seit 2018 überfällig, und die wichtigste Massnahme des Kantons, mehr Tempo 30, ist noch nicht beschlossen. Sie liegt beim Grossen Rat, und ab dem 1. Oktober 2026 verlangt das Bundesrecht ein Gutachten, das zeigt, dass Tempo 30 auf einer Hauptstrasse keinen Ausweichverkehr in Wohnquartiere auslöst. Basel-Stadt stimmte 2024 mit 56 % gegen den Autobahnausbau, doch die Bundesplanung hat den Rheintunnel wieder auf die Liste gesetzt. Die eigene Berechnung des Kantons zeigt nachts keinen Fortschritt: 2025 lebte ein grösserer Anteil der Bevölkerung über dem Nachtgrenzwert als im Jahr 2000."
         },
         "sources": [
-          "bs-abst-2024",
-          "uvek-v45-2026",
           "bs-mm-tempo30-2026",
+          "uvek-v45-2026",
           "astra-schilliger-2026",
-          "lsv-38"
+          "bs-abst-2024",
+          "ub-laerm-1002"
         ]
       },
       "upgrades": [
@@ -880,6 +940,10 @@
   "charts": {
     "waste-origin": {
       "type": "stack",
+      "basis": [
+        "measured",
+        "derived"
+      ],
       "title": {
         "en": "Where the waste burned in Basel comes from, 2025",
         "de": "Woher der in Basel verbrannte Abfall stammt, 2025"
@@ -929,13 +993,17 @@
     },
     "hot-days": {
       "type": "columns",
+      "basis": [
+        "derived",
+        "measured"
+      ],
       "title": {
         "en": "Hot days (30 °C or more) in Basel, June to August",
         "de": "Hitzetage (30 °C und mehr) in Basel, Juni bis August"
       },
       "note": {
-        "en": "MeteoSwiss station Basel/Binningen, homogenised series. The normal is MeteoSwiss's figure for a whole year; the bars for 2003, 2018 and 2026 count June to August only. In 2026 there were 62 hot days up to 27 September.",
-        "de": "MeteoSchweiz-Station Basel/Binningen, homogenisierte Reihe. Der Normwert ist der Jahreswert von MeteoSchweiz; die Säulen für 2003, 2018 und 2026 zählen nur Juni bis August. 2026 gab es bis zum 27. September 62 Hitzetage."
+        "en": "MeteoSwiss station Basel/Binningen, homogenised series. The bars for 2003, 2018 and 2026 add up MeteoSwiss's counts for June, July and August; the normal is MeteoSwiss's mean for a whole year. In 2026 there were 62 hot days up to 27 September.",
+        "de": "MeteoSchweiz-Station Basel/Binningen, homogenisierte Reihe. Die Säulen für 2003, 2018 und 2026 addieren die Zählungen von MeteoSchweiz für Juni, Juli und August; der Normwert ist das Jahresmittel von MeteoSchweiz. 2026 gab es bis zum 27. September 62 Hitzetage."
       },
       "unit": {
         "en": "days",
@@ -1000,6 +1068,7 @@
     },
     "trees": {
       "type": "dots",
+      "basis": "counted",
       "title": {
         "en": "Trees on public ground in the city of Basel, 2025",
         "de": "Bäume auf öffentlichem Grund in der Stadt Basel, 2025"
@@ -1043,6 +1112,7 @@
     },
     "legacy-sites": {
       "type": "sites",
+      "basis": "measured",
       "title": {
         "en": "Two sites, measured and classified",
         "de": "Zwei Standorte, gemessen und eingestuft"
@@ -1192,6 +1262,7 @@
     },
     "air-limits": {
       "type": "thresholds",
+      "basis": "measured",
       "title": {
         "en": "Measured against two yardsticks",
         "de": "An zwei Massstäben gemessen"
@@ -1339,6 +1410,7 @@
     },
     "calming": {
       "type": "progress",
+      "basis": "official",
       "title": {
         "en": "Traffic calming today",
         "de": "Verkehrsberuhigung heute"
@@ -1370,6 +1442,7 @@
     },
     "heating": {
       "type": "series",
+      "basis": "counted",
       "title": {
         "en": "Heating installations registered in Basel-Stadt",
         "de": "Registrierte Heizanlagen in Basel-Stadt"
@@ -1657,6 +1730,7 @@
     },
     "pfas-groundwater": {
       "type": "log",
+      "basis": "measured",
       "title": {
         "en": "PFAS in Basel groundwater, May 2024",
         "de": "PFAS im Basler Grundwasser, Mai 2024"
@@ -1751,6 +1825,245 @@
         "aue-pfas-gw-2024",
         "aue-pfas-gw-2025"
       ]
+    },
+    "emissions": {
+      "type": "series",
+      "basis": "official",
+      "title": {
+        "en": "Greenhouse gas emissions of Basel-Stadt, against the canton's target path",
+        "de": "Treibhausgasemissionen von Basel-Stadt, gemessen am Absenkpfad des Kantons"
+      },
+      "note": {
+        "en": "Direct emissions within the canton in kilotonnes of CO2 equivalents, calculated by the canton from energy statistics and emission factors. The latest published year is 2022; an update with 2024 data is announced for 2026. The dashed line joins the canton's target path from the 2020 baseline to net zero in 2037; the 89 kt left in 2037 must be balanced by removals.",
+        "de": "Direkte Emissionen im Kanton in Kilotonnen CO2-Äquivalenten, vom Kanton aus Energiestatistik und Emissionsfaktoren berechnet. Das neuste veröffentlichte Jahr ist 2022; eine Aktualisierung mit Daten von 2024 ist für 2026 angekündigt. Die gestrichelte Linie verbindet den Absenkpfad des Kantons vom Basisjahr 2020 bis Netto-Null 2037; die 2037 verbleibenden 89 kt müssen durch Entnahmen ausgeglichen werden."
+      },
+      "unit": {
+        "en": "kt CO2e",
+        "de": "kt CO2eq"
+      },
+      "valueLabel": {
+        "en": "Emissions (kt CO2e)",
+        "de": "Emissionen (kt CO2eq)"
+      },
+      "yMax": 800,
+      "yTicks": [
+        0,
+        200,
+        400,
+        600,
+        800
+      ],
+      "xMin": 2019.4,
+      "xMax": 2037.6,
+      "xTicks": [
+        2020,
+        2022,
+        2027,
+        2032,
+        2037
+      ],
+      "xTicksNarrow": [
+        2020,
+        2027,
+        2037
+      ],
+      "lines": [
+        {
+          "label": {
+            "en": "Emissions, calculated by the canton",
+            "de": "Emissionen, vom Kanton berechnet"
+          },
+          "tone": "ink",
+          "sources": [
+            "bs-klimaportal"
+          ],
+          "points": [
+            {
+              "x": 2020,
+              "y": 674
+            },
+            {
+              "x": 2022,
+              "y": 637
+            }
+          ]
+        }
+      ],
+      "refPath": true,
+      "refs": [
+        {
+          "kind": "point",
+          "x": 2027,
+          "y": 479,
+          "mark": {
+            "en": "479",
+            "de": "479"
+          },
+          "label": {
+            "en": "Target path (reference value)",
+            "de": "Absenkpfad (Referenzwert)"
+          },
+          "sources": [
+            "bs-klimaportal"
+          ]
+        },
+        {
+          "kind": "point",
+          "x": 2032,
+          "y": 293,
+          "mark": {
+            "en": "293",
+            "de": "293"
+          },
+          "label": {
+            "en": "Target path (reference value)",
+            "de": "Absenkpfad (Referenzwert)"
+          },
+          "sources": [
+            "bs-klimaportal"
+          ]
+        },
+        {
+          "kind": "point",
+          "x": 2037,
+          "y": 89,
+          "mark": {
+            "en": "89",
+            "de": "89"
+          },
+          "label": {
+            "en": "Target path (reference value)",
+            "de": "Absenkpfad (Referenzwert)"
+          },
+          "sources": [
+            "bs-klimaportal"
+          ]
+        }
+      ],
+      "sources": [
+        "bs-klimaportal"
+      ]
+    },
+    "noise-exposure": {
+      "type": "series",
+      "basis": "official",
+      "title": {
+        "en": "Residents exposed to road noise above the legal limit, Basel-Stadt",
+        "de": "Bevölkerung mit Strassenlärm über dem Grenzwert, Basel-Stadt"
+      },
+      "note": {
+        "en": "Share of the population above the immission limit values for road traffic noise (Annex 3 of the Noise Abatement Ordinance). Calculated, not measured: noise at buildings is modelled from the canton's road-traffic emission cadastre, as federal law allows (Art. 38 LSV); the source credits the Amt für Umwelt und Energie and Jauslin Stebler AG. All residents of a building count once any part of it is above the limit. No values were published for 2011 to 2020 (the gap in the lines) or for 2022 to 2024, and the source does not say whether the method stayed the same since 2000.",
+        "de": "Anteil der Bevölkerung über den Immissionsgrenzwerten für Strassenverkehrslärm (Anhang 3 der Lärmschutz-Verordnung). Berechnet, nicht gemessen: Der Lärm an den Gebäuden wird aus dem kantonalen Emissionskataster für Strassenverkehrslärm modelliert, wie es das Bundesrecht erlaubt (Art. 38 LSV); die Quelle nennt das Amt für Umwelt und Energie und die Jauslin Stebler AG. Alle Bewohnerinnen und Bewohner eines Gebäudes zählen, sobald ein Teil davon über dem Grenzwert liegt. Für 2011 bis 2020 (die Lücke in den Linien) und für 2022 bis 2024 sind keine Werte veröffentlicht, und die Quelle sagt nicht, ob die Methode seit 2000 gleich geblieben ist."
+      },
+      "unit": {
+        "en": "% of residents",
+        "de": "% der Bevölkerung"
+      },
+      "digits": 1,
+      "yMax": 25,
+      "yTicks": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "xMin": 1999.2,
+      "xMax": 2025.8,
+      "xTicks": [
+        2000,
+        2005,
+        2010,
+        2015,
+        2020,
+        2025
+      ],
+      "xTicksNarrow": [
+        2000,
+        2010,
+        2025
+      ],
+      "lines": [
+        {
+          "label": {
+            "en": "At night",
+            "de": "In der Nacht"
+          },
+          "tone": "bad",
+          "sources": [
+            "ub-laerm-1002"
+          ],
+          "points": [
+            {
+              "x": 2000,
+              "y": 17.04
+            },
+            {
+              "x": 2003,
+              "y": 19.4
+            },
+            {
+              "x": 2008,
+              "y": 16.24
+            },
+            {
+              "x": 2010,
+              "y": 18.48
+            },
+            {
+              "x": 2021,
+              "y": 20.46,
+              "break": true
+            },
+            {
+              "x": 2025,
+              "y": 19.72
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "By day",
+            "de": "Am Tag"
+          },
+          "tone": "mid",
+          "sources": [
+            "ub-laerm-1002"
+          ],
+          "points": [
+            {
+              "x": 2000,
+              "y": 13.38
+            },
+            {
+              "x": 2003,
+              "y": 14.91
+            },
+            {
+              "x": 2008,
+              "y": 14.47
+            },
+            {
+              "x": 2010,
+              "y": 10.04
+            },
+            {
+              "x": 2021,
+              "y": 11.65,
+              "break": true
+            },
+            {
+              "x": 2025,
+              "y": 11.63
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "ub-laerm-1002",
+        "lsv-38"
+      ]
     }
   },
   "politics": {
@@ -1842,7 +2155,8 @@
           "bs-abst-2024"
         ]
       }
-    ]
+    ],
+    "basis": "counted"
   },
   "timeline": [
     {
@@ -2158,8 +2472,8 @@
         "de": "Art. 16 USG; Art. 13 und Art. 17 Abs. 4 lit. b LSV (SR 814.41); Art. 108 SSV (SR 741.21), geändert am 12. August 2026 mit Wirkung ab 1. Oktober 2026; BGer 1C_318/2024 vom 27. März 2026; BGer 1C_513/2022 vom 7. Juli 2023"
       },
       "body": {
-        "en": "The deadline for remediating noise from main and other roads passed on 31 March 2018. On 27 March 2026 the Federal Supreme Court dismissed, insofar as it was admissible, an appeal by the TCS section of both Basel cantons and a resident against Tempo 30 on cantonal roads in Bottmingen, Oberwil and Therwil. It had upheld Tempo 30 on Basel's Feldbergstrasse in 2023. The Basel-Stadt government nevertheless says blanket Tempo 30 would conflict with federal law, and proceeds road by road. Since 1 October 2026, the expert report for Tempo 30 on traffic-oriented roads must also show that the reduction does not cause unwanted diversion into residential areas. The Federal Council's announcement does not say how this applies to procedures already under way.",
-        "de": "Die Frist zur Sanierung des Lärms von Haupt- und übrigen Strassen lief am 31. März 2018 ab. Am 27. März 2026 wies das Bundesgericht eine Beschwerde der TCS-Sektion beider Basel und eines Anwohners gegen Tempo 30 auf Kantonsstrassen in Bottmingen, Oberwil und Therwil ab, soweit es darauf eintrat. Bereits 2023 hatte es Tempo 30 auf der Basler Feldbergstrasse bestätigt. Die Basler Regierung hält flächendeckendes Tempo 30 dennoch für bundesrechtswidrig und geht Strasse für Strasse vor. Seit dem 1. Oktober 2026 muss das Gutachten für Tempo 30 auf verkehrsorientierten Strassen zudem zeigen, dass die Temporeduktion keinen «unerwünschten Ausweichverkehr» in Wohnquartiere verursacht. Wie das auf laufende Verfahren anzuwenden ist, sagt die Mitteilung des Bundesrates nicht."
+        "en": "The deadline for remediating noise from main and other roads passed on 31 March 2018. On 27 March 2026 the Federal Supreme Court dismissed, insofar as it was admissible, an appeal by the TCS section of both Basel cantons and a resident against Tempo 30 on cantonal roads in Bottmingen, Oberwil and Therwil. It had upheld Tempo 30 on Basel's Feldbergstrasse in 2023. The Basel-Stadt government nevertheless says blanket Tempo 30 would conflict with federal law, and proceeds road by road. From 1 October 2026, the expert report for Tempo 30 on traffic-oriented roads must also show that the reduction does not cause unwanted diversion into residential areas. The Federal Council's announcement does not say how this applies to procedures already under way.",
+        "de": "Die Frist zur Sanierung des Lärms von Haupt- und übrigen Strassen lief am 31. März 2018 ab. Am 27. März 2026 wies das Bundesgericht eine Beschwerde der TCS-Sektion beider Basel und eines Anwohners gegen Tempo 30 auf Kantonsstrassen in Bottmingen, Oberwil und Therwil ab, soweit es darauf eintrat. Bereits 2023 hatte es Tempo 30 auf der Basler Feldbergstrasse bestätigt. Die Basler Regierung hält flächendeckendes Tempo 30 dennoch für bundesrechtswidrig und geht Strasse für Strasse vor. Ab dem 1. Oktober 2026 muss das Gutachten für Tempo 30 auf verkehrsorientierten Strassen zudem zeigen, dass die Temporeduktion keinen «unerwünschten Ausweichverkehr» in Wohnquartiere verursacht. Wie das auf laufende Verfahren anzuwenden ist, sagt die Mitteilung des Bundesrates nicht."
       },
       "work": {
         "en": "Residents along roads above the noise limits can ask the authorities to act. Road users can appeal speed orders, but courts have upheld them where limits are exceeded and the expert report required by Art. 108 SSV is sound.",
@@ -2271,24 +2585,77 @@
         "de": "Die Datenjahre unterscheiden sich: Heizungszählungen vom September 2026, Wetter von 2026, Luft von 2025, Grundwasser und Fische von 2024 und 2025. Jede Zahl nennt ihr Jahr und ihre Quelle."
       },
       {
-        "en": "Every figure is a value that an official body measured or counted. Estimates, projections, modelled values, costs and press or advocacy figures are excluded; the build refuses any figure that cites a non-official source. Legal limits, guidelines and targets appear only as labelled reference values.",
-        "de": "Jede Zahl ist ein Wert, den eine amtliche Stelle gemessen oder gezählt hat. Schätzungen, Prognosen, modellierte Werte, Kosten sowie Zahlen aus Presse oder Interessenvertretungen sind ausgeschlossen; der Build lehnt jede Zahl ab, die eine nicht amtliche Quelle zitiert. Grenz-, Richt- und Zielwerte erscheinen nur als gekennzeichnete Referenzwerte."
+        "en": "Every figure comes from an official source and carries its basis: measured, counted, official calculation, or derived from official data (key below). Estimates, projections, costs, averages carried over from elsewhere (such as the Swiss average per-capita footprint applied to Basel) and press or advocacy figures are left out. The build refuses any figure that cites a non-official source or lacks a basis. Legal limits, guidelines and targets appear only as labelled reference values.",
+        "de": "Jede Zahl stammt aus einer amtlichen Quelle und nennt ihre Grundlage: gemessen, gezählt, amtlich berechnet oder aus amtlichen Daten abgeleitet (Legende unten). Schätzungen, Prognosen, Kosten, von anderswo übertragene Durchschnittswerte (etwa der Schweizer Pro-Kopf-Fussabdruck, auf Basel übertragen) sowie Zahlen aus Presse oder Interessenvertretungen sind weggelassen. Der Build lehnt jede Zahl ab, die eine nicht amtliche Quelle zitiert oder keine Grundlage nennt. Grenz-, Richt- und Zielwerte erscheinen nur als gekennzeichnete Referenzwerte."
       },
       {
-        "en": "No own measurements were taken. Hot days are counted from MeteoSwiss's daily measurements. Where this audit adds up official figures (the waste segment “Other”), the parts are official and the sum is stated as such.",
-        "de": "Es wurden keine eigenen Messungen durchgeführt. Hitzetage sind aus den Tagesmessungen von MeteoSchweiz ausgezählt. Wo diese Bilanz amtliche Zahlen addiert (das Abfallsegment «Übrige»), sind die Teile amtlich und die Summe als solche ausgewiesen."
+        "en": "No own measurements were taken. Where this audit adds up or subtracts official figures (hot days over a summer, the waste segment “Other”, the years between two official dates), the parts are official and the result is labelled as derived.",
+        "de": "Es wurden keine eigenen Messungen durchgeführt. Wo diese Bilanz amtliche Zahlen addiert oder subtrahiert (Hitzetage eines Sommers, das Abfallsegment «Übrige», die Jahre zwischen zwei amtlichen Daten), sind die Teile amtlich und das Ergebnis ist als abgeleitet gekennzeichnet."
       },
       {
-        "en": "The canton's greenhouse gas inventory is not shown: it is calculated from energy statistics and emission factors, and the latest published year is 2022. Noise is shown without a noise level, because no published series of measured levels was found.",
-        "de": "Das Treibhausgasinventar des Kantons wird nicht gezeigt: Es wird aus Energiestatistiken und Emissionsfaktoren berechnet, und das neuste veröffentlichte Jahr ist 2022. Lärm erscheint ohne Lärmpegel, weil keine veröffentlichte Reihe gemessener Pegel gefunden wurde."
+        "en": "The canton's greenhouse gas inventory is an official calculation from energy statistics and emission factors. Its latest published year is 2022; the canton announces the next edition, with 2024 data, for 2026. Figures from 2020 on follow the method of the 2023 climate protection strategy and are not compared here with older inventories. Road-noise exposure is likewise the canton's calculation from its noise emission cadastre, as federal law allows; no series of measured noise levels is published.",
+        "de": "Das Treibhausgasinventar des Kantons ist eine amtliche Berechnung aus Energiestatistik und Emissionsfaktoren. Sein neustes veröffentlichtes Jahr ist 2022; die nächste Ausgabe mit Daten von 2024 kündigt der Kanton für 2026 an. Die Zahlen ab 2020 folgen der Methode der Klimaschutzstrategie von 2023 und werden hier nicht mit älteren Inventaren verglichen. Auch die Strassenlärmbelastung ist eine Berechnung des Kantons aus seinem Lärm-Emissionskataster, wie es das Bundesrecht erlaubt; eine Reihe gemessener Lärmpegel ist nicht veröffentlicht."
       },
       {
         "en": "Recommendations under 'What would raise the grade' are this audit's analysis, not the canton's plans.",
         "de": "Die Empfehlungen unter «Was die Note verbessern würde» sind Analyse dieser Bilanz, nicht Pläne des Kantons."
       }
+    ],
+    "basis": [
+      {
+        "id": "measured",
+        "label": {
+          "en": "Measured",
+          "de": "Gemessen"
+        },
+        "text": {
+          "en": "Measured by an official body, or a statistic it forms directly from its measurements, such as an annual mean, a count of hot days or a 30-year normal.",
+          "de": "Von einer amtlichen Stelle gemessen oder direkt aus ihren Messungen gebildet, etwa ein Jahresmittel, eine Zahl von Hitzetagen oder ein 30-jähriger Normwert."
+        }
+      },
+      {
+        "id": "counted",
+        "label": {
+          "en": "Counted",
+          "de": "Gezählt"
+        },
+        "text": {
+          "en": "Counted by an official body: registers, permits, site inventories, trees, passengers and votes.",
+          "de": "Von einer amtlichen Stelle gezählt: Register, Bewilligungen, Kataster, Bäume, Passagiere und Stimmen."
+        }
+      },
+      {
+        "id": "official",
+        "label": {
+          "en": "Official calculation",
+          "de": "Amtlich berechnet"
+        },
+        "text": {
+          "en": "Calculated by an official body by its own published method, such as the canton's greenhouse gas inventory, a canopy cover or a share of the road network.",
+          "de": "Von einer amtlichen Stelle nach eigener, veröffentlichter Methode berechnet, etwa das Treibhausgasinventar des Kantons, eine Kronenbedeckung oder ein Anteil am Strassennetz."
+        }
+      },
+      {
+        "id": "derived",
+        "label": {
+          "en": "Derived from official data",
+          "de": "Aus amtlichen Daten abgeleitet"
+        },
+        "text": {
+          "en": "Calculated by this audit from official figures alone, by adding or subtracting them. The chart or note says how.",
+          "de": "Von dieser Bilanz allein aus amtlichen Zahlen berechnet, durch Addieren oder Subtrahieren. Grafik oder Anmerkung sagen, wie."
+        }
+      }
     ]
   },
   "changelog": [
+    {
+      "date": "2026-09-29",
+      "text": {
+        "en": "Every figure now states its basis: measured, counted, official calculation, or derived from official data. Official calculations are admitted: the canton's greenhouse gas inventory and target path are back in the climate section, and its calculated road-noise exposure is new in the noise section, whose grade falls from C– to D+. Quieter citations, fewer figures per section and a lighter layout.",
+        "de": "Jede Zahl nennt nun ihre Grundlage: gemessen, gezählt, amtlich berechnet oder aus amtlichen Daten abgeleitet. Amtliche Berechnungen sind zugelassen: Das Treibhausgasinventar des Kantons und sein Absenkpfad sind zurück im Klimateil, und die vom Kanton berechnete Strassenlärmbelastung ist neu im Lärmteil, dessen Note von C– auf D+ sinkt. Ruhigere Quellenangaben, weniger Zahlen pro Abschnitt und ein leichteres Layout."
+      }
+    },
     {
       "date": "2026-09-29",
       "text": {
@@ -2786,6 +3153,22 @@
       "date": "2026-04-01",
       "title": "Lärmschutz-Verordnung (LSV, SR 814.41), Art. 38 Art der Ermittlung",
       "url": "https://www.fedlex.admin.ch/eli/cc/1987/338_338_338/de#art_38"
+    },
+    {
+      "id": "bs-klimaportal",
+      "type": "official",
+      "publisher": "Kanton Basel-Stadt, Klimaportal",
+      "date": "2026-05-21",
+      "title": "Klimaportal Basel-Stadt: Emissionen (Datenstand 2022) und Absenkpfad Netto-Null 2037",
+      "url": "https://app.climateview.global/public/board/d8930a92-9c1a-417a-8c46-41ba0b68101b?tab=emissions"
+    },
+    {
+      "id": "ub-laerm-1002",
+      "type": "official",
+      "publisher": "Umweltbericht beider Basel, Amt für Umwelt und Energie Basel-Stadt",
+      "date": "2026-06-05",
+      "title": "Indikator «Lärmbelastete Personen»: Anteil der Bevölkerung über dem Immissionsgrenzwert, Tag und Nacht",
+      "url": "https://www.ub.basleratlas.ch/?format=ub&t=10&i=1002"
     }
   ]
 }

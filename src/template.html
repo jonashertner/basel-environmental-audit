@@ -193,7 +193,7 @@ p { margin: 0; }
 @media (max-width: 560px) { .board ol { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* ---------- Area sections ---------- */
-.area { border-top: 3px solid var(--ink); padding-block: clamp(48px, 7vw, 96px); }
+.area { border-top: 3px solid var(--ink); padding-block: clamp(64px, 9vw, 128px); }
 .area-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 28px var(--gap); }
 .area-head { grid-column: span 3; position: sticky; top: calc(var(--header-h) + 24px); align-self: start; }
 .area-body { grid-column: 4 / span 9; min-width: 0; }
@@ -206,30 +206,49 @@ p { margin: 0; }
   .area-head h2 { margin-top: 0; max-width: none; }
   .area-body { grid-column: span 12; }
 }
-.verdict { font-size: clamp(1.375rem, 2.4vw, 1.875rem); font-weight: 600; font-stretch: 90%; line-height: 1.25; max-width: 32ch; }
+.verdict { font-size: clamp(1.375rem, 2.4vw, 1.875rem); font-weight: 600; font-stretch: 90%; line-height: 1.28; max-width: 30ch; text-wrap: balance; }
 
-.figures { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 28px var(--gap); margin: 40px 0 0; }
-@media (min-width: 900px) { .figures[data-n="5"], .figures[data-n="6"] { grid-template-columns: repeat(3, 1fr); } }
-.fig { border-top: 2px solid var(--ink); padding-top: 10px; }
-.fig dt { font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 800; font-stretch: 72%; line-height: 1.05; }
-.fig dd { margin: 6px 0 0; font-size: var(--fs-s); color: var(--ink-2); line-height: 1.45; }
+.figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(32px, 4vw, 48px) clamp(24px, 4vw, 56px); margin: clamp(40px, 5vw, 56px) 0 0; }
+@media (min-width: 1000px) { .figures[data-n="3"] { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .figures { grid-template-columns: 1fr; gap: 28px; } }
+.fig { border-top: 2px solid var(--ink); padding-top: 14px; display: flex; flex-direction: column; }
+.fig dt { font-size: clamp(2.25rem, 4.2vw, 3.25rem); font-weight: 800; font-stretch: 70%; line-height: 1; letter-spacing: -0.01em; }
+.fig dd { margin: 0; }
+.fig .lbl { margin-top: 10px; font-size: var(--fs-m); line-height: 1.4; max-width: 34ch; }
+.fig .ctx { margin-top: 4px; font-size: var(--fs-s); color: var(--ink-2); line-height: 1.45; max-width: 40ch; }
+.fig .src { margin-top: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 4px 8px; }
+.fig .src .cite:first-child { margin-left: 0; }
+
+/* Basis of a figure: measured, counted, official calculation, derived */
+.basis { display: inline-flex; align-items: center; gap: 6px; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-3); white-space: nowrap; cursor: help; }
+.basis::before { content: ""; width: 7px; height: 7px; flex: none; border: 1.5px solid currentColor; }
+.basis[data-b="measured"]::before { background: currentColor; }
+.basis[data-b="counted"]::before { background: linear-gradient(90deg, currentColor 50%, transparent 50%); }
+.basis[data-b="official"]::before { border-radius: 50%; background: currentColor; }
+.basis[data-b="derived"]::before { border-radius: 50%; }
+.basis + .basis { margin-left: 2px; }
+.chart-meta { margin-top: 6px; display: flex; gap: 6px 14px; flex-wrap: wrap; }
+.strip .note .chart-meta { margin: 0 0 6px; }
+.votes-meta { margin: 0 0 16px; }
 
 /* Source citations */
 .cites { white-space: nowrap; }
 .cite {
-  display: inline-flex; align-items: center; justify-content: center; min-width: 1.6em; height: 1.45em;
-  margin-left: 4px; padding: 0 5px; border: 1px solid var(--ink-3); background: transparent;
-  font-size: 0.72rem; font-weight: 700; line-height: 1; vertical-align: 0.15em; cursor: pointer; color: var(--ink);
+  display: inline-flex; align-items: center; justify-content: center; min-width: 1.7em; height: 1.5em;
+  margin-left: 3px; padding: 0 4px; border: 0; border-radius: 2px; background: var(--field);
+  font-family: inherit; font-size: 0.6875rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1; vertical-align: 0.12em; cursor: pointer; color: var(--ink-2);
 }
-.cite:hover, .cite[aria-expanded="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.cites .cite + .cite { margin-left: 2px; }
+.cite:hover, .cite[aria-expanded="true"] { background: var(--ink); color: var(--paper); }
+.cite:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
 .cite.is-adv { border-color: var(--fuchsine); color: var(--fuchsine); }
 .cite.is-adv:hover, .cite.is-adv[aria-expanded="true"] { background: var(--fuchsine); color: var(--paper); }
 .adv-flag { margin-left: 6px; font-size: var(--fs-xs); color: var(--fuchsine); font-weight: 600; white-space: nowrap; }
 
 /* Charts */
-.chart { margin: clamp(48px, 6vw, 72px) 0 0; }
+.chart { margin: clamp(64px, 8vw, 104px) 0 0; }
 .chart h3 { font-size: var(--fs-l); font-stretch: 90%; }
-.chart-body { margin-top: 20px; }
+.chart-body { margin-top: 24px; }
 .chart > .note { margin-top: 14px; }
 .numbers { margin-top: 12px; font-size: var(--fs-s); }
 .numbers summary { cursor: pointer; font-weight: 600; width: fit-content; }
@@ -293,7 +312,8 @@ p { margin: 0; }
 .lnkey.ln-bad { background: var(--fuchsine); } .lnkey.ln-good { background: var(--rhine); } .lnkey.ln-mid { background: var(--sulfur); } .lnkey.ln-g2 { background: var(--g2); }
 .series .val { fill: var(--ink); font-weight: 700; }
 .series .ref { stroke: var(--fuchsine); stroke-width: 2; stroke-dasharray: 6 4; }
-.series .ref-pt { fill: none; stroke: var(--fuchsine); stroke-width: 2.5; }
+.series .ref-pt { fill: var(--paper); stroke: var(--fuchsine); stroke-width: 2.5; }
+.series .ref-path { fill: none; stroke: var(--fuchsine); stroke-width: 1.5; stroke-dasharray: 4 5; opacity: 0.8; }
 .series .ref-t { fill: var(--fuchsine); font-weight: 700; }
 .refkey, .refkey-pt { display: inline-block; width: 18px; height: 0; border-top: 2px dashed var(--fuchsine); vertical-align: middle; }
 .refkey-pt { width: 12px; height: 12px; border: 2.5px solid var(--fuchsine); border-radius: 50%; }
@@ -330,12 +350,13 @@ p { margin: 0; }
 .overdue b { font-size: var(--fs-2xl); font-weight: 800; font-stretch: 72%; color: var(--fuchsine); line-height: 1; }
 
 /* Truth + upgrades */
-.truth { margin-top: clamp(48px, 6vw, 72px); padding-top: 16px; border-top: 8px solid var(--fuchsine); }
-.truth h3 { font-size: var(--fs-s); color: var(--fuchsine); font-weight: 700; }
-.truth p { margin-top: 10px; font-size: clamp(1.25rem, 2.1vw, 1.625rem); font-weight: 600; font-stretch: 92%; line-height: 1.3; max-width: 44ch; }
-.upgrades { margin-top: 40px; }
+.truth { margin-top: clamp(64px, 8vw, 104px); padding-top: 18px; border-top: 8px solid var(--fuchsine); }
+.truth h3 { font-size: var(--fs-xs); color: var(--fuchsine); font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; }
+.truth .lead { margin-top: 14px; font-size: clamp(1.375rem, 2.3vw, 1.75rem); font-weight: 700; font-stretch: 90%; line-height: 1.25; max-width: 34ch; text-wrap: balance; }
+.truth .rest { margin-top: 14px; font-size: var(--fs-m); line-height: 1.6; color: var(--ink-2); max-width: 66ch; }
+.upgrades { margin-top: clamp(48px, 6vw, 64px); }
 .upgrades h3 { font-size: var(--fs-l); font-stretch: 90%; }
-.upgrades ul { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; max-width: 72ch; }
+.upgrades ul { margin: 16px 0 0; padding: 0; list-style: none; display: grid; gap: 14px; max-width: 66ch; }
 .upgrades li { padding-left: 22px; position: relative; }
 .upgrades li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 12px; height: 4px; background: var(--rhine); }
 .upgrades .note { margin-top: 12px; }
@@ -385,6 +406,10 @@ p { margin: 0; }
 .rubric .t-mid { --c: var(--sulfur); --c-text: var(--sulfur-ink); }
 .rubric .t-bad { --c: var(--fuchsine); --c-text: var(--fuchsine); }
 .method-notes { margin: 32px 0 0; padding-left: 1.1em; max-width: 72ch; display: grid; gap: 8px; }
+.basis-key { margin: 40px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px var(--gap); }
+.basis-key div { border-top: 1px solid var(--rule); padding-top: 12px; }
+.basis-key dt .basis { color: var(--ink); cursor: default; }
+.basis-key dd { margin: 8px 0 0; font-size: var(--fs-s); color: var(--ink-2); }
 @media (max-width: 800px) { .rubric { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* Sources */
@@ -627,6 +652,18 @@ p { margin: 0; }
     return `<span class="cites">${btns}</span>${adv ? `<span class="adv-flag">${UI.advFlag}</span>` : ''}`;
   }
 
+  // Basis of a figure (measured, counted, official calculation, derived), defined in method.basis
+  const BASIS = new Map((D.method.basis || []).map((b) => [b.id, b]));
+  function basisTag(b) {
+    return [].concat(b || []).map((id) => { const k = BASIS.get(id); return k ? `<span class="basis" data-b="${esc(id)}" title="${esc(L(k.text))}">${esc(L(k.label))}</span>` : ''; }).join('');
+  }
+
+  // Row citations are left out when every row cites the same sources and the chart note already cites them
+  const rowCites = (items, c) => {
+    const same = items.every((it) => String(it.sources) === String(items[0].sources)) && (items[0].sources || []).every((s) => (c.sources || []).includes(s));
+    return (it) => same ? '' : ' ' + cites(it.sources);
+  };
+
   /* ---------- Dates ---------- */
   const parseISO = (s) => { const [y, m = 1, d = 1] = s.split('-').map(Number); return new Date(y, m - 1, d); };
   const fullDate = (d) => UI.day(d.getDate(), (LANG === 'de' ? UI.monthsLong : UI.months)[d.getMonth()], d.getFullYear());
@@ -668,12 +705,13 @@ p { margin: 0; }
     const lines = linesOf(c);
     const multi = lines.length > 1;
     const aria = lines.map((ln) => `${multi ? L(ln.label) + ': ' : ''}${ln.points.map((p) => `${xLabel(p)} ${v(p.y)}`).join(', ')}`).join('; ') + ` (${unit})`;
-    const keys = multi ? lines.map((ln) => `<li><i class="lnkey ln-${ln.tone}" aria-hidden="true"></i><span>${esc(L(ln.label))} ${cites(ln.sources)}</span></li>`).join('') : '';
-    const refs = (c.refs || []).map((r) => `<li><i class="${r.kind === 'point' ? 'refkey-pt' : 'refkey'}" aria-hidden="true"></i><span>${esc(L(r.label))} ${cites(r.sources)}</span></li>`).join('');
+    const sameSrc = lines.every((ln) => String(ln.sources) === String(lines[0].sources));
+    const keys = (multi || (c.refs && lines[0].label)) ? lines.map((ln) => `<li><i class="lnkey ln-${ln.tone}" aria-hidden="true"></i><span>${esc(L(ln.label))}${sameSrc ? '' : ' ' + cites(ln.sources)}</span></li>`).join('') : '';
+    const refs = [...new Map((c.refs || []).map((r) => [L(r.label) + r.kind, r])).values()].map((r) => `<li><i class="${r.kind === 'point' ? 'refkey-pt' : 'refkey'}" aria-hidden="true"></i><span>${esc(L(r.label))} ${cites(r.sources)}</span></li>`).join('');
     const xs = [...new Map(lines.flatMap((ln) => ln.points.map((p) => [p.x, xLabel(p)]))).entries()].sort((a, b) => a[0] - b[0]);
     const head = [UI.period].concat(multi ? lines.map((ln) => L(ln.label)) : [L(c.valueLabel || unit)]);
     const rows = xs.map(([x, lab]) => [esc(lab)].concat(lines.map((ln) => { const p = ln.points.find((q) => q.x === x); return p ? v(p.y) : '–'; })))
-      .concat((c.refs || []).map((r) => [esc(L(r.label)), v(r.y)].concat(multi ? Array(lines.length - 1).fill('') : [])));
+      .concat((c.refs || []).map((r) => [esc(L(r.label) + (r.kind === 'point' ? `, ${r.x}` : '')), v(r.y)].concat(multi ? Array(lines.length - 1).fill('') : [])));
     return {
       body: `<div class="series" data-series="${esc(id)}" role="img" aria-label="${esc(aria)}"></div>${keys || refs ? `<ul class="legend">${keys}${refs}</ul>` : ''}`,
       table: table(head, rows)
@@ -684,7 +722,8 @@ p { margin: 0; }
     const W = Math.max(300, el.clientWidth);
     const narrow = W < 560;
     const H = narrow ? 240 : 280;
-    const m = { l: narrow ? 44 : 56, r: narrow ? 14 : 24, t: 28, b: 30 };
+    const multiL = linesOf(c).length > 1;
+    const m = { l: narrow ? 44 : 56, r: multiL ? (narrow ? 44 : 56) : (narrow ? 14 : 24), t: 28, b: 30 };
     const div = c.axis?.div || 1, dg = c.digits || 0, unit = L(c.axis?.unit || c.unit);
     const lines = linesOf(c);
     const xs = lines.flatMap((ln) => ln.points.map((p) => p.x)).concat((c.refs || []).filter((r) => r.kind === 'point').map((r) => r.x));
@@ -699,6 +738,11 @@ p { margin: 0; }
     s += `<text x="${m.l - 8}" y="${m.t - 14}" text-anchor="end">${esc(unit)}</text>`;
     const ticks = narrow ? (c.xTicksNarrow || c.xTicks) : c.xTicks;
     ticks.forEach((t) => { s += `<text x="${X(t.x ?? t)}" y="${H - m.b + 20}" text-anchor="middle">${esc(t.label ? L(t.label) : t)}</text>`; });
+    const pts = (c.refs || []).filter((r) => r.kind === 'point');
+    if (c.refPath && pts.length) {
+      const p0 = lines[0].points[0];
+      s += `<path class="ref-path" d="M${X(p0.x)},${Y(p0.y)} ${pts.map((r) => `L${X(r.x)},${Y(r.y)}`).join(' ')}"/>`;
+    }
     (c.refs || []).forEach((r) => {
       if (r.kind === 'point') {
         s += `<circle class="ref-pt" cx="${X(r.x)}" cy="${Y(r.y)}" r="6"/>`;
@@ -708,6 +752,7 @@ p { margin: 0; }
         s += `<text class="ref-t" x="${W - m.r}" y="${Y(r.y) - 6}" text-anchor="end">${esc(L(r.mark))}</text>`;
       }
     });
+    const ends = [];
     lines.forEach((ln) => {
       let d = '';
       ln.points.forEach((p, i) => { d += `${i && !p.break ? 'L' : 'M'}${X(p.x)},${Y(p.y)} `; });
@@ -716,9 +761,12 @@ p { margin: 0; }
       ln.points.forEach((p, i) => {
         const last = i === ln.points.length - 1;
         s += `<circle class="dot ln-${ln.tone}" cx="${X(p.x)}" cy="${Y(p.y)}" r="${narrow ? 3.5 : 4.5}"/>`;
-        if (labelAll || i === 0 || last) s += `<text class="val" x="${X(p.x)}" y="${Y(p.y) - 10}" text-anchor="${last && lines.length > 1 ? 'end' : 'middle'}">${fmtN(p.y / div, dg)}</text>`;
+        if (last && lines.length > 1) ends.push({ x: X(p.x) + 9, y: Y(p.y) + 4, t: fmtN(p.y / div, dg) });
+        else if (labelAll || i === 0 || last) s += `<text class="val" x="${X(p.x)}" y="${Y(p.y) - 10}" text-anchor="middle">${fmtN(p.y / div, dg)}</text>`;
       });
     });
+    ends.sort((a, b) => a.y - b.y).forEach((e, i, a) => { if (i && e.y - a[i - 1].y < 15) e.y = a[i - 1].y + 15; });
+    ends.forEach((e) => { s += `<text class="val" x="${e.x}" y="${e.y}" text-anchor="start">${e.t}</text>`; });
     s += '</svg>';
     el.innerHTML = s;
   }
@@ -742,7 +790,8 @@ p { margin: 0; }
     const ref = c.bars.find((b) => b.tone === 'base');
     const cols = c.bars.map((b) => `<div class="col"><span class="v">${fmtN(b.value, b.digits || 0)}</span><div class="b bg-${b.tone}" style="height:${b.value / max * 82}%"></div></div>`).join('');
     const refLine = ref ? `<div class="refline" style="bottom:${ref.value / max * 82}%"><span>${esc(L(ref.label))} ${fmtN(ref.value, ref.digits || 0)}</span></div>` : '';
-    const labels = c.bars.map((b) => `<div>${esc(L(b.label))} ${cites(b.sources)}</div>`).join('');
+    const rc = rowCites(c.bars, c);
+    const labels = c.bars.map((b) => `<div>${esc(L(b.label))}${rc(b)}</div>`).join('');
     const aria = c.bars.map((b) => `${L(b.label)}: ${b.value} ${L(c.unit)}`).join('; ');
     return {
       body: `<div class="cols" role="img" aria-label="${esc(aria)}">${cols}${refLine}</div><div class="col-labels">${labels}</div>`,
@@ -751,9 +800,10 @@ p { margin: 0; }
   };
 
   R.dots = (c) => {
+    const rc = rowCites(c.rows, c);
     const rows = c.rows.map((r) => {
       const n = Math.round(r.value / c.perDot);
-      return `<div class="dotrow"><div class="lbl"><b>${fmtN(r.value)}</b>${esc(L(r.label))} ${cites(r.sources)}</div><div class="dots" role="img" aria-label="${fmtN(r.value)} ${esc(L(c.unit))}">${`<i class="bg-${r.tone}"></i>`.repeat(n)}</div></div>`;
+      return `<div class="dotrow"><div class="lbl"><b>${fmtN(r.value)}</b>${esc(L(r.label))}${rc(r)}</div><div class="dots" role="img" aria-label="${fmtN(r.value)} ${esc(L(c.unit))}">${`<i class="bg-${r.tone}"></i>`.repeat(n)}</div></div>`;
     }).join('');
     return { body: rows, table: table([UI.item, L(c.unit)], c.rows.map((r) => [esc(L(r.label)), fmtN(r.value)])) };
   };
@@ -783,9 +833,10 @@ p { margin: 0; }
     const marks = lines.map((l) => `<span class="lim" style="left:${P(l.to)}%" aria-hidden="true"></span>`).join('');
     const nf = (v) => fmtN(v, v < 10 && v % 1 ? 1 : 0);
     const val = (it) => it.from ? `${nf(it.from)}–${nf(it.to)}` : `${it.prefix || ''}${nf(it.to)}`;
+    const rc = rowCites(bars, c);
     const rows = bars.map((it) => {
       const from = it.from ? P(it.from) : 0; const to = P(it.to);
-      return `<div class="row"><span class="lbl">${esc(L(it.label))} ${cites(it.sources)}</span><span class="track"><span class="bar bg-${it.tone}" style="left:${from}%;width:${to - from}%"></span>${marks}</span><span class="val">${val(it)}</span></div>`;
+      return `<div class="row"><span class="lbl">${esc(L(it.label))}${rc(it)}</span><span class="track"><span class="bar bg-${it.tone}" style="left:${from}%;width:${to - from}%"></span>${marks}</span><span class="val">${val(it)}</span></div>`;
     }).join('');
     const ticks = Array.from({ length: lmax - lmin + 1 }, (_, i) => 10 ** (lmin + i)).map((t) => `<span style="left:${P(t)}%">${fmtN(t)}</span>`).join('');
     const axis = `<div class="row" aria-hidden="true"><span class="lbl"></span><span class="logaxis">${ticks}</span><span></span></div>`;
@@ -808,7 +859,7 @@ p { margin: 0; }
   function chartFigure(id) {
     const c = D.charts[id]; if (!c || !R[c.type]) return '';
     const out = R[c.type](c, id);
-    return `<figure class="chart" id="chart-${id}"><figcaption><h3>${esc(L(c.title))}</h3></figcaption><div class="chart-body">${out.body}</div>${c.note ? `<p class="note">${esc(L(c.note))} ${cites(c.sources)}</p>` : ''}${out.table}</figure>`;
+    return `<figure class="chart" id="chart-${id}"><figcaption><h3>${esc(L(c.title))}</h3>${c.basis ? `<p class="chart-meta">${basisTag(c.basis)}</p>` : ''}</figcaption><div class="chart-body">${out.body}</div>${c.note ? `<p class="note">${esc(L(c.note))} ${cites(c.sources)}</p>` : ''}${out.table}</figure>`;
   }
 
   /* ---------- Sections ---------- */
@@ -839,7 +890,7 @@ p { margin: 0; }
           <div><b>${fmtN(rest.value)} ${esc(unit)}</b>${esc(L(rest.label))} ${cites(rest.sources)}</div>
         </div>
         ${mk ? `<p class="strip-mk"><i aria-hidden="true"></i><b>${fmtN(mk.value, mk.digits || 0)} ${esc(unit)}</b> ${esc(L(mk.label))} ${cites(mk.sources)}</p>` : ''}
-        <figcaption class="note">${esc(L(h.note))}</figcaption>
+        <figcaption class="note"><span class="chart-meta">${basisTag(h.basis)}</span>${esc(L(h.note))}</figcaption>
       </figure>
       <div class="hero-foot">
         <div class="overall">
@@ -873,7 +924,9 @@ p { margin: 0; }
   function area(d) {
     const t = toneOf(d.grade);
     const sub = d.subgrades ? `<ul class="subgrades">${d.subgrades.map((s) => `<li><b class="tone-${toneOf(s.grade)}">${esc(s.grade)}</b>${esc(L(s.label))}</li>`).join('')}</ul>` : '';
-    const figs = d.metrics.map((m) => `<div class="fig"><dt>${esc(L(m.value))}</dt><dd>${esc(L(m.label))} ${cites(m.sources)}</dd></div>`).join('');
+    const figs = d.metrics.map((m) => `<div class="fig"><dt>${esc(L(m.value))}</dt><dd class="lbl">${esc(L(m.label))}</dd>${m.context ? `<dd class="ctx">${esc(L(m.context))}</dd>` : ''}<dd class="src">${basisTag(m.basis)}${cites(m.sources)}</dd></div>`).join('');
+    const tt = L(d.truth.text); const cut = tt.search(/[.:] (?=[A-ZÄÖÜ«])/);
+    const truth = cut > 0 ? `<p class="lead">${esc(tt.slice(0, cut + 1))}</p><p class="rest">${esc(tt.slice(cut + 2))} ${cites(d.truth.sources)}</p>` : `<p class="lead">${esc(tt)} ${cites(d.truth.sources)}</p>`;
     const ups = d.upgrades.map((u) => `<li>${esc(L(u.text))} ${cites(u.sources)}</li>`).join('');
     return `<section class="area" id="${d.id}" aria-labelledby="h-${d.id}"><div class="wrap area-grid">
       <header class="area-head"><p class="g tone-${t}" aria-label="${gradeLabel(d.grade)}">${esc(d.grade)}</p><div><h2 id="h-${d.id}">${esc(L(d.name))}</h2>${sub}</div></header>
@@ -881,7 +934,7 @@ p { margin: 0; }
         <p class="verdict">${esc(L(d.verdict))}</p>
         <dl class="figures" data-n="${d.metrics.length}">${figs}</dl>
         ${(d.charts || []).map(chartFigure).join('')}
-        <div class="truth"><h3>${UI.truth}</h3><p>${esc(L(d.truth.text))} ${cites(d.truth.sources)}</p></div>
+        <div class="truth"><h3>${UI.truth}</h3>${truth}</div>
         <div class="upgrades"><h3>${UI.upgrades}</h3><ul>${ups}</ul><p class="note">${UI.upgradesNote}</p></div>
       </div></div></section>`;
   }
@@ -895,6 +948,7 @@ p { margin: 0; }
     return `<section class="block" id="voters" aria-labelledby="h-voters"><div class="wrap">
       <div class="block-head"><h2 id="h-voters">${esc(L(p.title))}</h2><p>${esc(L(p.lead))}</p></div>
       <figure class="chart" style="margin-top:0"><figcaption class="visually-hidden">${UI.votesCaption}</figcaption>
+        ${p.basis ? `<p class="chart-meta votes-meta">${basisTag(p.basis)}</p>` : ''}
         <div class="rows votes">${rows}</div>
         <ul class="legend"><li><i class="bg-ink" aria-hidden="true"></i><span>${UI.passed}</span></li><li><i style="background:repeating-linear-gradient(135deg,var(--g2) 0 3px,transparent 3px 6px);border:1px solid var(--ink)" aria-hidden="true"></i><span>${UI.rejected}</span></li><li><i style="background:var(--fuchsine);width:3px" aria-hidden="true"></i><span>${UI.half}</span></li></ul>
         ${table([UI.vote, UI.yes], p.votes.map((v) => [`${esc(fmtDate({ date: v.date }))}: ${esc(L(v.label))}`, pct(v.yes, 2)]))}
@@ -935,6 +989,7 @@ p { margin: 0; }
       <div class="block-head"><h2 id="h-method">${UI.methodTitle}</h2><p>${esc(L(D.meta.scope))}</p></div>
       <dl class="rubric">${rub}</dl>
       <ul class="method-notes">${m.notes.map((n) => `<li>${esc(L(n))}</li>`).join('')}</ul>
+      ${m.basis ? `<dl class="basis-key">${m.basis.map((b) => `<div><dt>${basisTag(b.id)}</dt><dd>${esc(L(b.text))}</dd></div>`).join('')}</dl>` : ''}
       <div class="method-foot">
         <div><h3>${UI.changelog}</h3><ol class="changelog">${log}</ol></div>
         <div><h3>${UI.cite}</h3><p class="cite-text">${esc(citeText)}</p></div>

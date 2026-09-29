@@ -38,6 +38,7 @@ CHROME = {
 GRADE = re.compile(r"^[A-DF][+–-]?$")
 DATE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 SOURCE_TYPES = {"official", "press", "advocacy", "reference"}
+BASES = {"measured", "counted", "official", "derived"}
 REQUIRED_SOURCE_FIELDS = ("id", "type", "publisher", "date", "title", "url")
 # Fields that carry reader-facing prose and must exist in every language.
 TEXT_KEYS = {
@@ -87,7 +88,7 @@ def check_languages(node, path, errors):
     if isinstance(node, dict):
         for key, value in node.items():
             child = f"{path}.{key}"
-            if key in TEXT_KEYS and isinstance(value, str):
+            if key in TEXT_KEYS and isinstance(value, str) and not (key == "kind" and value == "point"):
                 errors.append(f"{child} is a plain string; give it as {{\"en\": ..., \"de\": ...}}.")
             elif key in TEXT_LIST_KEYS and isinstance(value, list) and any(isinstance(x, str) for x in value):
                 errors.append(f"{child} contains plain strings; give each item as {{\"en\": ..., \"de\": ...}}.")
@@ -155,6 +156,23 @@ def validate(d: dict) -> tuple[list[str], list[str]]:
         for path, ref in collect_refs(node, where):
             if types.get(ref) and types[ref] != "official":
                 errors.append(f"{path} cites '{ref}' ({types[ref]}); values may cite official sources only.")
+
+    # Basis: every figure says whether it was measured, counted, calculated officially or derived here
+    basis_ids = {b.get("id") for b in d.get("method", {}).get("basis", [])}
+    if basis_ids != BASES:
+        errors.append(f"method.basis must define exactly {sorted(BASES)}.")
+    def check_basis(node, where):
+        b = node.get("basis") if isinstance(node, dict) else None
+        vals = b if isinstance(b, list) else [b]
+        if not b or any(v not in BASES for v in vals):
+            errors.append(f"{where} needs a basis from {sorted(BASES)}.")
+    check_basis(d.get("hero", {}), "hero")
+    check_basis(d.get("politics", {}), "politics")
+    for cid, c in d.get("charts", {}).items():
+        check_basis(c, f"chart '{cid}'")
+    for dom in d.get("domains", []):
+        for m in dom.get("metrics", []):
+            check_basis(m, f"metric '{loc(m.get('value'), 'en')}' in '{dom.get('id')}'")
 
     # Grades
     def check_grade(value, where):

@@ -38,13 +38,15 @@ CHROME = {
 GRADE = re.compile(r"^[A-DF][+–-]?$")
 DATE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 SOURCE_TYPES = {"official", "press", "advocacy", "reference"}
-BASES = {"measured", "counted", "official", "derived"}
+BASES = {"measured", "counted", "official", "derived", "assessed"}
 REQUIRED_SOURCE_FIELDS = ("id", "type", "publisher", "date", "title", "url")
 # Fields that carry reader-facing prose and must exist in every language.
 TEXT_KEYS = {
     "title", "scope", "thesis", "standfirst", "disclaimer", "description", "kicker", "author",
     "label", "short", "note", "summary", "verdict", "text", "name", "place", "k", "v", "lead",
+    "trajCaption", "statusNote", "benefitsLabel",
     "kind", "law", "body", "work", "meaning", "valueLabel", "deadlineLabel", "display",
+    "dueDisplay", "doneDisplay",
 }
 # Lists whose items are reader-facing prose.
 TEXT_LIST_KEYS = {"notes"}
@@ -173,6 +175,57 @@ def validate(d: dict) -> tuple[list[str], list[str]]:
     for dom in d.get("domains", []):
         for m in dom.get("metrics", []):
             check_basis(m, f"metric '{loc(m.get('value'), 'en')}' in '{dom.get('id')}'")
+
+    # Measures: proven measures, each with its evidence, an exemplar and Basel's status
+    ms = d.get("measures")
+    if ms:
+        stages = {s.get("id") for s in ms.get("stages", [])}
+        statuses = {s.get("id") for s in ms.get("status", [])}
+        benefits = {b.get("id") for b in ms.get("benefits", [])}
+        seen = set()
+        for it in ms.get("items", []):
+            mid = it.get("id")
+            if not mid or mid in seen:
+                errors.append(f"Measure id '{mid}' is missing or duplicated.")
+            seen.add(mid)
+            if it.get("stage") not in stages:
+                errors.append(f"Measure '{mid}' has unknown stage '{it.get('stage')}'.")
+            if it.get("status") not in statuses:
+                errors.append(f"Measure '{mid}' has unknown status '{it.get('status')}'.")
+            for b in it.get("benefits", []):
+                if b not in benefits:
+                    errors.append(f"Measure '{mid}' has unknown benefit '{b}'.")
+            for part in ("evidence", "exemplar", "basel"):
+                node = it.get(part)
+                if not node or not node.get("sources"):
+                    errors.append(f"Measure '{mid}' needs '{part}' with sources.")
+                    continue
+                # A part that states only rules, targets or dates carries no basis mark.
+                if "basis" in node:
+                    check_basis(node, f"measure '{mid}' {part}")
+                for path, ref in collect_refs(node, f"measure '{mid}' {part}"):
+                    if types.get(ref) and types[ref] != "official":
+                        errors.append(f"{path} cites '{ref}' ({types[ref]}); values may cite official sources only.")
+
+    # Obligations: binding duties with a deadline, and whether they were met
+    ob = d.get("obligations")
+    if ob:
+        ostat = {s.get("id") for s in ob.get("status", [])}
+        for it in ob.get("items", []):
+            oid = it.get("id")
+            if it.get("status") not in ostat:
+                errors.append(f"Obligation '{oid}' has unknown status '{it.get('status')}'.")
+            for k in ("due", "done"):
+                if k in it or k == "due":
+                    try:
+                        date.fromisoformat(it.get(k, ""))
+                    except (TypeError, ValueError):
+                        errors.append(f"Obligation '{oid}' needs an ISO '{k}' date.")
+            if not it.get("sources"):
+                errors.append(f"Obligation '{oid}' has no source.")
+            for path, ref in collect_refs(it, f"obligation '{oid}'"):
+                if types.get(ref) and types[ref] != "official":
+                    errors.append(f"{path} cites '{ref}' ({types[ref]}); obligations may cite official sources only.")
 
     # Grades
     def check_grade(value, where):

@@ -356,8 +356,8 @@
             "de": "Baumkronenbedeckung der Stadt Basel 2024"
           },
           "context": {
-            "en": "Unchanged since 2012",
-            "de": "Seit 2012 unverändert"
+            "en": "Unchanged since 2012; 15% without forest",
+            "de": "Seit 2012 unverändert; 15 % ohne Wald"
           },
           "basis": "official",
           "sources": [
@@ -374,10 +374,28 @@
             "de": "2023 und 2024 bewilligte Entsiegelung, noch nicht gebaut"
           },
           "context": {
-            "en": "Grand Council target: 165,000 m² by 2037",
-            "de": "Ziel des Grossen Rates: 165’000 m² bis 2037"
+            "en": "Grand Council motion: 165,000 m² by 2037",
+            "de": "Motion des Grossen Rates: 165’000 m² bis 2037"
           },
           "basis": "counted",
+          "sources": [
+            "bs-controlling-2026"
+          ]
+        },
+        {
+          "value": {
+            "en": "17.5%",
+            "de": "17,5 %"
+          },
+          "label": {
+            "en": "Share of city residents with 9 m² of accessible open space within 300 m, the canton's own target",
+            "de": "Anteil der Stadtbevölkerung mit 9 m² zugänglicher Freifläche innert 300 m, dem kantonalen Zielwert"
+          },
+          "context": {
+            "en": "31,367 of 179,517 residents",
+            "de": "31’367 von 179’517 Personen"
+          },
+          "basis": "derived",
           "sources": [
             "bs-controlling-2026"
           ]
@@ -389,8 +407,8 @@
       ],
       "truth": {
         "text": {
-          "en": "The canton's own 2026 monitoring report finds no measurable reduction in the number of people exposed to heat, and tree canopy has not grown since 2012. More trees are planted than felled, but the margin is small: 478 against 378 in the city in 2025. New trees are planted mainly where streets are already being dug up for district heating or maintenance, for cost reasons. The one measure that would free real space, converting street area to greenery, was rejected at the ballot box in 2023.",
-          "de": "Der kantonale Controllingbericht 2026 stellt keine messbare Reduktion der von Hitze betroffenen Bevölkerung fest, und die Baumkronenfläche ist seit 2012 nicht gewachsen. Es werden mehr Bäume gepflanzt als gefällt, aber knapp: 478 gegenüber 378 in der Stadt im Jahr 2025. Neue Bäume werden aus Kostengründen vor allem dort gepflanzt, wo Strassen ohnehin für Fernwärme oder Unterhalt aufgerissen werden. Die eine Massnahme, die echten Raum schaffen würde, die Umwandlung von Strassenfläche in Grün, scheiterte 2023 an der Urne."
+          "en": "The canton's own 2026 monitoring report finds no measurable reduction in the number of people exposed to heat, and tree canopy has not grown since 2012. More trees are planted than felled, but the margin is small: 478 against 378 in the city in 2025. New trees are planted mainly where streets are already being dug up for district heating or maintenance, for cost reasons. The one measure that would free real space, converting street area to greenery, was rejected at the ballot box in 2023. Measured against proven measures elsewhere, Basel leads on green roofs and canopy monitoring and lags on the rest: no binding canopy target, no green factor, and unsealing at about a fifth of the pace the Grand Council's motion requires.",
+          "de": "Der kantonale Controllingbericht 2026 stellt keine messbare Reduktion der von Hitze betroffenen Bevölkerung fest, und die Baumkronenfläche ist seit 2012 nicht gewachsen. Es werden mehr Bäume gepflanzt als gefällt, aber knapp: 478 gegenüber 378 in der Stadt im Jahr 2025. Neue Bäume werden aus Kostengründen vor allem dort gepflanzt, wo Strassen ohnehin für Fernwärme oder Unterhalt aufgerissen werden. Die eine Massnahme, die echten Raum schaffen würde, die Umwandlung von Strassenfläche in Grün, scheiterte 2023 an der Urne. Gemessen an bewährten Massnahmen anderswo führt Basel bei Gründächern und der Messung des Kronendachs und liegt beim Rest zurück: kein verbindliches Kronenziel, kein Grünfaktor, und Entsiegelung in etwa einem Fünftel des Tempos, das die Motion des Grossen Rates verlangt."
         },
         "sources": [
           "bs-controlling-2026",
@@ -402,27 +420,53 @@
       "upgrades": [
         {
           "text": {
-            "en": "Set a canopy-cover target for the identified heat hotspots instead of a tree count.",
-            "de": "Für die bekannten Hitze-Hotspots ein Ziel für die Kronenüberdeckung setzen statt einer Baumzahl."
+            "en": "Turn the canopy aim into a binding target with a path: 18% by 2040 is barely above today's 15%. Lausanne went from 20% to 24.3% in twelve years and aims for 30%.",
+            "de": "Das Kronenziel verbindlich machen, mit Absenkpfad: 18 % bis 2040 liegt kaum über den heutigen 15 %. Lausanne kam in zwölf Jahren von 20 % auf 24,3 % und will 30 %."
           },
-          "sources": []
+          "sources": [
+            "bs-controlling-2026",
+            "lausanne-canopee-2025"
+          ]
         },
         {
           "text": {
-            "en": "Adopt the proposed «Grünes Basel» programme for greening and unsealing private land, still before the Grand Council, and aim it at courtyards, where no ballot fight is needed.",
-            "de": "Das vorgeschlagene Förderprogramm «Grünes Basel» für Begrünung und Entsiegelung privater Flächen, das noch im Grossen Rat hängig ist, beschliessen und gezielt in Innenhöfen einsetzen, wo es keinen Abstimmungskampf braucht."
+            "en": "Write the unsealing target into law as Bern did, with a yearly minimum, and make unsealing the default whenever a district-heating trench is dug: at today's pace the 165,000 m² the Grand Council asks for by 2037 will not be reached.",
+            "de": "Das Entsiegelungsziel wie Bern mit jährlichem Minimum ins Recht schreiben und bei jedem Fernwärmegraben standardmässig entsiegeln: Beim heutigen Tempo werden die vom Grossen Rat bis 2037 verlangten 165’000 m² nicht erreicht."
           },
           "sources": [
-            "bs-gruenes-basel-2025",
+            "bern-kar-2024",
             "bs-controlling-2026"
           ]
         },
         {
           "text": {
-            "en": "Make unsealing the default whenever a district-heating trench is dug, not an option.",
-            "de": "Entsiegelung zur Regel machen, wann immer ein Fernwärmegraben geöffnet wird, nicht zur Option."
+            "en": "Add a green factor to the building law that also applies in zones 5 to 7, where the garden rule does not.",
+            "de": "Einen Grünfaktor ins Baugesetz aufnehmen, der auch in den Zonen 5 bis 7 gilt, wo die Gartenregel nicht greift."
           },
-          "sources": []
+          "sources": [
+            "bpg-bs",
+            "ura-lush-2017"
+          ]
+        },
+        {
+          "text": {
+            "en": "Map cool rooms against walking distance, set a minimum standard and keep the heat hotline running into September and at weekends.",
+            "de": "Kühle Räume nach Gehdistanz kartieren, einen Mindeststandard festlegen und das Hitzetelefon bis in den September und an Wochenenden betreiben."
+          },
+          "sources": [
+            "gd-hitze",
+            "bcn-refugis-2026"
+          ]
+        },
+        {
+          "text": {
+            "en": "Adopt the «Grünes Basel» programme for greening private land, still before the Grand Council, and aim it at courtyards, where no ballot fight is needed.",
+            "de": "Das Förderprogramm «Grünes Basel» für Begrünung auf privatem Grund, das noch im Grossen Rat hängig ist, beschliessen und gezielt in Innenhöfen einsetzen, wo es keinen Abstimmungskampf braucht."
+          },
+          "sources": [
+            "bs-gruenes-basel-2025",
+            "bs-controlling-2026"
+          ]
         }
       ]
     },
@@ -2416,6 +2460,52 @@
       "sources": [
         "rr-rheintunnel-2026"
       ]
+    },
+    {
+      "date": "2026-04-23",
+      "label": {
+        "en": "Deadline for the vehicle tax motion passes without a bill",
+        "de": "Frist der Motion zur Motorfahrzeugsteuer verstreicht ohne Vorlage"
+      },
+      "sources": [
+        "gr-23-5581"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "label": {
+        "en": "Deadline for the government's report on the biodiversity initiative passes",
+        "de": "Frist für den Regierungsbericht zur Biodiversitätsinitiative verstreicht"
+      },
+      "sources": [
+        "rr-25-1737"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "label": {
+        "en": "Government's report on raising canopy cover due",
+        "de": "Bericht der Regierung zur Erhöhung der Baumkronenbedeckung fällig"
+      },
+      "sources": [
+        "gr-24-5156"
+      ]
+    },
+    {
+      "date": "2027-12-31",
+      "precision": "year",
+      "display": {
+        "en": "2027",
+        "de": "2027"
+      },
+      "label": {
+        "en": "First five-year climate target: 479,000 t CO2eq net; next canopy survey",
+        "de": "Erstes Fünfjahresziel Klima: netto 479’000 t CO2eq; nächste Kronenerhebung"
+      },
+      "sources": [
+        "bs-ks-teil1-2025",
+        "stg-kronen-ogd"
+      ]
     }
   ],
   "legal": [
@@ -2599,6 +2689,14 @@
       {
         "en": "Recommendations under 'What would raise the grade' are this audit's analysis, not the canton's plans.",
         "de": "Die Empfehlungen unter «Was die Note verbessern würde» sind Analyse dieser Bilanz, nicht Pläne des Kantons."
+      },
+      {
+        "en": "'What works' compares Basel with official evidence reviews and with other cities' official records. The status of each measure is this audit's judgment. Comparison cities were chosen because their authorities publish what they did; figures from foundations, advocacy groups or press were left out, which excludes some well-known examples. Parts of a measure that state only a rule, target or date carry no basis mark.",
+        "de": "«Was wirkt» vergleicht Basel mit amtlichen Evidenzauswertungen und mit amtlichen Angaben anderer Städte. Der Stand jeder Massnahme ist die Beurteilung dieser Bilanz. Vergleichsstädte wurden gewählt, weil ihre Behörden veröffentlichen, was sie getan haben; Zahlen von Stiftungen, Interessengruppen oder Presse blieben weg, was einige bekannte Beispiele ausschliesst. Teile einer Massnahme, die nur eine Regel, ein Ziel oder ein Datum nennen, tragen keine Grundlagenmarke."
+      },
+      {
+        "en": "'Open obligations' lists only duties with a deadline set by federal or cantonal law or by a Grand Council decision, checked against the Grand Council's records on 29 September 2026. It is not a complete audit of every duty; where the record did not establish a breach, the item was left out.",
+        "de": "«Offene Pflichten» führt nur Pflichten mit einer Frist aus Bundes- oder kantonalem Recht oder aus einem Beschluss des Grossen Rates auf, geprüft anhand der Geschäftsdatenbank des Grossen Rates am 29. September 2026. Es ist keine vollständige Prüfung aller Pflichten; wo die Akten keine Verletzung belegten, blieb der Punkt weg."
       }
     ],
     "basis": [
@@ -2645,6 +2743,17 @@
           "en": "Calculated by this audit from official figures alone, by adding or subtracting them. The chart or note says how.",
           "de": "Von dieser Bilanz allein aus amtlichen Zahlen berechnet, durch Addieren oder Subtrahieren. Grafik oder Anmerkung sagen, wie."
         }
+      },
+      {
+        "id": "assessed",
+        "label": {
+          "en": "Assessed evidence",
+          "de": "Geprüfte Evidenz"
+        },
+        "text": {
+          "en": "A finding or range from an official review of many studies, by an intergovernmental or federal body such as the IPCC, WHO, the EEA or BAFU. It says what a measure achieves in general, not what it has achieved in Basel.",
+          "de": "Ein Befund oder eine Bandbreite aus einer amtlichen Auswertung vieler Studien, durch eine zwischenstaatliche oder eidgenössische Stelle wie IPCC, WHO, EUA oder BAFU. Er sagt, was eine Massnahme allgemein bewirkt, nicht was sie in Basel bewirkt hat."
+        }
       }
     ]
   },
@@ -2668,6 +2777,13 @@
       "text": {
         "en": "First public edition, in English and German. Figures and legal references checked against primary sources on 28 September 2026.",
         "de": "Erste öffentliche Ausgabe, auf Englisch und Deutsch. Zahlen und Rechtsgrundlagen am 28. September 2026 an den Primärquellen überprüft."
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "text": {
+        "en": "New section «What works»: fifteen heat measures benchmarked against official evidence reviews and other cities, with Basel's status. New section «Open obligations». New basis «assessed evidence». Heat area revised: outdated recommendation on a canopy target replaced, open-space figure added.",
+        "de": "Neuer Abschnitt «Was wirkt»: fünfzehn Hitzemassnahmen, gemessen an amtlichen Evidenzauswertungen und anderen Städten, mit dem Stand in Basel. Neuer Abschnitt «Offene Pflichten». Neue Grundlage «geprüfte Evidenz». Bereich Hitze überarbeitet: veraltete Empfehlung zu einem Kronenziel ersetzt, Freiflächen-Kennzahl ergänzt."
       }
     }
   ],
@@ -3169,6 +3285,1379 @@
       "date": "2026-06-05",
       "title": "Indikator «Lärmbelastete Personen»: Anteil der Bevölkerung über dem Immissionsgrenzwert, Tag und Nacht",
       "url": "https://www.ub.basleratlas.ch/?format=ub&t=10&i=1002"
+    },
+    {
+      "id": "bafu-hitze-2018",
+      "type": "official",
+      "publisher": "Bundesamt für Umwelt BAFU und Bundesamt für Raumentwicklung ARE",
+      "date": "2018",
+      "title": "Hitze in Städten. Grundlage für eine klimaangepasste Siedlungsentwicklung (Umwelt-Wissen 1812)",
+      "url": "https://www.nccs.admin.ch/dam/nccs/de/dokumente/website/massnahmen/leitfaden/hitze_in_staedten.pdf.download.pdf/hitze_in_staedten.pdf"
+    },
+    {
+      "id": "who-heat-2021",
+      "type": "official",
+      "publisher": "WHO Regional Office for Europe",
+      "date": "2021-02-08",
+      "title": "Heat and health in the WHO European Region: updated evidence for effective prevention",
+      "url": "https://www.who.int/europe/publications/i/item/9789289055406"
+    },
+    {
+      "id": "who-green-2017",
+      "type": "official",
+      "publisher": "WHO Regional Office for Europe",
+      "date": "2017",
+      "title": "Urban green spaces: a brief for action",
+      "url": "https://iris.who.int/handle/10665/344116"
+    },
+    {
+      "id": "ipcc-ar6-ch6",
+      "type": "official",
+      "publisher": "Intergovernmental Panel on Climate Change (IPCC)",
+      "date": "2022",
+      "title": "Climate Change 2022: Impacts, Adaptation and Vulnerability, Working Group II, Chapter 6: Cities, Settlements and Key Infrastructure",
+      "url": "https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Chapter06.pdf"
+    },
+    {
+      "id": "eea-heat-2024",
+      "type": "official",
+      "publisher": "European Environment Agency",
+      "date": "2024-11-27",
+      "title": "The impacts of heat on health: surveillance and preparedness in Europe",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/the-impacts-of-heat-on-health"
+    },
+    {
+      "id": "eea-green-2022",
+      "type": "official",
+      "publisher": "European Environment Agency",
+      "date": "2022-02-01",
+      "title": "Who benefits from nature in cities? Social inequalities in access to urban green and blue spaces across Europe",
+      "url": "https://www.eea.europa.eu/en/analysis/publications/who-benefits-from-nature-in-cities-social-inequalities-in-access-to-urban-green-and-blue-spaces-across-europe"
+    },
+    {
+      "id": "eawag-hitze-2021",
+      "type": "official",
+      "publisher": "Eawag, Wasserforschungsinstitut des ETH-Bereichs",
+      "date": "2021-10-14",
+      "title": "Wasser in der Siedlung ist zentral gegen Hitze",
+      "url": "https://www.eawag.ch/de/info/portal/aktuelles/news/wasser-in-der-siedlung-ist-zentral-gegen-hitze/"
+    },
+    {
+      "id": "uba-klima-2022",
+      "type": "official",
+      "publisher": "Umweltbundesamt (Deutschland)",
+      "date": "2022",
+      "title": "Nachhaltige Gebäudeklimatisierung in Europa (Climate Change 30/2022)",
+      "url": "https://www.umweltbundesamt.de/publikationen/nachhaltige-gebaeudeklimatisierung-in-europa"
+    },
+    {
+      "id": "nccs-hitzeschutz-2025",
+      "type": "official",
+      "publisher": "Bundesamt für Gesundheit BAG (Auftraggeber)",
+      "date": "2025-04",
+      "title": "Stand der Umsetzung von gesundheitlichen Hitzeschutzmassnahmen in der Schweiz, Erhebung 2: Hitzeaktionspläne und Engagement der Gesundheitsbehörden",
+      "url": "https://www.nccs.admin.ch/dam/nccs/de/dokumente/website/sektoren/gesundheit/hitzeschutzmassnahmen-kantone-staedte-2024.pdf.download.pdf/hitzeschutzmassnahmen-behoerden-staedte-schweiz.pdf"
+    },
+    {
+      "id": "gd-hitze",
+      "type": "official",
+      "publisher": "Gesundheitsdepartement Basel-Stadt",
+      "date": "2026",
+      "title": "Hitze: Präventionsangebote",
+      "url": "https://www.bs.ch/themen/gesundheit/gesundheitsfoerderung/praeventionsangebote/hitze"
+    },
+    {
+      "id": "bafu-hitzetote-2025",
+      "type": "official",
+      "publisher": "Bundesamt für Umwelt BAFU und Bundesamt für Gesundheit BAG (Bericht: Swiss TPH)",
+      "date": "2026-07-09",
+      "title": "Monitoring hitzebedingte Todesfälle, Sommer 2025",
+      "url": "https://www.bafu.admin.ch/dam/de/sd-web/1sY3aUa4WYEV/monitoring-hitzebedingte-todesfaelle-2025.pdf"
+    },
+    {
+      "id": "bpg-bs",
+      "type": "official",
+      "publisher": "Kanton Basel-Stadt, Gesetzessammlung",
+      "date": "2025-11-01",
+      "title": "Bau- und Planungsgesetz (BPG, SG 730.100), § 52 und § 72",
+      "url": "https://www.gesetzessammlung.bs.ch/api/de/versions/6680/pdf_file"
+    },
+    {
+      "id": "stg-flachdach-2026",
+      "type": "official",
+      "publisher": "Stadtgärtnerei Basel-Stadt",
+      "date": "2026-04",
+      "title": "Flachdachbegrünung: Aktualisierungen zur Broschüre vom Juni 2020 (Version 1.0)",
+      "url": "https://media.bs.ch/original_file/229b557c69efc70d539867a8b45a3f044451679d/flachdachbegruenung-mitmerkblatt-2026.pdf"
+    },
+    {
+      "id": "stg-kronen-ogd",
+      "type": "official",
+      "publisher": "Stadtgärtnerei Basel-Stadt (Open Data Basel-Stadt)",
+      "date": "2026-02-07",
+      "title": "Baumkronenbedeckung (Datensatz 100357)",
+      "url": "https://data.bs.ch/explore/dataset/100357/"
+    },
+    {
+      "id": "bcn-refugis-2026",
+      "type": "official",
+      "publisher": "Ajuntament de Barcelona",
+      "date": "2026-06-16",
+      "title": "Over 500 climate shelters to beat the heat this summer",
+      "url": "https://www.barcelona.cat/infobarcelona/en/tema/climate-emergency/over-500-climate-shelters-to-beat-the-heat-this-summer_1646096.html"
+    },
+    {
+      "id": "miteco-refugios-2026",
+      "type": "official",
+      "publisher": "Ministerio para la Transición Ecológica y el Reto Demográfico (Spanien)",
+      "date": "2026-07-27",
+      "title": "Red de Refugios Climáticos (Leitfaden)",
+      "url": "https://libreria.miteco.gob.es/libro/red-de-refugios-climaticos_5436/"
+    },
+    {
+      "id": "phx-shade-2024",
+      "type": "official",
+      "publisher": "City of Phoenix",
+      "date": "2024-11-13",
+      "title": "Shade Phoenix Plan",
+      "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/ShadePhoenixPlan_Nov13CouncilDraft_topost_EN.pdf"
+    },
+    {
+      "id": "phx-coolpave",
+      "type": "official",
+      "publisher": "City of Phoenix, Street Transportation Department",
+      "date": "2024-10",
+      "title": "Cool Pavement Program (with the 2021 and 2024 Arizona State University studies)",
+      "url": "https://www.phoenix.gov/administration/departments/streets/initiatives/pavement-maintenance/cool-pavement-program.html"
+    },
+    {
+      "id": "stuttgart-rahmenplan",
+      "type": "official",
+      "publisher": "Landeshauptstadt Stuttgart, Amt für Umweltschutz",
+      "date": "2007",
+      "title": "Rahmenplan Halbhöhenlagen (Städtebauliche Klimafibel online)",
+      "url": "https://www.stadtklima-stuttgart.de/index.php?planung_rahmenplan"
+    },
+    {
+      "id": "lausanne-canopee-2025",
+      "type": "official",
+      "publisher": "Ville de Lausanne",
+      "date": "2025-03-11",
+      "title": "Canopée: la couverture arborée progresse à Lausanne",
+      "url": "https://www.lausanne.ch/apps/actualites/Next/serve.php?id=16029"
+    },
+    {
+      "id": "zh-baeume-2023",
+      "type": "official",
+      "publisher": "Stadt Zürich",
+      "date": "2023-10-05",
+      "title": "Baumbestand: Kronenfläche nimmt weiter ab",
+      "url": "https://www.stadt-zuerich.ch/de/aktuell/medienmitteilungen/2023/10/231005b.html"
+    },
+    {
+      "id": "nparks-trees-2023",
+      "type": "official",
+      "publisher": "National Parks Board, Singapore",
+      "date": "2023-04-15",
+      "title": "More than half a million trees planted with the community: NParks expects to hit target of planting one million more trees by 2027",
+      "url": "https://www.nparks.gov.sg/news/news-detail/more-than-half-a-million-trees-planted-with-the-community---nparks-expects-to-hit-target-of-planting-one-million-more-trees-by-2027--three-years-ahead-of-2030-target"
+    },
+    {
+      "id": "tokyo-roof",
+      "type": "official",
+      "publisher": "Tokyo Metropolitan Government, Bureau of Environment",
+      "date": "2025-10-22",
+      "title": "Roof greening: results FY2000 to FY2024, and greening standards under Art. 14 of the Nature Conservation Ordinance",
+      "url": "https://www.kankyo.metro.tokyo.lg.jp/nature/green/roof_plant/actual/"
+    },
+    {
+      "id": "nparks-skyrise-2025",
+      "type": "official",
+      "publisher": "National Parks Board, Singapore",
+      "date": "2025",
+      "title": "Annual Report: Our Growth, for Nature (skyrise greenery)",
+      "url": "https://www.nparks.gov.sg/portals/annualreport/chapters/our-growth-for-nature/"
+    },
+    {
+      "id": "bern-kar-2024",
+      "type": "official",
+      "publisher": "Stadt Bern",
+      "date": "2024-06-13",
+      "title": "Klimaanpassungsreglement (KAR, SSSB 820.2)",
+      "url": "https://www.bern.ch/themen/umwelt-natur-und-energie/klima/klimaanpassung/planung-und-umsetzung-in-der-stadt-bern/ftw-simplelayout-filelistingblock/Klimaanpassungsreglement-KAR-SSSB_820.2.pdf"
+    },
+    {
+      "id": "berlin-brewa-2021",
+      "type": "official",
+      "publisher": "Senatsverwaltung für Umwelt, Mobilität, Verbraucher- und Klimaschutz Berlin",
+      "date": "2021-07",
+      "title": "Hinweisblatt: Begrenzung von Regenwassereinleitungen bei Bauvorhaben in Berlin (BReWa-BE)",
+      "url": "https://www.berlin.de/sen/uvk/_assets/umwelt/wasser-und-geologie/publikationen-und-merkblaetter/hinweisblatt-brewa-be.pdf"
+    },
+    {
+      "id": "kk-skybrud-2023",
+      "type": "official",
+      "publisher": "Københavns Kommune, Økonomiudvalget",
+      "date": "2023-12-05",
+      "title": "Referat, punkt 26: Status for skybrudsplanen",
+      "url": "https://www.kk.dk/dagsordener-og-referater/%C3%98konomiudvalget/m%C3%B8de-05122023/referat/punkt-26"
+    },
+    {
+      "id": "ura-lush-2017",
+      "type": "official",
+      "publisher": "Urban Redevelopment Authority, Singapore",
+      "date": "2017-11-09",
+      "title": "Circular URA/PB/2017/06-DCG: Landscaping for Urban Spaces and High-Rises (LUSH) 3.0",
+      "url": "https://www.ura.gov.sg/Corporate/Guidelines/Circulars/dc17-06"
+    },
+    {
+      "id": "uk-tcpa-7a",
+      "type": "official",
+      "publisher": "UK Government, legislation.gov.uk",
+      "date": "2024-02-12",
+      "title": "Town and Country Planning Act 1990, Schedule 7A: Biodiversity gain in planning",
+      "url": "https://www.legislation.gov.uk/ukpga/1990/8/schedule/7A"
+    },
+    {
+      "id": "eu-nrr-2024",
+      "type": "official",
+      "publisher": "Europäische Union, Amtsblatt",
+      "date": "2024-07-29",
+      "title": "Verordnung (EU) 2024/1991 über die Wiederherstellung der Natur, Art. 8",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1991/oj"
+    },
+    {
+      "id": "bafu-bodenstrategie-2020",
+      "type": "official",
+      "publisher": "BAFU, ARE und BLW",
+      "date": "2020-05-08",
+      "title": "Bodenstrategie Schweiz: Faktenblatt",
+      "url": "https://www.bafu.admin.ch/dam/de/sd-web/lT7hF7rnjEta/bodenstrategie_schweiz.pdf"
+    },
+    {
+      "id": "wien-kfp-2025",
+      "type": "official",
+      "publisher": "Stadt Wien",
+      "date": "2025-06",
+      "title": "Klimafahrplan-Monitoring: Klimaanpassung, öffentlicher Raum und Gebäude",
+      "url": "https://www.wien.gv.at/spezial/klimafahrplan-monitoring/klimaanpassung/offentlicher-raum-und-gebaude/"
+    },
+    {
+      "id": "bs-ks-teil1-2025",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2025-08-14",
+      "title": "Klimaschutzstrategie Kanton Basel-Stadt, Teil 1: Netto-Null 2037 (Langfassung)",
+      "url": "https://media.bs.ch/original_file/81b51881b3601b2d7641aff299881202da3330f2/20250814-klimastrategie-langfassung-bf.pdf"
+    },
+    {
+      "id": "gr-23-5581",
+      "type": "official",
+      "publisher": "Grosser Rat Basel-Stadt",
+      "date": "2024-10-23",
+      "title": "Beschluss zur Motion Raphael Fuhrer betreffend Anpassung der Motorfahrzeugsteuer (23.5581): Überweisung als Motion, Frist 23.04.2026",
+      "url": "https://grosserrat.bs.ch/dokumente/100408/000000408503.pdf"
+    },
+    {
+      "id": "rr-26-5024",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2026-04-01",
+      "title": "Beantwortung der Schriftlichen Anfrage betreffend Netto-Null im Verkehr (26.5024.02)",
+      "url": "https://grosserrat.bs.ch/?dnr=26.5024.02"
+    },
+    {
+      "id": "rr-26-0185",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2026-03-04",
+      "title": "Bericht über die Immissionen nichtionisierender Strahlung (NIS) im Jahr 2023 (26.0185.01)",
+      "url": "https://grosserrat.bs.ch/?dnr=26.0185.01"
+    },
+    {
+      "id": "usg-bs",
+      "type": "official",
+      "publisher": "Kanton Basel-Stadt, Gesetzessammlung",
+      "date": "2026-01-01",
+      "title": "Umweltschutzgesetz Basel-Stadt (USG BS, SG 780.100), § 19b",
+      "url": "https://www.gesetzessammlung.bs.ch/app/de/texts_of_law/780.100"
+    },
+    {
+      "id": "rr-25-1737",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2026-08-26",
+      "title": "Kantonale Biodiversitätsinitiative: Antrag auf Fristerstreckung (25.1737.02)",
+      "url": "https://grosserrat.bs.ch/?dnr=25.1737.02"
+    },
+    {
+      "id": "gr-24-5156",
+      "type": "official",
+      "publisher": "Grosser Rat Basel-Stadt",
+      "date": "2024-10-23",
+      "title": "Beschluss zum Anzug Lukas Bollack betreffend Erhöhung der Baumkronenbedeckung im Siedlungsgebiet (24.5156): Frist 23.10.2026",
+      "url": "https://grosserrat.bs.ch/dokumente/100408/000000408495.pdf"
+    },
+    {
+      "id": "gr-19-5034",
+      "type": "official",
+      "publisher": "Grosser Rat Basel-Stadt",
+      "date": "2022-02-16",
+      "title": "Beschluss zur Motion Grossenbacher betreffend Solardachpflicht auf öffentlichen Gebäuden (19.5034): Fristerstreckung bis 31.08.2023",
+      "url": "https://grosserrat.bs.ch/dokumente/100396/000000396659.pdf"
+    },
+    {
+      "id": "rr-25-0921",
+      "type": "official",
+      "publisher": "Regierungsrat Basel-Stadt",
+      "date": "2025-06-25",
+      "title": "Ratschlag Solaroffensive (25.0921.01)",
+      "url": "https://grosserrat.bs.ch/?dnr=25.0921.01"
+    },
+    {
+      "id": "bger-1c-191-2025",
+      "type": "official",
+      "publisher": "Schweizerisches Bundesgericht",
+      "date": "2025-07-03",
+      "title": "Urteil 1C_191/2025 vom 3. Juli 2025 (Strassenlärmsanierung Grenzacherweg, Riehen)",
+      "url": "https://www.bger.ch/ext/eurospider/live/de/php/aza/http/index.php?lang=de&type=show_document&highlight_docid=aza://03-07-2025-1C_191-2025"
+    },
+    {
+      "id": "bs-gewaesserraum",
+      "type": "official",
+      "publisher": "Amt für Umwelt und Energie Basel-Stadt",
+      "date": "2026",
+      "title": "Gewässerschutz und Revitalisierung: Festlegung des Gewässerraums",
+      "url": "https://www.bs.ch/wsu/aue/abteilung-gewaesser-und-boden/gewaesserschutz-und-revitalisierung"
+    },
+    {
+      "id": "gschv-ueb-2011",
+      "type": "official",
+      "publisher": "Schweizerische Eidgenossenschaft (Fedlex)",
+      "date": "2026-01-01",
+      "title": "Gewässerschutzverordnung (GSchV, SR 814.201), Übergangsbestimmungen zur Änderung vom 4. Mai 2011",
+      "url": "https://www.fedlex.admin.ch/eli/cc/1998/2863_2863_2863/de"
+    },
+    {
+      "id": "lsv-17",
+      "type": "official",
+      "publisher": "Schweizerische Eidgenossenschaft (Fedlex)",
+      "date": "2026-04-01",
+      "title": "Lärmschutz-Verordnung (LSV, SR 814.41), Art. 17 Fristen für Sanierungen",
+      "url": "https://www.fedlex.admin.ch/eli/cc/1987/338_338_338/de#art_17"
+    },
+    {
+      "id": "berlin-bff",
+      "type": "official",
+      "publisher": "Senatsverwaltung für Mobilität, Verkehr, Klimaschutz und Umwelt Berlin",
+      "date": "n.d.",
+      "title": "Der Biotopflächenfaktor: Ihr ökologisches Planungsinstrument",
+      "url": "https://www.berlin.de/sen/uvk/_assets/natur-gruen/landschaftsplanung/bff-biotopflaechenfaktor/broschuere_bff_als_oekologisches_planungsinstrument.pdf"
     }
-  ]
+  ],
+  "measures": {
+    "title": {
+      "en": "What works, and where Basel stands",
+      "de": "Was wirkt, und wo Basel steht"
+    },
+    "lead": {
+      "en": "Fifteen measures against summer heat, ordered from protecting people to regenerating the living systems that cool a city. For each: what official reviews of the evidence say, a city that does it well or instructively, and where Basel-Stadt stands.",
+      "de": "Fünfzehn Massnahmen gegen Sommerhitze, geordnet vom Schutz der Menschen bis zur Regeneration der lebendigen Systeme, die eine Stadt kühlen. Zu jeder: was amtliche Auswertungen der Evidenz sagen, eine Stadt, die es gut oder lehrreich macht, und wo Basel-Stadt steht."
+    },
+    "trajCaption": {
+      "en": "Measures by stage and Basel's status",
+      "de": "Massnahmen nach Stufe und Stand in Basel"
+    },
+    "statusNote": {
+      "en": "The status is this audit's comparison of Basel with the evidence and the examples, not an official rating. «Among the leaders» means Basel matches the best examples found; «Missing» means no instrument exists.",
+      "de": "Der Stand ist die Einschätzung dieser Bilanz aus dem Vergleich Basels mit der Evidenz und den Beispielen, keine amtliche Bewertung. «Unter den Vorreitern» heisst, Basel hält mit den besten gefundenen Beispielen mit; «Fehlt» heisst, es gibt kein Instrument."
+    },
+    "benefitsLabel": {
+      "en": "Also helps",
+      "de": "Hilft auch"
+    },
+    "stages": [
+      {
+        "id": "protect",
+        "label": {
+          "en": "Protect people",
+          "de": "Menschen schützen"
+        },
+        "text": {
+          "en": "Get everyone through the hottest days: warnings, care for those at risk, cool places close by.",
+          "de": "Alle durch die heissesten Tage bringen: Warnungen, Betreuung der Gefährdeten, kühle Orte in der Nähe."
+        }
+      },
+      {
+        "id": "reduce",
+        "label": {
+          "en": "Keep heat out",
+          "de": "Wärme vermeiden"
+        },
+        "text": {
+          "en": "Stop streets and buildings from absorbing and storing heat: shade, surfaces, air flow.",
+          "de": "Verhindern, dass Strassen und Gebäude Wärme aufnehmen und speichern: Schatten, Oberflächen, Luftaustausch."
+        }
+      },
+      {
+        "id": "restore",
+        "label": {
+          "en": "Restore living systems",
+          "de": "Lebendiges wiederherstellen"
+        },
+        "text": {
+          "en": "Bring back trees, soil and water. Evaporation and shade from living things cool more than any material.",
+          "de": "Bäume, Boden und Wasser zurückbringen. Verdunstung und Schatten von Lebendigem kühlen stärker als jedes Material."
+        }
+      },
+      {
+        "id": "regenerate",
+        "label": {
+          "en": "Regenerate",
+          "de": "Regenerieren"
+        },
+        "text": {
+          "en": "Make every plot and street leave more nature than before, and measure whether it does.",
+          "de": "Jede Parzelle und jede Strasse soll mehr Natur hinterlassen als vorher, und das wird gemessen."
+        }
+      }
+    ],
+    "status": [
+      {
+        "id": "lead",
+        "label": {
+          "en": "Among the leaders",
+          "de": "Unter den Vorreitern"
+        }
+      },
+      {
+        "id": "partial",
+        "label": {
+          "en": "In place, with gaps",
+          "de": "Vorhanden, mit Lücken"
+        }
+      },
+      {
+        "id": "behind",
+        "label": {
+          "en": "Behind",
+          "de": "Im Rückstand"
+        }
+      },
+      {
+        "id": "missing",
+        "label": {
+          "en": "Missing",
+          "de": "Fehlt"
+        }
+      }
+    ],
+    "benefits": [
+      {
+        "id": "health",
+        "label": {
+          "en": "Health",
+          "de": "Gesundheit"
+        }
+      },
+      {
+        "id": "water",
+        "label": {
+          "en": "Water cycle",
+          "de": "Wasserkreislauf"
+        }
+      },
+      {
+        "id": "bio",
+        "label": {
+          "en": "Biodiversity",
+          "de": "Biodiversität"
+        }
+      },
+      {
+        "id": "fair",
+        "label": {
+          "en": "Fair access",
+          "de": "Gerechter Zugang"
+        }
+      },
+      {
+        "id": "carbon",
+        "label": {
+          "en": "Climate protection",
+          "de": "Klimaschutz"
+        }
+      }
+    ],
+    "items": [
+      {
+        "id": "heat-plan",
+        "stage": "protect",
+        "status": "partial",
+        "name": {
+          "en": "Heat-health action plan",
+          "de": "Hitzeaktionsplan"
+        },
+        "evidence": {
+          "text": {
+            "en": "WHO Europe calls for more and broader heat-health action plans: warnings, care for people at risk, and long-term building and urban measures. The evidence that they save lives is thin: the Cochrane review WHO cites found only four studies, and the EEA judged the plans active in 2022 only partially effective.",
+            "de": "Die WHO Europa verlangt mehr und breitere Hitzeaktionspläne: Warnungen, Betreuung Gefährdeter sowie langfristige bauliche und städtische Massnahmen. Die Evidenz, dass sie Leben retten, ist dünn: Die von der WHO zitierte Cochrane-Übersicht fand nur vier Studien, und die EUA hielt die 2022 aktiven Pläne nur für teilweise wirksam."
+          },
+          "basis": "assessed",
+          "sources": [
+            "who-heat-2021",
+            "eea-heat-2024"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Switzerland as a whole: the share of heat deaths in all deaths from May to September fell by about 13% from 1980–2002 to 2004–2025, although the mean summer temperature rose by 1.4 °C. The federal estimate does not isolate what caused the fall.",
+            "de": "Die Schweiz insgesamt: Der Anteil der Hitzetoten an allen Todesfällen von Mai bis September sank von 1980–2002 bis 2004–2025 um rund 13 %, obwohl die mittlere Sommertemperatur um 1,4 °C stieg. Die Bundesschätzung weist nicht aus, worauf der Rückgang zurückgeht."
+          },
+          "basis": "official",
+          "sources": [
+            "bafu-hitzetote-2025"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "Basel-Stadt has had a heat plan since 2021 and is one of 8 of 26 cantons that meet at least 5 of WHO's 8 core elements. Its heat hotline with Pro Senectute runs on weekdays only and only until the end of August. The federal estimate for 2025 is 13 heat deaths in Basel-Stadt (95% interval 10–17), 6.3 per 100,000 against 4.5 for Switzerland.",
+            "de": "Basel-Stadt hat seit 2021 einen Hitzeplan und gehört zu den 8 von 26 Kantonen, die mindestens 5 der 8 Kernelemente der WHO erfüllen. Das Hitzetelefon mit Pro Senectute läuft nur werktags und nur bis Ende August. Die Bundesschätzung für 2025 ergibt 13 Hitzetote in Basel-Stadt (95-%-Intervall 10–17), 6,3 pro 100’000 gegenüber 4,5 in der Schweiz."
+          },
+          "basis": [
+            "counted",
+            "official"
+          ],
+          "sources": [
+            "nccs-hitzeschutz-2025",
+            "gd-hitze",
+            "bafu-hitzetote-2025"
+          ]
+        },
+        "benefits": [
+          "health",
+          "fair"
+        ]
+      },
+      {
+        "id": "cool-rooms",
+        "stage": "protect",
+        "status": "behind",
+        "name": {
+          "en": "Cool rooms within walking distance",
+          "de": "Kühle Räume in Gehdistanz"
+        },
+        "evidence": {
+          "text": {
+            "en": "No official review measures the lives saved by cool rooms. WHO notes weak evidence that outreach to frail older people and cooled wards reduce harm. Spain's first national guide (2026) sets a minimum standard: free entry, step-free access, about 27 °C, seating, drinking water and toilets.",
+            "de": "Keine amtliche Auswertung misst, wie viele Leben kühle Räume retten. Die WHO nennt schwache Evidenz dafür, dass aufsuchende Betreuung gebrechlicher älterer Menschen und gekühlte Stationen Schaden mindern. Der erste nationale Leitfaden Spaniens (2026) setzt einen Mindeststandard: freier Eintritt, stufenloser Zugang, etwa 27 °C, Sitzplätze, Trinkwasser und Toiletten."
+          },
+          "basis": "assessed",
+          "sources": [
+            "who-heat-2021",
+            "miteco-refugios-2026"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Barcelona: more than 500 climate shelters in 2026, over three quarters of them indoors. The city calculates that 99.5% of residents have one within a ten-minute walk, and 80.3% within five minutes.",
+            "de": "Barcelona: über 500 Klimaschutzräume im Jahr 2026, mehr als drei Viertel davon in Innenräumen. Die Stadt berechnet, dass 99,5 % der Bevölkerung einen innert zehn Gehminuten erreichen, 80,3 % innert fünf."
+          },
+          "basis": [
+            "counted",
+            "official"
+          ],
+          "sources": [
+            "bcn-refugis-2026"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "The health department publishes a list of cool rooms that it calls not exhaustive. There is no standard, no opening-hours commitment and no walking-distance analysis. IWB runs more than 200 public fountains.",
+            "de": "Das Gesundheitsdepartement veröffentlicht eine Liste kühler Räume, die es selbst als nicht abschliessend bezeichnet. Es gibt keinen Standard, keine Zusage zu Öffnungszeiten und keine Analyse der Gehdistanz. Die IWB betreiben über 200 öffentliche Brunnen."
+          },
+          "basis": "counted",
+          "sources": [
+            "gd-hitze"
+          ]
+        },
+        "benefits": [
+          "health",
+          "fair"
+        ]
+      },
+      {
+        "id": "shade",
+        "stage": "reduce",
+        "status": "partial",
+        "name": {
+          "en": "Shade where people walk and wait",
+          "de": "Schatten, wo Menschen gehen und warten"
+        },
+        "evidence": {
+          "text": {
+            "en": "Shade is the most effective measure against daytime heat stress: modelled perceived temperature in shade can be 20 degrees or more below that in sun. The federal guide prefers trees to sails and umbrellas, because trees also cool by evaporation.",
+            "de": "Schatten ist die wirksamste Massnahme gegen Hitzestress am Tag: Die modellierte gefühlte Temperatur im Schatten kann 20 Grad und mehr unter jener in der Sonne liegen. Der Leitfaden des Bundes zieht Bäume Sonnensegeln und Schirmen vor, weil Bäume zusätzlich durch Verdunstung kühlen."
+          },
+          "basis": "assessed",
+          "sources": [
+            "uba-klima-2022",
+            "bafu-hitze-2018"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Phoenix measured canopy per census tract (median 11%, range 2–30%) and in November 2024 adopted a funded plan: more than 27,000 trees and 550 shade structures in five years, with at least USD 60 million. Its own count is sobering: 32,968 trees planted on city land in 2010–2023, 21,222 lost.",
+            "de": "Phoenix hat die Kronenbedeckung pro Zensusgebiet gemessen (Median 11 %, Spanne 2–30 %) und im November 2024 einen finanzierten Plan beschlossen: über 27’000 Bäume und 550 Schattenstrukturen in fünf Jahren, mit mindestens 60 Millionen US-Dollar. Die eigene Zählung ernüchtert: 32’968 Bäume 2010–2023 auf städtischem Grund gepflanzt, 21’222 verloren."
+          },
+          "basis": [
+            "measured",
+            "counted"
+          ],
+          "sources": [
+            "phx-shade-2024"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "Where trees cannot grow, Basel placed mobile elements in 2025: 56 large planters at 14 sites, 71 umbrellas at 16 sites and mist sprayers at 12 sites. Useful at playgrounds and stops, but small against the 24.4% of the city's settlement area that is traffic space.",
+            "de": "Wo keine Bäume wachsen können, stellte Basel 2025 mobile Elemente auf: 56 grosse Pflanzgefässe an 14 Orten, 71 Sonnenschirme an 16 Orten und Sprühnebler an 12 Orten. Nützlich an Spielplätzen und Haltestellen, aber klein gegenüber den 24,4 % der Siedlungsfläche der Stadt, die Verkehrsfläche sind."
+          },
+          "basis": "counted",
+          "sources": [
+            "bs-controlling-2026"
+          ]
+        },
+        "benefits": [
+          "health",
+          "fair"
+        ]
+      },
+      {
+        "id": "cool-surfaces",
+        "stage": "reduce",
+        "status": "missing",
+        "name": {
+          "en": "Cool roofs and pavements",
+          "de": "Helle Dächer und Beläge"
+        },
+        "evidence": {
+          "text": {
+            "en": "Reflective roofs lower indoor temperatures; WHO cites a study estimating about 45 avoided heat deaths a year in New York City from much whiter roofs. The same review warns that reflective surfaces can raise ozone, and the IPCC notes that white surfaces soon turn grey.",
+            "de": "Reflektierende Dächer senken die Innentemperatur; die WHO zitiert eine Studie, die für New York City rund 45 vermiedene Hitzetote pro Jahr durch viel hellere Dächer schätzt. Dieselbe Auswertung warnt, dass reflektierende Flächen das Ozon erhöhen können, und der IPCC hält fest, dass weisse Flächen rasch vergrauen."
+          },
+          "basis": "assessed",
+          "sources": [
+            "who-heat-2021",
+            "ipcc-ar6-ch6"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Phoenix has coated more than 140 miles of streets since 2020. Measurements for the city found surfaces 10.5–12 °F (about 6–7 °C) cooler at midday, but air temperature only 0.13 °F lower on average, and more reflected heat on pedestrians at noon.",
+            "de": "Phoenix hat seit 2020 über 140 Meilen Strassen beschichtet. Messungen für die Stadt ergaben mittags 10,5–12 °F (etwa 6–7 °C) kühlere Oberflächen, aber eine im Mittel nur um 0,13 °F tiefere Lufttemperatur und mittags mehr reflektierte Wärme auf Fussgängerinnen und Fussgänger."
+          },
+          "basis": "measured",
+          "sources": [
+            "phx-coolpave"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "No cool-roof or cool-pavement programme is on record. Given the weak effect on air temperature and the glare, this is the least urgent gap; Basel's green-roof rule already covers unused flat roofs.",
+            "de": "Es ist kein Programm für helle Dächer oder Beläge bekannt. Angesichts der schwachen Wirkung auf die Lufttemperatur und der Blendung ist dies die am wenigsten dringliche Lücke; Basels Gründachpflicht deckt ungenutzte Flachdächer bereits ab."
+          },
+          "sources": [
+            "bs-controlling-2026",
+            "bpg-bs"
+          ]
+        },
+        "benefits": [
+          "health"
+        ]
+      },
+      {
+        "id": "cold-air",
+        "stage": "reduce",
+        "status": "behind",
+        "name": {
+          "en": "Cold-air corridors",
+          "de": "Kaltluftschneisen"
+        },
+        "evidence": {
+          "text": {
+            "en": "Green areas of a hectare or more produce cold air at night that can flow over 1,000 m into the city. The federal guide calls for securing these air flows in planning, and Eawag ranks cold-air corridors, with irrigation, as the most effective cooling measures.",
+            "de": "Grünflächen ab etwa einer Hektare erzeugen nachts Kaltluft, die über 1’000 m weit in die Stadt fliessen kann. Der Leitfaden des Bundes empfiehlt, diese Luftströme planerisch zu sichern, und die Eawag stuft Kaltluftschneisen, zusammen mit Bewässerung, als wirksamste Kühlmassnahmen ein."
+          },
+          "basis": "assessed",
+          "sources": [
+            "bafu-hitze-2018",
+            "eawag-hitze-2021"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Stuttgart plans around its cold-air flows: a framework plan of 2007 aims to keep its hillside slopes largely open so that night air can reach the basin. It is informal planning, not a building ban.",
+            "de": "Stuttgart plant um seine Kaltluftströme herum: Ein Rahmenplan von 2007 soll die Halbhöhenlagen weitgehend offen halten, damit Nachtluft den Talkessel erreicht. Es ist informelle Planung, kein Bauverbot."
+          },
+          "sources": [
+            "stuttgart-rahmenplan"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "A city climate analysis exists (2019), and large redevelopment sites are checked for air flow by microclimate modelling. But the canton has no reliable data on how well ventilation is being secured, and finds that the Rhine has no cooling effect at night.",
+            "de": "Es gibt eine Stadtklimaanalyse (2019), und grössere Areale werden mit Mikroklimamodellierungen auf ihre Durchlüftung geprüft. Belastbare Daten dazu, wie gut die Durchlüftung gesichert wird, hat der Kanton aber nicht, und er stellt fest, dass der Rhein nachts keine kühlende Wirkung hat."
+          },
+          "sources": [
+            "bs-controlling-2026"
+          ]
+        },
+        "benefits": [
+          "health"
+        ]
+      },
+      {
+        "id": "canopy-target",
+        "stage": "restore",
+        "status": "behind",
+        "name": {
+          "en": "A binding canopy target",
+          "de": "Ein verbindliches Kronenziel"
+        },
+        "evidence": {
+          "text": {
+            "en": "Measured air temperature under tree canopies is a few degrees lower than over open ground on sunny days; a simulation for Munich found over 7 °C. Mostly from shade, reinforced by evaporation.",
+            "de": "Unter Baumkronen ist die gemessene Lufttemperatur an sonnigen Tagen einige Grad tiefer als über offenen Flächen; eine Simulation für München ergab über 7 °C. Vor allem durch Schatten, verstärkt durch Verdunstung."
+          },
+          "basis": "assessed",
+          "sources": [
+            "bafu-hitze-2018"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Lausanne set 30% by 2040 in 2021 and measures it by LiDAR: its urban canopy grew from 20% in 2012 to 24.3% in 2024. Zurich aims for 25% by 2050, but its own measurements show a fall from 17% (2018) to 15% (2022).",
+            "de": "Lausanne setzte 2021 das Ziel von 30 % bis 2040 und misst es mit LiDAR: Die Kronenbedeckung der Stadt wuchs von 20 % im Jahr 2012 auf 24,3 % im Jahr 2024. Zürich strebt 25 % bis 2050 an, doch die eigenen Messungen zeigen einen Rückgang von 17 % (2018) auf 15 % (2022)."
+          },
+          "basis": "official",
+          "sources": [
+            "lausanne-canopee-2025",
+            "zh-baeume-2023"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "15% of the city's settlement area without forest, unchanged since 2012. The controlling report names about 18% by 2040, but it comes from a parliamentary Anzug, which only obliges the government to report, by 23 October 2026. There is no binding target.",
+            "de": "15 % der Siedlungsfläche der Stadt ohne Wald, seit 2012 unverändert. Der Controllingbericht nennt rund 18 % bis 2040, doch das Ziel stammt aus einem Anzug, der die Regierung nur zu einem Bericht verpflichtet, fällig am 23. Oktober 2026. Ein verbindliches Ziel gibt es nicht."
+          },
+          "basis": "official",
+          "sources": [
+            "bs-controlling-2026",
+            "gr-24-5156"
+          ]
+        },
+        "benefits": [
+          "health",
+          "bio",
+          "water"
+        ]
+      },
+      {
+        "id": "trees",
+        "stage": "restore",
+        "status": "partial",
+        "name": {
+          "en": "More trees, with room to grow old",
+          "de": "Mehr Bäume, die alt werden können"
+        },
+        "evidence": {
+          "text": {
+            "en": "Street trees reach on average only a quarter of their potential lifespan, and large old trees give most of the shade. Rooting space and water in dry spells decide whether planting pays off.",
+            "de": "Strassenbäume erreichen im Mittel nur ein Viertel ihrer möglichen Lebensdauer, und grosse alte Bäume spenden den meisten Schatten. Wurzelraum und Wasser in Trockenzeiten entscheiden, ob sich eine Pflanzung lohnt."
+          },
+          "basis": "assessed",
+          "sources": [
+            "bafu-hitze-2018"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Singapore set out in 2020 to plant one million more trees by 2030, with residents. By April 2023 more than 500,000 were in the ground, and the parks board expects to finish three years early.",
+            "de": "Singapur nahm sich 2020 vor, bis 2030 eine Million zusätzliche Bäume zu pflanzen, zusammen mit der Bevölkerung. Bis April 2023 standen über 500’000, und die Parkbehörde rechnet mit einem Abschluss drei Jahre früher."
+          },
+          "basis": "counted",
+          "sources": [
+            "nparks-trees-2023"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "Public trees rose from 26,660 in 2020 to 27,807 in 2024, a net gain of 1,147. The Grand Council asks for at least 2,000 more by 2037. There are no figures for trees on private land.",
+            "de": "Die öffentlichen Bäume nahmen von 26’660 im Jahr 2020 auf 27’807 im Jahr 2024 zu, netto 1’147. Der Grosse Rat verlangt mindestens 2’000 zusätzliche bis 2037. Für Bäume auf privatem Grund gibt es keine Zahlen."
+          },
+          "basis": "counted",
+          "sources": [
+            "bs-controlling-2026"
+          ]
+        },
+        "benefits": [
+          "bio",
+          "health",
+          "carbon"
+        ]
+      },
+      {
+        "id": "green-roofs",
+        "stage": "restore",
+        "status": "lead",
+        "name": {
+          "en": "Green roofs",
+          "de": "Begrünte Dächer"
+        },
+        "evidence": {
+          "text": {
+            "en": "The IPCC calls the cooling effect of green roofs highly variable. At street level they help only above several hundred square metres and up to about 10 m in height. Their larger value is rainwater retention and habitat.",
+            "de": "Der IPCC nennt die Kühlwirkung begrünter Dächer sehr unterschiedlich. Auf Strassenniveau wirken sie erst ab mehreren hundert Quadratmetern und bis etwa 10 m Höhe. Ihr grösserer Nutzen sind Regenrückhalt und Lebensraum."
+          },
+          "basis": "assessed",
+          "sources": [
+            "ipcc-ar6-ch6",
+            "bafu-hitze-2018"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Tokyo has required greening on new buildings since 2001: 20% of the roof on sites of 1,000 m² or more, 25% from 5,000 m². From 2000 to 2024, plans covered 2.9 million m² of roof, wall and balcony greening.",
+            "de": "Tokio verlangt seit 2001 Begrünung bei Neubauten: 20 % der Dachfläche auf Grundstücken ab 1’000 m², 25 % ab 5’000 m². Von 2000 bis 2024 umfassten die Pläne 2,9 Millionen m² Dach-, Wand- und Balkonbegrünung."
+          },
+          "basis": "counted",
+          "sources": [
+            "tokyo-roof"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "Basel requires every unused flat roof to be covered with vegetation, not a share, and has done so for decades. Since April 2026 the rules ask for at least 15 cm of substrate and a seed mix of about 50 regional species, which makes the roofs habitats, not just mats.",
+            "de": "Basel verlangt, dass jedes ungenutzte Flachdach begrünt wird, nicht nur ein Anteil, und das seit Jahrzehnten. Seit April 2026 verlangt das Merkblatt mindestens 15 cm Substrat und eine Ansaat mit rund 50 regionalen Arten, was die Dächer zu Lebensräumen macht, nicht bloss zu Matten."
+          },
+          "sources": [
+            "bpg-bs",
+            "stg-flachdach-2026"
+          ]
+        },
+        "benefits": [
+          "water",
+          "bio"
+        ]
+      },
+      {
+        "id": "facades",
+        "stage": "restore",
+        "status": "behind",
+        "name": {
+          "en": "Green façades",
+          "de": "Begrünte Fassaden"
+        },
+        "evidence": {
+          "text": {
+            "en": "Measured air temperature within 0.6 m of a green façade was up to 1.3 °C lower than at a bare wall. Façades offer far more surface than roofs and shade the wall itself.",
+            "de": "Die gemessene Lufttemperatur innerhalb von 0,6 m vor einer begrünten Fassade lag bis zu 1,3 °C tiefer als vor einer kahlen Wand. Fassaden bieten weit mehr Fläche als Dächer und beschatten die Wand selbst."
+          },
+          "basis": "assessed",
+          "sources": [
+            "bafu-hitze-2018"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Singapore targeted 200 hectares of roof and vertical greenery by 2030 and passed it early: 229 ha after 36 ha were added in 2024.",
+            "de": "Singapur setzte sich 200 Hektaren Dach- und Vertikalbegrünung bis 2030 zum Ziel und übertraf es vorzeitig: 229 ha, nachdem 2024 36 ha hinzukamen."
+          },
+          "basis": "counted",
+          "sources": [
+            "nparks-skyrise-2025"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "The canton has a feasibility study and has picked five pilot façades on its own buildings. The data work took longer than expected, and the canton says long-term funding for care and upkeep still has to be secured.",
+            "de": "Der Kanton hat eine Machbarkeitsstudie und fünf Pilotfassaden an eigenen Gebäuden ausgewählt. Die Datenarbeit dauerte länger als erwartet, und laut Kanton muss die langfristige Finanzierung von Pflege und Unterhalt erst gesichert werden."
+          },
+          "basis": "counted",
+          "sources": [
+            "bs-controlling-2026"
+          ]
+        },
+        "benefits": [
+          "bio",
+          "health"
+        ]
+      },
+      {
+        "id": "unsealing",
+        "stage": "restore",
+        "status": "behind",
+        "name": {
+          "en": "Unsealing",
+          "de": "Entsiegelung"
+        },
+        "evidence": {
+          "text": {
+            "en": "Full unsealing followed by planting has the best effect on the local climate of any surface measure; partial solutions such as grass pavers do less. Soil and groundwater must be checked for pollution first.",
+            "de": "Vollständige Entsiegelung mit anschliessender Begrünung hat unter den Oberflächenmassnahmen die beste Wirkung auf das Lokalklima; Teillösungen wie Rasengittersteine wirken weniger. Boden und Grundwasser sind vorher auf Belastungen zu prüfen."
+          },
+          "basis": "assessed",
+          "sources": [
+            "bafu-hitze-2018"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Bern made it law: since 1 January 2025 its climate adaptation regulation requires at least 10,000 m² of climate-effective area a year, 140,000 m² within ten years, counted as net unsealing weighted by effect. Vienna, working by programme rather than law, unsealed 111,600 m² from 2020 to June 2025.",
+            "de": "Bern hat es ins Recht geschrieben: Seit dem 1. Januar 2025 verlangt das Klimaanpassungsreglement mindestens 10’000 m² klimawirksame Fläche pro Jahr, 140’000 m² in zehn Jahren, gezählt als netto entsiegelte Fläche, gewichtet nach Wirkung. Wien entsiegelte ohne Gesetz, über Programme, von 2020 bis Juni 2025 111’600 m²."
+          },
+          "basis": "counted",
+          "sources": [
+            "bern-kar-2024",
+            "wien-kfp-2025"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "4,477 m² were approved for unsealing in 2023 and 2024 together. A motion the Grand Council passed to the government asks for 165,000 m² by 2037; that would need about 11,800 m² a year from 2024 (165,000 m² spread over 14 years), more than five times the current pace.",
+            "de": "2023 und 2024 zusammen wurden 4’477 m² Entsiegelung bewilligt. Eine vom Grossen Rat überwiesene Motion verlangt 165’000 m² bis 2037; das erfordert ab 2024 rund 11’800 m² pro Jahr (165’000 m² auf 14 Jahre verteilt), mehr als das Fünffache des heutigen Tempos."
+          },
+          "basis": [
+            "counted",
+            "derived"
+          ],
+          "sources": [
+            "bs-controlling-2026"
+          ]
+        },
+        "benefits": [
+          "water",
+          "bio",
+          "health"
+        ]
+      },
+      {
+        "id": "green-space",
+        "stage": "restore",
+        "status": "behind",
+        "name": {
+          "en": "Green space within 300 metres",
+          "de": "Grünraum in 300 Metern"
+        },
+        "evidence": {
+          "text": {
+            "en": "WHO Europe's rule of thumb is public green space of at least 0.5–1 hectare within 300 m of every home, about five minutes' walk.",
+            "de": "Die Faustregel der WHO Europa lautet: öffentlicher Grünraum von mindestens 0,5–1 Hektare innert 300 m jeder Wohnung, etwa fünf Gehminuten."
+          },
+          "basis": "assessed",
+          "sources": [
+            "who-green-2017"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Across Europe, fewer than half of city dwellers live within 300 m of a park. In Stockholm the share is above 80%, according to the EEA.",
+            "de": "In Europa lebt weniger als die Hälfte der Stadtbevölkerung innert 300 m eines Parks. In Stockholm liegt der Anteil laut EUA über 80 %."
+          },
+          "basis": "official",
+          "sources": [
+            "eea-green-2022"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "Basel's own target is 9 m² of accessible open space per resident within 300 m. 31,367 of 179,517 residents of the city reach it, 17.5%; 25,651 have less than 1.5 m².",
+            "de": "Basels eigenes Ziel sind 9 m² zugängliche Freifläche pro Person innert 300 m. 31’367 von 179’517 Einwohnerinnen und Einwohnern der Stadt erreichen es, 17,5 %; 25’651 haben weniger als 1,5 m²."
+          },
+          "basis": [
+            "official",
+            "derived"
+          ],
+          "sources": [
+            "bs-controlling-2026"
+          ]
+        },
+        "benefits": [
+          "health",
+          "fair",
+          "bio"
+        ]
+      },
+      {
+        "id": "sponge",
+        "stage": "regenerate",
+        "status": "behind",
+        "name": {
+          "en": "Sponge city",
+          "de": "Schwammstadt"
+        },
+        "evidence": {
+          "text": {
+            "en": "Evaporating water is the dominant cooling mechanism in a city, and greenery needs considerable water in dry spells. Keeping rainwater where it falls, in soil, trees and cisterns, serves both cooling and flood protection.",
+            "de": "Verdunstendes Wasser ist der wichtigste Kühlmechanismus in der Stadt, und Grün braucht in Trockenzeiten erhebliche Wassermengen. Regenwasser dort zu halten, wo es fällt, in Boden, Bäumen und Zisternen, dient der Kühlung und dem Hochwasserschutz zugleich."
+          },
+          "basis": "assessed",
+          "sources": [
+            "eawag-hitze-2021",
+            "bafu-hitze-2018"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Berlin limits the rainwater a new building may send to the sewer to 2 litres per second per hectare, so the rest must be kept on site. Copenhagen's cloudburst plan of 2012 foresaw about 300 surface projects; by December 2023, 19 were in use.",
+            "de": "Berlin begrenzt das Regenwasser, das ein Neubau in die Kanalisation leiten darf, auf 2 Liter pro Sekunde und Hektare; der Rest ist vor Ort zu halten. Kopenhagens Wolkenbruchplan von 2012 sah rund 300 Oberflächenprojekte vor; bis Dezember 2023 waren 19 in Betrieb."
+          },
+          "basis": "counted",
+          "sources": [
+            "berlin-brewa-2021",
+            "kk-skybrud-2023"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "The first sponge-city streets are due to be built at VoltaNord from 2026. A two-year trial of permeable parking at Riehenring ended in 2024, and its evaluation is not yet published. There is no general limit on rainwater discharge from new buildings on record.",
+            "de": "Die ersten Schwammstadt-Strassen sollen ab 2026 im Areal VoltaNord gebaut werden. Ein zweijähriger Versuch mit sickerfähigen Parkplätzen am Riehenring endete 2024; die Auswertung ist noch nicht veröffentlicht. Eine allgemeine Begrenzung der Regenwassereinleitung bei Neubauten ist nicht bekannt."
+          },
+          "sources": [
+            "bs-controlling-2026"
+          ]
+        },
+        "benefits": [
+          "water",
+          "bio"
+        ]
+      },
+      {
+        "id": "green-factor",
+        "stage": "regenerate",
+        "status": "missing",
+        "name": {
+          "en": "A green factor for every plot",
+          "de": "Ein Grünfaktor für jede Parzelle"
+        },
+        "evidence": {
+          "text": {
+            "en": "Official reviews do not measure the cooling of a green factor as such. It works through what it secures: planted, unsealed ground, trees and green roofs on each plot, which the measures above show to be effective.",
+            "de": "Amtliche Auswertungen messen die Kühlung eines Grünfaktors nicht als solche. Er wirkt über das, was er sichert: bepflanzten, unversiegelten Boden, Bäume und Gründächer auf jeder Parzelle, deren Wirkung oben belegt ist."
+          },
+          "sources": [
+            "bafu-hitze-2018"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Singapore has required landscaping since 2018: 30–40% of the site area and a green plot ratio of 3.0–4.0, rising with density. Berlin has used a biotope area factor since 1990, with target values of 0.3 to 0.6 by use and density; it is binding only where a landscape plan sets it, on almost 5% of the city.",
+            "de": "Singapur verlangt seit 2018 Begrünung: 30–40 % der Grundstücksfläche und eine Grünflächenzahl von 3,0–4,0, steigend mit der Dichte. Berlin kennt seit 1990 den Biotopflächenfaktor, mit Zielwerten von 0,3 bis 0,6 je nach Nutzung und Dichte; verbindlich ist er nur, wo ein Landschaftsplan ihn festsetzt, auf fast 5 % der Stadtfläche."
+          },
+          "sources": [
+            "ura-lush-2017",
+            "berlin-bff"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "Basel's building law requires two thirds of the area behind the building line to be garden, but not in zones 5, 6 and 7, the densest. It has no green factor or green area ratio.",
+            "de": "Basels Baugesetz verlangt, dass zwei Drittel der Fläche hinter der Baulinie Garten sind, aber nicht in den Zonen 5, 6 und 7, den dichtesten. Einen Grünfaktor oder eine Grünflächenziffer kennt es nicht."
+          },
+          "sources": [
+            "bpg-bs"
+          ]
+        },
+        "benefits": [
+          "water",
+          "bio",
+          "health"
+        ]
+      },
+      {
+        "id": "net-gain",
+        "stage": "regenerate",
+        "status": "missing",
+        "name": {
+          "en": "No net loss, then net gain",
+          "de": "Kein Nettoverlust, dann Nettogewinn"
+        },
+        "evidence": {
+          "text": {
+            "en": "The EU now requires no net loss of urban green space and tree canopy by 2030 against 2024, and a rising trend from 2031. It does not bind Switzerland, but sets the benchmark. Switzerland aims to consume no net soil by 2050.",
+            "de": "Die EU verlangt neu, dass Grünflächen und Baumkronen in Städten bis 2030 gegenüber 2024 nicht netto abnehmen und ab 2031 zunehmen. Die Schweiz ist daran nicht gebunden, aber es setzt den Massstab. Die Schweiz strebt an, bis 2050 netto keinen Boden mehr zu verbrauchen."
+          },
+          "sources": [
+            "eu-nrr-2024",
+            "bafu-bodenstrategie-2020"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "England made it law: since February 2024 most new developments must leave biodiversity at least 10% higher than before, measured by a statutory metric and secured for 30 years.",
+            "de": "England hat es ins Recht geschrieben: Seit Februar 2024 müssen die meisten Neubauprojekte die Biodiversität um mindestens 10 % gegenüber vorher erhöhen, gemessen mit einer gesetzlichen Metrik und für 30 Jahre gesichert."
+          },
+          "sources": [
+            "uk-tcpa-7a"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "The 2023 biodiversity strategy sets out measures but no quantified gain. A cantonal biodiversity initiative is pending: the government missed the 11 September 2026 deadline for its report and asks to extend it to June 2027.",
+            "de": "Die Biodiversitätsstrategie 2023 enthält Massnahmen, aber keinen bezifferten Gewinn. Eine kantonale Biodiversitätsinitiative ist hängig: Die Regierung verpasste die Frist für ihren Bericht vom 11. September 2026 und beantragt eine Verlängerung bis Juni 2027."
+          },
+          "sources": [
+            "rr-25-1737"
+          ]
+        },
+        "benefits": [
+          "bio",
+          "water"
+        ]
+      },
+      {
+        "id": "monitoring",
+        "stage": "regenerate",
+        "status": "lead",
+        "name": {
+          "en": "Measure canopy every few years",
+          "de": "Das Kronendach regelmässig messen"
+        },
+        "evidence": {
+          "text": {
+            "en": "A canopy target means little without repeated measurement of the same indicator. The EU regulation requires canopy to be measured every six years in each urban area.",
+            "de": "Ein Kronenziel bedeutet wenig ohne wiederholte Messung desselben Indikators. Die EU-Verordnung verlangt, das Kronendach in jedem städtischen Gebiet alle sechs Jahre zu messen."
+          },
+          "sources": [
+            "eu-nrr-2024"
+          ]
+        },
+        "exemplar": {
+          "text": {
+            "en": "Zurich flies LiDAR every four years, which is how it learned that its canopy lost 64 hectares between 2018 and 2022.",
+            "de": "Zürich misst alle vier Jahre per LiDAR-Befliegung und weiss daher, dass seine Kronenfläche zwischen 2018 und 2022 um 64 Hektaren abnahm."
+          },
+          "basis": "measured",
+          "sources": [
+            "zh-baeume-2023"
+          ]
+        },
+        "basel": {
+          "text": {
+            "en": "Basel measures canopy by LiDAR over the whole canton (2012, 2021, 2024), publishes the maps as open data and plans updates every three years, in 2027 and 2030.",
+            "de": "Basel misst das Kronendach per LiDAR über den ganzen Kanton (2012, 2021, 2024), veröffentlicht die Karten als offene Daten und plant alle drei Jahre eine Nachführung, 2027 und 2030."
+          },
+          "basis": "measured",
+          "sources": [
+            "stg-kronen-ogd",
+            "bs-controlling-2026"
+          ]
+        },
+        "benefits": [
+          "bio"
+        ]
+      }
+    ]
+  },
+  "obligations": {
+    "title": {
+      "en": "Open obligations",
+      "de": "Offene Pflichten"
+    },
+    "lead": {
+      "en": "Binding duties with a deadline, and whether they have been met. Only duties set by federal or cantonal law, or by a Grand Council decision with a deadline, count here; plans, strategies and self-commitments do not.",
+      "de": "Verbindliche Pflichten mit Frist, und ob sie erfüllt sind. Es zählen nur Pflichten aus Bundes- oder kantonalem Recht oder aus einem Beschluss des Grossen Rates mit Frist; Pläne, Strategien und Selbstverpflichtungen nicht."
+    },
+    "note": {
+      "en": "Status as of 29 September 2026, checked against the Grand Council's records and the cited documents. A missed deadline for a motion or report has no legal sanction beyond parliamentary oversight. The federal record does not show Basel widely in breach: of the federal duties checked, most are met or not yet due.",
+      "de": "Stand 29. September 2026, geprüft anhand der Geschäftsdatenbank des Grossen Rates und der zitierten Dokumente. Eine verpasste Frist für eine Motion oder einen Bericht hat ausser der parlamentarischen Aufsicht keine rechtliche Folge. Die Bundesebene zeigt keine breite Pflichtverletzung Basels: Von den geprüften Bundespflichten sind die meisten erfüllt oder noch nicht fällig."
+    },
+    "status": [
+      {
+        "id": "open",
+        "label": {
+          "en": "Not met",
+          "de": "Nicht erfüllt"
+        }
+      },
+      {
+        "id": "risk",
+        "label": {
+          "en": "At risk",
+          "de": "Gefährdet"
+        }
+      },
+      {
+        "id": "late",
+        "label": {
+          "en": "Met late",
+          "de": "Verspätet erfüllt"
+        }
+      }
+    ],
+    "items": [
+      {
+        "id": "noise",
+        "status": "open",
+        "due": "2018-03-31",
+        "title": {
+          "en": "Road-noise remediation",
+          "de": "Strassenlärmsanierung"
+        },
+        "law": {
+          "en": "Art. 17 para. 4 lit. b LSV",
+          "de": "Art. 17 Abs. 4 lit. b LSV"
+        },
+        "body": {
+          "en": "Roads above the noise limits had to be remediated by 31 March 2018. On the Grenzacherweg in Riehen, the canton ordered remediation only in September 2023; the municipality appealed, and in July 2025 the Federal Supreme Court told the cantonal instances to speed up the proceedings over a remediation that all of them consider urgent.",
+          "de": "Strassen über den Lärmgrenzwerten waren bis zum 31. März 2018 zu sanieren. Am Grenzacherweg in Riehen ordnete der Kanton die Sanierung erst im September 2023 an; die Gemeinde rekurrierte, und im Juli 2025 hielt das Bundesgericht die kantonalen Instanzen an, das Verfahren um die von allen als dringlich erachtete Sanierung beschleunigt abzuschliessen."
+        },
+        "sources": [
+          "lsv-17",
+          "bger-1c-191-2025"
+        ]
+      },
+      {
+        "id": "vehicle-tax",
+        "status": "open",
+        "due": "2026-04-23",
+        "title": {
+          "en": "Vehicle tax reform (Motion Fuhrer)",
+          "de": "Reform der Motorfahrzeugsteuer (Motion Fuhrer)"
+        },
+        "law": {
+          "en": "Grand Council decision of 23 October 2024 on motion 23.5581",
+          "de": "Beschluss des Grossen Rates vom 23. Oktober 2024 zur Motion 23.5581"
+        },
+        "body": {
+          "en": "The motion asks for a vehicle tax that no longer rewards vehicles with excessive resource use. The deadline passed on 23 April 2026 with no bill, interim report or extension on record. The government says a bill is in preparation and could take effect in 2030 at the earliest.",
+          "de": "Die Motion verlangt eine Motorfahrzeugsteuer ohne finanzielle Fehlanreize für Fahrzeuge mit übermässigem Ressourcenverbrauch. Die Frist lief am 23. April 2026 ab, ohne Vorlage, Zwischenbericht oder Fristerstreckung. Die Regierung erarbeitet nach eigenen Angaben eine Vorlage, die frühestens Anfang 2030 in Kraft treten könne."
+        },
+        "sources": [
+          "gr-23-5581",
+          "rr-26-5024"
+        ]
+      },
+      {
+        "id": "nis",
+        "status": "open",
+        "due": "2024-12-31",
+        "dueDisplay": {
+          "en": "yearly",
+          "de": "jährlich"
+        },
+        "title": {
+          "en": "Yearly report on non-ionising radiation",
+          "de": "Jährlicher Bericht zur nichtionisierenden Strahlung"
+        },
+        "law": {
+          "en": "§ 19b para. 1 USG BS",
+          "de": "§ 19b Abs. 1 USG BS"
+        },
+        "body": {
+          "en": "The law requires a report to the Grand Council every year. The report on 2023 arrived in March 2026, and none exists yet for 2024 or 2025. The government cites staff turnover at its contractor and proposes to drop the yearly duty. The measured values were well within the limits.",
+          "de": "Das Gesetz verlangt jedes Jahr einen Bericht an den Grossen Rat. Der Bericht zum Jahr 2023 kam im März 2026, für 2024 und 2025 liegt noch keiner vor. Die Regierung nennt Personalwechsel beim beauftragten Unternehmen und schlägt vor, die jährliche Pflicht abzuschaffen. Die gemessenen Werte lagen deutlich unter den Grenzwerten."
+        },
+        "sources": [
+          "usg-bs",
+          "rr-26-0185"
+        ]
+      },
+      {
+        "id": "biodiversity-initiative",
+        "status": "open",
+        "due": "2026-09-11",
+        "title": {
+          "en": "Government report on the biodiversity initiative",
+          "de": "Bericht der Regierung zur Biodiversitätsinitiative"
+        },
+        "law": {
+          "en": "§ 19 para. 1 IRG",
+          "de": "§ 19 Abs. 1 IRG"
+        },
+        "body": {
+          "en": "The six-month deadline for the government's report ended on 11 September 2026. The government asked in August for nine more months, to 11 June 2027, to prepare a counter-proposal; the Grand Council has not yet decided.",
+          "de": "Die sechsmonatige Frist für den Bericht der Regierung endete am 11. September 2026. Die Regierung beantragte im August neun Monate mehr, bis zum 11. Juni 2027, um einen Gegenvorschlag auszuarbeiten; der Grosse Rat hat noch nicht entschieden."
+        },
+        "sources": [
+          "rr-25-1737"
+        ]
+      },
+      {
+        "id": "climate-2027",
+        "status": "risk",
+        "due": "2027-12-31",
+        "dueDisplay": {
+          "en": "2027",
+          "de": "2027"
+        },
+        "title": {
+          "en": "First five-year climate target: 479,000 t",
+          "de": "Erstes Fünfjahresziel Klima: 479’000 t"
+        },
+        "law": {
+          "en": "§ 16a para. 3 KV BS; Klimaschutzstrategie, Table 1",
+          "de": "§ 16a Abs. 3 KV BS; Klimaschutzstrategie, Tabelle 1"
+        },
+        "body": {
+          "en": "The constitution requires binding five-year targets on the way to net zero in 2037. The first is 479,000 t CO2eq net in 2027, 29% below 2020. The strategy itself says missing it cannot be ruled out, and the government now calls the 2037 transport targets hardly achievable.",
+          "de": "Die Verfassung verlangt verbindliche Fünfjahresziele auf dem Weg zu Netto-Null 2037. Das erste lautet auf netto 479’000 t CO2eq im Jahr 2027, 29 % unter 2020. Die Strategie selbst hält es für nicht auszuschliessen, dass es verfehlt wird, und die Regierung bezeichnet die Verkehrsziele 2037 inzwischen als kaum erreichbar."
+        },
+        "sources": [
+          "kv-bs",
+          "bs-ks-teil1-2025",
+          "rr-26-5024"
+        ]
+      },
+      {
+        "id": "gewaesserraum",
+        "status": "late",
+        "due": "2018-12-31",
+        "done": "2024-02-01",
+        "doneDisplay": {
+          "en": "February 2024",
+          "de": "Februar 2024"
+        },
+        "title": {
+          "en": "Space for watercourses",
+          "de": "Gewässerraum"
+        },
+        "law": {
+          "en": "Transitional provisions to the GSchV amendment of 4 May 2011, para. 1",
+          "de": "Übergangsbestimmungen zur Änderung der GSchV vom 4. Mai 2011, Abs. 1"
+        },
+        "body": {
+          "en": "Cantons had to fix the space reserved for rivers and streams by the end of 2018. Basel-Stadt's zoning plan for it has been in force since February 2024, about five years late.",
+          "de": "Die Kantone mussten den Gewässerraum bis Ende 2018 festlegen. Der Nutzungsplan Gewässerraum von Basel-Stadt ist seit Februar 2024 rechtskräftig, rund fünf Jahre zu spät."
+        },
+        "sources": [
+          "gschv-ueb-2011",
+          "bs-gewaesserraum"
+        ]
+      },
+      {
+        "id": "solar-public",
+        "status": "late",
+        "due": "2023-08-31",
+        "done": "2025-06-25",
+        "title": {
+          "en": "Solar duty on public buildings (Motion Grossenbacher)",
+          "de": "Solarpflicht auf öffentlichen Gebäuden (Motion Grossenbacher)"
+        },
+        "law": {
+          "en": "Grand Council decision of 16 February 2022 on motion 19.5034",
+          "de": "Beschluss des Grossen Rates vom 16. Februar 2022 zur Motion 19.5034"
+        },
+        "body": {
+          "en": "The extended deadline was 31 August 2023. The government met the motion with its «Solaroffensive» bill of 25 June 2025, almost two years late. The bill is still before the Grand Council's committee.",
+          "de": "Die erstreckte Frist lief am 31. August 2023 ab. Die Regierung erfüllte die Motion mit dem Ratschlag «Solaroffensive» vom 25. Juni 2025, fast zwei Jahre zu spät. Die Vorlage liegt noch in der Kommission des Grossen Rates."
+        },
+        "sources": [
+          "gr-19-5034",
+          "rr-25-0921"
+        ]
+      }
+    ]
+  }
 }

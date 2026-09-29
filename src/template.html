@@ -226,6 +226,7 @@ p { margin: 0; }
 .basis[data-b="counted"]::before { background: linear-gradient(90deg, currentColor 50%, transparent 50%); }
 .basis[data-b="official"]::before { border-radius: 50%; background: currentColor; }
 .basis[data-b="derived"]::before { border-radius: 50%; }
+.basis[data-b="assessed"]::before { width: 6px; height: 6px; transform: rotate(45deg); margin-inline: 1px; }
 .basis + .basis { margin-left: 2px; }
 .chart-meta { margin-top: 6px; display: flex; gap: 6px 14px; flex-wrap: wrap; }
 .strip .note .chart-meta { margin: 0 0 6px; }
@@ -397,6 +398,76 @@ p { margin: 0; }
 .legal p.work { margin-top: 10px; font-size: var(--fs-s); }
 .legal p.work b { font-weight: 700; }
 
+/* ---------- What works: proven measures against Basel ---------- */
+.st-lead { --c: var(--rhine); --c-text: var(--rhine); }
+.st-partial { --c: var(--sulfur); --c-text: var(--sulfur-ink); }
+.st-behind { --c: var(--fuchsine); --c-text: var(--fuchsine); }
+.st-missing { --c: var(--fuchsine); --c-text: var(--fuchsine); }
+.st-mark { display: inline-block; width: 12px; height: 12px; flex: none; background: var(--c); border: 2px solid var(--c); vertical-align: -1px; }
+.st-missing .st-mark, .st-mark.st-missing { background: repeating-linear-gradient(135deg, var(--c) 0 2px, transparent 2px 5px); }
+.st-label { font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c-text); }
+.traj { margin: 0; }
+.traj-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--gap); position: relative; }
+.traj-col { border-top: 3px solid var(--ink); padding-top: 14px; display: flex; flex-direction: column; min-width: 0; }
+.traj-col:nth-child(1) { border-top-color: var(--g2); } .traj-col:nth-child(2) { border-top-color: var(--g1); }
+.traj-col .step { font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-3); }
+.traj-col h3 { font-size: var(--fs-xl); font-stretch: 78%; font-weight: 800; margin-top: 4px; }
+.traj-col > p { font-size: var(--fs-s); color: var(--ink-2); margin-top: 8px; line-height: 1.45; min-height: 4.4em; }
+.traj-col ul { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 8px; }
+.traj-col a { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; background: var(--field); text-decoration: none; font-size: var(--fs-s); font-weight: 600; line-height: 1.3; border-left: 4px solid var(--c); }
+.traj-col a:hover { background: var(--ink); color: var(--paper); }
+.traj-col a .st-mark { margin-top: 2px; }
+.traj-arrow { display: flex; align-items: center; gap: 10px; margin: 0 0 18px; font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-3); }
+.traj-arrow::after { content: ""; flex: 1; height: 2px; background: linear-gradient(90deg, var(--g3), var(--ink)); }
+.traj-arrow span:last-child { order: 2; color: var(--ink); }
+.traj-arrow::after { order: 1; }
+.st-legend { list-style: none; margin: 24px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: var(--fs-s); }
+.st-legend li { display: flex; align-items: center; gap: 8px; }
+.st-legend b { font-stretch: 80%; font-weight: 800; }
+@media (max-width: 900px) { .traj-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 40px; } .traj-col > p { min-height: 0; } }
+@media (max-width: 560px) { .traj-grid { grid-template-columns: 1fr; } }
+
+/* Open obligations */
+.oblig { list-style: none; margin: 0; padding: 0; }
+.oblig > li { display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: 8px var(--gap); padding: 18px 0; border-top: 1px solid var(--rule); }
+.oblig > li:first-child { border-top: 2px solid var(--ink); }
+.ob-open { --c: var(--fuchsine); --c-text: var(--fuchsine); }
+.ob-risk { --c: var(--sulfur); --c-text: var(--sulfur-ink); }
+.ob-late { --c: var(--ink-3); --c-text: var(--ink-2); }
+.ob-late .st-mark { background: transparent; }
+.ob-side .st-label { display: flex; gap: 8px; align-items: center; font-size: var(--fs-s); font-weight: 700; color: var(--c-text); }
+.ob-side time { display: block; margin-top: 8px; font-weight: 800; font-stretch: 78%; }
+.ob-side .when { display: block; font-size: var(--fs-xs); font-weight: 700; color: var(--c-text); }
+.ob-main h3 { font-size: var(--fs-l); font-stretch: 88%; }
+.ob-main .law { font-size: var(--fs-s); color: var(--ink-2); margin-top: 4px; font-style: italic; }
+.ob-main .body { margin-top: 8px; max-width: 68ch; }
+.ob-legend { display: flex; flex-wrap: wrap; gap: 8px 24px; list-style: none; margin: 0 0 18px; padding: 0; font-size: var(--fs-s); }
+.ob-legend li { display: flex; gap: 8px; align-items: center; color: var(--c-text); font-weight: 700; }
+.ob-legend b { font-stretch: 80%; font-weight: 800; }
+@media (max-width: 700px) { .oblig > li { grid-template-columns: 1fr; } .ob-side { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; } .ob-side time { margin-top: 0; } }
+
+.m-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: clamp(64px, 8vw, 104px) 0 8px; }
+.m-tools h3 { font-size: var(--fs-l); font-stretch: 90%; margin-right: auto; }
+.m-tools button { border: 2px solid var(--ink); background: none; padding: 5px 10px; font-size: var(--fs-xs); font-weight: 700; cursor: pointer; }
+.m-tools button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.mlist { list-style: none; margin: 0; padding: 0; }
+.mitem { border-top: 2px solid var(--ink); padding: 22px 0 30px; scroll-margin-top: calc(var(--header-h) + 16px); }
+.mitem[hidden] { display: none; }
+.mitem:target { background: linear-gradient(90deg, var(--field), transparent 70%); }
+.mhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; }
+.mhead h4 { font-size: var(--fs-xl); font-stretch: 80%; font-weight: 800; margin: 0; line-height: 1.1; flex: 1 1 18rem; }
+.mhead .meta { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+.mhead .stage { font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
+.mcols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px var(--gap); margin-top: 16px; }
+.mcols h5 { font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 6px; }
+.mcols p { font-size: var(--fs-s); line-height: 1.5; }
+.mcols .src { margin-top: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
+.mcols .src .cite:first-child { margin-left: 0; }
+.mcols .basel { border-left: 4px solid var(--c); padding-left: 14px; }
+.benefits { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.benefits li { font-size: var(--fs-xs); padding: 2px 8px; border: 1px solid var(--rule); color: var(--ink-2); }
+@media (max-width: 900px) { .mcols { grid-template-columns: 1fr; } }
+
 /* Method */
 .rubric { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--gap); margin: 0; }
 .rubric div { border-top: 8px solid var(--c); padding-top: 8px; }
@@ -469,10 +540,11 @@ p { margin: 0; }
 /* Print */
 @media print {
   :root { --paper: #fff; }
-  .site-head, .actions, .theme-btn, .src-tools, .pop, .skip { display: none !important; }
+  .site-head, .actions, .theme-btn, .src-tools, .m-tools button, .pop, .skip { display: none !important; }
+  .mitem[hidden] { display: block !important; }
   .area-head { position: static; }
   .area, .block { break-inside: auto; padding-block: 24px; }
-  .chart, .sheet, .fig, .legal article { break-inside: avoid; }
+  .chart, .sheet, .fig, .legal article, .mitem, .traj-col, .oblig > li { break-inside: avoid; }
   .seg-hot { animation: none !important; }
   .srclist .t a::after { content: " " attr(href); font-weight: 400; font-size: 0.75rem; word-break: break-all; }
   body { font-size: 10.5pt; }
@@ -574,7 +646,8 @@ p { margin: 0; }
       cite: 'How to cite',
       sourcesLead: 'Every figure on this page links here. All sources are official: authorities, courts, public utilities and international bodies. Source titles are given in their original language.',
       all: 'All', search: 'Search sources', showing: (n, t) => `Showing ${n} of ${t}`, noMatch: 'No sources match. Clear the search or choose All.',
-      nav: { overview: 'Overview', voters: 'Voters', deadlines: 'Deadlines', legal: 'Legal', method: 'Method', sources: 'Sources' },
+      mEvidence: 'What the evidence says', mExemplar: 'Elsewhere', obDue: 'Due', obDone: 'met', obLate: (n) => `${n} late`, dur: (n, unit) => `${n} ${{ d: ['day', 'days'], m: ['month', 'months'], y: ['year', 'years'] }[unit][n === 1 ? 0 : 1]}`, obNote: 'Note', mBasel: 'Basel', mAll: 'All', mList: 'The measures', mFrom: 'from', mTo: 'towards', mStep: 'Stage',
+      nav: { overview: 'Overview', measures: 'What works', voters: 'Voters', deadlines: 'Deadlines', obligations: 'Obligations', legal: 'Legal', method: 'Method', sources: 'Sources' },
       theme: 'Theme', themes: { auto: 'Auto', light: 'Light', dark: 'Dark' },
       preparedBy: 'Prepared by', dataLine: 'Data and code', reviewedOn: 'Reviewed',
       licence: 'Text and data CC BY 4.0, code MIT. Third-party sources remain under their own terms.',
@@ -613,7 +686,8 @@ p { margin: 0; }
       cite: 'Zitiervorschlag',
       sourcesLead: 'Jede Zahl auf dieser Seite verweist hierher. Alle Quellen sind amtlich: Behörden, Gerichte, öffentliche Werke und internationale Organisationen. Titel stehen in der Originalsprache.',
       all: 'Alle', search: 'Quellen durchsuchen', showing: (n, t) => `${n} von ${t} angezeigt`, noMatch: 'Keine Treffer. Suche leeren oder «Alle» wählen.',
-      nav: { overview: 'Überblick', voters: 'Abstimmungen', deadlines: 'Termine', legal: 'Recht', method: 'Methode', sources: 'Quellen' },
+      mEvidence: 'Was die Evidenz sagt', mExemplar: 'Anderswo', obDue: 'Fällig', obDone: 'erfüllt', obLate: (n) => `${n} zu spät`, dur: (n, unit) => `${n} ${{ d: ['Tag', 'Tage'], m: ['Monat', 'Monate'], y: ['Jahr', 'Jahre'] }[unit][n === 1 ? 0 : 1]}`, obNote: 'Hinweis', mBasel: 'Basel', mAll: 'Alle', mList: 'Die Massnahmen', mFrom: 'von', mTo: 'zu', mStep: 'Stufe',
+      nav: { overview: 'Überblick', measures: 'Was wirkt', voters: 'Abstimmungen', deadlines: 'Termine', obligations: 'Pflichten', legal: 'Recht', method: 'Methode', sources: 'Quellen' },
       theme: 'Darstellung', themes: { auto: 'Auto', light: 'Hell', dark: 'Dunkel' },
       preparedBy: 'Erstellt von', dataLine: 'Daten und Code', reviewedOn: 'Geprüft am',
       licence: 'Text und Daten CC BY 4.0, Code MIT. Quellen Dritter unterliegen ihren eigenen Bedingungen.',
@@ -634,7 +708,8 @@ p { margin: 0; }
   }
   walk(D.hero, 'overview'); walk(D.overall, 'overview');
   D.domains.forEach((d) => { walk(d, d.id); (d.charts || []).forEach((c) => walk(D.charts[c], d.id)); });
-  walk(D.politics, 'voters'); walk(D.timeline, 'deadlines'); walk(D.legal, 'legal');
+  if (D.measures) walk(D.measures, 'measures');
+  walk(D.politics, 'voters'); walk(D.timeline, 'deadlines'); if (D.obligations) walk(D.obligations, 'obligations'); walk(D.legal, 'legal');
   const DOMAIN = new Map(D.domains.map((d) => [d.id, d]));
   const whereLabel = (w) => DOMAIN.has(w) ? L(DOMAIN.get(w).short) : UI.nav[w];
 
@@ -688,6 +763,13 @@ p { margin: 0; }
     if (a < 60) return UI.rel(a, 'd', days >= 0);
     if (a < 730) return UI.rel(Math.round(a / 30.44), 'm', days >= 0);
     return UI.rel(Math.round(a / 365.25), 'y', days >= 0);
+  }
+  function span(from, to) {
+    const a = Math.abs(Math.round((to - from) / 864e5));
+    const u = UI.dur;
+    if (a < 60) return u(a, 'd');
+    if (a < 730) return u(Math.round(a / 30.44), 'm');
+    return u(Math.round(a / 365.25), 'y');
   }
   const decimalYear = (d) => d.getFullYear() + (d - new Date(d.getFullYear(), 0, 1)) / (365.25 * 864e5);
 
@@ -939,6 +1021,44 @@ p { margin: 0; }
       </div></div></section>`;
   }
 
+  // Proven measures, placed on a trajectory from protecting people to regenerating living systems, with Basel's status
+  function measures() {
+    const M = D.measures; if (!M) return '';
+    const ST = new Map(M.status.map((s) => [s.id, s]));
+    const SG = new Map(M.stages.map((s, i) => [s.id, { ...s, n: i + 1 }]));
+    const BN = new Map((M.benefits || []).map((b) => [b.id, b]));
+    const mark = (st) => `<i class="st-mark st-${st}" aria-hidden="true"></i>`;
+    const cols = M.stages.map((s, i) => {
+      const its = M.items.filter((m) => m.stage === s.id);
+      return `<div class="traj-col"><span class="step">${UI.mStep} ${i + 1}</span><h3>${esc(L(s.label))}</h3><p>${esc(L(s.text))}</p><ul>${its.map((m) => `<li><a class="st-${m.status}" href="#m-${esc(m.id)}" data-m="${esc(m.id)}">${mark(m.status)}<span>${esc(L(m.name))}<span class="visually-hidden">: ${esc(L(ST.get(m.status).label))}</span></span></a></li>`).join('')}</ul></div>`;
+    }).join('');
+    const counts = M.status.map((s) => [s, M.items.filter((m) => m.status === s.id).length]);
+    const legend = counts.map(([s, n]) => `<li class="st-${s.id}">${mark(s.id)}<b>${n}</b><span>${esc(L(s.label))}</span></li>`).join('');
+    const col = (h, part, cls = '') => part ? `<div class="${cls}"><h5>${h}</h5><p>${esc(L(part.text))}</p><div class="src">${basisTag(part.basis)}${cites(part.sources)}</div></div>` : '';
+    const items = M.items.map((m) => {
+      const st = ST.get(m.status), sg = SG.get(m.stage);
+      const bn = (m.benefits || []).map((b) => BN.get(b)).filter(Boolean).map((b) => `<li>${esc(L(b.label))}</li>`).join('');
+      return `<li class="mitem st-${m.status}" id="m-${esc(m.id)}" data-stage="${esc(m.stage)}" data-status="${esc(m.status)}">
+        <div class="mhead"><h4>${esc(L(m.name))}</h4><div class="meta"><span class="stage">${UI.mStep} ${sg.n}: ${esc(L(sg.label))}</span><span class="st-label">${mark(m.status)} ${esc(L(st.label))}</span></div></div>
+        <div class="mcols">${col(UI.mEvidence, m.evidence)}${col(UI.mExemplar, m.exemplar)}${col(UI.mBasel, m.basel, 'basel')}</div>
+        ${bn ? `<ul class="benefits" aria-label="${esc(L(M.benefitsLabel))}">${bn}</ul>` : ''}
+      </li>`;
+    }).join('');
+    const filters = [`<button type="button" data-mf="all" aria-pressed="true">${UI.mAll} ${M.items.length}</button>`]
+      .concat(M.status.map((s) => [s, M.items.filter((m) => m.status === s.id).length]).filter(([, n]) => n).map(([s, n]) => `<button type="button" data-mf="${esc(s.id)}" aria-pressed="false">${esc(L(s.label))} ${n}</button>`)).join('');
+    return `<section class="block" id="measures" aria-labelledby="h-measures"><div class="wrap">
+      <div class="block-head"><h2 id="h-measures">${esc(L(M.title))}</h2><p>${esc(L(M.lead))}</p></div>
+      <figure class="traj"><figcaption class="visually-hidden">${esc(L(M.trajCaption))}</figcaption>
+        <p class="traj-arrow"><span>${esc(L(M.stages[0].label))}</span><span>${esc(L(M.stages[M.stages.length - 1].label))}</span></p>
+        <div class="traj-grid">${cols}</div>
+        <ul class="st-legend">${legend}</ul>
+        <p class="note" style="margin-top:14px">${esc(L(M.statusNote))}</p>
+      </figure>
+      <div class="m-tools"><h3>${UI.mList}</h3><div role="group" aria-label="${UI.mList}" style="display:flex;gap:8px;flex-wrap:wrap">${filters}</div></div>
+      <ol class="mlist" id="mlist">${items}</ol>
+    </div></section>`;
+  }
+
   function politics() {
     const p = D.politics;
     const rows = p.votes.map((v) => {
@@ -967,6 +1087,32 @@ p { margin: 0; }
         <div class="ahead"><h3>${UI.ahead}</h3><ol>${ahead.map((t) => li(t, true)).join('')}</ol></div>
         <div><h3>${UI.behind}</h3><ol>${past.map((t) => li(t, false)).join('')}</ol></div>
       </div>
+    </div></section>`;
+  }
+
+  // Binding duties with a deadline, and whether they were met
+  function obligations() {
+    const O = D.obligations; if (!O) return '';
+    const ST = new Map(O.status.map((s) => [s.id, s]));
+    const mark = `<i class="st-mark" aria-hidden="true"></i>`;
+    const legend = O.status.map((s) => [s, O.items.filter((o) => o.status === s.id).length]).filter(([, n]) => n)
+      .map(([s, n]) => `<li class="ob-${esc(s.id)}">${mark}<b>${n}</b><span>${esc(L(s.label))}</span></li>`).join('');
+    const items = O.items.map((o) => {
+      const due = parseISO(o.due);
+      const dueText = o.dueDisplay ? L(o.dueDisplay) : fullDate(due);
+      let when = '';
+      if (o.done) when = `${UI.obDone} ${esc(o.doneDisplay ? L(o.doneDisplay) : fullDate(parseISO(o.done)))}, ${UI.obLate(span(due, parseISO(o.done)))}`;
+      else if (!o.dueDisplay) when = relative(due);
+      return `<li class="ob-${esc(o.status)}" id="ob-${esc(o.id)}">
+        <div class="ob-side"><span class="st-label">${mark}${esc(L(ST.get(o.status).label))}</span><time datetime="${esc(o.due)}">${UI.obDue}: ${esc(dueText)}</time>${when ? `<span class="when">${when}</span>` : ''}</div>
+        <div class="ob-main"><h3>${esc(L(o.title))}</h3><p class="law">${esc(L(o.law))}</p><p class="body">${esc(L(o.body))} ${cites(o.sources)}</p></div>
+      </li>`;
+    }).join('');
+    return `<section class="block" id="obligations" aria-labelledby="h-obligations"><div class="wrap">
+      <div class="block-head"><h2 id="h-obligations">${esc(L(O.title))}</h2><p>${esc(L(O.lead))}</p></div>
+      <ul class="ob-legend">${legend}</ul>
+      <ol class="oblig">${items}</ol>
+      <p class="note" style="margin-top:18px">${esc(L(O.note))}</p>
     </div></section>`;
   }
 
@@ -1015,11 +1161,11 @@ p { margin: 0; }
 
   /* ---------- Render ---------- */
   const app = document.getElementById('app');
-  app.innerHTML = hero() + board() + D.domains.map(area).join('') + politics() + deadlines() + legal() + method() + sources();
+  app.innerHTML = hero() + board() + D.domains.map(area).join('') + measures() + politics() + deadlines() + obligations() + legal() + method() + sources();
   const repo = D.meta.repoUrl ? ` <a href="${esc(D.meta.repoUrl)}">GitHub</a>,` : '';
   document.getElementById('foot').innerHTML = `<p>${UI.preparedBy} ${esc(L(D.meta.author))}. ${esc(L(D.meta.disclaimer))}</p><p>${UI.dataLine}:${repo} <a href="${LANG === 'de' ? '../' : ''}data/assessment.json">assessment.json</a>. ${UI.reviewedOn} ${esc(fullDate(parseISO(D.meta.reviewed)))}. ${UI.licence}</p>`;
 
-  const navItems = D.domains.map((d) => [d.id, L(d.short), d.grade]).concat(['voters', 'deadlines', 'legal', 'method', 'sources'].map((k) => [k, UI.nav[k], '']));
+  const navItems = D.domains.map((d) => [d.id, L(d.short), d.grade]).concat([...(D.measures ? ['measures'] : []), 'voters', 'deadlines', ...(D.obligations ? ['obligations'] : []), 'legal', 'method', 'sources'].map((k) => [k, UI.nav[k], '']));
   document.getElementById('nav-list').innerHTML = navItems.map(([id, label, g]) => `<li><a href="#${id}" data-nav="${id}">${g ? `<b class="tone-${toneOf(g)}">${esc(g)}</b>` : ''}${esc(label)}</a></li>`).join('');
 
   /* Series charts draw to the measured width and redraw on resize */
@@ -1120,6 +1266,21 @@ p { margin: 0; }
     applyFilter();
   });
   q.addEventListener('input', applyFilter);
+
+  /* Measures: filter by Basel's status; a trajectory tile always reveals its measure */
+  const mlist = document.getElementById('mlist');
+  if (mlist) {
+    const mButtons = document.querySelectorAll('[data-mf]');
+    const setMf = (f) => {
+      mButtons.forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.mf === f)));
+      mlist.querySelectorAll('.mitem').forEach((li) => { li.hidden = f !== 'all' && li.dataset.status !== f; });
+    };
+    mButtons.forEach((b) => b.addEventListener('click', () => setMf(b.dataset.mf)));
+    document.querySelectorAll('[data-m]').forEach((a) => a.addEventListener('click', () => {
+      const li = document.getElementById('m-' + a.dataset.m);
+      if (li && li.hidden) setMf('all');
+    }));
+  }
 
   /* ---------- Actions ---------- */
   function download(name, type, text) {

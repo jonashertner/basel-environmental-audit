@@ -16,6 +16,7 @@ Every figure comes from an official source (authorities, courts, public utilitie
 - **Counted**: counted by an official body (registers, permits, site inventories, trees, passengers, votes).
 - **Official calculation**: calculated by an official body by its own published method (the canton's greenhouse gas inventory, a canopy cover, a share of the road network).
 - **Derived from official data**: calculated by this audit from official figures alone, by adding or subtracting them; the chart or note says how.
+- **Assessed evidence**: a finding or range from an official review of many studies (IPCC, WHO, EEA, BAFU and similar). It says what a measure achieves in general, not what it achieved in Basel, and is used only in «What works».
 
 Estimates, projections, costs, averages carried over from elsewhere (such as the Swiss average per-capita footprint applied to Basel) and press or advocacy figures are excluded. Legal limits, guidelines and targets appear only as labelled reference values. The build enforces this: it fails if a figure, chart, the hero or the vote results cite a source that is not typed `official`, or lack a `basis`.
 
@@ -24,8 +25,10 @@ Estimates, projections, costs, averages carried over from elsewhere (such as the
 - **Thesis and summer strip.** The 92 days of June to August 2026 at Basel-Binningen: 52 hot days (30 °C or more), against MeteoSwiss's normal of 14.3 for a whole year.
 - **Grades.** An overall grade, three facets (governance, outcomes, legacy) and one grade per area, each with a one-line verdict.
 - **Areas.** Key figures, charts, "The uncomfortable part" and "What would raise the grade" for each of the six areas.
+- **What works.** Fifteen measures against summer heat on a path from protecting people to regenerating living systems. For each: what official evidence reviews say, an official record from another city, and Basel's status (among the leaders, in place with gaps, behind, missing). The status is the audit's judgment.
 - **Voters.** Ballot results that explain the gap between targets and measures.
 - **Deadlines.** Past events and upcoming deadlines, with countdowns computed from the reader's date.
+- **Open obligations.** Binding duties with a deadline (federal or cantonal law, or a Grand Council decision) and whether Basel-Stadt has met them: not met, at risk, or met late.
 - **Legal questions.** Where the findings turn into legal questions, with statutory and case-law references.
 - **Method, revision history and a citation line.**
 - **Sources.** Filterable by type and searchable, each showing where it is cited.
@@ -65,6 +68,8 @@ Conventions in the data file:
 - Every metric needs at least one source id in `sources` and a `basis`: `measured`, `counted`, `official` or `derived` (a list where a chart mixes them). Charts, the hero and the vote results carry a `basis` too. The labels and their definitions live in `method.basis`.
 - A metric has a short `label` and an optional `context` line for comparisons and reference values.
 - Source `type` is one of `official`, `press`, `advocacy`, `reference`. Only `official` sources may carry a figure; the others may appear in context only, and are flagged. The current edition cites official sources only. Source titles stay in their original language.
+- `measures.items` have a `stage`, a `status` and three parts (`evidence`, `exemplar`, `basel`), each with official `sources`. A part carries a `basis` (here `assessed` is allowed) when it states a figure; a part that states only a rule, target or date carries none.
+- `obligations.items` have a `status`, an ISO `due` date (optional `dueDisplay` for recurring or year-only deadlines), an optional ISO `done` date for duties met late, and official `sources`.
 - Timeline items take an ISO `date`. For approximate dates, add `precision` (`year`, `month`, `season`) and optionally `display`; the countdown uses the ISO date.
 - Grades use A–D or F with an optional `+` or `–`.
 - The template computes no figures of its own. Where this audit adds up or subtracts official figures (hot days over a summer, the waste segment "Other", the years between two official dates), the figure is labelled `derived` and the note says how.
@@ -78,7 +83,7 @@ GitHub Pages, built by GitHub Actions on every push to `main` (Settings → Page
 
 - **Typography.** A single family, Archivo, using its width axis from condensed (grades, figures, headlines) to normal (text), in the Swiss typographic tradition of which Basel's School of Design is a centre. The font is self-hosted, so the page makes no third-party requests.
 - **Colour.** Black and white, as in Basel's colours, plus three signals: Rhine teal for good grades, sulfur yellow for middling ones, and a magenta close to fuchsine, one of the synthetic dyes Basel's chemical industry grew out of, for poor grades and for the hot days of 2026.
-- **Basis marks.** A filled square, a half-filled square, a dot or a ring before each figure's citations marks it as measured, counted, officially calculated or derived. Citations are quiet numbered tabs that open the source.
+- **Basis marks.** A filled square, a half-filled square, a dot, a ring or an outlined diamond before each figure's citations marks it as measured, counted, officially calculated, derived or assessed evidence. Citations are quiet numbered tabs that open the source.
 - **Motion.** One moment: the hot-day segment of the summer strip extends on load. It is skipped when the reader prefers reduced motion.
 
 ## Before relying on it

@@ -67,19 +67,19 @@
       }
     ],
     "marker": {
-      "value": 13.6,
+      "value": 14.3,
       "digits": 1,
       "label": {
-        "en": "hot days in a normal summer (1991–2020, sum of the monthly normals for June to August)",
-        "de": "Hitzetage in einem Normalsommer (1991–2020, Summe der Monatsnormwerte Juni bis August)"
+        "en": "hot days in a whole normal year (1991–2020)",
+        "de": "Hitzetage in einem ganzen Normaljahr (1991–2020)"
       },
       "sources": [
         "meteoswiss-normwerte"
       ]
     },
     "aria": {
-      "en": "Of the 92 days from June to August 2026, 52 reached 30 °C or more at Basel-Binningen. In a normal summer there are 13.6.",
-      "de": "Von den 92 Tagen von Juni bis August 2026 erreichten in Basel-Binningen 52 Tage 30 °C oder mehr. In einem Normalsommer sind es 13,6."
+      "en": "Of the 92 days from June to August 2026, 52 reached 30 °C or more at Basel-Binningen. A whole normal year has 14.3.",
+      "de": "Von den 92 Tagen von Juni bis August 2026 erreichten in Basel-Binningen 52 Tage 30 °C oder mehr. Ein ganzes Normaljahr hat 14,3."
     },
     "note": {
       "en": "Daily maximum temperature at the MeteoSwiss station Basel-Binningen. Each day is counted once.",
@@ -318,8 +318,8 @@
         {
           "value": "52",
           "label": {
-            "en": "Hot days (30 °C or more) in June–August 2026; 1991–2020 normal: 13.6",
-            "de": "Hitzetage (30 °C und mehr) im Juni–August 2026; Normwert 1991–2020: 13,6"
+            "en": "Hot days (30 °C or more) in June–August 2026; normal for a whole year (1991–2020): 14.3",
+            "de": "Hitzetage (30 °C und mehr) im Juni–August 2026; Normwert für ein ganzes Jahr (1991–2020): 14,3"
           },
           "sources": [
             "nbcn-binningen",
@@ -534,7 +534,7 @@
         "en": "Air",
         "de": "Luft"
       },
-      "grade": "B–",
+      "grade": "C+",
       "verdict": {
         "en": "In 2025 nitrogen dioxide met the Swiss annual limit at both Basel stations. Fine particles at Feldbergstrasse did not, and ozone exceeded its hourly limit for hundreds of hours.",
         "de": "2025 hielt Stickstoffdioxid an beiden Basler Stationen den Schweizer Jahresgrenzwert ein. Feinstaub an der Feldbergstrasse nicht, und Ozon überschritt seinen Stundengrenzwert während Hunderten von Stunden."
@@ -934,8 +934,8 @@
         "de": "Hitzetage (30 °C und mehr) in Basel, Juni bis August"
       },
       "note": {
-        "en": "MeteoSwiss station Basel/Binningen, homogenised series. The normal is the sum of MeteoSwiss's monthly normals for June, July and August. In 2026 there were 62 hot days up to 27 September.",
-        "de": "MeteoSchweiz-Station Basel/Binningen, homogenisierte Reihe. Der Normwert ist die Summe der Monatsnormwerte von MeteoSchweiz für Juni, Juli und August. 2026 gab es bis zum 27. September 62 Hitzetage."
+        "en": "MeteoSwiss station Basel/Binningen, homogenised series. The normal is MeteoSwiss's figure for a whole year; the bars for 2003, 2018 and 2026 count June to August only. In 2026 there were 62 hot days up to 27 September.",
+        "de": "MeteoSchweiz-Station Basel/Binningen, homogenisierte Reihe. Der Normwert ist der Jahreswert von MeteoSchweiz; die Säulen für 2003, 2018 und 2026 zählen nur Juni bis August. 2026 gab es bis zum 27. September 62 Hitzetage."
       },
       "unit": {
         "en": "days",
@@ -948,10 +948,10 @@
       "bars": [
         {
           "label": {
-            "en": "Normal 1991–2020",
-            "de": "Normwert 1991–2020"
+            "en": "Normal, whole year (1991–2020)",
+            "de": "Normwert ganzes Jahr (1991–2020)"
           },
-          "value": 13.6,
+          "value": 14.3,
           "digits": 1,
           "tone": "base",
           "sources": [
@@ -2275,8 +2275,8 @@
         "de": "Jede Zahl ist ein Wert, den eine amtliche Stelle gemessen oder gezählt hat. Schätzungen, Prognosen, modellierte Werte, Kosten sowie Zahlen aus Presse oder Interessenvertretungen sind ausgeschlossen; der Build lehnt jede Zahl ab, die eine nicht amtliche Quelle zitiert. Grenz-, Richt- und Zielwerte erscheinen nur als gekennzeichnete Referenzwerte."
       },
       {
-        "en": "No own measurements were taken. Where this audit adds up official counts (hot days per summer, the June to August normal, the waste segment “Other”), the parts are official and the sum is stated as such.",
-        "de": "Es wurden keine eigenen Messungen durchgeführt. Wo diese Bilanz amtliche Zählungen addiert (Hitzetage pro Sommer, der Normwert Juni bis August, das Abfallsegment «Übrige»), sind die Teile amtlich und die Summe als solche ausgewiesen."
+        "en": "No own measurements were taken. Hot days are counted from MeteoSwiss's daily measurements. Where this audit adds up official figures (the waste segment “Other”), the parts are official and the sum is stated as such.",
+        "de": "Es wurden keine eigenen Messungen durchgeführt. Hitzetage sind aus den Tagesmessungen von MeteoSchweiz ausgezählt. Wo diese Bilanz amtliche Zahlen addiert (das Abfallsegment «Übrige»), sind die Teile amtlich und die Summe als solche ausgewiesen."
       },
       {
         "en": "The canton's greenhouse gas inventory is not shown: it is calculated from energy statistics and emission factors, and the latest published year is 2022. Noise is shown without a noise level, because no published series of measured levels was found.",
@@ -2640,8 +2640,8 @@
       "type": "official",
       "publisher": "MeteoSchweiz",
       "date": "2025-05-27",
-      "title": "Klimanormwerte 1991–2020: Hitzetage, Basel/Binningen",
-      "url": "https://opendata.swiss/de/dataset/klimanormwerte"
+      "title": "Klimanormwerte 1991–2020: Hitzetage (Maximum 30 Grad C oder höher), Monats- und Jahreswerte",
+      "url": "https://data.geo.admin.ch/ch.meteoschweiz.klima/normwerte/normwerte.zip"
     },
     {
       "id": "meteoswiss-rekord-2026",

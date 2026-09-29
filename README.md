@@ -14,7 +14,7 @@ Only measured or counted values from official sources: authorities, courts, publ
 
 ## What is on the page
 
-- **Thesis and summer strip.** The 92 days of June to August 2026 at Basel-Binningen: 52 hot days (30 °C or more) against a normal of 13.6.
+- **Thesis and summer strip.** The 92 days of June to August 2026 at Basel-Binningen: 52 hot days (30 °C or more), against MeteoSwiss's normal of 14.3 for a whole year.
 - **Grades.** An overall grade, three facets (governance, outcomes, legacy) and one grade per area, each with a one-line verdict.
 - **Areas.** Key figures, charts, "The uncomfortable part" and "What would raise the grade" for each of the six areas.
 - **Voters.** Ballot results that explain the gap between targets and measures.
@@ -59,7 +59,7 @@ Conventions in the data file:
 - Source `type` is one of `official`, `press`, `advocacy`, `reference`. Only `official` sources may carry a figure; the others may appear in context only, and are flagged. The current edition cites official sources only. Source titles stay in their original language.
 - Timeline items take an ISO `date`. For approximate dates, add `precision` (`year`, `month`, `season`) and optionally `display`; the countdown uses the ISO date.
 - Grades use A–D or F with an optional `+` or `–`.
-- The template computes no figures of its own. Where official counts are added up (hot days per summer, the June to August normal, the waste segment "Other"), the method notes say so.
+- The template computes no figures of its own. Where official figures are added up (the waste segment "Other"), the method notes say so.
 - German text follows Swiss conventions: "ss" for "ß", «guillemets», an apostrophe as thousands separator (28’000) and a decimal comma in running text.
 
 ## Deployment

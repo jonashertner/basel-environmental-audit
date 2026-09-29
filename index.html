@@ -1053,12 +1053,19 @@ p { margin: 0; }
   /* Active nav */
   if ('IntersectionObserver' in window) {
     const links = new Map([...document.querySelectorAll('[data-nav]')].map((a) => [a.dataset.nav, a]));
+    const navEl = document.querySelector('.nav');
+    /* Reveal the active link by scrolling the nav strip only; scrollIntoView would also scroll the page and interrupt the reader's scrolling */
+    const reveal = (a) => {
+      const n = navEl.getBoundingClientRect(), r = a.getBoundingClientRect(), fade = 40;
+      if (r.left < n.left) navEl.scrollLeft -= n.left - r.left + 8;
+      else if (r.right > n.right - fade) navEl.scrollLeft += r.right - (n.right - fade) + 8;
+    };
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         if (e.isIntersecting) {
           links.forEach((a) => a.removeAttribute('aria-current'));
           const a = links.get(e.target.id);
-          if (a) { a.setAttribute('aria-current', 'true'); a.scrollIntoView({ block: 'nearest', inline: 'nearest' }); }
+          if (a) { a.setAttribute('aria-current', 'true'); reveal(a); }
         }
       });
     }, { rootMargin: '-40% 0px -55% 0px' });
